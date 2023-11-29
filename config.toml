@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://ornate-sunshine-f48353.netlify.app/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Zan Ahmad"
@@ -48,7 +48,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
   #         poppy / primer / sky / violet / water 
-  theme = "sky"
+  theme = "forest"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -122,12 +122,12 @@ enableEmoji = true
 [menu]
   # Configure header 
   [[menu.header]]
-    name = "About"
+    name = "Test"
     title = "About Blogophonic"
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
+    name = "Zan"
     title = "Blog"
     url = "/blog/"
     weight = 2
