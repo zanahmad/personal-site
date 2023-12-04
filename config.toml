@@ -112,7 +112,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "youtube" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.youtube.com/@zan-music
+      url       = "https://www.youtube.com/@zan-music"
 [taxonomies]
   category = "categories"
   series = "series"
