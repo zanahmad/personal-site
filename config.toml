@@ -102,8 +102,8 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "http://linkedin.com/zanahmad"
   [[params.social]]
-      icon      = "google" # icon name without the 'fa-'
-      icon_pack = "fab"
+      icon      = "google-scholar" # icon name without the 'fa-'
+      icon_pack = "ai"
       url       = "https://scholar.google.com/citations?user=_oh0KZwAAAAJ&hl=en&oi=sra"
   [[params.social]]
       icon      = "spotify" # icon name without the 'fa-'

@@ -1,9 +1,9 @@
 ---
-title: "Zan Ahmad"
+title: "Zan Ahmad (Site Under Development)"
 subtitle: "Applied Mathematics @ Johns Hopkins University"
 description: "Welcome to my personal webpage! My name is Zan and I am currently a second year PhD student in the Department of Applied Mathematics and Statistics. Here, you'll find information about my academic endeavors."
 images:
-  - azores.jpeg
+  - Heart/icon (1).png
 image_left: false
 text_align_left: true
 show_social_links: true # specify social accounts in site config
