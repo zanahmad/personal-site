@@ -1,4 +1,4 @@
-baseURL = "https://ornate-sunshine-f48353.netlify.app/"
+baseURL = "https://zanahmad.com"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Zan Ahmad"
@@ -31,8 +31,8 @@ enableEmoji = true
   orgName = "RStudio"
   orgLocal = "Anywhere"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
+  favicon = "/img/lemon.ico"
+  logo = "/img/lemon.png"
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -43,7 +43,7 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
+  twitter = "ZanAhmad08"
   
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
@@ -65,8 +65,8 @@ enableEmoji = true
   customheadingFontFamily = "Fraunces"
   # alternatively, leave empty and select basic font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
-  textFontFamily = "sans-serif"
-  headingFontFamily = "sans-serif"
+  textFontFamily = "Garamond"
+  headingFontFamily = "Garamond"
 
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
@@ -100,7 +100,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "http://linkedin.com/zanahmad"
+      url       = "https://www.linkedin.com/in/zan-ahmad/"
   [[params.social]]
       icon      = "google-scholar" # icon name without the 'fa-'
       icon_pack = "ai"
@@ -113,6 +113,7 @@ enableEmoji = true
       icon      = "youtube" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://www.youtube.com/@zan-music"
+
 [taxonomies]
   category = "categories"
   series = "series"
@@ -121,12 +122,12 @@ enableEmoji = true
 [menu]
   # Configure header 
   [[menu.header]]
-    name = "Test"
+    name = "About"
     title = "About Blogophonic"
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Zan"
+    name = "Blog"
     title = "Blog"
     url = "/blog/"
     weight = 2
