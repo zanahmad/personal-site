@@ -3,7 +3,7 @@ title: "Zan Ahmad"
 subtitle: "math + medicine + music"
 description: "Welcome to my personal webpage! My name is Zan and I am currently a second year Applied Math PhD student at Johns Hopkins University. I work on research at the intersection of mathematics and medicine and biology, specifically focused on personalized cardiovascular modeling and simulation. I also enjoy composing guitar music in my free time."
 images:
-  - Headshot/32B9216C-DD22-4506-8C93-5E815B3E74E3_Original.JPG
+  - Headshot/zan-greece.jpeg
 image_left: false
 text_align_left: true
 show_social_links: true # specify social accounts in site config
