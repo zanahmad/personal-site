@@ -1,6 +1,6 @@
 ---
-title: A Project Portfolio To Grow
-description: "Give your projects a place to live online."
+title: Research
+description: "Here are a list of research topics I am interested in. Click any of the links to see more about any particular subject. "
 author: "The R Markdown Team @RStudio"
 show_post_thumbnail: true
 show_author_byline: true
