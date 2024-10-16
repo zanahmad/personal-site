@@ -90,14 +90,6 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://github.com/zanahmad"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.instagram.com/zan.music/"
-  [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://twitter.com/ZanAhmad08"
-  [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://www.linkedin.com/in/zan-ahmad/"
@@ -109,20 +101,14 @@ enableEmoji = true
       icon      = "spotify" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://open.spotify.com/artist/2X8bjHHLiqividQ9xnbB64?si=LG93Qg0CRs2hVu1BJ6luNA"
-  [[params.social]]
-      icon      = "youtube" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.youtube.com/@zan-music"
-  [[params.social]]
-      icon      = "tiktok" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.tiktok.com/@zan.music"
+ 
 
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
-
+[permalinks]
+  publications = "/talk/"
 [menu]
   # Configure header 
   [[menu.header]]
@@ -135,27 +121,22 @@ enableEmoji = true
     #title = "Blog"
     #url = "/blog/"
     #weight = 2
-   [[menu.header]]
-    name = "Publications"
-    title = "Publications"
-    url = "/publications/"
-    weight = 2
   [[menu.header]]
     name = "Projects"
     title = "Project Portfolio"
     url = "/project/"
+    weight = 2
+  [[menu.header]]
+    name = "Publications"
+    title = "Publications"
+    url = "/publications/"
     weight = 3
+  [[menu.header]]
+    name = "A collection"
+    title = "A collection"
+    url = "/collection/"
+    weight = 4
  
- # [[menu.header]]
-   # name = "A collection"
-    #title = "A collection"
-    #url = "/collection/"
-    #weight = 5
-  #[[menu.header]]
-   # name = "Elements"
-   # title = "Element Page"
-    #url = "/elements/"
-    #weight = 6
     
   # Configure footer  
   

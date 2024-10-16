@@ -1,11 +1,11 @@
 ---
 title: Publications
 description: |
-  Here is a list of all my papers in journals, conferences or on Arxiv. 
-author: 
-show_post_thumbnail: false
-show_author_byline: true
-show_post_date: true
+  Here, you can find links to my papers and prepints.
+author: "The R Markdown Team @RStudio"
+show_post_thumbnail: true
+show_author_byline: false
+show_post_date: false
 show_post_time: false
 show_button_links: true
 # for listing page layout
@@ -23,14 +23,16 @@ sidebar:
     to edit this content. 
   author: "The R Markdown Team @RStudio"
   text_link_label: Subscribe via RSS
-  text_link_url: /talk/index.xml
+  text_link_url: /publications/index.xml
   show_sidebar_adunit: false # show ad container
 
 # set up common front matter for all pages inside blog/
+type: talk
 cascade:
+  type: talk 
   author: "The R Markdown Team @RStudio"
   show_author_byline: true
-  show_post_date: true
+  show_post_date: false
   show_post_time: false
   show_comments: false # see site config to choose Disqus or Utterances
   # for single-sidebar layout
