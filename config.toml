@@ -19,6 +19,8 @@ enableEmoji = true
   [markup.goldmark.renderer]
     unsafe = true  # Enable user to embed HTML snippets in Markdown content.
     hardwraps = false 
+    headerAnchor = false  # Disable automatic header anchors
+
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 2
@@ -26,6 +28,8 @@ enableEmoji = true
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
     style = "github"
+ 
+
     
 [params]
   orgName = "RStudio"
@@ -101,7 +105,10 @@ enableEmoji = true
       icon      = "spotify" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://open.spotify.com/artist/2X8bjHHLiqividQ9xnbB64?si=LG93Qg0CRs2hVu1BJ6luNA"
- 
+[[params.social]]
+      icon      = "cv" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "/files/CV.pdf"
 
 [taxonomies]
   category = "categories"
@@ -109,6 +116,7 @@ enableEmoji = true
   tag = "tags"
 [permalinks]
   publications = "/talk/"
+ 
 [menu]
   # Configure header 
   [[menu.header]]
@@ -116,26 +124,28 @@ enableEmoji = true
     title = "About"
     url = "/about/"
     weight = 1
-  #[[menu.header]]
-    #name = "Blog"
-    #title = "Blog"
-    #url = "/blog/"
-    #weight = 2
   [[menu.header]]
-    name = "Projects"
-    title = "Project Portfolio"
-    url = "/project/"
+    name = "Research"
+    title = "Research"
+    url = "/research/"
     weight = 2
   [[menu.header]]
     name = "Publications"
     title = "Publications"
     url = "/publications/"
     weight = 3
-  [[menu.header]]
-    name = "A collection"
-    title = "A collection"
-    url = "/collection/"
+    [[menu.main]]
+   [[menu.header]]
+    name = "Teaching"
+    title = "Teaching"
+    url = "/teaching/"
     weight = 4
+  [[menu.header]]
+    name = "CV"
+    title = "CV"
+    url = "/CV/"
+    weight = 5
+ 
  
     
   # Configure footer  
