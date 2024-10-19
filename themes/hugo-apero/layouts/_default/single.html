@@ -16,6 +16,17 @@
         {{ if .Params.subtitle }}
           <h4 class="f4 mt0 mb2 lh-title measure">{{ .Params.subtitle }}</h4>
         {{ end }}
+
+        <!-- Render buttons -->
+        {{ with .Params.buttons }}
+          <div class="mt2 flex items-center flex-wrap">
+            {{ range . }}
+              <a href="{{ .url }}" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+                <i class="{{ .icon_pack }} fa-{{ .icon }} mr2"></i>{{ .name }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
       </header>
 
       <!-- Main content section -->

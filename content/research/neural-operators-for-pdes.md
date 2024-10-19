@@ -1,10 +1,14 @@
 ---
-title: ""
+title: "Neural Operators for PDEs"
 description: ""
 layout: single
 draft: false
+buttons:
+- icon: book
+  icon_pack: fas
+  name: arXiv
+  url: https://arxiv.org/pdf/XXXX.XXXXX
 ---
-## Neural Operators for PDEs
 <!-- Back Button: Lower and to the Right -->
 <div style="position: fixed; top: 100px; left: 200px; z-index: 1000;">
   <a href="javascript:history.back()" 
@@ -25,7 +29,9 @@ $$
 
 where $\theta \in \Theta$ denotes the neural operator's parameters, $\Omega_{\alpha} \subset \mathbb{R}^d$ (or a $d$-dimensional manifold $\mathcal{M}^d$) represents the spatial domain on which the functions are defined and $\alpha \in \mathscr{A}$ denotes the shape of the domain. The dimensions $d_a$ and $d_u$ denote the respective sizes of the input and output function spaces, often subspaces of Sobolev or Banach spaces.
 
-Neural operators can be applied to various problems such as those described by continuous functions $C(\Omega;\mathbb{R}^{d_a})$ or Sobolev spaces $H^s(\Omega;\mathbb{R}^{d_a})$ for some $s \ge 0$. The neural operator $\mathcal{N}^{\theta}$ is an approximation of a true target operator $\mathcal{N}$, e.g., the solution operator of a partial differential equation (PDE) obtained by training on input-output function pairs $(a_i, u_i)_{i=1}^{m}$, where $a_i \in \mathcal{A}$ and $u_i = \mathcal{N}(a_i) \in \mathcal{U}$. These pairs could be simulation data representing a known, high-fidelity numerical approximation of the PDE. My research on this topic aims at developing robust computational and mathematical frameworks for operator/PDE learning on arbitrary domains and enforcing known symmetries to enhance the data efficiency of these ideas. 
+Neural operators can be applied to various problems such as those described by continuous functions $C(\Omega;\mathbb{R}^{d_a})$ or Sobolev spaces $H^s(\Omega;\mathbb{R}^{d_a})$ for some $s \ge 0$. The neural operator $\mathcal{N}^{\theta}$ is an approximation of a true target operator $\mathcal{N}$, e.g., the solution operator of a partial differential equation (PDE) obtained by training on input-output function pairs $(a_i, u_i)_{i=1}^{m}$, where $a_i \in \mathcal{A}$ and $u_i = \mathcal{N}(a_i) \in \mathcal{U}$. These pairs could be simulation data representing a known, high-fidelity numerical approximation of the PDE.
+
+My research on this topic aims at developing robust computational and mathematical frameworks for operator/PDE learning on arbitrary domains and enforcing known symmetries of the problem to enhance the data efficiency of these ideas. 
 
 
 </div>

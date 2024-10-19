@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Zan Ahmad</title>
+    <link>https://zanahmad.com/about/</link>
+    <description>Recent content in About on Zan Ahmad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://zanahmad.com/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
