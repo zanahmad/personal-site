@@ -82,7 +82,7 @@ enableEmoji = true
 
   # Configuration of math rendering
   [params.math]
-    renderer = "katex" # one of "mathjax" / "katex" 
+    renderer = "mathjax" # one of "mathjax" / "katex" 
 
   # Social icons may appear on homepage and in site header or footer
   # Configure show/hide above - add as many as you like below

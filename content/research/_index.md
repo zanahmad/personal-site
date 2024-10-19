@@ -32,7 +32,7 @@ draft: false
     <h3>Cardiovascular Modeling</h3>
   </a>
   <a href="/research/cardiovascular-modeling" style="display: inline-block; transition: opacity 0.3s ease;">
-    <img src="/images/heartep2.gif" alt="Cardiovascular Modeling" 
+    <img src="/images/heartep1.gif" alt="Cardiovascular Modeling" 
          style="width: 200px; height: auto; margin-top: 10px;">
   </a>
 </div>

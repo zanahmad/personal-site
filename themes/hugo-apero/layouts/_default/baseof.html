@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  <head>
     {{- partial "head.html" . -}}
-    <body>
-      <div class="grid-container{{ if .Params.layout }} {{ .Params.layout }}{{ end }}{{ if .IsHome }} home{{ end }}">
-        {{- block "header" . }}{{- partial "header.html" . -}}{{- end }}
-        {{- block "main" . }}{{- end }}
-        {{- block "footer" . }}{{- partial "footer.html" . -}}{{- end }}
-      </div>
-    </body>
+  </head>
+  <body>
+    <div class="grid-container{{ if .Params.layout }} {{ .Params.layout }}{{ end }}{{ if .IsHome }} home{{ end }}">
+      {{- block "header" . }}{{- partial "header.html" . -}}{{- end }}
+      {{- block "main" . }}{{- end }}
+      {{- block "footer" . }}{{- partial "footer.html" . -}}{{- end }}
+    </div>
+
+    <!-- Load MathJax after the page content -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script type="text/javascript">
+      if (window.MathJax) {
+        window.MathJax.typesetPromise();
+      }
+    </script>
+  </body>
 </html>

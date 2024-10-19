@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Zan Ahmad</title>
+    <link>https://zanahmad.com/publications/</link>
+    <description>Recent content in Publications on Zan Ahmad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zanahmad.com/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graph Fourier Neural Kernels (G-FuNK): Learning Solutions of Nonlinear Diffusive Parametric PDEs on Multiple Domains</title>
+      <link>https://zanahmad.com/talk/</link>
+      <pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://zanahmad.com/talk/</guid>
+      <description>arXiv preprint</description>
+    </item>
+    <item>
+      <title>A comprehensive stroke risk assessment by combining atrial computational fluid dynamics simulations and functional patient data</title>
+      <link>https://zanahmad.com/talk/</link>
+      <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://zanahmad.com/talk/</guid>
+      <description>Nature Scientific Reports 14, Article number: 9515 (2024), Collection titled: &amp;ldquo;Computational Fluid Dynamics for the Study of Cardiovascular Disease&amp;rdquo;</description>
+    </item>
+    <item>
+      <title>Elastic Shape Analysis for Unsupervised Clustering of Left Atrial Appendage Geometries in Atrial Fibrillation Patients</title>
+      <link>https://zanahmad.com/talk/</link>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://zanahmad.com/talk/</guid>
+      <description>arXiv preprint</description>
+    </item>
+    <item>
+      <title>Optimal fenestration of the Fontan circulation</title>
+      <link>https://zanahmad.com/talk/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://zanahmad.com/talk/</guid>
+      <description>Front. Physiol., 29 June 2022 Sec. Computational Physiology and Medicine Volume 13 - 2022 | https://doi.org/10.3389/fphys.2022.867995</description>
+    </item>
+  </channel>
+</rss>

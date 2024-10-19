@@ -2,7 +2,7 @@
 title: "Teaching"
 layout: "single"
 draft: false
-description: "Courses I've designed, instructed, or assisted (organized by institution and role)."
+description: "Courses I've designed, instructed, and assisted (organized by institution and role)."
 ---
 
 #### Johns Hopkins University
