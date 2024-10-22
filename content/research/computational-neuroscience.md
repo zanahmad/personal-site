@@ -7,7 +7,7 @@ buttons:
 - icon: image
   icon_pack: fas
   name: AES '21
-  url: \files\Trampoline.pdf
+  url: /files/AES-TLE-Poster.pdf
 ---
 
 <!-- Main content with larger font -->

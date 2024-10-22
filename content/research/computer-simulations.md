@@ -6,11 +6,11 @@ draft: false
 buttons:
 - icon: book
   icon_pack: fas
-  name: report
-  url: \files\Trampoline.pdf
+  name: Report
+  url: /files/Trampoline.pdf
 - icon: play-circle
   icon_pack: fa
-  name: videos
+  name: Videos
   url: https://www.youtube.com/watch?v=yUCRSj4tcbQ&list=PLQ_KsQ99ZUQOOsvtNYw3o9EywuQ9gaHj3&pp=gAQBiAQB
 ---
 

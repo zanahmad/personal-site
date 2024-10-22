@@ -15,7 +15,7 @@ layout: single
 buttons:
 - icon: book
   icon_pack: fas
-  name: paper
+  name: Paper
   url: https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/full
 ---
 Front. Physiol., 29 June 2022

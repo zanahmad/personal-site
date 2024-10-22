@@ -15,7 +15,7 @@ layout: single
 buttons:
 - icon: book
   icon_pack: fas
-  name: paper
+  name: Paper
   url: https://arxiv.org/pdf/2410.04655
 ---
  arXiv preprint
