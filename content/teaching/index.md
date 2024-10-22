@@ -27,7 +27,7 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
   Developed and demonstrated code for a multicompartmental neuron model with [3D visualizations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB) of action potential propagation:
 
 <div style="margin-top: 5px; margin-bottom: 15px; text-align: left;">
-  <img src="/videos/simple-ap-prop2.gif" alt="Simple AP Propagation" 
+  <img src="/images/simple-ap-prop2.gif" alt="Simple AP Propagation" 
        style="max-width: 50%; height: auto; display: inline-block;">
 </div>
 
