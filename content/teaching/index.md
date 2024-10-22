@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 layout: "single"
-draft: false
+draft: true
 description: "Courses I've designed, instructed, and assisted (organized by institution and role)."
 ---
 
@@ -26,12 +26,12 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   Developed and demonstrated code for a multicompartmental neuron model with [3D visualizations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB) of action potential propagation:
 
-<div style="margin-top: 5px; margin-bottom: 15px;">
-  <video width="560" height="315" autoplay loop muted playsinline>
-     <source src="/videos/simple-ap-prop.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div style="margin-top: 5px; margin-bottom: 15px; text-align: left;">
+  <img src="/videos/simple-ap-prop2.gif" alt="Simple AP Propagation" 
+       style="max-width: 50%; height: auto; display: inline-block;">
 </div>
+
+
   
 - **MATH-UA 140 Linear Algebra** – Fall 2020  
 - **MATH-UA 121 Calculus I** – Spring 2020, Fall 2019

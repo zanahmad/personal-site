@@ -7,19 +7,9 @@
           {{ .Title | safeHTML }}
         </h1>
 
-        <!-- Description with no wrapping and minimal margin -->
-        {{ with .Description }}
-          <p class="f5 lh-copy measure-narrow mb0 fw4 nowrap">{{ . }}</p>
-        {{ end }}
-
-        <!-- Optional subtitle -->
-        {{ if .Params.subtitle }}
-          <h4 class="f4 mt0 mb2 lh-title measure">{{ .Params.subtitle }}</h4>
-        {{ end }}
-
-        <!-- Render buttons -->
+        <!-- Render buttons: Back and arXiv -->
         {{ with .Params.buttons }}
-          <div class="mt2 flex items-center flex-wrap">
+          <div class="mt3 flex items-center flex-wrap" style="margin-top: 30px;">
             {{ range . }}
               <a href="{{ .url }}" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
                 <i class="{{ .icon_pack }} fa-{{ .icon }} mr2"></i>{{ .name }}
@@ -36,6 +26,40 @@
     </article>
   </section>
 </main>
+
+<!-- Styles for Fixed Back Button -->
+<style>
+  @media (min-width: 768px) {
+    .fixed-back-button {
+      position: fixed;
+      bottom: 50px;
+      left: 200px;
+      z-index: 1000;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .fixed-back-button {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .fixed-back-button a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .fixed-back-button a:hover {
+    background-color: #f0f0f0;
+  }
+</style>
 
 <!-- Load MathJax -->
 <script type="text/javascript">

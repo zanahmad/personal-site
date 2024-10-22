@@ -7,17 +7,17 @@ show_social_links: true
 link_list_label: "Interests"
 link_list:
   - name: Neural Operators for PDEs
-    url: /research/#neural-operators-for-pdes
+    url: /research/neural-operators-for-pdes
   - name: Cardiovascular Modeling
-    url: /research/#cardiovascular-modeling
+    url: /research/cardiovascular-modeling
   - name: Riemannian Shape Analysis
     url: /research/#riemannian-shape-analysis
   - name: Mathematical Biology
-    url: /research/#mathematical-biology
+    url: /research/mathematical-biology
   - name: Computational Neuroscience
-    url: /research/#computational-neuroscience
+    url: /research/computational-neuroscience
   - name: High Dimensional Statistical Learning
-    url: /research/#high-dimensional-statistical-learning
+    url: /research/high-dimensional-statistical-learning
   - name: Computer Simulations
-    url: /research/#computer-simulations
+    url: /research/computer-simulations
 ---

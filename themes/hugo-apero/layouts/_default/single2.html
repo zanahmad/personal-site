@@ -1,0 +1,91 @@
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+
+    <article class="post-content pa0 ph4-l">
+
+      <header class="post-header" style="text-align: center; margin-bottom: 10px;">
+        <!-- Centered Title -->
+        <h1 class="f1 lh-solid mb1 fw4" style="font-size: 2.5rem; margin-bottom: 5px;">
+          {{ .Title | safeHTML }}
+        </h1>
+
+        <!-- Centered, Single-Line Description -->
+        {{ with .Description }}
+          <p class="f5 lh-copy fw4 nowrap" 
+             style="font-size: 1.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0 auto;">
+            {{ . }}
+          </p>
+        {{ end }}
+
+        <!-- Render Buttons: Back and arXiv -->
+        {{ with .Params.buttons }}
+          <div class="mt2 flex items-center justify-center flex-wrap">
+            {{ range . }}
+              <a href="{{ .url }}" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+                <i class="{{ .icon_pack }} fa-{{ .icon }} mr2"></i>{{ .name }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </header>
+
+      <!-- Main Content Section -->
+      <section class="post-body pt2 pb4">
+        {{ .Content | safeHTML }}
+      </section>
+
+    </article>
+
+  </section>
+</main>
+
+<!-- Styles for Fixed Back Button -->
+<style>
+  @media (min-width: 768px) {
+    .fixed-back-button {
+      position: fixed;
+      bottom: 50px;
+      left: 210px; /* Slightly shifted to the right */
+      z-index: 1000;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .fixed-back-button {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .fixed-back-button a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .fixed-back-button a:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+
+<!-- Load MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script type="text/javascript" async 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+
+{{ end }}
