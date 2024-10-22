@@ -14,9 +14,7 @@ buttons:
 <div style="text-align: justify; font-size: 1.2rem;">
   Mathematically, a neural operator $\mathcal{N}^\theta$ is defined as a mapping from an input domain function space $\mathcal{A}(\Omega_{\alpha};\mathbb{R}^{d_a})$ to an output target function space $\mathcal{U}(\Omega_{\alpha};\mathbb{R}^{d_u})$, represented as:
 
-  $$
-  \mathcal{N}^{\theta}: \mathcal{A}(\Omega_{\alpha};\mathbb{R}^{d_a}) \rightarrow \mathcal{U}(\Omega_{\alpha};\mathbb{R}^{d_u})
-  $$
+  $$\mathcal{N}^{\theta}: \mathcal{A}(\Omega_{\alpha};\mathbb{R}^{d_a}) \rightarrow \mathcal{U}(\Omega_{\alpha};\mathbb{R}^{d_u})$$
 
   where $\theta \in \Theta$ denotes the neural operator's parameters, $\Omega_{\alpha} \subset \mathbb{R}^d$ (or a $d$-dimensional manifold $\mathcal{M}^d$) represents the spatial domain on which the functions are defined and $\alpha \in \mathscr{A}$ denotes the shape of the domain. The dimensions $d_a$ and $d_u$ denote the respective sizes of the input and output function spaces, often subspaces of Sobolev or Banach spaces.
 
