@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 layout: "single"
-draft: true
+draft: false
 description: "Courses I've designed, instructed, and assisted (organized by institution and role)."
 ---
 
