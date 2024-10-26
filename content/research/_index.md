@@ -1,6 +1,6 @@
 ---
-title: "Research Interests"
-description: "Here are some research topics I enjoy working on. Click the links to see more!"
+title: "Research Projects and Interests"
+description: ""
 layout: single2
 draft: false
 ---
