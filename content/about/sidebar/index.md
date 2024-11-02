@@ -11,7 +11,7 @@ link_list:
   - name: Cardiovascular Modeling
     url: /research/cardiovascular-modeling
   - name: Riemannian Shape Analysis
-    url: /research/#riemannian-shape-analysis
+    url: /research/riemannian-shape-analysis
   - name: Mathematical Biology
     url: /research/mathematical-biology
   - name: Computational Neuroscience
