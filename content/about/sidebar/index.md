@@ -12,12 +12,12 @@ link_list:
     url: /research/cardiovascular-modeling
   - name: Riemannian Shape Analysis
     url: /research/riemannian-shape-analysis
+  - name: High Dimensional Statistical Learning
+    url: /research/high-dimensional-statistical-learning
   - name: Mathematical Biology
     url: /research/mathematical-biology
   - name: Computational Neuroscience
     url: /research/computational-neuroscience
-  - name: High Dimensional Statistical Learning
-    url: /research/high-dimensional-statistical-learning
   - name: Computer Simulations
     url: /research/computer-simulations
 ---
