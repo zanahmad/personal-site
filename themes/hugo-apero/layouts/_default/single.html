@@ -61,18 +61,34 @@
   }
 </style>
 
-<!-- Load MathJax -->
+<!-- Load MathJax with enhanced configuration -->
 <script type="text/javascript">
   window.MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]']],
-      processEscapes: true
-    }
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams', // or 'none' if you don’t want equation numbers
+    },
+    options: {
+      renderActions: {
+        addMenu: [],
+      },
+    },
+    startup: {
+      typeset: false, // defer rendering to improve load consistency
+    },
   };
 </script>
-<script type="text/javascript" async 
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+
+<!-- Manually trigger MathJax rendering on page load -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    MathJax.startup.promise = MathJax.startup.promise
+      .then(() => MathJax.typesetPromise())
+      .catch((err) => console.error("MathJax typesetting failed:", err));
+  });
 </script>
 
 {{ end }}
