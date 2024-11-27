@@ -6,7 +6,7 @@ draft: false
 buttons:
 - icon: book
   icon_pack: fas
-  name: arXiv
+  name: Graph Fourier
   url: https://arxiv.org/abs/2410.04655
 ---
 
