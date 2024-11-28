@@ -8,6 +8,10 @@ buttons:
   icon_pack: fas
   name: Graph Fourier
   url: https://arxiv.org/abs/2410.04655
+- icon: book
+  icon_pack: fas
+  name: Diffeomorphic
+  url: https://arxiv.org/pdf/2411.18014
 ---
 
 <!-- Main content with larger font -->
