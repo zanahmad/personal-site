@@ -1,5 +1,5 @@
 ---
-title: "Elastic Shape Analysis for Unsupervised Clustering of Left Atrial Appendage Geometries in Atrial Fibrillation Patients"
+title: "Elastic Shape Analysis for Unsupervised Clustering of Left Atrial Appendage Morphology"
 title_link: https://arxiv.org/pdf/2403.08685
 subtitle: ""
 excerpt: ""
