@@ -13,7 +13,7 @@ intro: |
 
 
 
-show_outro: true
+show_outro: false
 outro: |
   <i class="fas fa-glass-cheers pr2"></i> My partner [Avisha Kumar](https://avishakumar.com/) is a PhD candidate in the Electrical and Computer Engineering Department at JHU, check out her [webpage](https://avishakumar.com)!
 ---
