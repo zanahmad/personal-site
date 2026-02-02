@@ -15,9 +15,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 
 ##### Instructor:
-- **EN.553.285 Introduction to Scientific Programming in Python** – Winter 2025  
+- [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2025, Winter 2026  
 
-- [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Fall 2024, Summer 2024, Summer 2023  
+- [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Summer 2025, Spring 2025, Fall 2024, Summer 2024, Summer 2023  
 
 
 ---
