@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Probability and Statistics in Life Sciences — Covariance, Correlation, and Regression</title>
+<link href="index_assets/reveal.css" rel="stylesheet"/>
+<link href="index_assets/black.css" rel="stylesheet"/>
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+<link href="index_assets/zenburn.css" rel="stylesheet"/>
+<!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_87a23bb370701234fc9e22e3b6f1c823fb6ca31094483f5e5dd82e0df285be9f.mp4" data-background-video-muted="">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_17f8c40a3abde13af300ab67b94005a4ec6b36e5380937f3eab49739ac32a5cd.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_a6f6aeac4ad6f47acea9b5489869d961e196698e6b73684d4608605d008fe644.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ebf892159366c3b3f5b2ac2f010afacd9c8587de18fa86d9c72bb3c6c8819964.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_c8580635a1097fbeb75ca9193b8c70b5065dd1a69b171a37d03b2861730dd462.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_6dacc92cf4989a2d615bd9a48f283607789bd560683b7033f5ad22e668b62ef3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_76d63b672dcaaa012b0eda0f1daa78a5ee7f8875a89e519920083dd0179da651.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_41774f9639d3b42997fa2a153e5df0b00008a1ae9fb5545e035a3df313252456.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_7cc398677b323e28c63be7f7e45f85d72f0d029e75581f4e5b7d6a02b0ff0f34.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_d7eac7b38a35554a3857a7fa3f2752d726e8d4170777d523a1e0f3382805bc33.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_0621fb5aa67cd0c99334c0e5a4c186fee42d907a1ebae0c945080c31abeff47e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e0588a7600f4b0d3ccf7466dbdd50a2119f95ddb9f4cd223612ace0c538714b5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4646a9916525ba7373f0958a098f2645622063274b164dd6d91549e932e5a5da.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e345fbd805e132e4a93f467781cef9720d2ddd04b5b724737f30f949d7115302.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_61fffc285ba3d3c6844476331f578e3f8d795fa15b09eb2fbe005dcca91e5b32.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f035409691dc88499f25ce65c52ed58064210df5b2af459e13b4307a10f8ec05.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_1b98b651e2dd0af9cca391e98477bf383c6d8801469a1866bd21a8138cb7bf95.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ad678238169961c35d8780ac3b7562579da697849628367684b390b8952ef364.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_43eb362f25c155175d83bbf5ca82bac9ddf7c644f8e0307bbd26680c57fad77a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_8b792a601949b1b6b32c55f7c3c72004fc485b16a40b7b0b385baeb787995800.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_d70b034b97d9d019bc27604cb001812c6ec57ff1a1588604bd5a906e81fbb1b3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_036ca25c34c2a39bd764f781b640cdbee3d40cdb6b9a5b82536faa78c299324c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_50d41e466918b6f724dfd14740ac40350d40a7a4048f484484e86eea3fbd96df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_78c82d69d981dc5e59a3cb2915be1e5a3911de45c9b777080196ca553e7944ec.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_06f923821d00f325d89eca0da8351f96ce03a53c12291eeb8d8d7fa9ba94463c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ef3250cb2ad27f42de5311d5dde49b5be583c2619cdb9b9e82479cc6c244600e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_a7c94c0e0695fe9131c7615909800ec182e3679d69938ad26cb12480ff49d796.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_374af4a5a60297a662ded44014ee213673048fbc42c00ee98f4d8b379454f763.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e2c8a7efb1bdaa7fcec888c71de1a76a5dec671832b2c3e5f0b67963ccbccac5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_985e6733932111dc397ece35ec959ec3580aa87698f6525f17628b36eb39df41.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_447df5dfee421b06156dfdf1da47e9858a8c4d9057032291be71e335a03eb888.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_48ab3dacb76520ec8023201c3c5b4d1b927be006892daf82a9b2b66994d3c5b2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_40dc83a301bd64ab9fc656dd8bde8ed517e31f828bc71b8a17a098b2176c9fc6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_3d965abc5c24d2622e1756df8a81cac9c13910e3b0c31855c7589c74a75170d6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_59e48c147b2207eda087bdd8bffc966560a8c92f0b402571a0d9c8e447dec8fc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f7714cbd8ac4bf57dec4aa316287a3b134e330252617ad13ae7ada142e25e25c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ff53baa9d24d01a40ff85d062a1a4aae608b3efaf0b430ee28566079017ae501.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f76fb54d323f6dd72e79b56b6641db430849888f3f3a6bf93718bab31c98e4d3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_05d2cedd3d1cf5d84e4097b082a0cec204e8b78334e529d5bfbba2bb48313a20.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_72c2dc79a88dc089bf466faec74b032229dea9d9dd14435d85976b56b1e751cb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_b50ae15649cdb9d82d1cf43a9a5370cbea88d81f5431b1f612e4b04c0c1130b5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_73413d3a770b054ee7b5cb3bed5c5a5fcbd749494ec3b1df8169c50b1cbda781.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_7a171852d44be4dda465787adc2e78d477b1751d918dfb319dc72a2ae6a4bc55.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e8e04ae68e96f26ca640c5c1ce2d830e676734c4f29ec7bf06f6dd92d33c57e2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4c1449091c5d2d2f8c5cbbffe7a9ce7ccfa9efe2cd9bc81b75d434ba104d0ca5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_60c87825bf8c716b5b4bb9e27035d54c2bf233f6a133ca3ecfcfbc61b294b03f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_a90144d49f3a79a747bc8862b7a7ddea9cc9f206fe3cc547c4f75e9b802ce15d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_dd30ac89af49378a17bf656d85dfb94bb5c489f9a63ea62afcec0700d5c515b8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e3542ab4552b37051739311e25f5c669ec54e89ec4e96a0728cfe29e8745c9cc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_da19704fe435f29e133953eb1abf1e4a82cdd53c5c01bd397f40498d55ea821c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_d7fbb1579250cb800be8fa61a40520b5f5365ce93880a640498bdf2b882c85df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_583ccb247d45e40ff22a26a686b0f1a562bd8523f33901f9f08b2a1b66890e4b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f44a6be9a3b968cd22670aa6b1abe4f2d0bde414bd872d400bf305f25bdd6f3f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_5cd8953e3b5645fcbd5df13115a7d3d638ac4d5928bcd2102742285eeb458477.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_6f694496352d5e2455cac703cd69410d298a727828fbce9634a60998e633a55a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_2a2838903ff983e42fa821a4ae3694d4e6eaad2625aa4540418b2033c899f4f7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ce7cb772fcfbdf596963039267caaa38193600013e4e6b8f7599c46257b097b4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_856c510f613cd9c05332fa5fac0597b1ac33549b4f63f5f4992a545006ac5b15.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_665e17b4d01d65f40d3ec9671537f99edbe56fb5685abefa73f4d40809497aed.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_36424466fc9fbc5242974113f746555fa1d6492b047b64cd608120db0efbee58.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_899d15f3d7a977369506d93d2c849865ba2eeca02fb94c4aa8b3a64249c5b02d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_cc5f1e92fc2e1c066ede056467772e531d3b657a0b86a4666297685b96ec885e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4477f0f62e1cf554c4cb5beb9cb620fd1e6b22ebd26adcf39ecf0ac12854196b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_7c2b64dafa125407ec6b199d8cb2e8c390603cb99e86e21e60e8cd242abce83e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_c503acc2f34d7adbf31e68b68249498aa5ba50d7d9716925dee08f16c6416b74.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_481b702bfbfd675c79976f00518d883cb6cb2e50aa35046cfb3fb260c9d6da59.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_67758ebab5c0b9c15d819b5edf8617c7ba12b0ea541e71d10f9d880028c84c86.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f6de967463b0f00ad65e018d9bdffd4823227c72426b6fee3e935a755179b9da.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4060a1ac0e8e5b933254f5d92c0e2359dc1b44f6c52a7d4825b0cbcf745229ff.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_f02e969c2b0c941eb2270d453b596b38d6326aaa67420d55e7a03c5382cb34e6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_0f456b7c909387ffbd363ad1082343442e24b172aca9778d92abd6948854c643.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_c5db7fd949152833bbd12f378882b6370a472c4a3c4dc059aed0001f80afcd58.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_60443e8b17d9e4042b7ac726bf4ced060f043fdecd701809ab7c9fd95d8435ce.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ff5888d3a8ab59f4c62d5a6c72c6f51b935734252e2c5fa55a87b0117fd43437.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_b5f8932269bdba2461c143ea8181a12d44e8922430f7cb032fca19218b8946c2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_7ad1af58445ca56f63fb43d07e6813f3202ff73dd5697927a89af5cd7f85bc38.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_9172adc30654fef5865779ef8af712977d19cecaa4d221da41e9daca367bed7e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_c05fe626918d2d6ed0dd007fb139cce8057429a604ff26456bc5b46eb037a4ee.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_01812fe726c9f78d94495dee905d57bccdbc6dc2d641720acf57a159874ae823.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_b39b44a708f46161c046732b6a4306dcad018e08f3a56ca16dd230a6b8b78b83.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_2b6190a6b27fae0682c5f62ef49afd727dd276fef47ea955ba1a5444978193a0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_6542dd44d2648ddb368be0e8a298d29de474edde91ceaa732683d4b8f16b248f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_d6a6756bff89574968877e62ada1b52b93bed9ad80606d87b3c3f0bec731999e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_8b197f9658584d8564c5edaafbbe709cd650f2e2999ba955f8f55dd996154e93.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_b56491d77c0880c5a6428f20298e141b920f41ba6593a96941d46788d731c6f0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_46b9b5cb49d97b2b6a55b9cc27f8818d0c3d90ec7c6a834ea02dbf86edc9d4cb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_1b14284ac408052733e6e424c9196cbe4cba4f27a9f6444b36975cc779545c74.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4cafc9fc0258fa4e7314cc6e9c42dbb438644d70fc9909eca2ec163f03e2a868.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_040d0954cff0220be84dc56c0e3de7ce9bef8e333f8b4fcf2bb43948da3a5b15.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_c79c9eb60fd4a89fbda2d0e2fdc8a54122d8deb2a990b47eba715ac994bf1d3e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_023aedd4be336ec1c8776593b84cda5bfbd80686af12e4edf221f9a25c3c4e59.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_de1ab7c42a981491814985e0ea1e4f8d311d5f4fac8044ed59db9488d432c8aa.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_42c370c7e0ae11e6ffd65678bb97f21f0d57377723eb8e3d8cc6d6ea3d14a975.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_a8c9da4950cf3d2f65b759976e8c0de9eba95a24205cd9ba1666dfb06871ff91.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_d35ff0d3a88ed17c532ac079ce57371dfc9d1332d112e5aebb338a30d431b271.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_558547ee79eee3643623cd660d50e59dc20892258e9ab4263e8a3cd44c94ff6e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_5dbc6facef7208edcffca5e429f3483874d8a3c9e4d5b4c0b528790584b38d34.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e40ee764c32f7eb126290e4509637b54f5606f14614b277750e34a49b1315295.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_12e3af96e256ac67c70e711e3010534449ec7e3bbdfa1ebc39553672dd159c38.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_5dc5e4a0109bf2385a029806f713852cdfc6cdfa92581e168be14bd2cdd0ed7c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_5d19d1232ad90be3b34b684e8c7c4c2a6d5fbcc7d509e3406bb397f3d76c6448.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_170a2b63bee8076c9ffea6c36d666341cc081f2b34847e6e10cee5ff506f588a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_4ae752e23d9dc49f9cc271797500f158d7d2b4ffc746115c020c749a6633f8bc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e00add85d9ea257cf832dd24e41e560d96fa9826b3cf7f8b1d154e137f72ff17.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_ce222ef0cb59c2f1e2ca5081119bb6bf3e492ba8cdae025f0f135193c03d88c4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_fe66ea8a640603ca6c0dd86a73e3066073b6c5c4115ef9a3678a6cff2b423f09.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_80418c72c33663d55f14e05b316050bfd55c52c9c00f92af369f9c7b3795f15c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_1990676345fc02ad3d1853a578688e1f0223348912ae87896041f9fc3be63fd0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_e28ded16533e2196baa5618c07bfd00faa8e2d3dd85426ea38dc63972b7a1936.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_0453a1eb7a00a72cf5e757a516442ffc13e92dd0fd0f9460fc5f53db36ff802d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s0_dd7a4d122510b60830a8ba280d5e8f7aaa6bf34fa36f71a3d44cbf5e42a9017f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e1ffa3d200bffed89d5357c90b5ac1fa308b8432e5523a190d30cc58112d372e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_64c8f2b6b18d784ac47162dac083735a1d2efa15c98451e29123e9f46d2ca68e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_295961cf98ef7fd4306c1d5ea019676fb27790a23251fc3bba59e8f2708a57cf.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_cd091854c1d2097e1e01b6487b44cbcb41c8c48dc10cec2f5f90b275bb627b82.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_14587c3cab34f995ddddecc2cbded428a72e3fb3c2156f79ac8ac8be57774a13.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e2241283e03100075bc792042ee411ffb3cd1abee2e6d1b7d0040fa404ca9e0e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_80e96416e6f52f349e97269ce3e7470e8b6686e3c3c925afcbac313be71168ab.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_cb114b7343b2ec8036a2635d9026aa1062582fce7e66b8665da84c08ae5f4a54.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_9e8f83d13788b04408608d16e418fec97aece8d9fcfd0eba62f39d1159b5994d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_70ebf5b0dee1eafe2ad044cc30290efb6bfc6d3e5e974f17136e9df87d314044.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_b7ae680da719719258231968cc14f7978d51278f62c17ef6101c1ba65ecc200b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_2a886d75c7cc771e3c3979a42d2f3a655f6185b9593e847620d3d113ea1f5baa.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_2feb947aa288a7477b9261bb7e1d0ed185a20c7c7ee32e2d840d0392d716a2b9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_720d886d20a2791f34e9028a7d664d74f30cf7c33109c45c53d3928d19169513.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_1631ee83ae6117d5519a1af2d9081002b5d109f974b7708d9f88dfa7c99b6007.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_302c13ef888b9c8acb2b0fa87bc15f3d2c4892bd24ede39f0d3a4cebf2848ee4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_45c200813c90154cb9facaf823566f747dc221a9fff7f5af276fccd6a2d12221.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_eaeacfae879327bc1d2c51f38bec9e7ed57cd40f3a79d7488d0136efbc8f8529.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_50ce94590a0537cd062cc67e9fd345004bc7fcc57b45d281f12f2cd86fc1f63a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_a4d8a71e50b84bca33c004cc7bac5088552d34c1bff0e858cde10c995b0f4eb1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_f83890e1294c41028edc0f5fe4544fbc8e5aada308e8b7bf9c3a09734761cab3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_27f06006e9a81b0fde9cef29f876de840bb3ea4c2580a5a74a7b9dfa41d9aff3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_59daa5e94f8bdaa4dde32a58d27a54dd773a8455431db5a7aa6b572162e4437b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_51276c767b0fff77e70c191d71cdf204682188b7c537e362ff5db9510fcfcd98.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e1735173b4463a1daa5e4f6ddfb19d5acd04776e25c06bf502129bb5a5131ad9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_2943b904bd197686ef2a8ae0bdab97d0b0b863be5637df13802ff4ce5e3abf12.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_45510b46e8b812f6a9640e76f79c37813dd26e58755a7284e284376c42ec3115.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_fab66b8cda933d10e6e1336ed7c75e4bce8ced1fe31ad603935a4a74e1263327.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_8172aa832aa195ac30513634bcd0041b33489126c5e99ee18e22018d547b5aca.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_cedffd47e1d1711e77bb2a4a97b290ad0f51a739c25e2a595506698803a3d792.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_2752a1dd380f3aed0aa1606429dab703605bfdba5401afc8796f5de459912360.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_dcc4d243c3887de22a67ddeef24d3dbeb0b65bc90459642b68eccdc34f6d4bb6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e6cb62b48d488e3097522043ee1f6c169391f3b63a8b1065d198f2aa8e52fe4c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_f85fed3842497cb7645b2ea1c15aacc646362999f5e8541d507dd2d5438966d0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_deaf56930796119408b8586525d307a76219e90a525e335baa2d0ab30f1e10ef.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_d7d78238de81d9f35fd27c7ccde83c8c7bcdb3be3a45c47bd50c3aa01ba33051.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_a957d01c341724c4f20e1cead2e1af473db491023baa540398571689e7e4bbf8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_3b010b63ff92d16cc454523f7d9dea3dddd382956a7c935704ebb1be3a293fe0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_23da218b9e25226e0d786bfce4df1d43c03f176de4b853c002ab55ac6f85d332.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_85678d864aed4d845a6c7dbbb688db2d0fb9e10f4418e558f5041f7855ba010d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_25a3fd9c1fcb0901e8a37334d4d4e0ee94d12aa22f682cd754c30d49483b2c77.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_215bb3caca70d6c900c7bccd0be9a909d7bd3f8620da18bd7626635f78eae414.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_a05ce075acb9931e690ca55ab23ac38cadc60b28b3360b46ce9174207df8cfc7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_616c990158cc273546f71ef39afdc1a838910d8ff869fabc25974d0ba17ccfd0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_14c2afe1588d756e439121ec62af2ebe90cade098bbb057c5707f0bec88c323d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_9bf17a39cecf1670b4bb03adf3b9ee50c85839fd5fb1ae2a031568ec6cf1033c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_f3419afccfaa191f7f9c4dae9106120b199246bc3ed6ecf123e27cbad41d5946.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e4cd86122b5e68e701a754b4e4fc6d274962727a40f922983d3e2c851237d10c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_637c41d4a3a597e53693c3db150bc2fafe3bda78577ea1256337ac5f55c4e19d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_6bf21f6458c81f2bca4cd9ace3133914a460d7c0ffb4340f6adff6b3b35bb78b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_691c8cb33796608267fa35e3715983c6cbe3e981bbfcb5815cf796e06196fc53.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_ef862dcf8edcc099bd5c5d8af216b145fceaba1beb9b945d7ae509d77a323008.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_c28017477061a9cd30c91991d6b74049d7e13ab155ca53b7afb461dd77019b57.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_32f70aaae59e181e953d11f81019f816cd5ad0913a83ac1928b727e0e16a0d42.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_d1d0da2ce2d1f240bb3e85ee44ce5f9e0c44bbf85a0dc07ce356c5933dbd685b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_cb8c14f0a231229414d36260ab8367466d1812b6f220258ddb5dab9694ea45de.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_846d24030f5bf3f61e98606267a004869ead4b9c444db2678e9728ef67e815fd.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_baeab104dc11897c7d1c9f8ca54df1f3020f809b544b34aa59adfba13bada68f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_fda6d4ca4857604d8b450508d8d24875896afcf3685c60c9bc5d92f4ed47a9ec.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_b486678f2046203fe88ecf253f3956a0bcd0ad0b7b1932db361c6347f1a355ec.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_a68c6d4cf51ef24a17ca7cb0dacf2fe8663b726b050cd05888573a549c9e2733.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_7317ca98f91316ea7c39ce160546371e4ae5e039d5d2d3e40293f57083f7235a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_39c36693cb71a6d524054f0ba02aae12ce9fc032262fb472934fdee5840c591f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_9e5d007a8babf76c7eb2301a47928ff2437eb26c4fde9fe2579abd682ec8a428.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_aa44216a902b5b15f92f3e371ca5161428eeb5c5ce7ad8714b5b0a14e35968f6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_d5eea178c63f1b894054504f4bd71cf9adbf8a500a8ee1e147fe487e3b36e819.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_9565e6a5c0aaecae7cf442f531ec628388e0212beafb6a3293474a4666e4475c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_911de618671d5a575126d34d86b41d8a7ba550c99ac0fb7afbd4abaa41fce017.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_ee88894e7d792f8942431a964246e1871d4dea9c415599cfc182a53fd42f5276.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_46089a57eb400cd101e05a74f2aba883b8aaa1ed89093b490f302aec9c843c3c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_28a115aa6139de4b7d811f90752442b4189839effcdffaa0559fb488f719b656.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_2adaf5bfdc333e4e0dc85c17fd2f57f4b6688ae81a439e9de9e3bdcaffc1efd5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_640b30b42a728cbccfc6bcb36cff7bf00b06620d893ef8bb9973efb8a9fde9a4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_90a2a495b20cf04b7514f740a5493a67063cf7aacaa53f73e4752002385cf47c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_be4a227e38cba04e98e3133beda68cf7896c924c34e10998c59d0918f3174bba.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_73e666614910fb352b7b1cbe7d94fdbb6b2f4926523445a3eba6821902b75910.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_e06b00ca08f19583f1d21598ea56f7d0d917970f318dd74a5186e9750236990f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_4dcad931817204eb9b7deb6fd71c1c17a1759aae3ebd73a309edbfabcb88abe7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_974ce65a696fa989973f1a34e4fefeacb30a2e3c0833ae3959331690c27cea8f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_228568904124337cb580a45b389e1ed84e5596a5bf3b153184ea37fad0358236.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_514cc6909d4f57da2180d8f1cb81356cd71f7ed3d1001b48a11083caca2c583b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_d3f2969e06ac0a3f08cff4338f3f7b999e41df2b062eacae267f6e1419254846.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_82fad0d6e1c6b80b623549c7ec621fab79d22e348d49ad66dc0fe382e8d34b4b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_a4f87bc54f7d81d576befc8f23c8984359c4b98d1bfc51a2b4a3ad7a17e92fe8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_545c7c180c154cba35d0ea78b7f330ee02eabc13bafcdf02cb4df89d0182f2e6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s1_84464a5f055d850d137173e60b49e6114f65db83c822a51e5357c10066022667.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d97b0f30fefd0c99b9eeadd4dab59a38a60e0e396147dae8b4c768d4de956ae5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_eabb13e88315281377821e0f79be24f3444e722b677d3b54cd41e6b6b93c27d4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8c8c16a1e0975847b557c0cb6b1e5e8e9422272d93772bc438870b0b14a6c8b1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f31dd1b47feecf0f02affe933291ad019273d3b1d11eb177c5547a77f2a4c9d7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f182fe28ae3c42fc9bdd0baf49d37938e1ada87dd3c909f0914129b52c5b7499.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_854c79e7d0ff7bb9c92c45760c2865db62bf16a7c0d03b9090d324879af36e3b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c35b946198a9911199b74c1c7afc04830fa4991a5e70011ec20f4b180e4feff2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_bf6dfcd31c121251d09cadc3bb457bb9a13f0ba034dff1634673ce61c4b8823d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_82baf5bae7c1bffd9743733c071e37a393bbbf8335169327e4bd803ec86216f4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2b3840f1c88f27a662206d3a42c2c860e1b2859bb0797bfafcbe753cd0fe9461.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_3454ac8fe485ed379b70f6fbd4e506a00011a72a7472544b52a1b91d75bd6240.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_bdd47e473cc0fdf57129821f1cb8c78b7c4e8a9a8634845e4b69879015b95678.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_44e8af613ff39c73c1c25495e228b55eae642cdc18b86faa8bd1e754f688b27f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_772a8d2b02a2cfd33da6f6eaed2e72171b2f1081bafb58200ea74d426d8393ec.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_de2e9986f77bb2c2501d92224b581f487d2ba049812c42418ffa4ef3d09be2a7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d653baced59dc0f396d098ea02a8600ad1a89c4e2c955bc81b17e9b5bd46e3a7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_a7bb87f8c5cf31313d5165b3517484d4d398263ea8575077b2c56a327640fc8e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7a49c2fbd0cdae58ef50a4e195a396c7977bfaca6d94c59eebf30cdc670cca32.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_eddbd240925f1d0e4b9c69eb20486a99973a3f0213b256f564fbb9cf6851206a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_3f7ed1683df25754d3b95e663149e9ca0781a236bfbbb68552b87fdc24ff26f6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_409f4d7bd478544f5f9327a48e83ee773fed9f8ea466a9d8c047539d9e2c7ef5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2bf8da2aff5f95d8428b42c149baf8c7c872a7f30c2e9a2cee5cf22f8b3b6f4e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f8133f23a826d04c3348ce36b1be6aa8fe5470777b802d2cc53412e1a5c872a3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e3e9c9c50754b93e083f28e4ad8315b22d6e65d512794fc57720f087d31d4bac.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_aa209a57f5444e1aca7fb864976cd7618e285e1cfa88538abaf5fe02ec9e7f0e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_ae03e761437b441af22b1f0be9bd4dbd229b6019de1057fe548bab0154c689a5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_313b9d41b8a77f133314818ce9acd7dc998229df73d5177b19950e5870ad63f5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_860af6cf643e688f4da0055de82c94e05acd851b98e44890a0aef6539f4a254f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9332abe3332499148aec1166b050b640140c7d4aee8fbc4303ba8fce90e4d7a8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_bf3578d326f86a819178ee59ab6d99881309d7bd783411412934622ee7aca4ed.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4e74ecd0092d2319060d31d1165ea46347e1e0aaadeb1eef68c940ad29edd8f3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_af39c84d695efaecfcc5e10bdb288b9e390ec2712bc3ac408697adad3053ac10.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9aeec77341339c552c50434c73cbe8e5d6795d63cea2f8645225d863b6cfe187.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8c40a57e7daff7416c0288d9e21e0cec7fbcc05c1c6d33d55da559f775b53977.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_846665bf18486b966f9160fe5f425635ed6aca54705fe9ec5d6a9de49860fd3a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_de976e9cfdba77fccd3c6056b9076434cd99bd156c115637ccd909eb3d0ce81d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8121bff4e4c403cff27f39fc6be0955a8143ba055f7726a9ecb70aaefb8080a0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8471ab0893f5ce1e86d1e6a9ff8fee0608dacf79dddfd8449bc8711b56ff5bc5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8378122d5a9f4204267361f6f11af38cfc558ab3689264dbcc078e8534f63015.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f1c26baecc5cf13ca64fbd1af951c1ae795a1907830f488588321cf7d1abd6fc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_57a2173629c34a887e14c1f5a5fc371fff2a21e72080d7e67272b72b601054e8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_5410a18a79d3065ab4052d5706f8c8e51158245b422ee9add9bab2bb71624770.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_b9f60eec763e1817cdc37da1805d9c9d23eb8795df6fb6e74fcdd525f480d9e4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_ba1bcf52b2147d101d414e4153d8c8d0813bb52bbd2dacb4f5e5ab1d0381ce0b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d9d6db183e17c04786275af57a258d343bce5c7c1028fa417482261d23b9441f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_cdceff0cb1d9586506aed66c8a762d638cfed82b5f47ec9db24847a9e1b0a533.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_40511d4d858caaa62b5d9269a37acd6231b64ab75deed5470545e986227db2a4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d712d7c2ae0ee9dbd0864c3298d0429520fafd6b2c19146b61a76783ae3c39b8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_1f16693505e97aaa97754fac5b81935046cf9b014379fa8a346c8e738d68a42e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_bedc5cf5531f6c96f3f23dd42f511d6bbd6714e7a3c8817395b2dfe02d0d1b4a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4d12111d51e30427db54acff44c3e9e480c335a3ad71f4bd530b7c228050a9c8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_257d43dc01f28872eb1ddd47a3c5edc2d0fdfb346078ca86846e6cbe42a3e3f0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f22718294f3155fc3c055a0468264ce96a8ac8a921a5582123d6654ca2542072.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_1ee90387e0cfed7aee436acc8de52c0b967235f9f634edfdfc205c0fa8c131c0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9fa43dd1e28b02ab8a2b47d4dafad3a25c5569fc45540b47a9d82e173161eac4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_85ff86bea6bc1839e463c29792f5efc25cf4d897c17c7c49ca285a80cc08ca32.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_b2e56f1b27fc897b3e41f25473772ec3874da70447ac1611774184b6c428563d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_a96d245ba3c8e299dcca85edbb22c111172418f9d48be7ed9bb9bab62b521b58.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_5609d6f5aee9abdbf1be450206a19fe9f9eb75d2db6b9752ecfadb6af31d9f59.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9d945b94aac8c93110b21d93628f51544fd470e0fc94eaa09790a1a4dad91db4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_0895cdb44a05b227b73293db8a306cb37dc608c237cd4400207b2e4d55645831.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9576f41350fcaf4ef8be90f908cbf4dc97622031a9a10465c87bd1d324f2f0a9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_54bef4a98c655355b29b7b4b9f134df172a009ffa6fe3a2ddca24eb091fc01e0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_cabba918664505cfdd57f6031320bec4cc53e50dd7397da1877e3d7fc4cc215e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_73add4e842b22c186a2f6e8948150fa3e7e0eca1d886daaa7359f4f10f954e4e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7583c3d6d5c53ec74d266af2649ddab62f71c27de81a5fb181415c233f0c142c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e717f850c3da0b3c17649132fe8a8e6be1394a010a79916d792212b98b0a90c0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_309f9c35d6bd3b49685b72171497e7bf1a17c0663c8898a067357119ebbdd1a6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f42ca84aa947187d0936728e486e8c6aa8600eeb8479f1c7a334cf43566120f6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_904ceae7fbf987d48ad9b2b47bbd9255a69e127fdf1d7314e5a6766aac1c5cf9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_523707851ec2c162bc372a11c5a198b965861008c40b4a82104b76fdccf10b6e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d3fae4e85c4a3b4d4f653e459a3bc928f154d10200ddb9f88c6f69f81994231f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7d73432f71484404041a15c1af6a0c6db384d5a481848f748458adb285394c77.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c2627e0072592eeec6ce589b5942469dfe637c5119ecd419d573ccae568e5594.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_fb036a5b0451a6b1c5fd4cf1d35b85652641db9d3f95a8a1791080dd62bf7bfb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2a9a6dedcfc119fefc3767c8ca9793a8831baa668fab6d440b427f5bc859858d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6d2f3b241cfb052c307a06e899180b244997b34f02378a5566eb65f993b40474.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_89cc07c57ef66d049f5883c34066aff7983744a3a7c7453f0943e22bc4bfdc20.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_49bf7573278e8ecc4f08263920ddf7a31ab90da3eba54852dd4e2fdadb62576f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d0421aef6b09e95b18ca32436005449bdb3571b52f9a33d8834cda9ea9fa2df3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d5a04a99025af122163a8704d5f628adf59e4ef72811318f65e6d1251db589c0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_a49500407b0c728afce0ff257c4aa83293b93d28aeda795934ca6746fd782da8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_156a124dded8efb943ff68339913c38e00015d5fcb8c4db1f381eff66296490b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4911312e8a9b4e5e1aef09fef02d83034f8554be3c6aeaf8aecc4b5077972792.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8ae2cd1b2ddb34a5ef68a28f68bb65584faa338150d311556cc9dcac86f86d73.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8923e54d7cbf716fe4e641645d61115040c41c666163c5e5f8d0f8d0e6c9b629.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2b016e77afb84e5b44f9d345be7d8ce5af7c1dccd0953c90d7101a6c5ad6c84d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6fb5a45d7f61a30268f7ce18a90bdab65385c720e119930c663b404545546fd2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7e724aab2f01b8439cbfdba776a6845db0f9f4975499411d4ce5ab2a3538adad.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6b9eddc3947334d51e49c6c9d6101d703aaf83eab08a171f472f46652091aa04.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_57ac1d8b5f87d48db7fe31fdac91afe75275019a4ddc43cfcef996307a31d41e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_176738ea4c762bd0523e80c1f50653261be6643d793e9e1e32178c5725cfc9d9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_32e3495fee6fbba06f3f26175f98ca63f0bc4be76c73beea1256c4940af9bf00.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_693676419c80961439d1ad861045737b3a1bd5260514dc458ef8339b462ba404.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_a858b061fb16b6c274f20561f6ec12a6e396f85f7ab7051dd291f4c277299057.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f5558957d19f2c4c2d4d7582a42e43627b7ac2aafdf0d7237e41a7d365340597.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d8f38e1ce7b6c2913b3a8e417e1a35d30edbdf57df62da10c67ecda00468f0d8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e815d3864ae713570c031d5b82559ac019f7f8bec40f3ff003b6be78cf05373b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8dc99ebfca64c818ca60616975adc683450fdb0ccd9be8fd4f9d0a88779aa3eb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6e0c45d50d57842bb9084d341d2c094741dcf33cc251054a606f5ef395e8744f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_31f0e8d1137954224327e150d1cedade868b8378894203272eab7b9899fd7b24.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2fdb7708d4f586743500a7eb77cc1b8d6dc68901c19370f1bfcc8439e61c75ba.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6dc7d73e997211e714d2890bfb46377c220e055dc6756011a27dfb4102c8027b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_5e54d5e41b84202595dc2cbebfd6d82a8bb4c28e474f412a04c2d0cf5a5f685c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_be24f5385923ef65b136253f3441b312fb2f3d82c7946eb08e36e7f482a4c083.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_6b7740eeef59d09cedb3ba35185ddb8bbec86fab9a039b4cdf72041033dd8498.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_47c713d5d6c6e0685ccda899a49744f9bb6914439a007dd9847260fab089ed18.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_eeca72cf18f70a3f32643baa97a70d04f4d8143971ef6f44632211dc4363d42a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_060d792309fb4e3be754b5667df24e738cf73a14b592cd12433372e79d946403.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4f1b66d5586e40f2953440b69b6406df83a4ad9ce6769086e0a8b006bb5ac4e6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_3aeef937f24919fa1832208a19f20a203e7ecf30c0f4e9dcd0d339625390d105.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8c2cd0d57fa3c20ebae92496592339759db488f6f3acfd5a8838814fa976e29f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_efbb1f6c672bf1629391cfa8eed113a2c3e8f079fedc374b7c68744e8d328d5b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_3a7aad102fb6fc62461dae2199d44522f04edced167bf44c2216f8fd4056d696.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f1e8ceb9017d460c30b74e3dfa5e680ef51f35241c4af2cd554a1f3b0ac13844.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_a6da482dd75681e06792daf28f34ffab436ece5bdf8ec55e46592e6a7c7556b0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_ffaec56d2235f0a4e94da7b0cb06a3796be127cc9dd978c37c6c1d20e131ab55.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_fe04ba068a7a051ab2a5036209735234c8b9ee4a3e125f8e5a0552d4d316b974.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_dd584c30106d7cc27ad03bca95a988760f66117dd954542cb667513c6fc91c45.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f49dcb2de26740b79556c4ede2714af64b5c11cb85f18315917da6575de69cc3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_73b6018442deb6d4a3ca55f657f2d1a31486cb150b304c1395d3b38bc21d18d3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_5e26c29e7156703504ddc63db988305589531b43cf13e426c3d20fa39db4266a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_26157c9747c044ac92c286acabdc58e9cdba5bdb9bc453cbd7fceffb94244484.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_19412996b494e43bc7d5b17c11545b033d73cd6718061dd9960cefd2a6de7d9e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_b23d726ac95611368dc0558734ad90ea39c39f4605b577003e09ae7552c2a6d3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c11e7931365f325fa9b348770df39f568634f3dba73d0aab8248efb6eca63b49.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_1308b97ba782ea4ed8a6a5e4e5381c6556ad578b12db82bfb50b8af91db36f04.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4028b4b4f83c735ec16d7ec6072a7ba31eb61b13a6bfb3f72b6e726365e09095.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_969e550f337aee19e6fae4f7a75e22e5490d0701121ef9f3bc25847a0e396e87.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7fb0767076924a036ebea84fa3dd2b2a8acbc2d98368df1d55e4650e40ebe9d6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8adc3ce03da08c44e6731fcf43132f0214fda4929671f4357f4a1e4ef68cc0ee.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2af51e03c04a66466f202f0e2e824fee78770d2d4504666cb58fb5e46457ad1d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_ed2be1777f5b7d7c4a7b3f5ab1e2afac4fc948af87a60457823abaff4df629d6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_cb4d135cfe057756482fccc77366fa3ce04b0d3b434af6485d5f82e2a97555f5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_73b29b7d612946df9806cd2dbe384792033380386b4be9eaab051a60662c7949.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f1dda8bd3306e11a2c23381ba99af2b3bc0e4cd446faa71b4bf12ca63987c4a0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_96e9ad33925d642fb37d297ff12dc1f6c25760571b5f0f83ee3f7501c0883cef.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_23870b0935f7e5fff5077305f61f8a5c98bce1681edcdaac0a712eb9fc024e18.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_044793a7302b5f4a8d55746faaa40c0e2803e43754ea24c00fd053ce77f2bfc2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4e37e0820886a8ba24ebef5874771f400001d054348cf05cfd56b56a05f93932.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8edb2f3f244b8cfab92319669da944f96d65e87a24fc01b44538cb614a2a9d93.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_b198cbb7291059e988ca1eada69a1d58395b2d693b79514b0c24066467d1ace2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_40a857804814639039851d9e3ad93a6c6f2eb91dafe25ad307e6fc7a82947bd6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_602c9e3948aceece4ed7f8b98edc0d0bbd5a5daa00c7e5fee587caf2b093c3a2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8a56eda11bdd1f8b1842b8af03dcf02940bedeb882ebc60c738193459d8f3947.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c13fc3ef7321525668046221ab09f14e5f563b23d89dd80070f805e70971429c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_05f99bc11d8a2be528702e3d865a3b9254b4cfab8ec4e7ebf9a0e12d3e3f540c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_12f29ad6143eb1f937747d8fe686e691c8fddb81a31193bf106a4e0b3fcd03f2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_d6c8cf9231420243431e6c3666cd6aed19c1c57100d72b602794079d96d1508d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c5f670ba832e942ddfcb8d2c94c3d9a3f446d8f01df1e3037cdb613e1cc6fd0b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f0ada69ab3b3bd394368c6f9571bb5f12222ca83c06c9c46d804e6a3fa9daf47.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_fe7dba8e3f2b739120243aa47b10242dc746c87f0b2362849dfc79605b390ac3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_ccff298635fbabcde6c0e1ec2a5b41653d5014ee113df87af91ece3d42e132c1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e737b36272a325dff351b6ce83e02b36d2e896158ed23b79e76c7ba977539fe4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f99ac2e03d1ca374fc0eaab1f87412267db29d2c3a44a340f039a26164cfd684.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_45e7f808c118c503372d64a9857aaa4d6557ce1c4136dfca225cfda66439bda2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_805988335ac45b20e0d12d53e9f1d446625813946632be8bac8104370551068f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_807c696d67347bbf7a6e0d47fd31232a340ed99eab495a4d185b08ceb9b203e6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2235744d8f466e6d021e111f6cf4225b4c8265cddee71daf6082ba4af7bcd026.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_dd7c32692eec4294f5fb718d0540904828a62fca955d3f830d7d436b19f8980e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_2480eb1089cd1ebe0e463d6aeb504854aa6d880ae73d974f3e00e5f84517c6e4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_137e5e9e983d359454bfc810ae496a1995b91c1364bcb92a342915ce39943f90.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f30d8b17e07fe371683e09bba772525fba12826424558f43f860ede60f436597.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e968fa979a0f40a8dab2fc43d074f04724a93678cd35f250e24a714f014f501f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_47c6415029e8f159bfa2a378f69a3ee03835235daa50888dfffa9d5d864772f5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_4848f187a954b733143e0b1ff32f314893fe26dd4c885a6501946f04429c9a8b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_dc6a9140b6809bac686b8c5127fa692b3f33bf3bef144bd67af22c29b198085a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_7d430eba239a59ea737f9601aad86f328cf443ca4aa9d6592392830e1a1d91f5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_c6bb2cc9ea1fb22b470be830aa92dde51c7f9c7cbf9ac8f6ac03653692fca35d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_196374e18075dfea3f6098b66730c46813ad968540981b06e2d7a551d644eab3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8ce117a23d714f49cb45f8262b47c8f7edbd6ef4a31cab9642c22fb1649f8f8e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8f14f35e731faa376aa5f561c1979c21405151a432de3b3a777ec11bfaef5800.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_676d6d38621116a8647536fcb838b47c2038183443ad0b0f2bd49a700dfa36b0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_142a459c6cfb2849d54c8b57e78ad0b12388c9c370a8d0dc9ad5105bd01fd779.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_1b310eca8fd86d7c497e900117279a47a974a79f71cabe2ad35e6fc359cb70a7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_bc5e8c8c4ec6c9e02c4a6d0bf709226403cdfebd1dd1c40d680eaa7f3cac578c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_9d25e7d67a2c286523689f6e2aa875237e93a199c9d51e2288dfc1376ce2e599.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_b3f7b411c38815f4005456acd6b5efd24712965a46b17bcc19da3d12a0a815a9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_91158c444f181f64162c2f65aecc7ad230e9b9e30035e46e97025a1184c9b9ae.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_0235ee02b0bfb00b89a556b91001543e71657442991f38a1ee801c038dfbca6e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_0ec6d185c4d209681ab2763c197face93ef6dfa3bcb4d4f9c6ff0863daed6ffa.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_e73a8417d7b843a4631ceb1b1e1707febccab4ce4a856572b01caa8d7fec2d54.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f7b8fe5ed78af4d1651b8beee2cbdfaca0ea90045456ff529bf735e5e4eaea6d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_503254bb6f616d53e8cb51116b382a27c73becdc087726993d36de150d0a9bff.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_f4ec3f7a49d5246400dc346621ae19ccd665b7039aa5a087c4210df151dd5711.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_8faa5c41e9221e7f1c10757c4bcd990759fe2ab8206e506dca5cc181d4eada17.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_28aa3e538d51fa964a1ecdfd6fdf682c20bd0c459b6d4a17ddcad70b792cd5d5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_0644324947851f6213050f9bf64875944d1810275de06eaa72f6d22d75174fa6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s2_aea6d2aea07df2cb19ed7094eb5e4a286910c26700b9191c09ab64b866ea37ad.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_e48fd84887be19ef57c086c78854481089bc5f6fedff97101d3e878633be3520.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_224a6df43f972cbd2857696c6c9f8c83a66e9aba39bacfc914f4e6c878961448.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_7d72cc353166d0fe566974c69b1f8b45be140978dbe0d00353be5247b8532fc4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_72de9964b7b9ce693759e4dc2908d309651be4215cf61534dce6d084972161e5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_ec05775441cd1b36351157a81d874e3a4e93362f5fc0953e3a5e76b222561c16.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_323c0b063dc127b7494219941033ccfb9b2352fe070e4bc8327f574c7a860b0d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_6be6eb1ad3c4a891d20cb1bbb2f62016f87f7c449af13ca3b3996883cda5b84b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_1ce7c7ab46dd4a0d6baf307affe79d38506017125c5267e1d28a4fec0cbb07ce.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_b34b4c501538724d7f159fb5af8c63a0a19e2a385691cd427cf1b41594052372.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_daf0c85a909e8f31b79e5b590a8ac536811ac00720a199113bf5d515edd54d94.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_9e7ceac1c636b78e273350643e9eea5673dbbaa0b9f7b57a76dcab0f7685dbc2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_55cbc60f3a0c91631b39a2f9066e09de44bdd4a8e50dbf218d1fb6e449c1e12e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_0a2e1b9788fe5cd5c8ab4ea96975ff20aa0be9b1844788e6f62de02adbd65749.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_98f79423067b7a1ee73af99de776632055d75b1e5cbe4f77f874759c55d0f4e2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_50072ffc30ae1d5176bbaa5df98bb47f26568522a3a797fbfdb6e6294c6f35df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_1c3d0e43f2887d3b2edc8b158661b431113b14ad20c69a2daddf552576ee0723.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_118e5c22dcfc3e6f5db7808217f3f12af3609f5773b9916cd9a10fc7c2946b67.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_4ff76f4eea433952ad4985aed57f64d12dd1920071051990c9c2df90444f340f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_cee355d0086c6ac41a524ec304f73093dff4304eb99692fa892dffddf81a11b9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_df3c2ee817e867369e04c3a635158b5bcf7f9feddf278c3e8604cc8c338fa68f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_61fb7818afd8623fa372b04e039cb01208f8e5eceeee7558f7862ba03402793f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_faa46c86ce8ab79700283b13012a3bde615a94197b26e87f2f6c68603edb6873.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_806d4a21307ad320a816b9d13a488737a8263c8daa89181afa7607efb3b976ab.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_e0df397aa2e52fc41e4a5b2116c49c117234866d4bff213033f7ff4aa28d24a3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s3_6b8f9a6f11a950d46048a1125c207c039d2de161e6f148746c8dcd71d9530370.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_6b9cec0ed36d722af4a94a79668494e275b79fc57ba86d4fc406980ca042c651.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_1c62c93517a6aa28efbf05ad3ddb433123d4b00bff188d3cdbd603e980ce0afc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_6ea9807dcf71e919a5c992e97a230f1fb332882d2ec579bdb4ef5c7a5e38b93a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_fc5a80498b0dbf76d812d4d91caf2003f9a0bcd0d9453e76b470b14bfa3e8766.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_4e5ac791e540709dffce1fe2652bf84e952b1cac647b163994bb9ac8ce207f5a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_354adec0e9ed5370f22d072edbfd8ea4b437e6d006bdf38c65596eaa480215e0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_cb24bb64e11f0380c3076ed4b919f1408f388e5cc6a468ea83169b843a7e3929.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_9295e73588c02a6571b3ac7cf22e782bb8ffe523b26b9d56ccea656536dfbcf2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_d9f6ef5a14e5f85876d845d54bc90787f71136dffeb1a1c5d6b131f5a4fcdb85.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_a6de0d0526acdc321b67a60bad60e0efafc9809147cb905628c25aabc493b0d5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_fbeb575cbc2d92c6c579ba14df5278f797cfcce16de59174f7627a1bf6ca3ca7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_81bbc67010fb9b200bbbb8130706110864b9fc04e9b31451798f973718adc9e2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_482cc5b12e07b7a174984e32d6e561675153baac9d1182b98ec653c2441aebaa.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_d8d87ea80b5cb34928a189da34a9bbec3187e4ed3f2089bb082fb121dbe723bf.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_239133292e3938589978b6f7763d72c545627972982168c092efd48f38e28696.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_2d50b1cd0a76c6972c99e7b526a851a4f8c1966aada76de5c5eea73dbf5d94f6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_dfa2fb0314f789b842bf620d11b92654646a9a411e15108588dedb208dfdb61d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_48dcd20c660b499561b9b43902a3a06401ea9e0bc9752c41d113920f2a92f621.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_2b3069a710fe13c3a40dd0c587e8899582bc5afe857faa9c43b60c06fe45c133.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_8ed6b2ded0fbfd6223dd0994c31f8a89449cfd48f789a2c53c6e2335a47c64a2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_097f8a99b7947cfbf7db9af0e2a9766090030eba367dc0d469d46003d00d2bed.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_d52d27548e783c1b2e91b835b6453ba5494d18f6ce50ba65df81bfff08eb0bb3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_0018390c473a21ca6f18d66949eab65dc856ec5810cd596d36c3d6ff66939857.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_935332a166e0094a354cf5121d2b5b7b1d5eb7721e04c7d3c0390b9ccf01af4c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_b40efcc93ca74e67399c2ab208186bf9dbfd71a69df29119957ef3bb36dfab80.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_ad5e0aec046f979e0a96f75dee1b129a91e90fc4f04f84f4f4c1ac3b5e628b74.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_84466b2506673f47597fd0c34c7336fb0e259d6819928260c53818449f99316c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_12cfacd3dcbfa1217357d608fff9b4548d3540a302cb66066f5ea42650581cca.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_21183f260ebbca28c101f6b98ed656e95b47435c48a5a8900af18ee07f0c3732.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_5249794e0d4a11dfa4d1632aca7b573226d27caa9806002a1aa2788983db5a7c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_9f327b86bc0e7895c912ee9b29720f202fd9cb96431a437af38295f6c274d2f5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_fa3fa24df85d348f86c1b03e187c783f4d579f3f23c1dfbf1d6fedb1a2d3b0c8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_a7d627221a0ff0d65f58492369972702a503c6e2d233bccf7777b4f5e9280cbc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_05cbe5f5234aaf9a8c31ce22ce5ec51b7ef0b36fd7acda20095cff802afa3d57.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_2fb9e764a58312b04712c0b3d12e87e32ee365958053118d9e6517a4133adf34.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_38b3b880391535485990f9f7593ce69c0ce62cc3b9801b09daacf41a75327a1a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_dce2323d01c8e08549297b7b09978acc75254b183d01fd1aeda92cf050926812.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_075361ac25df6d0a498e8d875be246dbfbdbfe3588fcbbc057de70caecdfce66.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_b516363038f1837e9851fed49e0764151e04f346efe85677b900fc11a73ca805.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_c6a3da8922ac436b9f59487219955b0063d4ab41d696f84d7e49d0dfec6f8829.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s4_602210bb5e7826a8144d91d8cf10c9228ef0c7676d0c919f87ad469170389410.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_3324fedc6e9f0212cb852a6bc3c1ffc1fc4b151d370a6923b9728b65dd6e006c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f7a4c1db229de288c08182e8dd2748e2db8b33b9039b75a864de8b6767358c1b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_9e41c3c94ac0dbaf34a01c73e4dd41ef52f35af4469fc3bda6c79254ad24ca66.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f32215877b5aefc40a8025f670ce426627fd48c10e9b32898183dbdc7b6e6aff.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e8f447dc5399d932a9c5007246cefe9602ab7163c5a927e5332ed418fe96fda9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_4d2aeb99657e0377408e9bdb706d8f0a3d8d0942324b1a1c6c0be1d451b01d26.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c8626ae04f8cc51f3908f6430977c30241b7f2c662d693ee018e0ccbecce5e5c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ac635f2a1a1f24e4cee03b678eaad530460b832015c6805fcc70bf511190ec08.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_390ddc10ea21acaab58d432b09c7567c35e1df329f3dba83364a868cf1f3155a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_b2a04c98038bd9d96979c9a98d5c84453455c52b82d92c9333c9d4d9cb857690.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_fa90bbecf90691fcc8def536396a329f4445cf9a6df038af6d826049a5bf1c39.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_736ae699f341636fa48a3e7b9e9ad8459747e358d89f5b4b71c39a7beff96306.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_50ec8bc57ad82dc99bb58a80e925613267b66c80d5c3bccd30ed65d85054bc64.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_baad1a013986c7ba69412c915c802cda8105b0aece6384937fa546fdcf0b22ee.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_92739ed2b476c0e4f37d07e55d5736aad33de51718127fd40add1ee7aed5a16a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_afee642997b7dc121530f03bdf7235cf2b496bd8af3b08569020f36a473d7342.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_a2f14c0b36aee1dacdf0a452558bcb28c55fb4d11d01b138d0b41070e6ab4759.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_a886f6caa5060a57c56b13e042a1b00cc401a8e6bb61ce9d370a73a39b6cf6ba.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_63194f20803d4f71bc109831a756c3e86405730091f8a1a09b6202a5a6ed3cc7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_7dc2e1352b31c3f0c31931003dafba8128622a5cec8a4183a267909af4db173d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_46c9e8da3801afcfc47bac3445781685f30b733a775039432bb8a980c0f879ef.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_efac50a5dd47aa0d174510600c49fd563147b0617571480e3b99ebe067a11285.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_dbc77cab84794ac622ec934670575005f0f54d67a09e1505d38e48d6ec849dee.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_3ae4baa778e54b95fa85f42988fc440543ce2b30e25fffc2ab49dbe3c46b3d8f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_385379a3056be29ae2a2216c4f2619f62b3220f94e44cad7eb474f49d1833a8b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_93a24ac4b784abfe569c198729d70395b4bc2cf138937465a29e794fef659280.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c0cc60246a034f0911d24ca39eca59c9fcbeea4c27ac2c3f487953e2d1cf11b4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_b2f33b4dcebbbeba448fecc535e5d7758ef32ff1b6014230519179350ea63262.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_cb6fd94e3f90aed1d36da840083afe9d0817ec839a266f908c491b10ce6b52d7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f5f9f2a9311bc06ac37f57f27cd60b6d335c785b0859a198bf7d3013d00d429f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_8e0ef0bda6ef3f3cf9538d3a13b8de61dba179890c00d81de469d7497c3190e3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ac33df13911d447bdd069f296cc3e6ddcd907c6bec055bf02cfde221bbfe1578.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c7976f7399b6aaadd92872894dfca52df9b5db45fd461a6cc7c1ce97e962181d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f965bf5b9472169289f63f931f73ca8a17d21f1af0f6b0b3355d6c9a6e5c4dd7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_30476594cd7a1e98609c021ab804d5d5264739229704288f5d935d4e275ff0df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_db450dff18dbcf30f7be8330ba28e6d2ed746a1e0dfe8751b81f3670f839bc61.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_cd71933ba32b12e3b7515a304d7a74b000437b49911796461ae18daf7b24c9e1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_7956a9b5d766991ab8d1f71fe677f0fe444aadb4416e9e8d2b57e724fb28cceb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_73b1603645f4ff0b77d0d9cecccb5bc4e94e926b878a2bed319ead8509dd0028.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c1a2470a4e1d0959b405ba3ef23c8caa4b3622ebfc4acd4daf0435b492b3f404.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f626e840c3e8c483eb5b2895d40fe2a4155b91a4a736cbed1d79dc2e35c07a6d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ad95fea221be17fdd2b4f175e0233080a71dd3459125e03c09db3132985f0c0a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_5a8128042c8881ea12eb9498a441c30c87968eaaddd0b9869d2cd249fc287fa4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_233219989543bce31de8d3f31df0c754d605f441245a6bbe7499c2c8a3719f01.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ff4fa3f8f17c97ab976a3d13f4f5acba03bf2226e73a0d1a714cec9d4f241b0c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_cbe6f3b1c0d2b6a4ca19a82f98d4fdb690964b731cb09d37e8c74b121db6525b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e1749c724b5623716df71c239389e6ca0c8a3a5a30784c3fcbcae9b930c6033b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_90072c7b86fc430fe3150edb619970214a55b4d9cc0168a594b099a1fcf4fecc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_380bda4ce804a7fcc5446ac7d449b8cd54022597fac2edced721882c355a2d1b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_b918cf8108284539ae9c861120172411d4f1e76df2a5fdf6ed77a4fe62a04757.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_06508becd56ca85ec7e3376714209528c94dea9c21ced06d043529655010e76d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ac121575179f535f49e03acf2f1c742a0356f707efc343506e5ea120493d24ae.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ffd15dff26a9574f32bc3f5c96ccbf0b0dce410ee29570bc3bde2b4a8b2c37a6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c3a55ed6d4ede0b40c0c8d7c80f45ca59f98b78cd39c64dc40f5de7adb427a69.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_71914e69272363a7fdb439b886ed8ccc019d986cf864ce6678f6347b25dda56e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f1e8a580a6bab165514b6b405e71599e5e337681f23c9d8ddb5da6b55f6116fb.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_cf178aa7a94c45f595a4872104f91370617d5bd74cdc63262d0442c900919eb1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_417a0dc6a1f050fb86277662a934a90083b40d81ec9a3c2adf36effe5ddf1af2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_1d1bbbaebfcec416855407858ef1792a9e5ff86335d1e5c82a8e2929b3cc16ad.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_19ea295ac4aac84e98959a6c73044186f1b74edca45125dff22835e702cc83e0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_0531beca021c5029b62482272740443d4f49674afc31c4be09baf44ade08505b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_541b3867ee2206b9034198ba1f17e66c1d81f02bc768466e713e18da9aec42b7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f9524b40144169126499f467efff3679305aae6e6edb2cce948df11824570fcc.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_96798b910957f355a82536d56cf97e51b3d5e202a138ef05fd80c7ef5b7c07ae.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_6c731b90c83e1c7bcbb3e3ff41e51c95ad4469ec2dad507f0ac8ed188d35640b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e83ea5d7ac7f9c2824a84ff5316cf68eff1da12f3ef246ddda19935c991b120d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_8c96ad0e78491a54ffe0c10c5724522fcb36e709320e349e64a1d9b34032f303.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e951cda29cf5e985b1e2a25f88b94f31da572c6baf0ef7d0c4a23a53429e9059.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_bc680ba3fe90dfbe648bec7c4f01666dd382fd62cad395f8650b47c18a09d297.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_f685092d48b7b024ec2db6c088911dd728b09ea1611bcdbb43baf9933d8dcdba.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_6933cb7009241910e5820c6be943af661bf4bb1931a78f03f32edfe3c403d267.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_a145fee3760c2068b1098eb098754b490d4ba1a5bf3ab2b0607d919272c1f266.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_aadd42b0b0659b98e68b7ccd5fdfff31656650395aa325f7d635e5f8571f3468.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_18ddd002faa38b78818d9918acffeb3f84683440774887cdb38f80509dd8c9e7.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_79f942adee8f203b91297504c1bd71c5754537e3da08de48429e9312d7b2fb4b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_a04ddc0f5080f9d31ba65311f1413ac2a7e2a819804149d72cc3a0732ec06c97.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_d03b8feaf213fad7a0e294f699e44425ca6506aa45f9b0230d33b17c0d6f0bb1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_2d29dd3d0c3290e7b899667e4f94ecdeea2adf40d22077c3898df2cb77d44ad3.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_4f23e43cb818a78780c6d59c194d64e777e138f2dfefb9d663bd5686a01f14d5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_efe76da4203afef96beb69dac7baf2c698ed99e94d6042bc2ffeeac9999a1a24.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_7cec731c47a2ed1d4795f7df698c9ccc737ceb6bb935f0696d77ed987d93ad4c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_d6343cc85dffcb2e7de2aee8bcb3aafac8d006ae581c41f399d5c44aa928d2b1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_590285a9738a70e8c19c7e61dc21baecdc4dfd7e79b678d3b2f0da0f67e6be73.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_b478ceb19376a8b325359b924bdea3ff6bed0bee2ebcb618f4b2494e17b5db4b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_58c6626beea93b4aebb122eda00dfd6e1daee7784f116c5bb35f8b506ee0fc9b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_fb8852479bd5b6cabdb6830d853547d5a541cddd640b9ffbc246618d25446cd2.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_6db5cff8fccddd0f27e56014c2d8c27c1fc40f65275f05a9faad475895a3d108.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_28e04a851ea660d14a920d7f6d0f96410a1cfd6cf39624ad15eb066e5c0c0a9f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_d5b23a2005c925f3d917cb3aa1b0ce547aab3d4f5f783bad879af28aab0bddf6.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_3d57a0b8d972de27a3bf812b6245b5a895164354acefcfbfb388620db34ee521.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e73449f2570a49f0e91496d67bf6effd414edccbcbc6691c75373d3bec1f5922.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_14b1298de448e2b019e4f47ab062d2c869809eefd7c54fbaf6f66d19324f0032.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_370167e07b266a5cfd09a56397f9e48b457a54deb82ba158d6e8213fdfdedef5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_eb27fc2d161bb0b43e45b1a672e30497451baac055eb7b2b307ebaac5cd1d869.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_fe2ec0f5a2aeae9470c9c1b2b68669e9298fb731cadbbb9c4775933cfdceac52.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_30d481f6869fd119c3c2b0507215a96e60f07bbeddf953fe3a6c859db703b103.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_6c5796a76ac7122d5907f73ba8be42c8fbd40fabd9b2e9c7ce265d23f5d47543.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_417787fd43b191b87660812ceca9559aac542cdc2fcd2f404b9007a9aafa1567.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_87405c950ffd566e142e97e1832948260582057456c19275843c44a1981be731.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_48cec9ddc9dcd7571a2d40b5337a4ef42a0b6fba9b1107e1423380b8a295d809.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_b0befd70091191d55f8b0b65cae2d04678a58685186976b611f63a585b8eb40f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_17005833796cfcc1478df7fa389a1bcb109638e65c29cab5f3a23af5e6262126.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_7eb42f8b6a699e406cd139ec4248304105765bd06a13c2449abbd8854d441e5a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_06cd0661238bc23e37ad7c6616d5f9ce964f11173880aee74c2b3dd741bfdb6b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_49525ca5ae72fd706dbf855f53653cfaf3a286211a697ef4e0c5be02e86315d4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_663bbe9f148f3c4a5fcbd30f6363d5fce8c00655bb51ae4d74c0bdaf9831a44a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_da9794a0347dcf39fe57967915edc950669fee4c697d49bcadbb82f670cf8c6d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_78ff8bc13900006721031789c41014cd3502f98da735c70a29a349cb46d17c62.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_c332da952da4c1a1c5b95b8f003f939a6fc8720d62e5e12b299631ce8287db49.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_a4c52676ac8ebd5ed1b7f7038afc0096e3afad4cecf4a9465f84b16502054af8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_3c72626649fb18d27ed16c13309cb74709f31a165837eba17e765f4673d3190f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e63220f14f5f509c32f7076992221a656cac659b4c7a9968d466a674b1d25367.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_d2f6aa2a13e7c6334d9c847bb2b3a63b7b36445dc2b828217025077e070fc8d4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_4d7f7267e307321fb2315b3962c2acbc864c8c2805eeef7adedc6c9e7df1c659.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_93ff2adc53b9cb68d6e12f841f20824f4b4e01487443b09547467bb625b9c8ae.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_9c6a9eaf6067894be0b26dde6d04c550f7aaac32e36d6cc2d39af45093c21af1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_edac421f0bee90d65ce5362c03d2ee0fcebd17c5db8df115dc83c27afdd33fab.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_4673acebf4f85d13c0b6623bfbe65004fb0cb8b110e72a452cc68368ddad23d9.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_ddaa8fe9478ae36953974dad3cd732826aec339144bd030782b032a9ec9e93d1.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_5ea034443be1b317bb02459479aa5c1d20707107fc1f223a72def3e9fac58b95.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_74f7967292e7497934d0de6315e198fffcd0b4a6b974819823769ad1139d0564.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_01c503cd36e5842b8e64f1213da2474ec97fa444454bd9ec3a0c045c22117ac0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s5_e6d2f744fe82359ce658f0b9f3701995cd93c92e2416fb0ad1f83b7089401ea4.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_68a3d30245ea04a039cab96ba6a1c53e2adca40caebbfeec80ca9c5cec54ba80.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_2d13eb04e6346f49d29ad098d376264a23730366b9cbbcac2fb74dcd28b3139f.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_c1f0299d2387fa96f2e296b91f0fcc69d043a2d385962fec65a4e14df7f87960.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_55569f0bacca7b692e56bae3afd882e972672d1d859938891704bd917d625620.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_8b5eea900c10bfd7811008bf074e047dcfc6ec984a1754d82da72d1904e8818c.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_e6e2ca36e965af0852ca62e818cc54b5f9ff3a17ed599314333eac9c4e9824b8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_b90db7143ffc28add4faf1f3ec8af1202c79f3424f508f340a1eeefbc5ac0a30.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_9c9fe3a63ff640abb81e3525b59ebaf704ee3af93eed43b13d8af630fb3b1e21.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_f2e0aa77a3a3302d954ca7ec6a7ba6dd2e6096e90054989a101f10cfca9b3204.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_326455b8610cbc2c4e3be06492120cd6458550a8422247a5729aac1c9a82e3ef.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_dec5e0c0134dadea8fae742efedddc448e9a7cb0c8e5416714090e75eb4ce76d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_902d2b764c829f784e757fa5f49799d644e204a4eef848024bca93dd0d8d6bae.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_fb4784d72311218c61210e8b73e06d3ff751d4fbbc870ae2ffa1168e5fb73ee0.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_44911ace9c6005c05b997f25727c3941ed17043d477f96197ffa33e57d751d6d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_12b21589d789fab29267b33b6b6f20fec676a4508b8ad39144270dff19c021df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s6_71960df70294e6381ed539812e22f8825c85601c11ef71b088263d0e012bf36d.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_9ddc103130e20a981311033bc542d964be05a20b8d1a9d7df2a5dc57f2d2b211.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_cf53de6f57948b29c13ea2bfa1a245c5c8ad5d59a52b8289febb21c2b4a67a0e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_66fff54bc715a4353b2e162ac861d0c8fc9b24ba64335f914b84b8660f6b1c5b.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_496767a19e6f002269ffafdabc226fce681075c1463f006b25109aeec18716df.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_e53cd37f933e21d147b31c869c64e5013883564f12ef16dc1762da7be75ac7af.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_388696f33e40ded180b0075aa180f6c5505aa653af6e6a214aa3e6ea8b779b59.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_4f6fd320061f7d5f6a9ab78acb2c1b0453a1d671f41ebdd9a6fa70def2b55cea.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_3c87fc865bb28d32af685d7854b9692156824a040f3a9b84490d541cd8195886.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_2dbe8a89cb96bb4767574716ce4d4e4ddb45241dcadc25ed3e804800925977e5.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_5b3ba62001ffff1682bdcd507380a18eaf8c95ec2dec57c45b51af2079cdcb1e.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_7b34cacad137fd38fdde0b4f2cee4fc5ad0cd178eef7cb650999db4adab8fa27.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_c5a84fbf7e7438d5590fa234a03d06b0447e0531ecf2ec266b14bfa79370ec6a.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_68291511bffad11020126ced410ce5b88b512312ebc6833f7fc194aee6989085.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_60b7176b9ee004b3c5aca4bff8b4bfadea3b433a0489ab9a5961b9969d3bc376.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_4a76119cc71e51fbf34962a2cabf840072ec6185313ba62f81f9748347a710a8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_46d7d7f4422cfe79b919f8fa9ab2cdbdc2fc62cbf45973b34488170ebef66766.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_45a14c3b3b84bb603976361c6704141de2acedfa282360c1853e44d7a649a8db.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_84199daadb6c0e05a88c0ae4be0a9a7f5486ff1898b8aedd0aa900e687fc3ec8.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_0d9b34b9e5df7010504a1835fe45a18eb0eb762c71debbad007b8cab2edfad32.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_a4bb7acda0c2807c98d79774dc74f8b45f16192c986349810aeac8b00836fa10.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_677f8d1a6be4fb7c87ffd83de1601f39378c9e7af04c8f8cdc1726556aeeaa94.mp4">
+</section>
+<section data-background-color="#081521" data-background-size="contain" data-background-video="index_assets/s7_54e219cf8e4fdcbcb1dac83d4dd75ae96ac8b0f1c5c85eb750b8cec777285435.mp4">
+</section>
+</div>
+</div>
+<script src="index_assets/reveal.js"></script>
+<script src="index_assets/notes.js"></script>
+<!-- To include plugins, see: https://revealjs.com/plugins/ -->
+<!-- <script src="index.js"></script> -->
+<script>
+      Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will
+        // be preserved when the presentation is scaled to fit different
+        // resolutions. Can be specified using percentage units.
+        width: '100%',
+        height: '100%',
+        // Factor of the display size that should remain empty around
+        // the content
+        margin: 0.04,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0,
+        // Display presentation control arrows
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: false,
+        // Display the page number of the current slide
+        // - true:    Show slide number
+        // - false:   Hide slide number
+        //
+        // Can optionally be set as a string that specifies the number formatting:
+        // - "h.v":   Horizontal . vertical slide number (default)
+        // - "h/v":   Horizontal / vertical slide number
+        // - "c":   Flattened slide number
+        // - "c/t":   Flattened slide number / total slides
+        //
+        // Alternatively, you can provide a function that returns the slide
+        // number for the current slide. The function should take in a slide
+        // object and return an array with one string [slideNumber] or
+        // three strings [n1,delimiter,n2]. See #formatSlideNumber().
+        slideNumber: false,
+        // Can be used to limit the contexts in which the slide number appears
+        // - "all":      Always show the slide number
+        // - "print":    Only when printing to PDF
+        // - "speaker":  Only in the speaker view
+        showSlideNumber: 'all',
+        // Use 1 based indexing for # links to match slide number (default is zero
+        // based)
+        hashOneBasedIndex: false,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: false,
+        // Enable support for jump-to-slide navigation shortcuts
+        jumpToSlide: true,
+        // Push each slide change to the browser history.  Implies `hash: true`
+        history: false,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Optional function that blocks keyboard events when retuning false
+        //
+        // If you set this to 'focused', we will only capture keyboard events
+        // for embedded decks when they are in focus
+        keyboardCondition: null,
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Changes the behavior of our navigation directions.
+        //
+        // "default"
+        // Left/right arrow keys step between horizontal slides, up/down
+        // arrow keys step between vertical slides. Space key steps through
+        // all slides (both horizontal and vertical).
+        //
+        // "linear"
+        // Removes the up/down arrows. Left/right arrows step through all
+        // slides (both horizontal and vertical).
+        //
+        // "grid"
+        // When this is enabled, stepping left/right from a vertical stack
+        // to an adjacent vertical stack will land you at the same vertical
+        // index.
+        //
+        // Consider a deck with six slides ordered in two vertical stacks:
+        // 1.1    2.1
+        // 1.2    2.2
+        // 1.3    2.3
+        //
+        // If you're on slide 1.3 and navigate right, you will normally move
+        // from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
+        // from 1.3 -> 2.3.
+        navigationMode: 'default',
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+        // Flags if we should show a help overlay when the question-mark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null:   Media will only autoplay if data-autoplay is present
+        // - true:   All media will autoplay, regardless of individual setting
+        // - false:  No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes
+        // - null:   Iframes with data-src AND data-preload will be loaded when within
+        //           the viewDistance, iframes with only data-src will be loaded when visible
+        // - true:   All iframes with data-src will be loaded when within the viewDistance
+        // - false:  All iframes with data-src will be loaded only when visible
+        preloadIframes: null,
+        // Can be used to globally disable auto-animation
+        autoAnimate: true,
+        // Optionally provide a custom element matcher that will be
+        // used to dictate which elements we can animate between.
+        autoAnimateMatcher: null,
+        // Default settings for our auto-animate transitions, can be
+        // overridden per-slide or per-element via data arguments
+        autoAnimateEasing: 'ease',
+        autoAnimateDuration: 1.0,
+        autoAnimateUnmatched: true,
+        // CSS properties that can be auto-animated. Position & scale
+        // is matched separately so there's no need to include styles
+        // like top/right/bottom/left, width/height or margin.
+        autoAnimateStyles: ['opacity', 'color', 'background-color', 'padding', 'font-size', 'line-height', 'letter-spacing', 'border-width', 'border-color', 'border-radius', 'outline', 'outline-offset'],
+        // Controls automatic progression to the next slide
+        // - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
+        //           is present on the current slide or fragment
+        // - 1+:     All slides will progress automatically at the given interval
+        // - false:  No auto-sliding, even if data-autoslide is present
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding (defaults to navigateNext)
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Opens links in an iframe preview overlay
+        // Add `data-preview-link` and `data-preview-link="false"` to customize each link
+        // individually
+        previewLinks: false,
+        // Exposes the reveal.js API through window.postMessage
+        postMessage: true,
+        // Dispatches all reveal.js events to the parent window through postMessage
+        postMessageEvents: false,
+        // Focuses body when page changes visibility to ensure keyboard shortcuts work
+        focusBodyOnPageVisibilityChange: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // The maximum number of pages a single slide can expand onto when printing
+        // to PDF, unlimited by default
+        pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+        // Prints each fragment on a separate slide
+        pdfSeparateFragments: true,
+        // Offset used to reduce the height of content within exported PDF pages.
+        // This exists to account for environment differences based on how you
+        // print to PDF. CLI printing options, like phantomjs and wkpdf, can end
+        // on precisely the total height of the document whereas in-browser
+        // printing has to end one pixel before.
+        pdfPageHeightOffset: -1,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000
+      });
+      // Override SPACE to play / pause the video
+      Reveal.addKeyBinding(
+        {
+          keyCode: 32,
+          key: 'SPACE',
+          description: 'Play / pause video'
+        },
+        () => {
+          var currentVideos = Reveal.getCurrentSlide().slideBackgroundContentElement.getElementsByTagName("video");
+          if (currentVideos.length > 0) {
+            if (currentVideos[0].paused == true) currentVideos[0].play();
+            else currentVideos[0].pause();
+          } else {
+            Reveal.next();
+          }
+        }
+      );
+    </script>
+</body>
+</html>
