@@ -19,13 +19,19 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   **Class notes and animated lectures**
 
+  [**Chapter 3: Foundations of Probability and Counting**](/lectures/probability-statistics/chapter-3-foundations-counting/)
+
+  A click-through lesson on outcomes, probability rules, DNA strings, ordered roles, unassigned teams, combinations, and the binomial connection.
+
   [**Chapter 4: Conditional Probability**](/lectures/probability-statistics/chapter-4-conditional-probability/)
 
-  A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example. Use the arrow keys or on-screen arrows to advance.
+  A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example.
 
-  [**View animated lecture: Covariance, Correlation, and Linear Regression**](/lectures/probability-statistics/covariance-correlation-regression/)
+  [**Covariance, Correlation, and Linear Regression**](/lectures/probability-statistics/covariance-correlation-regression/)
 
-  A step-by-step visual review with worked derivations. Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
+  A step-by-step visual review with worked derivations.
+
+  Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
 
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
 
