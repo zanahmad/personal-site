@@ -17,6 +17,12 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 ##### Instructor:
 - **EN.553.211 Probability and Statistics in Life Sciences** – Fall 2026
 
+  **Class notes and animated lectures**
+
+  [**Chapter 4: Conditional Probability**](/lectures/probability-statistics/chapter-4-conditional-probability/)
+
+  A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example. Use the arrow keys or on-screen arrows to advance.
+
   [**View animated lecture: Covariance, Correlation, and Linear Regression**](/lectures/probability-statistics/covariance-correlation-regression/)
 
   A step-by-step visual review with worked derivations. Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
