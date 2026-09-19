@@ -92,17 +92,19 @@ partition2(){
     +pos(911,623,600,0,add,'eq p2-prior',3)
     +pos(105,766,1390,0,total,'eq',4);
 },
-partition5(){
-  const sigma='<span class="sum gold"><span class="sumtop">5</span><span class="sumsymbol">∑</span><span class="sumbottom">i=1</span></span>';
-  const coloredTerm=i=>`<span style="color:${PART_COLORS[i]}">P(A∩B<sub>${i+1}</sub>)</span>`;
-  const fivePieces=`<span class="blue">P(A)</span> = ${coloredTerm(0)} + ${coloredTerm(1)}<br>+ ${coloredTerm(2)} + ${coloredTerm(3)} + ${coloredTerm(4)}`;
-  const twoPieces='<span class="blue">P(A)</span> = <span class="gold">P(A|B)P(B)</span><br>+ <span class="ice">P(A|Bᶜ)P(Bᶜ)</span>';
-  return head('Law of total probability','A partition into five cases','Every outcome belongs to exactly one Bᵢ.')
-    +pos(91,286,765,430,`<div class="five-case" style="position:absolute;inset:0">${fivePartition()}</div><div class="two-case" style="position:absolute;inset:0">${twoPartition('B₁ = B','B₂ = Bᶜ')}</div>`)
-    +pos(906,310,605,0,'A meets each disjoint case in one piece.','small blue five-explain',1)
-    +pos(906,412,600,0,'Add the five pieces of A.','body five-explain',2)
-    +pos(904,485,630,0,fivePieces,'p5-expanded five-explain',2)
-    +pos(905,615,630,0,`<span class="blue">P(A)</span> = ${sigma} P(A | B<sub>i</sub>) P(B<sub>i</sub>)`,'eq five-explain',3)
+	partition5(){
+	  const sigma='<span class="sum gold"><span class="sumtop">5</span><span class="sumsymbol">∑</span><span class="sumbottom">i=1</span></span>';
+	  const coloredTerm=i=>`<span style="color:${PART_COLORS[i]}">P(A∩B<sub>${i+1}</sub>)</span>`;
+	  const fivePieces=`<span class="blue">P(A)</span> = ${coloredTerm(0)} + ${coloredTerm(1)}<br>+ ${coloredTerm(2)} + ${coloredTerm(3)} + ${coloredTerm(4)}`;
+	  const twoPieces='<span class="blue">P(A)</span> = <span class="gold">P(A|B)P(B)</span><br>+ <span class="ice">P(A|Bᶜ)P(Bᶜ)</span>';
+	  const partitionDefinition='This collection is called a <span class="white strong">partition</span> because:<br><span class="white">Exhaustive:</span> <span class="math gold">B<sub>1</sub> ∪ B<sub>2</sub> ∪ ··· ∪ B<sub>5</sub> = S</span><br><span class="white">Pairwise disjoint:</span> <span class="math ice">B<sub>i</sub> ∩ B<sub>j</sub> = ∅</span> when <span class="math">i ≠ j</span>.';
+	  return head('Law of total probability','A partition into five cases','Every outcome belongs to exactly one Bᵢ.')
+	    +pos(91,286,765,430,`<div class="five-case" style="position:absolute;inset:0">${fivePartition()}</div><div class="two-case" style="position:absolute;inset:0">${twoPartition('B₁ = B','B₂ = Bᶜ')}</div>`)
+	    +pos(906,286,625,0,partitionDefinition,'small muted five-explain')
+	    +pos(906,474,605,0,'A meets each disjoint case in one piece.','small blue five-explain',1)
+	    +pos(906,546,600,0,'Add the five pieces of A.','small five-explain',2)
+	    +pos(904,596,630,0,fivePieces,'p5-expanded five-explain',2)
+	    +pos(905,733,630,0,`<span class="blue">P(A)</span> = ${sigma} P(A | B<sub>i</sub>) P(B<sub>i</sub>)`,'eq five-explain',3)
     +pos(908,480,630,0,twoPieces,'eq',4)
     +pos(103,741,735,0,'Schematic shapes; area does not encode probability.','tiny muted');
 },
@@ -139,7 +141,7 @@ const beats=[
 ['partition2',2,'Why add','The probability axiom adds probabilities of disjoint events.'],
 ['partition2',3,'Add intersections','P(A)=P(A∩B)+P(A∩Bᶜ).'],
 ['partition2',4,'Two-case LTP','Apply the multiplication rule separately in B and Bᶜ. The conditional terms require positive probabilities; if one case has zero probability, use the intersection form instead.'],
-['partition5',0,'Five exhaustive cases','The five jigsaw pieces are mutually disjoint and exhaust the sample space. Their colors will match the five summands. The blue A crosses them.'],
+['partition5',0,'Five exhaustive cases','The sets B₁ through B₅ form a partition because their union is S and every pairwise intersection Bᵢ∩Bⱼ is empty when i≠j. The five jigsaw pieces are therefore mutually disjoint and exhaustive. Their colors will match the five summands. The blue A crosses them.'],
 ['partition5',1,'Five pieces','Reveal the portions of A inside the five regions.'],
 ['partition5',2,'Add pieces','P(A) equals the sum of the five intersection probabilities.'],
 ['partition5',3,'Generalized LTP','Turn each intersection into P(A|Bᵢ)P(Bᵢ) for positive-probability Bᵢ.'],
