@@ -65,7 +65,7 @@ const splitMath=(...lines)=>`<span class="mathsplit">${lines.map(x=>`<span>${x}<
 const R=(math,why,caption=why,long=false)=>({math,why,caption,long});
 // One new equality per hold. Each new phase carries the last completed equality forward.
 function proof(phase,diagram,rows,take,carry=false,notes=''){
- return rows.slice(carry?1:0).map((row,j)=>{const count=j+(carry?2:1);return {...H(row.caption,diagram,[`<section class="proof-panel" aria-label="Derivation: ${phase}"><div class="proof-heading">${phase} · ${count} / ${rows.length} lines</div>${rows.slice(0,count).map((r,i)=>`<div class="proof-row ${i===count-1?'current':'retained'}" data-proof-line="${i+1}"><span class="proof-index">${i+1}</span><div class="proof-equation${r.long?' long':''}">${r.math}</div><div class="proof-why">${r.why}</div></div>`).join('')}</section>`],take,notes||`${row.why} Keep earlier equalities in view. ${take}`),proof:true,phase,proofRows:rows.slice(0,count)};});
+ return rows.slice(carry?1:0).map((row,j)=>{const count=j+(carry?2:1);return {...H(row.caption,typeof diagram==='function'?diagram(count):diagram,[`<section class="proof-panel" aria-label="Derivation: ${phase}"><div class="proof-heading">${phase} · ${count} / ${rows.length} lines</div>${rows.slice(0,count).map((r,i)=>`<div class="proof-row ${i===count-1?'current':'retained'}" data-proof-line="${i+1}"><span class="proof-index">${i+1}</span><div class="proof-equation${r.long?' long':''}">${r.math}</div><div class="proof-why">${r.why}</div></div>`).join('')}</section>`],take,notes||`${row.why} Keep earlier equalities in view. ${take}`),proof:true,phase,proofRows:rows.slice(0,count)};});
 }
 const ref=(mode,focus='')=>({kind:'reference',mode,focus});
 function drawReference(s){
@@ -76,11 +76,20 @@ function drawReference(s){
  else if(s.mode==='transform')body=`<h2>Keep the die’s weights</h2>${table(['x',v('1'),v('2'),v('3'),v('4'),v('5'),v('6')],[['g(x) = x²',1,4,9,16,25,36],['P(X=x)',...Array(6).fill(w('1/6'))]])}<p>Square each possible value; keep its probability.</p><div class="ref-rule">g(X) = X²</div><p>Squaring the average is a different order of operations.</p>`;
  else if(s.mode==='joint'){
  const focus=s.focus;const cell=(t,i)=>`<span class="${focus==='x'&&(i<2)||focus==='y'&&(i===0||i===2)?'ref-focus':''}">${t}</span>`;
- body=`<h2>Keep the same four outcomes</h2>${table(['','TT','TH','HT','HH'],[['P(pair)',...Array(4).fill(w('¼'))],['X',...['0','0','1','1'].map((x,i)=>cell(v(x),i))],['Y',...['0','1','0','1'].map((x,i)=>cell(v(x),i))],['X + Y',0,1,1,2]])}`;
+ body=`<h2>Keep the same four outcomes</h2>${table(['','TT','TH','HT','HH'],[['probability',...Array(4).fill(w('¼'))],['X',...['0','0','1','1'].map((x,i)=>cell(v(x),i))],['Y',...['0','1','0','1'].map((x,i)=>cell(v(x),i))],['X + Y',0,1,1,2]])}`;
  if(focus==='x')body+=`<div class="ref-rule">P(X = 0) = ${w('¼ + ¼ = ½')}</div><p class="ref-small">Combine TT and TH: X stays 0; Y can be either value.</p>`;
  else if(focus==='y')body+=`<div class="ref-rule">P(Y = 0) = ${w('¼ + ¼ = ½')}</div><p class="ref-small">Combine TT and HT: Y stays 0; X can be either value.</p>`;
  else body+=`<p>Each outcome has one weight. Split its total into its X and Y contributions.</p>`;
- }else if(s.mode==='centered')body=`<h2>The same coins, centered</h2>${table(['','TT','TH','HT','HH'],[['P(pair)',...Array(4).fill(w('¼'))],['A = X − ½',...['−½','−½','½','½'].map(d)],['B = Y − ½',...['−½','½','−½','½'].map(d)],['AB','¼','−¼','−¼','¼']])}<p class="ref-small">${d('A = X − μₓ')}, ${d('B = Y − μᵧ')}. Here μₓ = μᵧ = ½.</p><p class="ref-small">Product × probability: ${d('1/16 − 1/16 − 1/16 + 1/16 = 0')}.</p>`;
+ }else if(s.mode==='centered'){
+ const phase=s.focus||'product',rows=[['probability',...Array(4).fill(w('¼'))]];
+ if(phase==='values')rows.push(['X',...['0','0','1','1'].map(v)],['Y',...['0','1','0','1'].map(v)]);
+ else rows.push(['A = X − ½',...['−½','−½','½','½'].map(d)],['B = Y − ½',...['−½','½','−½','½'].map(d)]);
+ if(['product','cancel'].includes(phase))rows.push(['AB','¼','−¼','−¼','¼']);
+ body=`<h2>${phase==='values'?'Return to the two coin values':'The same coins, centered'}</h2>${table(['','TT','TH','HT','HH'],rows)}<p class="ref-small">Here ${m('μₓ = μᵧ = ½')}. ${phase==='values'?'Find each deviation by subtracting its own mean.':`${d('A = X − μₓ')}, ${d('B = Y − μᵧ')}.`}</p>`;
+ if(phase==='cancel')body+=`<p class="ref-small">Product × probability: ${d('1/16 − 1/16 − 1/16 + 1/16 = 0')}.</p>`;
+ else if(phase==='product')body+='<p class="ref-small">Same-direction deviations give a positive product; opposite directions give a negative product.</p>';
+ else if(phase==='deviations')body+='<p class="ref-small">Keep the two signed deviations aligned with their common outcome.</p>';
+ }
  else if(s.mode==='independence')body=`<h2>Where independence enters</h2><div class="ref-rule">${w('P(X=x, Y=y)')}<br>= ${w('P(X=x) P(Y=y)')}</div><p>Only this step separates the joint weight into two weights.</p><p>Then the inner Y-average is the same for every x.</p><div class="ref-rule">${d('E[A] = 0')} &nbsp; ${d('E[B] = 0')}</div><p class="ref-small">A = X − μₓ and B = Y − μᵧ. The example’s positive and negative weighted products cancel.</p>`;
  return `<div class="reference">${body}</div>`;
 }
@@ -275,14 +284,14 @@ const crossFactoredWeight=`E[AB] = ${sx}${sy} ${d('(x − μₓ)(y − μᵧ)')}
 const crossGrouped='E[AB] = '+splitMath(`${sx} ${d('(x − μₓ)')}${px}`,`× [${sy} ${d('(y − μᵧ)')}${py}]`);
 const crossSeparate='E[AB] = '+splitMath(`[${sx} ${d('(x − μₓ)')}${px}]`,`× [${sy} ${d('(y − μᵧ)')}${py}]`);
 scene('sums','Add spreads only after following the cross term',[
- ...proof('Center the total · start with its actual mean',ref('centered'),[
+ ...proof('Center the total · start with its actual mean',ref('centered','values'),[
  R('(X + Y) − E[X + Y]','The total’s deviation is its value minus its mean.'),
  R('= (X + Y) − (μₓ + μᵧ)','Use linearity: E[X + Y] = μₓ + μᵧ.'),
  R('= X + Y − μₓ − μᵧ','Distribute the minus sign to both mean terms.'),
  R(`= ${d('(X − μₓ)')} + ${d('(Y − μᵧ)')}`,'Regroup each value with its own mean.'),
  R(`= ${d('A + B')}`,'Name the centered variables A = X − μₓ and B = Y − μᵧ.')
  ],'The deviation of a total is the total of the deviations.'),
- ...proof('Square the total deviation · track every product',ref('centered'),[
+ ...proof('Square the total deviation · track every product',count=>ref('centered',count>=3?'product':'deviations'),[
  R(`${sumVar} = E[${d('(A + B)²')}]`,'Insert the total deviation into the variance definition.'),
  R(`${sumVar} = E[(A + B)(A + B)]`,'Write the square as two identical factors.'),
  R(`${sumVar} = E[A² + ${d('AB')} + ${d('BA')} + B²]`,'Multiply all four pairs; both mixed products matter.'),
@@ -294,7 +303,7 @@ scene('sums','Add spreads only after following the cross term',[
  R(`${sumVar} = E[A²] + ${d('2E[AB]')} + E[B²]`,'Pull the fixed factor 2 outside the middle expectation.'),
  R(crossResult,'E[A²] is Var(X); E[B²] is Var(Y).')
  ],'Variances add only when the average cross product is zero.',true),
- ...proof('Why a centered variable has mean zero',ref('centered'),[
+ ...proof('Why a centered variable has mean zero',ref('centered','deviations'),[
  R(`E[A] = E[${d('X − μₓ')}]`,'Recall A = X − μₓ.'),
  R('E[A] = E[X] − E[μₓ]','Apply linearity to the difference.'),
  R('E[A] = E[X] − μₓ','μₓ is a fixed number, so its expectation is itself.'),
@@ -311,13 +320,13 @@ scene('sums','Add spreads only after following the cross term',[
  R(`E[AB] = ${d('E[A]')} ${d('E[B]')}`,'Each bracket is the mean of a centered variable.'),
  R('E[AB] = 0 × 0 = 0','Use the two centered means we just calculated.')
  ],'The product average vanishes here because the variables are independent.',true),
- ...proof('Return to the variance formula · remove the cross term',ref('centered'),[
+ ...proof('Return to the variance formula · remove the cross term',ref('centered','cancel'),[
  R(crossResult,'Bring back the general result before using independence.'),
  R(`${sumVar} = Var(X) + ${d('2 × 0')} + Var(Y)`,'Substitute E[AB] = 0 for independent variables.'),
  R(`${sumVar} = Var(X) + Var(Y)`,'Remove the zero term.'),
  R(`${sumVar} = ¼ + ¼ = ½`,'Check the two independent fair coins.')
  ],'Independence is sufficient, not necessary; a zero cross term is enough.',false,'Finite second moments. The cross term is twice the covariance. It may be positive, negative, or zero for dependent variables.'),
- ...proof('Difference · carefully distribute the minus sign',ref('centered'),[
+ ...proof('Difference · carefully distribute the minus sign',ref('centered','values'),[
  R('(X − Y) − E[X − Y]','Start from the value minus its expected value.'),
  R('= (X − Y) − (μₓ − μᵧ)','Linearity gives the difference of the two means.'),
  R('= X − Y − μₓ + μᵧ','Subtracting the mean difference makes the final sign positive.'),
