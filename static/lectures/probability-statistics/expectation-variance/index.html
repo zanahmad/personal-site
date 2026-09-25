@@ -2,41 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Expectation and variance · EN.553.211</title>
+<title>Expectation and variance · Lecture version · EN.553.211</title>
 <style>
 :root{color-scheme:dark;--bg:#081521;--ink:#f4f7fb;--muted:#b3c5d3;--blue:#69bafa;--gold:#f4c95d;--teal:#62d9c5;--pink:#f596bf;--line:#416073}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next",Avenir,system-ui,sans-serif}#viewport{height:calc(100vh - 64px);display:flex;align-items:center;justify-content:center;overflow:hidden}#slide{width:1600px;height:900px;flex:none;position:relative;transform-origin:center;background:var(--bg);padding:48px 65px}#kicker{font-size:19px;color:var(--muted);letter-spacing:.1em}h1{font-size:49px;line-height:1.12;margin:20px 0 0;font-weight:650}#caption{font-size:26px;color:var(--muted);margin-top:16px;max-width:1440px;line-height:1.4}#rvContext{position:absolute;left:65px;right:65px;top:213px;font-size:22px;line-height:1.25;color:var(--blue)}#diagram{position:absolute;left:55px;top:248px;width:820px;height:480px}#words{position:absolute;left:925px;top:250px;width:610px;font-size:28px;line-height:1.45}#words .piece{margin:0 0 23px}#words p{margin:0}.eq{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.65}.eq.compact{font-size:30px;line-height:1.7}.big{font-size:44px}.hint{font-size:23px;color:var(--muted);line-height:1.45}.role{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.2;margin:0 4px}.role small{font:17px "Avenir Next",sans-serif;margin-top:9px;letter-spacing:.02em}.value{color:var(--blue)}.weight{color:var(--teal)}.mean{color:var(--gold)}.dev{color:var(--pink)}.frac{display:inline-flex;vertical-align:middle;flex-direction:column;align-items:center;font-size:.83em;line-height:1.15;margin:0 .12em}.frac>span:first-child{border-bottom:1.4px solid currentColor;padding:0 .14em .1em}.frac>span:last-child{padding:.1em .14em 0}.term{display:inline-block;white-space:nowrap}.sumline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 8px;align-items:center}.sumline>.sumterm{white-space:nowrap}.pill{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:5px;font-size:21px}.new{animation:appear .38s ease both}@keyframes appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}#takeaway{position:absolute;left:65px;right:65px;bottom:89px;border-top:1px solid var(--line);padding-top:21px;font-size:28px;line-height:1.35;min-height:62px}#legend{position:absolute;left:65px;bottom:30px;display:flex;gap:25px;font-size:18px}#topicProgress{position:absolute;right:65px;bottom:29px;font-size:18px;color:var(--muted)}svg{width:100%;height:100%;overflow:visible}svg text{fill:var(--ink);font:25px "Avenir Next",Avenir,sans-serif}button,select{font:16px system-ui;background:#183143;color:var(--ink);border:1px solid #526e80;border-radius:5px;padding:8px 11px}button{cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}#controls{height:64px;padding:10px 16px;display:flex;align-items:center;gap:10px;border-top:1px solid var(--line)}#counter{min-width:100px;font-size:16px;font-variant-numeric:tabular-nums}#sceneSelect{max-width:305px}#notes{position:fixed;right:18px;top:18px;max-width:560px;max-height:80vh;overflow:auto;background:#102a3cf5;border:1px solid var(--line);border-radius:8px;padding:22px;font-size:21px;line-height:1.5;box-shadow:0 10px 45px #0009}#notes h2{font-size:23px;margin-top:0}#notes[hidden]{display:none}.static *{animation:none!important;transition:none!important}#help{margin-left:auto;color:var(--muted);font-size:14px}@media(max-width:900px){#help,#full{display:none}#controls{gap:5px;padding:8px}#sceneSelect{width:135px}button{padding:8px 7px}}@media(prefers-reduced-motion:reduce){.new{animation:none}}
-
-#slide[data-proof="true"] #diagram{left:65px;top:267px;width:495px;height:443px}
-#slide[data-proof="true"] #words{left:600px;top:252px;width:935px}
-#slide[data-proof="true"] #words .piece{margin:0}
-.proof-heading{font-size:19px;letter-spacing:.035em;color:var(--muted);margin-bottom:10px}
-.proof-row{display:grid;grid-template-columns:25px 1fr;gap:0 10px;padding:8px 12px;margin:0 0 5px;border-left:3px solid var(--line);background:#0b1b29}
-.proof-row.current{border-color:var(--gold);background:#142b3b}
-.proof-index{grid-row:1/3;font:18px system-ui;color:var(--muted);padding-top:6px}
-.proof-equation{font:29px/1.25 Georgia,"Times New Roman",serif;white-space:nowrap}
-.proof-equation.long{font-size:25px}
-.proof-why{font-size:19px;line-height:1.25;color:var(--muted);margin-top:5px}
-.proof-row.current .proof-why{color:var(--ink)}
-.proof-row.current{animation:appear .3s ease both}
-.mathsplit{display:inline-flex;flex-direction:column;vertical-align:top;gap:2px}
-.cancel{text-decoration:line-through;text-decoration-thickness:2px;color:var(--gold)}
-.reference{font-size:24px;line-height:1.4;border:1px solid var(--line);border-radius:7px;padding:18px;background:#0b1b29}
-.reference h2{font-size:24px;font-weight:500;line-height:1.2;margin:0 0 14px}
-.reference p{font-size:22px;margin:17px 0 0;color:var(--muted)}
-.reference table{width:100%;border-collapse:collapse;font-size:24px;text-align:center}
-.reference th{font-weight:500;font-size:19px;color:var(--muted)}
-.reference td,.reference th{padding:8px 4px;border-bottom:1px solid var(--line)}
-.reference .ref-rule{margin:15px 0;padding:9px 0;font-size:25px;color:var(--pink)}
-.reference .ref-small{font-size:20px}
-.reference .ref-focus{background:#203747;outline:1px solid var(--teal)}
-.reference .areas{height:86px;display:flex;gap:40px;align-items:flex-end;padding-left:20px;margin-top:14px}
-.reference .areas span{display:flex;align-items:center;justify-content:center;background:#653d58;color:var(--ink);font-size:21px}
-.reference .areas .area1{width:42px;height:42px}.reference .areas .area2{width:84px;height:84px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next",Avenir,system-ui,sans-serif}#viewport{height:calc(100vh - 64px);display:flex;align-items:center;justify-content:center;overflow:hidden}#slide{width:1600px;height:900px;flex:none;position:relative;transform-origin:center;background:var(--bg);padding:48px 65px}#kicker{font-size:19px;color:var(--muted);letter-spacing:.1em}h1{font-size:49px;line-height:1.12;margin:20px 0 0;font-weight:650}#caption{font-size:26px;color:var(--muted);margin-top:16px;max-width:1440px;line-height:1.4}#rvContext{position:absolute;left:65px;right:65px;top:204px;font-size:22px;line-height:1.25;color:var(--blue)}#diagram{position:absolute;left:55px;top:248px;width:820px;height:480px}#words{position:absolute;left:925px;top:250px;width:610px;font-size:28px;line-height:1.45}#words .piece{margin:0 0 23px}#words p{margin:0}.eq{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.65}.eq.compact{font-size:30px;line-height:1.7}.big{font-size:44px}.hint{font-size:23px;color:var(--muted);line-height:1.45}.role{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.2;margin:0 4px}.role small{font:17px "Avenir Next",sans-serif;margin-top:9px;letter-spacing:.02em}.value{color:var(--blue)}.weight{color:var(--teal)}.mean{color:var(--gold)}.dev{color:var(--pink)}.frac{display:inline-flex;vertical-align:middle;flex-direction:column;align-items:center;font-size:.83em;line-height:1.15;margin:0 .12em}.frac>span:first-child{border-bottom:1.4px solid currentColor;padding:0 .14em .1em}.frac>span:last-child{padding:.1em .14em 0}.term{display:inline-block;white-space:nowrap}.sumline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 8px;align-items:center}.sumline>.sumterm{white-space:nowrap}.pill{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:5px;font-size:21px}.new{animation:appear .38s ease both}@keyframes appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}#takeaway{position:absolute;left:65px;right:65px;bottom:89px;border-top:1px solid var(--line);padding-top:21px;font-size:28px;line-height:1.35;min-height:62px}#legend{position:absolute;left:65px;bottom:30px;display:flex;gap:25px;font-size:18px}#topicProgress{position:absolute;right:65px;bottom:29px;font-size:18px;color:var(--muted)}svg{width:100%;height:100%;overflow:visible}svg text{fill:var(--ink);font:25px "Avenir Next",Avenir,sans-serif}button,select{font:16px system-ui;background:#183143;color:var(--ink);border:1px solid #526e80;border-radius:5px;padding:8px 11px}button{cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}#controls{height:64px;padding:10px 16px;display:flex;align-items:center;gap:10px;border-top:1px solid var(--line)}#counter{min-width:100px;font-size:16px;font-variant-numeric:tabular-nums}#sceneSelect{max-width:305px}#notes{position:fixed;right:18px;top:18px;max-width:560px;max-height:80vh;overflow:auto;background:#102a3cf5;border:1px solid var(--line);border-radius:8px;padding:22px;font-size:21px;line-height:1.5;box-shadow:0 10px 45px #0009}#notes h2{font-size:23px;margin-top:0}#notes[hidden]{display:none}.static *{animation:none!important;transition:none!important}#help{margin-left:auto;color:var(--muted);font-size:14px}@media(max-width:900px){#help,#full{display:none}#controls{gap:5px;padding:8px}#sceneSelect{width:135px}button{padding:8px 7px}}@media(prefers-reduced-motion:reduce){.new{animation:none}}
 </style>
 </head>
 <body>
-<div id="viewport"><main id="slide" aria-label="Expectation and variance lecture"><div id="kicker">EN.553.211 · SEPTEMBER 25, 2026</div><h1 id="title"></h1><div id="caption"></div><div id="rvContext"></div><div id="diagram"></div><div id="words"></div><div id="takeaway"></div><div id="legend"></div><div id="topicProgress"></div></main></div>
+<div id="viewport"><main id="slide" aria-label="Expectation and variance lecture"><div id="kicker">EN.553.211 · SEPTEMBER 25, 2026 · LECTURE VERSION</div><h1 id="title"></h1><div id="caption"></div><div id="rvContext"></div><div id="diagram"></div><div id="words"></div><div id="takeaway"></div><div id="legend"></div><div id="topicProgress"></div></main></div>
 <nav id="controls" aria-label="Lecture controls"><button id="back" aria-label="Previous teaching step">← Back</button><button id="next" aria-label="Next teaching step">Next →</button><span id="counter" aria-live="polite"></span><select id="sceneSelect" aria-label="Choose a topic"></select><button id="noteButton" aria-expanded="false">Notes</button><button id="motion" aria-pressed="false">Motion on</button><button id="full">Fullscreen</button><span id="help">← → / Space · N notes · M motion · F fullscreen</span></nav><aside id="notes" hidden></aside>
 <script>
 'use strict';
@@ -54,46 +27,12 @@ function drawTable(s){const count=s.rows[0].values.length,left=180,width=590,dx=
 function drawData(s,progress,old){const xs=[1,1,2,3,3],group=s.group;let b=txt(410,40,'Our five observations: 1, 1, 2, 3, 3',C.ink,26);xs.forEach((x,i)=>{const gx=180+(x-1)*230,gy=(i===1||i===4)?228:142;const t=group?(old&&old.kind==='data'&&!old.group?progress:1):0;const xx=lerp(90+i*160,gx,t),yy=lerp(166,gy,t);b+=circ(xx,yy,31,'#173a50')+txt(xx,yy+10,x,C.blue,29);});if(group)b+=txt(180,320,'2 / 5',C.teal,28)+txt(410,320,'1 / 5',C.teal,28)+txt(640,320,'2 / 5',C.teal,28)+txt(410,382,'observed proportions',C.teal,23);else b+=txt(410,320,'Each observation gets weight 1/5.',C.teal,26);return b;}
 function drawDeviation(s){const ds=dieX.map(x=>x-3.5);let b=txt(410,35,'Keep the fair die · mean μ = 3.5',C.gold,26);dieX.forEach((x,i)=>{const xx=88+i*128,active=s.all||i===0,alpha=active?1:.22;b+=`<g opacity="${alpha}">`+txt(xx,103,x,C.blue,28)+txt(xx,151,'1/6',C.teal,24);if(active){b+=txt(xx,227,`${ds[i]>0?'+':''}${ds[i]}`,C.pink,27);if(s.squares){const side=Math.abs(ds[i])*27;b+=rect(xx-side/2,287-side/2,side,side,C.pink,.6)+txt(xx,361,fmt(ds[i]**2),C.pink,26);if(s.weighted)b+=txt(xx,412,'× 1/6',C.teal,24);}}b+='</g>';});b+=txt(410,469,s.weighted?'Now give each square its probability weight.':s.squares?'Square area = squared deviation.':'First subtract the mean from each value.',C.muted,23);return b;}
 function drawJoint(s){const labels=['TT','TH','HT','HH'],xs=[0,0,1,1],ys=[0,1,0,1],tot=[0,1,1,2];let rows=[{label:'outcome',values:labels},{label:'probability',values:['1/4','1/4','1/4','1/4'],color:C.teal}];if(s.centered){rows.push({label:'X − ½',values:xs.map(x=>x-.5),color:C.pink},{label:'Y − ½',values:ys.map(x=>x-.5),color:C.pink});if(s.product)rows.push({label:'product',values:['+1/4','−1/4','−1/4','+1/4'],color:C.pink});}else{rows.push({label:'X',values:xs,color:C.blue},{label:'Y',values:ys,color:C.blue});if(s.total)rows.push({label:'X + Y',values:tot,color:C.blue});}return drawTable({top:'Two independent fair coins · four outcomes',rows,spacing:65,markRow:s.total?4:undefined,bottom:s.product?'Equal weights make these products cancel.':'The weight belongs to the whole outcome.'});}
-function drawState(s,progress=1,old=null){if(s.kind==='reference')return drawReference(s);let b;if(s.kind==='coin')b=drawCoin(s,progress,old);else if(s.kind==='run')b=drawRun(s);else if(s.kind==='data')b=drawData(s,progress,old);else if(s.kind==='deviation')b=drawDeviation(s);else if(s.kind==='joint')b=drawJoint(s);else if(s.kind==='table')b=drawTable(s);else b=drawMass(s);return svg(b,s.alt||'A worked example with blue values, teal probability weights, gold mean and pink deviations.');}
+function drawState(s,progress=1,old=null){let b;if(s.kind==='coin')b=drawCoin(s,progress,old);else if(s.kind==='run')b=drawRun(s);else if(s.kind==='data')b=drawData(s,progress,old);else if(s.kind==='deviation')b=drawDeviation(s);else if(s.kind==='joint')b=drawJoint(s);else if(s.kind==='table')b=drawTable(s);else b=drawMass(s);return svg(b,s.alt||'A worked example with blue values, teal probability weights, gold mean and pink deviations.');}
 function tween(old,to,t){if(!old||old.kind!==to.kind)return to;if(to.kind==='mass'&&old.x.length===to.x.length)return {...to,x:to.x.map((x,i)=>lerp(old.x[i],x,t)),p:to.p.map((p,i)=>lerp(old.p[i],p,t)),mu:lerp(old.mu,to.mu,t),min:lerp(old.min,to.min,t),max:lerp(old.max,to.max,t)};if(to.kind==='run')return {...to,n:Math.max(1,Math.round(lerp(old.n,to.n,t)))};return to;}
 const coinMass=opts=>mass([0,1],[.5,.5],{min:-.5,max:1.5,labels:['1/2','1/2'],muLabel:'1/2',...opts});
 const dieMass=opts=>mass(dieX,fair,{max:7,labels:pFair,...opts});
 const dieTable=(extra=[],opts={})=>({kind:'table',rows:[{label:'value x',values:dieX,color:C.blue},{label:'P(X = x)',values:pFair,color:C.teal},...extra],...opts});
 const H=(caption,diagram,parts,take,notes=caption)=>({caption,diagram,parts,take,notes});
-
-const splitMath=(...lines)=>`<span class="mathsplit">${lines.map(x=>`<span>${x}</span>`).join('')}</span>`;
-const R=(math,why,caption=why,long=false)=>({math,why,caption,long});
-// One new equality per hold. Each new phase carries the last completed equality forward.
-function proof(phase,diagram,rows,take,carry=false,notes=''){
- return rows.slice(carry?1:0).map((row,j)=>{const count=j+(carry?2:1);return {...H(row.caption,typeof diagram==='function'?diagram(count):diagram,[`<section class="proof-panel" aria-label="Derivation: ${phase}"><div class="proof-heading">${phase} · ${count} / ${rows.length} lines</div>${rows.slice(0,count).map((r,i)=>`<div class="proof-row ${i===count-1?'current':'retained'}" data-proof-line="${i+1}"><span class="proof-index">${i+1}</span><div class="proof-equation${r.long?' long':''}">${r.math}</div><div class="proof-why">${r.why}</div></div>`).join('')}</section>`],take,notes||`${row.why} Keep earlier equalities in view. ${take}`),proof:true,phase,proofRows:rows.slice(0,count)};});
-}
-const ref=(mode,focus='')=>({kind:'reference',mode,focus});
-function drawReference(s){
- const table=(heads,rows)=>`<table><tr>${heads.map(h=>`<th>${h}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table>`;
- let body='';
- if(s.mode==='affine')body=`<h2>Follow one die value</h2>${table(['','value','mean','deviation'],[['X',v('1'),m('3.5'),d('−2.5')],['2X + 2',v('4'),m('9'),d('−5')]])}<div class="ref-rule">${d('−5')} = 2 × ${d('(−2.5)')}</div>${s.focus==='variance'?'<div class="areas"><span class="area1">6.25</span><span class="area2">25</span></div>':'<p>The shift moves both value and mean. Subtracting cancels it.</p>'}<p class="ref-small">${s.focus==='variance'?'Double the side → four times the area.':'The deviation doubles.'} Probability stays ${w('1/6')}.</p>`;
- else if(s.mode==='shortcut')body=`<h2>Two calculations, same fair die</h2>${table(['operation','result'],[['average of squares',v('E[X²] = 91/6')],['square of average',m('μ² = 49/4')]])}<div class="ref-rule">Variance = average of (X − μ)²</div><p>μ = E[X] = 3.5 is a fixed number. X varies from outcome to outcome.</p><p>Follow the two middle terms as the square expands, then combines.</p>`;
- else if(s.mode==='transform')body=`<h2>Keep the die’s weights</h2>${table(['x',v('1'),v('2'),v('3'),v('4'),v('5'),v('6')],[['g(x) = x²',1,4,9,16,25,36],['P(X=x)',...Array(6).fill(w('1/6'))]])}<p>Square each possible value; keep its probability.</p><div class="ref-rule">g(X) = X²</div><p>Squaring the average is a different order of operations.</p>`;
- else if(s.mode==='joint'){
- const focus=s.focus;const cell=(t,i)=>`<span class="${focus==='x'&&(i<2)||focus==='y'&&(i===0||i===2)?'ref-focus':''}">${t}</span>`;
- body=`<h2>Keep the same four outcomes</h2>${table(['','TT','TH','HT','HH'],[['probability',...Array(4).fill(w('¼'))],['X',...['0','0','1','1'].map((x,i)=>cell(v(x),i))],['Y',...['0','1','0','1'].map((x,i)=>cell(v(x),i))],['X + Y',0,1,1,2]])}`;
- if(focus==='x')body+=`<div class="ref-rule">P(X = 0) = ${w('¼ + ¼ = ½')}</div><p class="ref-small">Combine TT and TH: X stays 0; Y can be either value.</p>`;
- else if(focus==='y')body+=`<div class="ref-rule">P(Y = 0) = ${w('¼ + ¼ = ½')}</div><p class="ref-small">Combine TT and HT: Y stays 0; X can be either value.</p>`;
- else body+=`<p>Each outcome has one weight. Split its total into its X and Y contributions.</p>`;
- }else if(s.mode==='centered'){
- const phase=s.focus||'product',rows=[['probability',...Array(4).fill(w('¼'))]];
- if(phase==='values')rows.push(['X',...['0','0','1','1'].map(v)],['Y',...['0','1','0','1'].map(v)]);
- else rows.push(['A = X − ½',...['−½','−½','½','½'].map(d)],['B = Y − ½',...['−½','½','−½','½'].map(d)]);
- if(['product','cancel'].includes(phase))rows.push(['AB','¼','−¼','−¼','¼']);
- body=`<h2>${phase==='values'?'Return to the two coin values':'The same coins, centered'}</h2>${table(['','TT','TH','HT','HH'],rows)}<p class="ref-small">Here ${m('μₓ = μᵧ = ½')}. ${phase==='values'?'Find each deviation by subtracting its own mean.':`${d('A = X − μₓ')}, ${d('B = Y − μᵧ')}.`}</p>`;
- if(phase==='cancel')body+=`<p class="ref-small">Product × probability: ${d('1/16 − 1/16 − 1/16 + 1/16 = 0')}.</p>`;
- else if(phase==='product')body+='<p class="ref-small">Same-direction deviations give a positive product; opposite directions give a negative product.</p>';
- else if(phase==='deviations')body+='<p class="ref-small">Keep the two signed deviations aligned with their common outcome.</p>';
- }
- else if(s.mode==='independence')body=`<h2>Where independence enters</h2><div class="ref-rule">${w('P(X=x, Y=y)')}<br>= ${w('P(X=x) P(Y=y)')}</div><p>Only this step separates the joint weight into two weights.</p><p>Then the inner Y-average is the same for every x.</p><div class="ref-rule">${d('E[A] = 0')} &nbsp; ${d('E[B] = 0')}</div><p class="ref-small">A = X − μₓ and B = Y − μᵧ. The example’s positive and negative weighted products cancel.</p>`;
- return `<div class="reference">${body}</div>`;
-}
-
 const scenes=[];function scene(id,title,holds){scenes.push({id,title,holds,steps:holds.length})}
 scene('coin','Start with one coin',[
 H('One experiment. Two possible outcomes.',{kind:'coin',phase:0},[hint('Before calculating anything, name what could happen.')],'What can one flip produce?'),
@@ -128,19 +67,12 @@ H('Return to the fair die and keep its probability row.',dieTable(),[hint('Suppo
 H('Square each value in a new row.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:2}),[eq(`${v('1 → 1² = 1')}<br>${v('2 → 2² = 4')}`),hint('The new row contains the values of X².')],'Only the values change. The probability row stays the same.'),
 H('Attach the probability to one squared value.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:2,focus:1}),[eq(`${role('2²','squared value','value')} × ${role(frac(1,6),'probability','weight')}`)],'First transform the value, then weight its contribution.'),
 H('Add all six weighted squares.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:2}),[sumterms(['1²','2²','3²','4²','5²','6²'],F6),eq(`E[X²] = ${frac(91,6)}`)],'We average the squared values using the original probabilities.'),
- ...proof('Choose the function · substitute without changing the weights',ref('transform'),[
- R(`E[g(X)] = ∑<sub>x</sub> ${v('g(x)')} ${w('P(X = x)')}`,'Start from the general expectation of a function.'),
- R(`${v('g(x) = x²')}  ⇒  ${v('g(X) = X²')}`,'Choose squaring as the function. Keep the general formula above.'),
- R(`E[X²] = ∑<sub>x</sub> ${v('x²')} ${w('P(X = x)')}`,'Replace g(X) on the left and g(x) on the right by their squares.'),
- R(`E[X²] = ${frac(91,6)} ≈ 15.167`,'Use the weighted squares we already calculated for this die.')
- ],'Transform the values first; then take their probability-weighted average.'),
- ...proof('Compare the two orders of operation',ref('transform'),[
- R(`E[X²] = ${frac(91,6)} ≈ 15.167`,'Keep the square-first calculation visible.'),
- R(`E[X] = ${frac('1 + 2 + 3 + 4 + 5 + 6',6)} = 3.5`,'For the other order, first average the original values.'),
- R(`(E[X])² = (3.5)² = ${frac(49,4)} = 12.25`,'Now square that one fixed average.'),
- R(`(E[X])² ≠ E[X²]`,'For this die: 12.25 is different from 15.167.')
- ],'The variance proof later explains exactly how big this gap is.',false,'The inequality is for the fair die, not every variable. With finite second moment, the gap E[X²] − (E[X])² is nonnegative and equals Var(X); equality holds exactly for an almost-sure constant.')
-]);
+H('Replace “square” with any chosen transformation g.',dieTable([{label:'g(x)',values:['g(1)','g(2)','g(3)','g(4)','g(5)','g(6)'],color:C.blue}],{markRow:2}),[eq(`E[g(X)] = ∑<sub>x</sub> ${v('g(x)')} ${w('P(X = x)')}`),hint('Apply g to each possible value, then take the same weighted average.')],'The probability row stays unchanged.','If transformed values coincide, their contributions add correctly. Assume finite E[|g(X)|] for countable support.'),
+H('In our example, choose the function g(x) = x².',dieTable([{label:'g(x) = x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:2}),[eq(`${v('g(x)')} = ${v('x²')}`),eq(`E[g(X)] = ∑<sub>x</sub> ${v('g(x)')} ${w('P(X = x)')}`,true),hint('So g(X) = X². The square is the function we are averaging.')],'Keep the general formula; choose a particular function g.'),
+H('Replace g by that same squaring function on both sides.',dieTable([{label:'g(x) = x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:2}),[eq(`E[${v('X²')}] = ∑<sub>x</sub> ${v('x²')} ${w('P(X = x)')}`,true),eq(`= ${frac(91,6)} ≈ 15.167`)],'E[X²]: square each possible value first, then average.'),
+H('Try the other order: first take the mean of X.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}],{markRow:0}),[sumterms(dieX,F6),eq(`${m('E[X] = 3.5')}`)],'First average the original values. This produces one number.'),
+H('Now square that one number.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq(`(${m('E[X]')})² = (${m('3.5')})²`),eq(`= ${frac(49,4)} = 12.25`)],'(E[X])²: take the mean first, then square it.'),
+H('For this die, the two orders give different answers.',dieTable([{label:'square x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq(`E[X²] = ${frac(91,6)} ≈ 15.167`,true),eq(`(E[X])² = ${frac(49,4)} = 12.25`,true),eq('(E[X])² ≠ E[X²]'),hint('Square then average ≠ average then square, for this die.')],'The gap will become our second formula for variance.','The inequality is demonstrated for this nonconstant die, not asserted for every random variable. With finite second moment, E[X²] − (E[X])² = Var(X) ≥ 0; equality holds exactly when X is almost surely constant.')]);
 scene('chapter1','Find the same weights in a data average',[
 H('Now these are observations, not a probability model.',{kind:'data',group:false},[eq(`x̄ = ${frac('1 + 1 + 2 + 3 + 3',5)}`),eq(`= ${v(2)}`)],'Each of the five observations gets equal weight.'),
 H('Move equal observations into groups.',{kind:'data',group:true},[hint('Two 1s, one 2, and two 3s.'),hint('Their observed proportions become the weights.')],'Regrouping the data does not change its average.'),
@@ -173,187 +105,34 @@ H('Add 2 to every value.',mass(dieX.map(x=>x+2),fair,{rv:'Y',max:15,labels:pFair
 H('Distances from the new mean have not changed.',mass(dieX.map(x=>x+2),fair,{rv:'Y',max:15,labels:pFair,focus:0}),[eq(`${v('3')} − ${m('5.5')} = ${d('−2.5')}`),hint('Compare the original: 1 − 3.5 = −2.5.')],'A shift changes the mean, but not the spread.'),
 H('Now compare X + 2 with 2X + 2.',mass(dieX.map(x=>2*x+2),fair,{rv:'Y',max:15,labels:pFair}),[eq(`${v('Y = 2X + 2')}`),eq(`${m('E[Y] = 2(3.5) + 2 = 9')}`),eq(`${v(4)} − ${m(9)} = ${d('−5')}`)],'The deviations double; their squares become four times as large.')]);
 const transformed=()=>mass(dieX.map(x=>2*x+2),fair,{rv:'Y',max:15,labels:pFair});
-
-const px=w('P(X = x)'),py=w('P(Y = y)'),pj=w('P(X = x, Y = y)'),sx='∑<sub>x</sub>',sy='∑<sub>y</sub>';
-const affineSplit=`E[Y] = ${sx} a${v('x')}${px} + ${sx} b${px}`;
-const affineFactor=`E[Y] = a${sx} ${v('x')}${px} + b${sx} ${px}`;
-const centerResult=`Y − E[Y] = ${d('a(X − μ)')}`;
-scene('affineproof','Move the mean; follow each deviation',[
- ...proof('Mean · distribute within each weighted value',ref('affine'),[
- R('E[Y] = E[aX + b]','Start from the definition Y = aX + b.'),
- R(`E[Y] = ${sx} ${v('(ax + b)')} ${px}`,'Average the transformed values, using the original probabilities.'),
- R(`E[Y] = ${sx} [a${v('x')}${px} + b${px}]`,'Distribute: (ax + b) × probability gives two products.',undefined,true),
- R(affineSplit,'Split one sum of two terms into two sums.',undefined,true)
- ],'The probability stays attached to the value it weights.'),
- ...proof('Mean · pull out fixed constants',ref('affine'),[
- R(affineSplit,'Carry forward the two sums.',undefined,true),
- R(affineFactor,'a and b do not depend on x, so move them outside the sums.',undefined,true),
- R(`E[Y] = a${m('μ')} + b × ${w('1')}`,'The first weighted sum is μ = E[X]; all probabilities add to 1.'),
- R(`E[Y] = ${m('aμ + b')}`,'Multiplying b by 1 leaves b.')
- ],'Shift the mean by b; scale it by a.',true),
- ...proof('Deviation · subtract the new mean',ref('affine'),[
- R(`Y − E[Y] = ${v('(aX + b)')} − ${m('(aμ + b)')}`,'Use the transformed value and the mean we just found.'),
- R(`Y − E[Y] = aX + <span class="cancel">b</span> − aμ − <span class="cancel">b</span>`,'Distribute the minus sign to both terms in the mean.'),
- R('Y − E[Y] = aX − aμ','The +b and −b cancel: a shift does not change a deviation.'),
- R(centerResult,'Factor a out of both remaining terms.')
- ],'Every deviation is multiplied by a. The shift disappears.'),
- ...proof('Variance · square, then average the new deviation',ref('affine','variance'),[
- R('Var(Y) = E[(Y − E[Y])²]','Start with the variance definition.'),
- R(`Var(Y) = E[${d('(a(X − μ))²')}]`,'Substitute the deviation a(X − μ) from the previous panel.'),
- R(`Var(Y) = E[${d('a²(X − μ)²')}]`,'Square both factors: (au)² = a²u².'),
- R(`Var(Y) = a² E[${d('(X − μ)²')}]`,'a² is fixed, so take it outside the expectation.'),
- R('Var(Y) = a² Var(X)','Recognize the remaining expectation as Var(X).')
- ],'Multiplying distances by a multiplies their squares by a².'),
- ...proof('Standard deviation · return to the original units',ref('affine','variance'),[
- R('Var(Y) = a² Var(X)','Keep the variance rule in view.'),
- R('SD(Y) = √(a² Var(X))','Standard deviation is the nonnegative square root of variance.'),
- R('SD(Y) = |a| SD(X)','√a² = |a|. Reflection changes direction, not distance.')
- ],'a = 0 collapses the distribution to a constant; negative a reflects it.',true)
-]);
-
-const jointStart=`E[X + Y] = ${sx}${sy} ${v('(x + y)')} ${pj}`;
-const jointDistributed=`E[X + Y] = ${sx}${sy} `+splitMath(`[${v('x')}${pj}`,`+ ${v('y')}${pj}]`);
-const jointSeparated='E[X + Y] = '+splitMath(`${sx}${sy} ${v('x')}${pj}`,`+ ${sy}${sx} ${v('y')}${pj}`);
-const xGroup=`${sx}${sy} ${v('x')}${pj}`;
-const yGroup=`${sy}${sx} ${v('y')}${pj}`;
-scene('linearity','Add values; keep their outcome weights',[
- H('Define X and Y as heads on the first and second fair coin flips.',{kind:'joint'},[hint('X and Y each take the values 0 or 1.'),hint('These flips are independent; the rule we derive will not need that assumption.')],'Each column is one outcome, with its own probability.'),
- ...proof('Concrete total · add, weight, then average',ref('joint'),[
- R('E[X + Y] = (0 + 0)¼ + (0 + 1)¼ + (1 + 0)¼ + (1 + 1)¼','Read one total and one probability from each column.',undefined,true),
- R('E[X + Y] = 0¼ + 1¼ + 1¼ + 2¼','Add the two values within each outcome.'),
- R('E[X + Y] = 0 + ¼ + ¼ + ½ = 1','Multiply by the weights, then add the contributions.')
- ],'We can regroup the same contributions without changing the answer.'),
- ...proof('General total · distribute before collecting',ref('joint'),[
- R(jointStart,'Sum over every possible pair (x, y), using its joint probability.',undefined,true),
- R(jointDistributed,'Distribute the same weight across x and y.',undefined,true),
- R(jointSeparated,'Collect X terms and Y terms; reverse the order of the Y sum.',undefined,true)
- ],'No independence has been used: each pair keeps its actual joint weight.'),
- ...proof('X contributions · collect all outcomes with the same x',ref('joint','x'),[
- R(xGroup,'Focus on the first sum from the previous line.',undefined,true),
- R(`= ${sx} ${v('x')} [${sy} ${pj}]`,'For a fixed x, that value does not change while y varies.',undefined,true),
- R(`= ${sx} ${v('x')} ${px}`,'Add all joint probabilities with that x: the bracket is P(X = x).'),
- R('= E[X]','Recognize value × its probability, summed over all x.')
- ],'Adding joint probabilities gives a marginal probability; it does not assume independence.'),
- ...proof('Y contributions · collect all outcomes with the same y',ref('joint','y'),[
- R(yGroup,'Now follow the second sum, keeping the Y outcomes together.',undefined,true),
- R(`= ${sy} ${v('y')} [${sx} ${pj}]`,'For a fixed y, move y outside the sum over x.',undefined,true),
- R(`= ${sy} ${v('y')} ${py}`,'The bracket adds all outcomes with that y, giving P(Y = y).'),
- R('= E[Y]','This is the probability-weighted mean of Y.')
- ],'Both means come from the same original weighted total.'),
- ...proof('Rejoin the two pieces',ref('joint'),[
- R(jointSeparated,'Return to the two sums we separated.',undefined,true),
- R(`E[X + Y] = ${m('E[X]')} + ${m('E[Y]')}`,'Replace each collected sum with the mean it represents.'),
- R('1 = ½ + ½','Check the rule against our four coin outcomes.')
- ],'Linearity needs finite expectations, not independence.',false,'For infinite discrete support, finite absolute expectations justify rearrangement. Repeat the argument for any finite sum. The picture uses independent flips only to give a simple numerical example.')
-]);
-
-const varianceExpanded=`Var(X) = E[${v('X²')} − ${m('2μ')}X + ${m('μ²')}]`;
-const varianceLinear=`Var(X) = E[${v('X²')}] − E[${m('2μ')}X] + E[${m('μ²')}]`;
-const varianceConstants=`Var(X) = E[${v('X²')}] − ${m('2μ')}E[X] + ${m('μ²')}`;
-scene('shortcut','Keep the definition; expand one piece at a time',[
- ...proof('Expand the square · keep expectation around it',ref('shortcut'),[
- R(`Var(X) = E[${d('(X − μ)²')}]`,'Start with the mean squared deviation; μ = E[X].'),
- R(`Var(X) = E[${d('(X − μ)(X − μ)')}]`,'A square means multiply the expression by itself.'),
- R(`Var(X) = E[${v('X²')} − ${d('μX')} − ${d('μX')} + ${m('μ²')}]`,'Multiply all four pairs; two negative products appear.'),
- R(varianceExpanded,'Combine the two identical middle terms: −μX − μX = −2μX.')
- ],'This is still the original variance definition, written differently.'),
- ...proof('Take expectations · one term at a time',ref('shortcut'),[
- R(varianceExpanded,'Carry forward the expanded square.'),
- R(varianceLinear,'Linearity splits the expectation of a sum or difference.'),
- R(`Var(X) = E[${v('X²')}] − ${m('2μ')}E[X] + E[${m('μ²')}]`,'2μ is fixed; pull it outside its expectation.'),
- R(varianceConstants,'The expectation of the fixed number μ² is μ².')
- ],'μ is one fixed mean, not a new random outcome.',true),
- ...proof('Substitute the mean · expose the cancellation',ref('shortcut'),[
- R(varianceConstants,'Keep the result of linearity visible.'),
- R(`Var(X) = E[${v('X²')}] − ${m('2μ')} × ${m('μ')} + ${m('μ²')}`,'Replace E[X] by its name μ.'),
- R(`Var(X) = E[${v('X²')}] − ${m('2μ²')} + ${m('μ²')}`,'Multiply μ by μ to obtain μ².'),
- R(`Var(X) = E[${v('X²')}] − ${m('μ²')}`,'Combine −2μ² + μ²: one negative μ² remains.'),
- R(`Var(X) = E[${v('X²')}] − ${m('(E[X])²')}`,'Write μ as E[X] to name the two different operations.')
- ],'Average of squares minus square of average equals variance.',true),
- ...proof('Fair-die check · connect back to the earlier example',ref('shortcut'),[
- R(`Var(X) = E[${v('X²')}] − ${m('(E[X])²')}`,'Keep the derived rule visible.'),
- R(`Var(X) = ${v(frac(91,6))} − ${m(frac(49,4))}`,'Use E[X²] = 91/6 and (E[X])² = (3.5)² = 49/4.'),
- R(`Var(X) = ${v(frac(182,12))} − ${m(frac(147,12))}`,'Use the common denominator 12.'),
- R(`Var(X) = ${frac(35,12)}`,'Subtract numerators: 182 − 147 = 35. This matches the direct calculation.')
- ],'The earlier gap between E[X²] and (E[X])² is exactly the variance.',true,'Assume finite second moment. Variance is nonnegative; the gap is zero exactly when X is almost surely constant.')
-]);
-
-const sumVar='Var(X + Y)',crossResult=`${sumVar} = Var(X) + ${d('2E[AB]')} + Var(Y)`;
-const crossJoint=`E[AB] = ${sx}${sy} ${d('(x − μₓ)(y − μᵧ)')} ${pj}`;
-const crossFactoredWeight=`E[AB] = ${sx}${sy} ${d('(x − μₓ)(y − μᵧ)')} ${px}${py}`;
-const crossGrouped='E[AB] = '+splitMath(`${sx} ${d('(x − μₓ)')}${px}`,`× [${sy} ${d('(y − μᵧ)')}${py}]`);
-const crossSeparate='E[AB] = '+splitMath(`[${sx} ${d('(x − μₓ)')}${px}]`,`× [${sy} ${d('(y − μᵧ)')}${py}]`);
-scene('sums','Add spreads only after following the cross term',[
- ...proof('Center the total · start with its actual mean',ref('centered','values'),[
- R('(X + Y) − E[X + Y]','The total’s deviation is its value minus its mean.'),
- R('= (X + Y) − (μₓ + μᵧ)','Use linearity: E[X + Y] = μₓ + μᵧ.'),
- R('= X + Y − μₓ − μᵧ','Distribute the minus sign to both mean terms.'),
- R(`= ${d('(X − μₓ)')} + ${d('(Y − μᵧ)')}`,'Regroup each value with its own mean.'),
- R(`= ${d('A + B')}`,'Name the centered variables A = X − μₓ and B = Y − μᵧ.')
- ],'The deviation of a total is the total of the deviations.'),
- ...proof('Square the total deviation · track every product',count=>ref('centered',count>=3?'product':'deviations'),[
- R(`${sumVar} = E[${d('(A + B)²')}]`,'Insert the total deviation into the variance definition.'),
- R(`${sumVar} = E[(A + B)(A + B)]`,'Write the square as two identical factors.'),
- R(`${sumVar} = E[A² + ${d('AB')} + ${d('BA')} + B²]`,'Multiply all four pairs; both mixed products matter.'),
- R(`${sumVar} = E[A² + ${d('2AB')} + B²]`,'AB = BA, so the two mixed products combine.')
- ],'The extra product measures how the two deviations move together.'),
- ...proof('Average the expanded square',ref('centered'),[
- R(`${sumVar} = E[A² + ${d('2AB')} + B²]`,'Carry forward the expanded square.'),
- R(`${sumVar} = E[A²] + E[${d('2AB')}] + E[B²]`,'Split the expectation into three expectations.'),
- R(`${sumVar} = E[A²] + ${d('2E[AB]')} + E[B²]`,'Pull the fixed factor 2 outside the middle expectation.'),
- R(crossResult,'E[A²] is Var(X); E[B²] is Var(Y).')
- ],'Variances add only when the average cross product is zero.',true),
- ...proof('Why a centered variable has mean zero',ref('centered','deviations'),[
- R(`E[A] = E[${d('X − μₓ')}]`,'Recall A = X − μₓ.'),
- R('E[A] = E[X] − E[μₓ]','Apply linearity to the difference.'),
- R('E[A] = E[X] − μₓ','μₓ is a fixed number, so its expectation is itself.'),
- R('E[A] = μₓ − μₓ = 0','Use E[X] = μₓ. The identical argument gives E[B] = 0.')
- ],'Zero individual means alone do not guarantee E[AB] = 0.'),
- ...proof('Independence · change only the probability weight',ref('independence'),[
- R(crossJoint,'Write the average product using the joint probability.',undefined,true),
- R(crossFactoredWeight,'Independence: replace the joint weight by P(X=x)P(Y=y).',undefined,true),
- R(crossGrouped,'Hold x fixed. Pull its deviation and probability outside the y-sum.',undefined,true)
- ],'This factorization is the precise step that requires independence.'),
- ...proof('Independence · separate the two weighted averages',ref('independence'),[
- R(crossGrouped,'Carry forward the inner Y-average.',undefined,true),
- R(crossSeparate,'The bracket has no x; take it outside the x-sum.',undefined,true),
- R(`E[AB] = ${d('E[A]')} ${d('E[B]')}`,'Each bracket is the mean of a centered variable.'),
- R('E[AB] = 0 × 0 = 0','Use the two centered means we just calculated.')
- ],'The product average vanishes here because the variables are independent.',true),
- ...proof('Return to the variance formula · remove the cross term',ref('centered','cancel'),[
- R(crossResult,'Bring back the general result before using independence.'),
- R(`${sumVar} = Var(X) + ${d('2 × 0')} + Var(Y)`,'Substitute E[AB] = 0 for independent variables.'),
- R(`${sumVar} = Var(X) + Var(Y)`,'Remove the zero term.'),
- R(`${sumVar} = ¼ + ¼ = ½`,'Check the two independent fair coins.')
- ],'Independence is sufficient, not necessary; a zero cross term is enough.',false,'Finite second moments. The cross term is twice the covariance. It may be positive, negative, or zero for dependent variables.'),
- ...proof('Difference · carefully distribute the minus sign',ref('centered','values'),[
- R('(X − Y) − E[X − Y]','Start from the value minus its expected value.'),
- R('= (X − Y) − (μₓ − μᵧ)','Linearity gives the difference of the two means.'),
- R('= X − Y − μₓ + μᵧ','Subtracting the mean difference makes the final sign positive.'),
- R('= (X − μₓ) − (Y − μᵧ)','Group each value with its own mean.'),
- R('= A − B','Use the same centered variables as in the sum.')
- ],'A minus sign applies to every term inside its parentheses.'),
- ...proof('Difference · square the centered difference',ref('centered'),[
- R('(X − Y) − (μₓ − μᵧ) = A − B','Keep the completed deviation calculation visible.'),
- R('Var(X − Y) = E[(A − B)(A − B)]','Insert the difference into the variance definition.'),
- R(`Var(X − Y) = E[A² ${d('− AB − BA')} + B²]`,'Multiply all four pairs; the final product is positive.'),
- R(`Var(X − Y) = E[A² ${d('− 2AB')} + B²]`,'Combine the two negative mixed products.')
- ],'The cross term changes sign; the squared B term stays positive.'),
- ...proof('Difference · average, then apply independence',ref('centered'),[
- R(`Var(X − Y) = E[A² ${d('− 2AB')} + B²]`,'Carry forward the expanded square.'),
- R(`Var(X − Y) = E[A²] − E[${d('2AB')}] + E[B²]`,'Separate the three expectations.'),
- R(`Var(X − Y) = E[A²] ${d('− 2E[AB]')} + E[B²]`,'Pull the fixed 2 outside the expectation.'),
- R(`Var(X − Y) = Var(X) ${d('− 2E[AB]')} + Var(Y)`,'Identify each mean squared deviation as a variance.'),
- R('Var(X − Y) = Var(X) + Var(Y)','Under independence E[AB] = 0, so the middle term vanishes.')
- ],'Independent differences add variances: subtraction does not make spread negative.',true)
-]);
+scene('affineproof','Turn that motion into a rule',[
+H('Replace 2X + 2 by the general transformation aX + b.',transformed(),[eq(`E[aX + b]<br>= ∑<sub>x</sub> ${v('(ax + b)')} ${w('P(X = x)')}`)],'Use the same weighted-average definition.'),
+H('Distribute the weights across the two terms.',transformed(),[eq(`= a ∑<sub>x</sub> ${v('x')} ${w('P(X = x)')}<br>+ b ∑<sub>x</sub> ${w('P(X = x)')}`),hint('The first sum is μ. The probabilities in the second sum add to 1.')],'So E[aX + b] = aμ + b.'),
+H('Subtract the new mean from the new value.',transformed(),[eq(`${v('(ax + b)')} − ${m('(aμ + b)')}`,true),eq(`= ${d('a(x − μ)')}`),hint('The shift b cancels.')],'Every deviation is multiplied by a.'),
+H('Square those deviations, then average.',transformed(),[eq(`Var(aX + b)<br>= E[${d('a²(X − μ)²')}]`),eq(`= a² Var(X)`),hint('For 2X + 2: variance is four times as large.')],'Standard deviation scales by |a|. A negative a reflects; a = 0 collapses to a constant.')]);
+scene('linearity','Add two values on the same outcome',[
+H('Let X and Y record two coin flips as 0 or 1.',{kind:'joint'},[hint('X counts heads on the first flip; Y counts heads on the second.'),hint('For example: P(X = 0, Y = 1) = ¼.')],'We will average their total.','These displayed joint probabilities come from two independent fair flips; the algebra of linearity below works for any joint probabilities, including dependent variables.'),
+H('Add X and Y before averaging.',{kind:'joint',total:true},[eq(`E[X + Y]`),sumterms([0,1,1,2],Array(4).fill(frac(1,4))),eq('= 1')],'The total row has the same outcome weights.'),
+H('Separate each weighted total into its X and Y contributions.',{kind:'joint',total:true},[eq(`(${v('x')} + ${v('y')})${w('P(X=x,Y=y)')}<br>= ${v('x')}${w('P(X=x,Y=y)')}<br>+ ${v('y')}${w('P(X=x,Y=y)')}`),hint('Collect all X contributions, then all Y contributions.')],'Distributing the sum does not require independence.'),
+H('The two collected sums are their two means.',{kind:'joint',total:true},[eq(`${m('E[X + Y]')}<br>= ${m('E[X] + E[Y]')}`),eq('Here: 1 = ½ + ½'),hint('The same rule extends to any finite sum of variables.')],'Linearity holds whenever the expectations are finite.','A general proof uses the joint PMF and marginalization, never a product-weight assumption. Full joint-PMF derivation remains in instructor script.')]);
+scene('shortcut','A shorter route to the same variance',[
+H('Keep our fair die and its squared values in view.',dieTable([{label:'x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq(`Var(X) = E[${d('(X − μ)²')}]`),hint('We already found 35/12 by averaging squared deviations.')],'Now expand the square inside the expectation.'),
+H('Expand one squared deviation.',dieTable([{label:'x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq(`${d('(X − μ)²')}<br>= X² − 2μX + μ²`)],'μ is a fixed number while X varies.'),
+H('Average the three terms separately.',dieTable([{label:'x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq('Var(X)<br>= E[X²] − 2μE[X] + μ²',true)],'This uses linearity of expectation.'),
+H('Substitute E[X] = μ and simplify.',dieTable([{label:'x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq('= E[X²] − 2μ² + μ²'),eq(`= E[X²] − μ²`),hint('Average of squares − square of the average.')],'E[X²] and (E[X])² are different operations.'),
+H('Check it against our die calculation.',dieTable([{label:'x²',values:[1,4,9,16,25,36],color:C.blue}]),[eq(`E[X²] = ${frac(91,6)}`),eq(`Var(X) = ${frac(91,6)} − (3.5)²`),eq(`= ${frac(35,12)}`)],'Both routes give exactly the same variance.')]);
+scene('sums','What changes when we add spreads?',[
+H('Center each of our coin values at its own mean.',{kind:'joint',centered:true},[eq(`A = ${d('X − μₓ')}<br>B = ${d('Y − μᵧ')}`),hint('The deviation of X + Y is A + B.')],'First center, then square.'),
+H('Squaring a sum creates an extra product.',{kind:'joint',centered:true,product:true},[eq(`${d('(A + B)²')} = A² + B² + 2AB`),hint('The extra term tracks how the deviations move together.')],'The product can be positive or negative.'),
+H('Average all three terms.',{kind:'joint',centered:true,product:true},[eq('Var(X + Y)<br>= Var(X) + Var(Y) + 2E[AB]',true),hint('In this example, equally weighted positive and negative products cancel.')],'The cross term is why variances do not always add.'),
+H('Independence makes that average product zero.',{kind:'joint',centered:true,product:true},[eq('E[AB] = E[A]E[B] = 0',true),eq(`Var(X + Y)<br>= Var(X) + Var(Y)`),hint('For these independent coins: ¼ + ¼ = ½.')],'Independence is sufficient for this rule, not necessary.','Each centered mean is zero. Independence factors the expectation of their product; zero covariance is enough even without independence. Finite second moments are assumed.'),
+H('For a difference, the independent variances still add.',{kind:'joint',centered:true,product:true},[eq(`Var(X − Y)<br>= Var(X) + Var(Y)`),hint('Changing Y to −Y leaves its variance unchanged.')],'This statement uses the independence assumption.','The general difference has a negative cross term. Under independence it vanishes. Pairwise uncorrelated variables suffice for finite-sum variance additivity.')]);
 const questions=[
 ['Can the mean be a value the variable never takes?',coinMass(),eq('Our coin takes only 0 and 1.'),eq(`Yes: its mean is ${m('½')}.`),'The mean is a balance point, not a promised outcome.'],
 ['What happens for Y = −2X + 5?',mass(dieX.map(x=>-2*x+5),fair,{rv:'Y',min:-8,max:6,labels:pFair}),eq('Predict the mean and variance.'),eq('E[Y] = −2E[X] + 5<br>Var(Y) = 4 Var(X)',true),'The negative sign reflects the values; squaring the scale removes the sign.'],
 ['Do means add when variables depend on one another?',{kind:'joint',total:true},eq('Does E[X + Y] require independence?'),eq('E[X + Y] = E[X] + E[Y]',true),'No independence is required when both expectations are finite.'],
 ['What is Var(X + X)?',mass([0,2],[.5,.5],{rv:'2X',min:-1,max:3,labels:['1/2','1/2']}),eq('Use X + X = 2X.'),eq('Var(X + X) = 4 Var(X)'), 'The repeated X is dependent on itself; the independent-sum rule does not apply.']];
 scene('check','One last prediction at a time',questions.flatMap((q,i)=>[H(`Question ${i+1}: ${q[0]}`,i===1?{...q[1],showMean:false}:q[1],[q[2]],'Pause for a prediction before advancing.'),H(`Answer ${i+1}: ${q[0]}`,q[1],[q[3]],q[4],i===3?'For nonconstant X, 4Var(X) differs from 2Var(X). End here; named Bernoulli and binomial distributions begin Monday.':q[4])]));
-
 let sceneIndex=0,step=0,frame=0,lastState=null,lastParts=[],lastScene='';let staticMode=matchMedia('(prefers-reduced-motion: reduce)').matches;const counts=scenes.map(s=>s.steps),total=counts.reduce((a,b)=>a+b,0);
 
 function variableContext(id,step){
@@ -370,14 +149,13 @@ function variableContext(id,step){
  if(['deviations','variance','shortcut'].includes(id))return 'X = face value of a fair die; P(X = x) = 1/6 for x = 1, 2, 3, 4, 5, 6.';
  if(id==='shift')return step===0?die:step<3?'X = face value of a fair die; define Y = X + 2.':'X = face value of a fair die; define Y = 2X + 2.';
  if(id==='affineproof')return 'X = face value of a fair die; Y = aX + b, with fixed a and b. Picture: a = b = 2.';
- if(id==='linearity')return 'X = heads on the first fair flip; Y = heads on the second. Picture: independent flips; linearity also allows dependence.';
- if(id==='sums')return 'X, Y = heads on first/second flip; μₓ = E[X], μᵧ = E[Y]. A = X − μₓ; B = Y − μᵧ. Picture: independent flips.';
+ if(id==='linearity'||id==='sums')return 'X = heads on the first fair flip; Y = heads on the second. Each is 0 or 1; flips are independent.';
  if(id==='check'){const q=Math.floor(step/2);return q===0||q===3?coin:q===1?'X = face value of a fair die; define Y = −2X + 5.':'X = heads on the first flip; Y = heads on the second. The rule also allows dependence.';}
  return '';
 }
 
 function resize(){$('slide').style.transform=`scale(${Math.min(innerWidth/1600,(innerHeight-64)/900)})`}
-function render(animate=true){cancelAnimationFrame(frame);const s=scenes[sceneIndex],h=s.holds[step],from=lastState,to=h.diagram;$('slide').dataset.proof=String(!!h.proof);$('title').textContent=s.title;$('caption').textContent=h.caption;$('rvContext').textContent=variableContext(s.id,step);$('words').innerHTML=h.parts.map((html,i)=>`<div class="piece${animate&&!staticMode&&!h.proof&&lastParts[i]!==html?' new':''}">${html}</div>`).join('');$('takeaway').textContent=h.take;$('notes').innerHTML=`<h2>${s.title} · step ${step+1}</h2><p>${h.notes}</p>`;$('counter').textContent=`${counts.slice(0,sceneIndex).reduce((a,b)=>a+b,0)+step+1} / ${total}`;$('topicProgress').textContent=`${sceneIndex+1} / ${scenes.length} topics · ${step+1} / ${s.steps} steps`;$('back').disabled=sceneIndex===0&&step===0;$('next').disabled=sceneIndex===scenes.length-1&&step===s.steps-1;$('sceneSelect').value=sceneIndex;$('slide').dataset.scene=s.id;$('slide').dataset.step=step;$('legend').innerHTML=sceneIndex===0&&step<2?'':`<span class="value">value / observation</span>${sceneIndex>0||step>=3?'<span class="weight">probability / proportion</span>':''}${sceneIndex>0?'<span class="mean">model mean</span>':''}${sceneIndex>=9?'<span class="dev">deviation / square</span>':''}`;document.body.classList.toggle('static',staticMode);$('motion').textContent=staticMode?'Motion off':'Motion on';$('motion').setAttribute('aria-pressed',String(staticMode));history.replaceState(null,'',`#${s.id}:${step+1}`);const paint=t=>{$('diagram').innerHTML=drawState(tween(from,to,t),t,from)};if(animate&&!staticMode){const start=performance.now();const tick=now=>{const t=Math.min(1,(now-start)/850);paint(1-(1-t)**3);if(t<1)frame=requestAnimationFrame(tick)};paint(0);frame=requestAnimationFrame(tick)}else paint(1);lastState=to;lastParts=h.parts.slice();lastScene=s.id;}
+function render(animate=true){cancelAnimationFrame(frame);const s=scenes[sceneIndex],h=s.holds[step],from=lastState,to=h.diagram;$('title').textContent=s.title;$('caption').textContent=h.caption;$('rvContext').textContent=variableContext(s.id,step);$('words').innerHTML=h.parts.map((html,i)=>`<div class="piece${animate&&!staticMode&&lastParts[i]!==html?' new':''}">${html}</div>`).join('');$('takeaway').textContent=h.take;$('notes').innerHTML=`<h2>${s.title} · step ${step+1}</h2><p>${h.notes}</p>`;$('counter').textContent=`${counts.slice(0,sceneIndex).reduce((a,b)=>a+b,0)+step+1} / ${total}`;$('topicProgress').textContent=`${sceneIndex+1} / ${scenes.length} topics · ${step+1} / ${s.steps} steps`;$('back').disabled=sceneIndex===0&&step===0;$('next').disabled=sceneIndex===scenes.length-1&&step===s.steps-1;$('sceneSelect').value=sceneIndex;$('slide').dataset.scene=s.id;$('slide').dataset.step=step;$('legend').innerHTML=sceneIndex===0&&step<2?'':`<span class="value">value / observation</span>${sceneIndex>0||step>=3?'<span class="weight">probability / proportion</span>':''}${sceneIndex>0?'<span class="mean">model mean</span>':''}${sceneIndex>=9?'<span class="dev">deviation / square</span>':''}`;document.body.classList.toggle('static',staticMode);$('motion').textContent=staticMode?'Motion off':'Motion on';$('motion').setAttribute('aria-pressed',String(staticMode));history.replaceState(null,'',`#${s.id}:${step+1}`);const paint=t=>{$('diagram').innerHTML=drawState(tween(from,to,t),t,from)};if(animate&&!staticMode){const start=performance.now();const tick=now=>{const t=Math.min(1,(now-start)/850);paint(1-(1-t)**3);if(t<1)frame=requestAnimationFrame(tick)};paint(0);frame=requestAnimationFrame(tick)}else paint(1);lastState=to;lastParts=h.parts.slice();lastScene=s.id;}
 function next(){if(step<scenes[sceneIndex].steps-1)step++;else if(sceneIndex<scenes.length-1){sceneIndex++;step=0}else return;render()}
 function back(){if(step>0)step--;else if(sceneIndex>0){sceneIndex--;step=scenes[sceneIndex].steps-1}else return;render(false)}
 function toggleNotes(){const show=$('notes').hidden;$('notes').hidden=!show;$('noteButton').setAttribute('aria-expanded',String(show))}

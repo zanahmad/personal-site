@@ -31,9 +31,13 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example.
 
-  [**Expectation and Variance**](/lectures/probability-statistics/expectation-variance/)
+  [**Expectation and Variance — Lecture version**](/lectures/probability-statistics/expectation-variance/)
 
-  A step-by-step lesson from coin flips and probability masses to weighted means, variance, transformations, and sums of random variables.
+  The presentation for class, from coin flips and probability masses to expectation, variance, transformations, and sums.
+
+  [Detailed version — Step-by-step derivations](/lectures/probability-statistics/expectation-variance-detailed/)
+
+  An expanded companion for review, with retained algebra steps, visual references, and full derivations of the expectation and variance properties.
 
   Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
 
