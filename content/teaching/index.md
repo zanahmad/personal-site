@@ -31,6 +31,10 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example.
 
+  [**Expectation and Variance**](/lectures/probability-statistics/expectation-variance/)
+
+  A step-by-step lesson from coin flips and probability masses to weighted means, variance, transformations, and sums of random variables.
+
   Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
 
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
