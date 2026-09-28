@@ -15,39 +15,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 
 ##### Instructor:
-- **EN.553.211 Probability and Statistics in Life Sciences** – Fall 2026
+- [**EN.553.211 Probability and Statistics for the Life Sciences**](/teaching/probability-statistics/) – Fall 2026
 
-  **Class notes and animated lectures**
-
-  [**Covariance, Correlation, and Linear Regression**](/lectures/probability-statistics/covariance-correlation-regression/)
-
-  A step-by-step visual review with worked derivations.
-
-  [**Foundations of Probability and Counting**](/lectures/probability-statistics/chapter-3-foundations-counting/)
-
-  A click-through lesson on outcomes, probability rules, DNA strings, ordered roles, unassigned teams, combinations, and the binomial connection.
-
-  [**Conditional Probability**](/lectures/probability-statistics/chapter-4-conditional-probability/)
-
-  A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example.
-
-  [**Expectation and Variance — Lecture version**](/lectures/probability-statistics/expectation-variance/)
-
-  The presentation for class, from coin flips and probability masses to expectation, variance, transformations, and sums.
-
-  [Detailed version — Step-by-step derivations](/lectures/probability-statistics/expectation-variance-detailed/)
-
-  An expanded companion for review, with retained algebra steps, visual references, and full derivations of the expectation and variance properties.
-
-  Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
-
-  **Tutorials and written review**
-
-  [**Independence and Discrete Counting Models**](/tutorials/independence-bernoulli-binomial/)
-
-  September 28 review and September 30 read-ahead: a reading guide and 35-page PDF through hypergeometric and Poisson, with worked derivations and simulation figures. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
-
-  [**Interactive practice quiz**](/practice/independence-bernoulli-binomial/) — 12 questions through the cereal-box example, with hints, worked explanations, and retries.
+  PDF notes, animated slides, and practice resources, organized in class order.
 
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
 

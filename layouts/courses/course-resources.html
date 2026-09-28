@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "meta.html" . }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
+  {{ $styles := resources.Get "scaffold.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ "css/course-resources.css" | relURL }}">
+</head>
+<body class="course-page">
+  <a class="course-skip" href="#course-content">Skip to course resources</a>
+  {{ partial "header.html" . }}
+  <main class="course-hub" id="course-content">
+    <header class="course-intro">
+      <a class="course-back" href="/teaching/">← All teaching</a>
+      <p class="course-kicker">Johns Hopkins University · Fall 2026 · EN.553.211</p>
+      <h1>Probability &amp; Statistics<br><span>for the Life Sciences</span></h1>
+      <p class="course-deck">A place to revisit class. Read the notes, follow an idea through the slides, and check your understanding.</p>
+      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#counting-models">This week: Counting models ↓</a></div>
+    </header>
+
+    <section aria-labelledby="lecture-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">Follow the course</p><h2 id="lecture-heading">Notes &amp; animated lectures</h2></div><p>In class order · earliest to latest</p></div>
+      <div class="course-grid">
+        {{ range $i, $unit := .Site.Data.probability_course.units }}
+        <article class="resource-card{{ if .current }} resource-current{{ end }}" id="{{ .id }}">
+          <div class="resource-preview" aria-hidden="true"><img src="/images/course-resources/{{ .preview }}.svg" alt="" width="600" height="260" loading="lazy"><span class="resource-number">{{ printf "%02d" (add $i 1) }}</span>{{ if .current }}<span class="resource-this-week">This week</span>{{ end }}</div>
+          <div class="resource-content">
+            <p class="resource-meta">{{ .date }} <span aria-hidden="true">·</span> {{ .chapter }}</p>
+            <h3>{{ .title }}</h3>
+            <p class="resource-description">{{ .description }}</p>
+            <div class="resource-links" aria-label="Resources for {{ .title }}">{{ range .links }}<a class="resource-link resource-{{ .type }}" href="{{ .url }}" aria-label="{{ .label }} — {{ $unit.title }}"><span class="resource-kind">{{ if eq .type "pdf" }}PDF{{ else if eq .type "slides" }}SLIDES{{ else if eq .type "practice" }}PRACTICE{{ else }}GUIDE{{ end }}</span><span>{{ .label }}</span><span aria-hidden="true">↗</span></a>{{ end }}</div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      <p class="course-help">Slides pause at each step. Use the arrow keys or on-screen controls; a laptop or tablet works best for the animations.</p>
+    </section>
+
+    <section class="course-video-section" aria-labelledby="video-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">Another way to see it</p><h2 id="video-heading">Selected 3Blue1Brown videos</h2></div><p>Optional visual companions</p></div>
+      <div class="course-video-grid">{{ range .Site.Data.probability_course.videos }}<article class="course-video"><p class="resource-meta">{{ .topic }}</p><h3><a href="{{ .url }}">{{ .title }} <span aria-hidden="true">↗</span></a></h3><p>{{ .description }}</p><span class="video-source">3Blue1Brown · YouTube</span></article>{{ end }}</div>
+      <p class="course-help">The final video includes a discussion of independence alongside the Bayes proof.</p>
+    </section>
+    <footer class="course-footer"><a href="/teaching/">← All teaching</a><span>EN.553.211 · Fall 2026</span></footer>
+  </main>
+</body>
+</html>

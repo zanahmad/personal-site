@@ -1,5 +1,5 @@
 ---
-title: "Independence and Discrete Counting Models"
+title: "Counting Models"
 layout: "single"
 draft: false
 url: "/tutorials/independence-bernoulli-binomial/"
@@ -43,4 +43,4 @@ When can we add expectations, when can we add variances, and how do the sampling
 
 **Simulation illustrates the result.** The figures distinguish exact pmfs from simulated frequencies; the notes also give the mathematical convergence argument.
 
-[Return to all course notes and lectures](/teaching/)
+[Return to all course notes and lectures](/teaching/probability-statistics/)

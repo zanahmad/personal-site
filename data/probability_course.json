@@ -1,0 +1,126 @@
+{
+  "units": [
+    {
+      "id": "covariance",
+      "date": "September 11",
+      "chapter": "Chapter 2",
+      "title": "Covariance, correlation & regression",
+      "description": "See how two quantities move together, then build a line that describes their relationship.",
+      "preview": "covariance",
+      "links": [
+        {
+          "label": "Animated slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/covariance-correlation-regression/"
+        }
+      ]
+    },
+    {
+      "id": "counting-foundations",
+      "date": "September 14–18",
+      "chapter": "Chapter 3",
+      "title": "Foundations of probability & counting",
+      "description": "Start with outcomes and events. Build probability rules, permutations, combinations, and careful counting.",
+      "preview": "counting",
+      "links": [
+        {
+          "label": "Animated slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/chapter-3-foundations-counting/"
+        }
+      ]
+    },
+    {
+      "id": "independence-bayes",
+      "date": "September 18–21",
+      "chapter": "Chapter 4",
+      "title": "Conditional probability, independence & Bayes",
+      "description": "Change the reference group, follow probability paths, and use evidence to update a probability.",
+      "preview": "bayes",
+      "links": [
+        {
+          "label": "PDF notes · 7 pages",
+          "type": "pdf",
+          "url": "/files/bayes-and-independence-student-notes-2026-09-24.pdf"
+        },
+        {
+          "label": "Conditional probability slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/chapter-4-conditional-probability/"
+        }
+      ]
+    },
+    {
+      "id": "expectation-variance",
+      "date": "September 23–25",
+      "chapter": "Chapter 5",
+      "title": "Random variables, expectation & variance",
+      "description": "Turn outcomes into numbers. Connect probability masses to averages, spread, transformations, and sums.",
+      "preview": "moments",
+      "links": [
+        {
+          "label": "Class slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/expectation-variance/"
+        },
+        {
+          "label": "Detailed slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/expectation-variance-detailed/"
+        }
+      ]
+    },
+    {
+      "id": "counting-models",
+      "date": "September 28 & 30",
+      "chapter": "Chapter 5",
+      "title": "Counting models",
+      "description": "One Bernoulli trial leads to binomial, hypergeometric, and Poisson counts. Compare assumptions, probabilities, means, and variances.",
+      "preview": "models",
+      "current": true,
+      "links": [
+        {
+          "label": "PDF notes · 35 pages",
+          "type": "pdf",
+          "url": "/files/independence-bernoulli-binomial-2026-09-28.pdf"
+        },
+        {
+          "label": "Reading guide",
+          "type": "guide",
+          "url": "/tutorials/independence-bernoulli-binomial/"
+        },
+        {
+          "label": "Practice quiz",
+          "type": "practice",
+          "url": "/practice/independence-bernoulli-binomial/"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Bayes theorem, the geometry of changing beliefs",
+      "description": "An area picture for changing the reference group and updating beliefs.",
+      "url": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+      "topic": "Bayes · geometric intuition"
+    },
+    {
+      "title": "The medical test paradox, and redesigning Bayes’ rule",
+      "description": "A diagnostic-testing example that makes the role of the base rate visible.",
+      "url": "https://www.youtube.com/watch?v=lG4VkPoG3ko",
+      "topic": "Bayes · medical example"
+    },
+    {
+      "title": "Binomial distributions | Probabilities of probabilities, part 1",
+      "description": "A visual companion to repeated trials and binomial counts. The later inference material is optional.",
+      "url": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+      "topic": "Counting models · binomial"
+    },
+    {
+      "title": "The quick proof of Bayes’ theorem",
+      "description": "A short Bayes proof with a discussion of independence.",
+      "url": "https://www.youtube.com/watch?v=U_85TaXbeIo",
+      "topic": "Bayes & independence"
+    }
+  ]
+}
