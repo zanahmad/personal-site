@@ -47,6 +47,8 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   September 28 lecture review: a reading guide and 16-page PDF with worked derivations, counting examples, and binomial histograms. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
 
+  [**Interactive practice quiz**](/practice/independence-bernoulli-binomial/) — 12 questions through the cereal-box example, with hints, worked explanations, and retries.
+
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
 
 - [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Summer 2025, Spring 2025, Fall 2024, Summer 2024, Summer 2023  

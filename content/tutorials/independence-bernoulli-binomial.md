@@ -13,6 +13,10 @@ When can we add expectations, when can we add variances, and how do these rules 
 
 [**Read or download the complete tutorial (PDF, 16 pages)**](/files/independence-bernoulli-binomial-2026-09-28.pdf)
 
+[**Try the interactive practice quiz — 12 questions with hints and explanations**](/practice/independence-bernoulli-binomial/)
+
+**Where we stopped in class:** the cereal-box example. The quiz reviews material through that example. The binomial expectation and variance derivations on pages 15–16 are a preview for the next lesson.
+
 ## A guide to the notes
 
 Read in order for the full argument, or use the page links to revisit a particular idea.
@@ -24,7 +28,7 @@ Read in order for the full argument, or use the page links to revisit a particul
 | [From trials to a binomial count](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=8) | 8–10 | Check the model assumptions, count success positions, and attach a probability to each sequence. |
 | [Why the probabilities sum to one](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=11) | 11–12 | Connect the probability formula to Pascal's triangle and the binomial theorem. |
 | [Histograms and the cereal decision rule](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=13) | 13–15 | Add the relevant bars and distinguish two errors calculated under different true prize rates. |
-| [Binomial expectation and variance](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=15) | 15–16 | Write the count as a sum of indicators and identify which calculation uses independence. |
+| [Binomial expectation and variance — next-lesson preview](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=15) | 15–16 | Write the count as a sum of indicators and identify which calculation uses independence. |
 
 ## Ideas to carry forward
 
@@ -40,6 +44,6 @@ Before consulting the worked derivations, try to explain:
 
 - Why adding two independent copies of a random variable differs from doubling the same variable.
 - Why exactly two successes in five trials has ten possible arrangements.
-- Why the binomial mean calculation uses linearity, while the variance calculation uses zero cross covariances.
+- How lowering the cereal rejection cutoff changes the two error probabilities.
 
 [Return to all course notes and lectures](/teaching/)
