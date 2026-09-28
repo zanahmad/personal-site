@@ -74,10 +74,10 @@ September 28 and 30, 2026 \quad\textbullet\quad EN.553.211
 These notes continue from the properties of expectation and variance,
 develop independence through centered deviations, and build counting models
 from individual trials. Monday's material leads to the cereal-box example.
-The Wednesday continuation begins at \hyperref[wed-start]{cereal part (b),
-page~\pageref{wed-start}}, derives binomial moments, contrasts sampling with
-and without replacement, and continues through hypergeometric and Poisson
-models to the end of Chapter 5.
+These comprehensive combined notes continue through hypergeometric
+and Poisson models, with worked examples and detailed derivations for
+class and test review. The Wednesday continuation begins at
+\hyperref[wed-start]{cereal part (b), page~\pageref{wed-start}}.
 
 All random variables in this article are \textbf{discrete and have finite
 second moments}. In particular, every expectation, variance, and covariance
@@ -698,6 +698,7 @@ The endpoint counts are both $1$. The $n=0$ row records the one empty
 sequence, which has zero successes.
 
 \subsection{The binomial theorem is the algebra of these choices}
+\label{binomial-theorem}
 
 Expand a product of five identical factors:
 \[
@@ -1155,7 +1156,8 @@ After a failure instead,
  =\frac K{N-1}>\frac KN.
 \]
 The label on the first draw therefore gives information about the next
-draw. The draw indicators are dependent, even though each draw position
+draw. The Bernoulli variables recording success or failure on each draw
+(also called indicators) are dependent, even though each draw position
 has the same success probability $K/N$ before any outcomes are observed.
 We need a distribution that accounts for this sampling procedure.
 
@@ -1229,8 +1231,8 @@ the groups partition the set of all possible samples.
 
 \subsection{A balanced population is still different from independent fair flips}
 
-Take $N=10$, $K=5$, and $n=4$. Each draw position has marginal success
-probability $1/2$. Without replacement,
+Take $N=10$, $K=5$, and $n=4$. Before we learn any draw outcomes, each
+draw position has success probability $1/2$. Without replacement,
 \[
 \Prob(X=2)=\frac{\binom52\binom52}{\binom{10}4}
  =\frac{100}{210}=\frac{10}{21}\approx0.47619.
@@ -1240,9 +1242,10 @@ Both experiments have success probability $1/2$ at each position, but
 their joint behavior differs. The without-replacement sample is more
 concentrated around its mean of two in this example.
 
-\subsection{Source example: how many purple candies?}
+\subsection{Skittles source example: how many purple candies?}
+\label{skittles-example}
 
-A bag contains $50$ candies of each of five colors, for $250$ candies
+A bag of Skittles contains $50$ candies of each of five colors, for $250$ candies
 altogether. Select $12$ uniformly without replacement. A success is
 selecting a purple candy. Therefore
 \[
@@ -1258,11 +1261,12 @@ The second factor chooses six nonpurple candies, because a sample of
 twelve with six purple candies must have six of the other colors.
 We group all nonpurple colors together as failures.
 
-\section{Hypergeometric moments from the same indicator strategy}
+\section{Hypergeometric moments from a sum of Bernoulli variables}
 \label{hypergeometric-moments}
 
-The count still has an indicator representation. Imagine the uniform
-sample being drawn sequentially without replacement, and define
+We use the same Bernoulli variables that record individual successes
+and failures. Imagine the uniform sample being drawn sequentially
+without replacement, and define
 \[
 I_i=
 \begin{cases}
@@ -1271,20 +1275,84 @@ I_i=
 \end{cases}
 \qquad X=I_1+\cdots+I_n.
 \]
-The indicators are dependent. We will retain the covariance terms
-instead of discarding them.
+Each $I_i$ is a \textbf{Bernoulli random variable}: it takes the value
+one for success and zero for failure. We also call it an
+\emph{indicator} because it indicates whether that draw succeeded.
+The count $X$ is therefore a sum of Bernoulli variables, just as in the
+binomial calculation. Here those variables are generally dependent.
+We will see that each still has success probability $K/N$, and that
+the dependence contributes covariance terms to the variance of their sum.
 
-\subsection{Mean: the marginal chance at each position is still $K/N$}
+\subsection{Why every draw position has the same success probability}
 
-Before any draws are observed, each of the $N$ objects is equally likely
-to occupy a particular draw position. Exactly $K$ objects are successes,
-so
+If the remaining collection changes after each draw, why does every
+position have the same chance of success? Imagine shuffling all $N$
+objects into a row and then revealing them one at a time. This produces
+the same experiment as drawing uniformly without replacement; our sample
+consists of the first $n$ positions.
+
+Before any results are revealed, each of the $N$ objects is equally
+likely to occupy any particular position. Exactly $K$ of those objects
+are successes. Thus
 \[
 \Prob(I_i=1)=\frac KN=:p
 \quad\text{for every }i.
 \]
-This is a marginal probability. It does not say the conditional chance
-stays fixed after earlier results are revealed.
+No position has an advantage over another. Once we learn other draw
+results, we can ask a different question: what is the chance of success
+\emph{given those results}? That conditional chance may differ from
+$K/N$; the probability for a position considered on its own is still $K/N$.
+
+\textbf{Connect to the law of total probability.}
+Suppose the population contains four red balls and six blue balls,
+and red counts as a success. If the first ball is red, the chance that
+the second is red becomes $3/9$. If the first ball is blue, that chance
+becomes $4/9$. These are conditional probabilities: each uses information
+about the first draw.
+
+Let $R_1$ mean ``the first ball is red'' and $R_2$ mean ``the second
+ball is red.'' To find the chance of red on the second draw without
+specifying the first ball's color, combine both possible first-draw
+outcomes. They are disjoint and cover all possibilities, so
+\begin{align*}
+\Prob(R_2)
+ &=\Prob(R_1\cap R_2)+\Prob(R_1^c\cap R_2)\\
+ &=\Prob(R_2\mid R_1)\Prob(R_1)
+   +\Prob(R_2\mid R_1^c)\Prob(R_1^c)\\
+ &=\frac39\cdot\frac4{10}+\frac49\cdot\frac6{10}\\
+ &=\frac{12+24}{90}=\frac4{10}.
+\end{align*}
+This is a \textbf{weighted average} of the two conditional chances.
+Each is weighted by how likely its first-draw case is. The result
+agrees with the shuffled-row argument, which applies to every position.
+
+\textbf{Bonus terminology: marginal probability.}
+The probability $\Prob(R_2)$ for the second draw alone, without
+conditioning on the first draw's outcome, is called a \emph{marginal
+probability}. The law of total probability recovers it by combining
+the possible first-draw cases. Knowing this name is not necessary for
+the calculation; it labels the distinction we have just explained.
+
+\begin{keyidea}{Same Bernoulli distribution does not mean independence}
+Each draw variable has distribution $I_i\sim\Bernoulli(p)$ with
+$p=K/N$. Nevertheless, in the red-ball example,
+\[
+\Prob(R_2)=\frac4{10},\qquad
+\Prob(R_2\mid R_1)=\frac39.
+\]
+Learning that the first draw succeeded changes the chance of success
+on the second. The Bernoulli variables have the same individual
+distribution, but they are dependent. Their sum is hypergeometric.
+The binomial model instead uses independent Bernoulli variables with
+a common success probability.
+\end{keyidea}
+
+\subsection{Mean: add the expectations of the Bernoulli variables}
+
+For each Bernoulli variable,
+\[
+\E[I_i]=1\cdot p+0\cdot(1-p)=p=\frac KN.
+\]
 
 By linearity,
 \begin{align*}
@@ -1295,7 +1363,9 @@ By linearity,
 \end{align*}
 The mean agrees with the binomial mean for the same $n$ and $p$.
 The derivation remains valid because linearity never required
-independence.
+independence. The dependence \emph{does} affect the variance calculation:
+the variance of a sum includes covariance terms describing how the
+Bernoulli variables vary together. We now compute those terms.
 
 \subsection{Covariance: two successes compete for the finite supply}
 
@@ -1325,7 +1395,7 @@ leaves fewer successes available for another.
 
 \subsection{Variance: add the covariance contributions}
 
-Each $I_i$ is marginally Bernoulli$(p)$, so
+Each $I_i$ is a Bernoulli$(p)$ random variable, so
 $\Var(I_i)=p(1-p)$. There are $\binom n2$ distinct unordered pairs
 of positions. Therefore
 \begin{align*}
@@ -1338,6 +1408,12 @@ of positions. Therefore
  &=np(1-p)\left(1-\frac{n-1}{N-1}\right)\\
  &=\boxed{np(1-p)\frac{N-n}{N-1}}.
 \end{align*}
+The first term, $np(1-p)$, adds the individual Bernoulli variances.
+The covariance contribution is exactly where dependence appears in
+this variance calculation. For independent Bernoulli trials it would
+be zero. Here, when $0<K<N$ and $n\ge2$, it is negative, so sampling
+without replacement has smaller variance than the binomial model
+with the same $n$ and $p$.
 
 \begin{keyidea}{Hypergeometric mean and variance}
 For $X\sim\operatorname{Hypergeometric}(N,K,n)$, set $p=K/N$.
@@ -1884,6 +1960,39 @@ $r$ per minute. For an observation lasting $t$ minutes, define
 \]
 The rate $r$ has units of events per minute. The parameter $\lambda$
 is the expected number of events in this particular window.
+
+\subsection{Rain example: choose the area and the duration}
+\label{rain-example}
+
+Suppose raindrops strike a roof at a constant rate
+\[
+\rho=300\ \frac{\text{drops}}{\text{ft}^{2}\,\text{s}}.
+\]
+We model arrivals as homogeneous Poisson events: counts in disjoint
+regions or intervals are independent, and the rate is constant over
+the observation. These are modeling assumptions, not consequences
+of specifying an average rate.
+
+Let $X$ count the drops striking an area of $A=1\ \text{ft}^{2}$
+during $t=0.01\ \text{s}$. The rate $\rho$ describes arrivals per
+unit area per unit time; the Poisson parameter $\lambda$ describes
+the expected count in our chosen area and time window:
+\[
+\boxed{\lambda=\rho At}
+\qquad\Longrightarrow\qquad
+\lambda=300(1)(0.01)=3.
+\]
+The area and time units cancel those in the rate. Thus
+$X\sim\operatorname{Poisson}(3)$, and the probability of exactly
+two drops is
+\[
+\boxed{\Prob(X=2)=e^{-3}\frac{3^2}{2!}\approx0.2240.}
+\]
+For this count, $\E[X]=3$ and $\Var(X)=3$. Keeping the same area
+and doubling the duration to $0.02\ \text{s}$ gives
+$\lambda=300(1)(0.02)=6$; the rate remains $300$, while the
+expected count and variance become six. Likewise, doubling the area
+with the duration fixed doubles $\lambda$.
 
 \subsection{State the assumptions before assigning the model}
 

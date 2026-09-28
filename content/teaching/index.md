@@ -45,7 +45,7 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   [**Independence and Discrete Counting Models**](/tutorials/independence-bernoulli-binomial/)
 
-  September 28 review and September 30 read-ahead: a reading guide and 33-page PDF through hypergeometric and Poisson, with worked derivations and simulation figures. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
+  September 28 review and September 30 read-ahead: a reading guide and 35-page PDF through hypergeometric and Poisson, with worked derivations and simulation figures. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
 
   [**Interactive practice quiz**](/practice/independence-bernoulli-binomial/) — 12 questions through the cereal-box example, with hints, worked explanations, and retries.
 
