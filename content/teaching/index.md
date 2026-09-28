@@ -31,7 +31,21 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   A click-through lesson on conditional probability, the multiplication rule, partitions, the law of total probability, and a fictional diagnostic-testing example.
 
+  [**Expectation and Variance — Lecture version**](/lectures/probability-statistics/expectation-variance/)
+
+  The presentation for class, from coin flips and probability masses to expectation, variance, transformations, and sums.
+
+  [Detailed version — Step-by-step derivations](/lectures/probability-statistics/expectation-variance-detailed/)
+
+  An expanded companion for review, with retained algebra steps, visual references, and full derivations of the expectation and variance properties.
+
   Use the arrow keys or on-screen arrows to advance at your own pace. Best viewed on a laptop or tablet in landscape orientation.
+
+  **Tutorials and written review**
+
+  [**Independence, Bernoulli Trials, and the Binomial Distribution**](/tutorials/independence-bernoulli-binomial/)
+
+  September 28 lecture review: a reading guide and 16-page PDF with worked derivations, counting examples, and binomial histograms. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
 
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
 
