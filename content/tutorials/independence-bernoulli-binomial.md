@@ -1,49 +1,46 @@
 ---
-title: "Independence, Bernoulli Trials, and the Binomial Distribution"
+title: "Independence and Discrete Counting Models"
 layout: "single"
 draft: false
 url: "/tutorials/independence-bernoulli-binomial/"
-description: "EN.553.211 review tutorial for September 28, 2026: independence, covariance, Bernoulli trials, binomial probabilities, and their mean and variance."
+description: "EN.553.211 September 28 and 30 lecture notes: independence, Bernoulli sums, binomial and hypergeometric counting, simulation, and Poisson distributions."
 ---
 
 **EN.553.211 Probability and Statistics for Life Sciences**  
-Lecture review · September 28, 2026 · Zan Ahmad
+Monday review and Wednesday read-ahead · September 28 and 30, 2026 · Zan Ahmad
 
-When can we add expectations, when can we add variances, and how do these rules help us count successes? These notes develop the ideas from individual trials, with worked derivations, examples, and binomial histograms.
+When can we add expectations, when can we add variances, and how do the sampling assumptions change a count's distribution? These cumulative notes connect independence and Bernoulli trials to binomial, hypergeometric, and Poisson models, with worked derivations and simulation figures.
 
-[**Read or download the complete tutorial (PDF, 16 pages)**](/files/independence-bernoulli-binomial-2026-09-28.pdf)
+[**Read or download the complete notes (PDF, 33 pages)**](/files/independence-bernoulli-binomial-2026-09-28.pdf)
 
 [**Try the interactive practice quiz — 12 questions with hints and explanations**](/practice/independence-bernoulli-binomial/)
 
-**Where we stopped in class:** the cereal-box example. The quiz reviews material through that example. The binomial expectation and variance derivations on pages 15–16 are a preview for the next lesson.
+**Wednesday starts at [cereal example, part (b), page 16](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=16).** We then connect a binomial count to a sum of Bernoulli variables, derive its mean and variance, and set the success probability to one-half to recover ordinary counting probabilities. Next come sampling without replacement, hypergeometric moments and convergence, and Poisson through the final Chapter 5 example. The quiz reviews the earlier material through cereal; the expanded notes let you read ahead.
 
 ## A guide to the notes
 
-Read in order for the full argument, or use the page links to revisit a particular idea.
-
 | Topic | Pages | What to focus on |
 |---|---|---|
-| [Independence, covariance, and variance of a sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=2) | 2–6 | Where independence is used, why covariance appears, and why zero covariance does not establish independence. |
-| [A single Bernoulli trial](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=7) | 7–8 | Code an outcome as zero or one, then derive its expectation and variance. |
-| [From trials to a binomial count](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=8) | 8–10 | Check the model assumptions, count success positions, and attach a probability to each sequence. |
-| [Why the probabilities sum to one](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=11) | 11–12 | Connect the probability formula to Pascal's triangle and the binomial theorem. |
-| [Histograms and the cereal decision rule](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=13) | 13–15 | Add the relevant bars and distinguish two errors calculated under different true prize rates. |
-| [Binomial expectation and variance — next-lesson preview](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=15) | 15–16 | Write the count as a sum of indicators and identify which calculation uses independence. |
+| [Independence, covariance, and variance of a sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=3) | 3–8 | Where independence is used, why covariance appears, and why zero covariance does not establish independence. |
+| [A single Bernoulli trial](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=8) | 8–9 | Code an outcome as zero or one, then derive its expectation and variance. |
+| [Binomial trials, counting, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=9) | 9–14 | Count success positions, assign probabilities to sequences, and sum the pmf to one. |
+| [The cereal decision rule](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=14) | 14–17 | Keep the rule fixed while changing the true prize rate. Wednesday resumes at part (b), page 16. |
+| [A binomial count as a Bernoulli sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=17) | 17–18 | Linearity gives the expectation; independence removes covariance terms from the variance. |
+| [Fair-coin counting and sampling with replacement](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=18) | 18–20 | Set p = 1/2 to get C(n,k)/2^n, then compare the counting assumptions. |
+| [Hypergeometric probabilities and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=20) | 20–24 | Distinguish population N, sample n, population successes K, and sample successes k. |
+| [Hypergeometric convergence and simulation](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=24) | 24–26 | Hold n fixed while the population grows. Compare exact probabilities and 100,000 simulated samples for each population. |
+| [Poisson: example, pmf, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=26) | 26–28 | Start with many rare opportunities; identify the expected count and check that the probabilities sum to one. |
+| [Poisson derivation, exposure, and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=28) | 28–32 | Keep np finite in the binomial limit, scale the observation window, and derive mean and variance. |
+| [Final insurance example and model comparison](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=32) | 32–33 | Infer the Poisson parameter from a probability ratio and select models from their assumptions. |
 
 ## Ideas to carry forward
 
-**Expectation is linear without independence.** For variance, first account for the covariance terms. Independence makes those terms zero; zero covariance alone does not prove independence.
+**Expectation is linear without independence.** Variance includes covariance terms. Independent Bernoulli trials make those terms zero; sampling without replacement introduces a finite-population correction.
 
-**A binomial count starts with a model.** We need a fixed number of trials, two outcomes per trial, a common success probability, and mutually independent trials. The coefficient counts possible success positions; the probability factors describe one specified sequence.
+**Choose the experiment before the formula.** Independent binary trials with a common success probability give a binomial count. A uniform sample without replacement from a fixed population gives a hypergeometric count. Many rare independent opportunities motivate Poisson.
 
-**A decision rule is evaluated under an assumed truth.** The cereal example compares false rejection at a 15% prize rate with a missed false claim at a 5% rate. These are different probabilities under different assumptions, not complementary events in one distribution.
+**Keep track of what stays fixed.** For the hypergeometric-to-binomial limit, the sample size stays fixed while the population grows. For the binomial-to-Poisson limit, the number of opportunities grows, the success probability shrinks, and their product approaches the desired expected count.
 
-## Check your understanding
-
-Before consulting the worked derivations, try to explain:
-
-- Why adding two independent copies of a random variable differs from doubling the same variable.
-- Why exactly two successes in five trials has ten possible arrangements.
-- How lowering the cereal rejection cutoff changes the two error probabilities.
+**Simulation illustrates the result.** The figures distinguish exact pmfs from simulated frequencies; the notes also give the mathematical convergence argument.
 
 [Return to all course notes and lectures](/teaching/)

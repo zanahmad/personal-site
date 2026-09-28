@@ -43,9 +43,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   **Tutorials and written review**
 
-  [**Independence, Bernoulli Trials, and the Binomial Distribution**](/tutorials/independence-bernoulli-binomial/)
+  [**Independence and Discrete Counting Models**](/tutorials/independence-bernoulli-binomial/)
 
-  September 28 lecture review: a reading guide and 16-page PDF with worked derivations, counting examples, and binomial histograms. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
+  September 28 review and September 30 read-ahead: a reading guide and 33-page PDF through hypergeometric and Poisson, with worked derivations and simulation figures. [Read or download the notes (PDF)](/files/independence-bernoulli-binomial-2026-09-28.pdf).
 
   [**Interactive practice quiz**](/practice/independence-bernoulli-binomial/) — 12 questions through the cereal-box example, with hints, worked explanations, and retries.
 
