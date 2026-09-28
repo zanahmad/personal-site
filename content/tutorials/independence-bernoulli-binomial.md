@@ -13,25 +13,31 @@ When can we add expectations, when can we add variances, and how do the sampling
 
 [**Read or download the complete notes (PDF, 35 pages)**](/files/independence-bernoulli-binomial-2026-09-28.pdf)
 
+[**Class & test review slides**](/lectures/probability-statistics/counting-models/classroom.html) · [**Detailed animated explanations**](/lectures/probability-statistics/counting-models/detailed.html)
+
+Start with a coin flip and build toward binomial, hypergeometric, and Poisson counts. The class version emphasizes the formulas and examples; the detailed version adds the derivations, Pascal’s triangle, and simulations. Switching versions takes you to the closest matching point.
+
 [**Try the interactive practice quiz — 12 questions with hints and explanations**](/practice/independence-bernoulli-binomial/)
 
-**Wednesday starts at [cereal example, part (b), page 16](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=16).** We will use the binomial theorem to check that binomial probabilities sum to one, set the success probability to one-half to connect the formula to counting, compare sampling with and without replacement, and introduce Poisson counts with a rain example. The combined notes include additional derivations and examples for review beyond what we will cover in class. The quiz reviews the earlier material through cereal.
+**Wednesday starts at [cereal example, part (b), page 16](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=16).** [Resume the class slides at the cereal decision rule](/lectures/probability-statistics/counting-models/classroom.html#cereal-rule). We will use the binomial theorem to check that binomial probabilities sum to one, set the success probability to one-half to connect the formula to counting, compare sampling with and without replacement, and introduce Poisson counts with a rain example. The combined notes include additional derivations and examples for review beyond what we will cover in class. The quiz reviews the earlier material through cereal.
 
 ## A guide to the notes
 
-| Topic | Pages | What to focus on |
+Select a topic for its PDF pages, or **Animate** for the matching detailed explanation.
+
+| Topic | Pages / animation | What to focus on |
 |---|---|---|
-| [Independence, covariance, and variance of a sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=3) | 3–8 | Where independence is used, why covariance appears, and why zero covariance does not establish independence. |
-| [A single Bernoulli trial](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=8) | 8–9 | Code an outcome as zero or one, then derive its expectation and variance. |
-| [Binomial trials, counting, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=9) | 9–14 | Count success positions, assign probabilities to sequences, and sum the pmf to one. |
-| [The cereal decision rule](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=14) | 14–17 | Keep the rule fixed while changing the true prize rate. Wednesday resumes at part (b), page 16. |
-| [A binomial count as a Bernoulli sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=17) | 17–18 | Linearity gives the expectation; independence removes covariance terms from the variance. |
-| [Fair-coin counting and sampling with replacement](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=18) | 18–20 | Set p = 1/2 to get C(n,k)/2^n, then compare the counting assumptions. |
-| [Hypergeometric probabilities and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=20) | 20–25 | Distinguish population N, sample n, population successes K, and sample successes k. See why each draw has success probability K/N and where dependence enters the variance. |
-| [Hypergeometric convergence and simulation](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=25) | 25–28 | Hold n fixed while the population grows. Compare exact probabilities and 100,000 simulated samples for each population. |
-| [Poisson: example, pmf, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=28) | 28–29 | Start with many rare opportunities; identify the expected count and check that the probabilities sum to one. |
-| [Poisson derivation, exposure, and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=29) | 29–34 | Keep np finite in the binomial limit, scale the observation window, and derive mean and variance. |
-| [Final insurance example and model comparison](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=34) | 34–35 | Infer the Poisson parameter from a probability ratio and select models from their assumptions. |
+| [Independence, covariance, and variance of a sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=3) | 3–8 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#independence-picture) | Where independence is used, why covariance appears, and why zero covariance does not establish independence. |
+| [A single Bernoulli trial](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=8) | 8–9 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#bernoulli-trial) | Code an outcome as zero or one, then derive its expectation and variance. |
+| [Binomial trials, counting, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=9) | 9–14 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#binomial-fixed-trials) | Count success positions, assign probabilities to sequences, and sum the pmf to one. |
+| [The cereal decision rule](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=14) | 14–17 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#cereal-boxes) | Keep the rule fixed while changing the true prize rate. Wednesday resumes at part (b), page 16. |
+| [A binomial count as a Bernoulli sum](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=17) | 17–18 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#binomial-bernoulli-sum) | Linearity gives the expectation; independence removes covariance terms from the variance. |
+| [Fair-coin counting and sampling with replacement](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=18) | 18–20 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#fair-sequence-probability) | Set p = 1/2 to get C(n,k)/2^n, then compare the counting assumptions. |
+| [Hypergeometric probabilities and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=20) | 20–25 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#skittles-population) | Distinguish population N, sample n, population successes K, and sample successes k. See why each draw has success probability K/N and where dependence enters the variance. |
+| [Hypergeometric convergence and simulation](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=25) | 25–28 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#hyperlimit-small) | Hold n fixed while the population grows. Compare exact probabilities and 100,000 simulated samples for each population. |
+| [Poisson: example, pmf, and normalization](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=28) | 28–29 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#poisson-lab-picture) | Start with many rare opportunities; identify the expected count and check that the probabilities sum to one. |
+| [Poisson derivation, exposure, and moments](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=29) | 29–34 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#poissonlimit-set-p) | Keep np finite in the binomial limit, scale the observation window, and derive mean and variance. |
+| [Final insurance example and model comparison](/files/independence-bernoulli-binomial-2026-09-28.pdf#page=34) | 34–35 · [Animate](/lectures/probability-statistics/counting-models/detailed.html#insurance-picture) | Infer the Poisson parameter from a probability ratio and select models from their assumptions. |
 
 ## Ideas to carry forward
 

@@ -85,6 +85,16 @@
           "url": "/files/independence-bernoulli-binomial-2026-09-28.pdf"
         },
         {
+          "label": "Class & test review slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/counting-models/classroom.html"
+        },
+        {
+          "label": "Detailed animated explanations",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/counting-models/detailed.html"
+        },
+        {
           "label": "Reading guide",
           "type": "guide",
           "url": "/tutorials/independence-bernoulli-binomial/"
