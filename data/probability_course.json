@@ -77,7 +77,6 @@
       "title": "Counting models",
       "description": "One Bernoulli trial leads to binomial, hypergeometric, and Poisson counts. Compare assumptions, probabilities, means, and variances.",
       "preview": "models",
-      "current": true,
       "links": [
         {
           "label": "PDF notes · 35 pages",
@@ -103,6 +102,22 @@
           "label": "Practice quiz",
           "type": "practice",
           "url": "/practice/independence-bernoulli-binomial/"
+        }
+      ]
+    },
+    {
+      "id": "chapter-6",
+      "date": "October 5",
+      "chapter": "Chapter 6",
+      "title": "Continuous random variables & the normal distribution",
+      "description": "Move from probability mass to density and area. Explore cumulative probability, uniform and normal distributions, standardization, and percentiles.",
+      "preview": "continuous",
+      "current": true,
+      "links": [
+        {
+          "label": "Click-through animated slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/chapter-6/"
         }
       ]
     }
@@ -131,6 +146,12 @@
       "description": "A short Bayes proof with a discussion of independence.",
       "url": "https://www.youtube.com/watch?v=U_85TaXbeIo",
       "topic": "Bayes & independence"
+    },
+    {
+      "title": "But what is the Central Limit Theorem?",
+      "description": "Further intuition for the normal distribution and the Central Limit Theorem. You do not need to know the binomial-to-normal approximation formulas.",
+      "url": "https://www.youtube.com/watch?v=zeJD6dqJ5lo",
+      "topic": "Normal distribution · further intuition"
     }
   ]
 }
