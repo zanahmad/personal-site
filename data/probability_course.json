@@ -106,6 +106,21 @@
       ]
     },
     {
+      "id": "chapters-1-to-5-review",
+      "date": "October 5",
+      "chapter": "Chapters 1–5",
+      "title": "Formula and concept review",
+      "description": "Connect data summaries, probability, conditioning, and discrete models with course notation, formulas, and click-controlled diagrams.",
+      "preview": "models",
+      "links": [
+        {
+          "label": "Animated review · 31 slides",
+          "type": "slides",
+          "url": "/lectures/probability-statistics/chapters-1-to-5-review/"
+        }
+      ]
+    },
+    {
       "id": "chapter-6",
       "date": "October 5",
       "chapter": "Chapter 6",
