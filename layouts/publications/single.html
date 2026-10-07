@@ -1,0 +1,6 @@
+{{ define "main" }}{{ partial "classical-style.html" . }}
+<main class="page-main"><div class="classical"><p class="backlink"><a href="/publications/">← All papers</a></p>
+{{ $id := .Params.publication_id }}{{ range where .Site.Data.publications "slug" $id }}
+<h1>{{ .title }}</h1><p class="authors">{{ delimit .authors ", " }}.</p><p>{{ .status }}</p>
+<p class="paper-links"><a href="{{ .paper }}">Paper</a>{{ if .pdf }}<a href="{{ .pdf }}">{{ .pdf_label }}</a>{{ end }}<a href="https://doi.org/{{ .doi }}">DOI: {{ .doi }}</a></p>{{ with .note }}<p>{{ . }}</p>{{ end }}
+{{ end }}</div></main>{{ end }}

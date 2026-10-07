@@ -1,0 +1,11 @@
+{{ $p := . }}
+<article class="paper" id="{{ .slug }}">
+<h3><a href="{{ .paper }}">{{ .title }}</a></h3>
+{{ if gt (len .authors) 12 }}
+<p class="authors">{{ delimit (first 4 .authors) ", " }}, et al.</p>
+<details><summary>All {{ len .authors }} authors</summary><p class="authors">{{ range $i, $name := .authors }}{{ if $i }}, {{ end }}{{ if eq $name "Zan Ahmad" }}<strong>{{ $name }}</strong>{{ else }}{{ $name }}{{ end }}{{ end }}.</p></details>
+{{ else }}<p class="authors">{{ range $i, $name := .authors }}{{ if $i }}, {{ end }}{{ if eq $name "Zan Ahmad" }}<strong>{{ $name }}</strong>{{ else }}{{ $name }}{{ end }}{{ end }}.</p>{{ end }}
+<p class="venue">{{ .status }}</p>
+<p class="paper-links"><a href="{{ .paper }}">{{ if eq .kind "abstract" }}Abstract{{ else }}Paper{{ end }}</a>{{ with .pdf }}<a href="{{ . }}">{{ $p.pdf_label }}</a>{{ end }}<a href="https://doi.org/{{ .doi }}">DOI: {{ .doi }}</a></p>
+{{ with .note }}<p class="paper-note">{{ . }}</p>{{ end }}
+</article>

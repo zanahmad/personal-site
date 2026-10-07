@@ -7,7 +7,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 #### Johns Hopkins University
 ##### Creator/Instructor:
-- [**EN.500.312 Advanced Topics in Computational Cardiology**](/files/Fall_2024_HEROIC_Syllabus.pdf) – Fall 2024  
+- [**EN.500.312 Advanced Topics in Computational Cardiology**](/teaching/heroic/) – Fall 2024
+
+  Selected project brief, finite-difference tutorial, and Python code. [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
     
 - [**EN.500.111 Mathematical Modeling and Computer Simulation**](/files/Fall_2024_HEART_Syllabus.pdf)  – Fall 2024  
  
@@ -19,7 +21,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   PDF notes, animated slides, and practice resources, organized in class order.
 
-- [**EN.553.285 Introduction to Scientific Programming in Python**](/files/Python_Syllabus.pdf) – Winter 2026, Winter 2025  
+- [**EN.553.285 Introduction to Scientific Programming in Python**](/teaching/scientific-python/) – Winter 2026, Winter 2025
+
+  Selected Winter 2026 notes on algorithmic thinking and SciPy, with runnable examples.
 
 - [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Summer 2025, Spring 2025, Fall 2024, Summer 2024, Summer 2023  
 
@@ -30,12 +34,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 ##### Teaching Assistant:
 - [**NEURL-UA 302 Computational Neuroscience: From Channels to Networks**](https://as.nyu.edu/departments/cns/UndergraduateProgram/Courses/Channels/ComputationalNeuroscienceFromChannelstoNetworksSampleSyllabus.html) – Spring 2021
 
-  Developed and demonstrated code for a multicompartmental neuron model with [3D visualizations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB) of action potential propagation:
+  Developed and demonstrated code for a multicompartmental neuron model with [3D visualizations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB) of action potential propagation.
 
-<div style="margin-top: 5px; margin-bottom: 15px; text-align: left;">
-  <img src="/images/simple-ap-prop2.gif" alt="Simple AP Propagation" 
-       style="max-width: 50%; height: auto; display: inline-block;">
-</div>
+
 
 
   
