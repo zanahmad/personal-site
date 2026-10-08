@@ -3,29 +3,23 @@ title: "Scientific Programming in Python"
 type: curated
 layout: sample
 url: /teaching/scientific-python/
-description: "Selected lessons from EN.553.285, Winter 2026."
+aliases:
+  - /teaching/samples/python-thinking/
+  - /teaching/samples/python-scipy/
+description: "Original lecture slides and course materials from EN.553.285, Winter 2026."
 ---
 
 **EN.553.285 Introduction to Scientific Programming in Python**<br>
 Johns Hopkins University · Winter 2026<br>
 Instructor: Zan Ahmad
 
-These selected lessons come from the January 7–16, 2026 course. They emphasize reasoning about code and connecting a mathematical problem to a numerical method. The course was also taught in Winter 2025; the samples here are specifically from the 2026 archive.
+Original course PDFs, preserved as prepared for the class.
 
-<h2>Thinking in Python</h2>
-
-Object references, mutability, lists, dictionaries, sets, and recurring algorithmic patterns. A compact companion to the January 8 lecture, with a worked frequency-counting example and careful time/space-complexity statements.
-
-[Read the notes](/teaching/samples/python-thinking/) · [PDF (2 pages)](/files/teaching-samples/python-thinking.pdf)
-
-<h2>From mathematical problems to SciPy solvers</h2>
-
-Root finding, initial-value problems, and cubic-spline interpolation. The January 15 lecture is condensed into three worked examples with convergence checks, an exact-solution comparison, and prompts for further experiments.
-
-[Read the notes](/teaching/samples/python-scipy/) · [PDF (3 pages)](/files/teaching-samples/python-scipy.pdf) · [Python code](/files/teaching-samples/python-scipy.py)
-
-<h2>Using the examples</h2>
-
-The conceptual lesson assumes basic Python syntax. The SciPy examples use Python 3, NumPy, and SciPy. Install the numerical libraries in your usual Python environment with `python -m pip install numpy scipy`. The downloadable file runs all three examples and prints diagnostics.
-
-The samples were edited in October 2026. Course reference: [Robert Johansson’s Lectures on scientific computing with Python](https://github.com/jrjohansson/scientific-python-lectures), available under CC BY 3.0.
+- [Winter 2026 syllabus (PDF)](/files/Python_Syllabus.pdf)
+- [Lecture 0: Getting Started + Basics of Programming in Python (PDF)](/files/scientific-python/Lecture_0__Intro_to_Python.pdf)
+- [Lecture 1 (PDF)](/files/scientific-python/Lecture_1__Intro_to_Python.pdf)
+- [Lecture 3 (PDF)](/files/scientific-python/Lecture_3__Intro_to_Python.pdf)
+- [Lecture 4 (PDF)](/files/scientific-python/Lecture_4__Intro_to_Python.pdf)
+- [Lecture 5 (PDF)](/files/scientific-python/Lecture_5__Intro_to_Python.pdf)
+- [Step 0: Familiarity with organizational tools for scientific computing (PDF)](/files/scientific-python/Python_Setup.pdf)
+- [EN.553.285 Python Setup Guide: Miniconda + Python + Jupyter (PDF)](/files/scientific-python/Instructions_for_Downloading_Python.pdf)

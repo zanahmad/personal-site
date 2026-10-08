@@ -9,7 +9,7 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 ##### Creator/Instructor:
 - [**EN.500.312 Advanced Topics in Computational Cardiology**](/teaching/heroic/) – Fall 2024
 
-  Selected project brief, finite-difference tutorial, and Python code. [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
+  Original course projects and notes (PDF). [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
     
 - [**EN.500.111 Mathematical Modeling and Computer Simulation**](/files/Fall_2024_HEART_Syllabus.pdf)  – Fall 2024  
  
@@ -23,7 +23,7 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 - [**EN.553.285 Introduction to Scientific Programming in Python**](/teaching/scientific-python/) – Winter 2026, Winter 2025
 
-  Selected Winter 2026 notes on algorithmic thinking and SciPy, with runnable examples.
+  Original Winter 2026 lecture slides and course materials (PDF).
 
 - [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Summer 2025, Spring 2025, Fall 2024, Summer 2024, Summer 2023  
 
