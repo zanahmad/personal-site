@@ -1,5 +1,5 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}
-  {{- if or (eq .Level 2) (eq .Level 3) -}}
+  {{- if and (ne .Page.Section "research") (or (eq .Level 2) (eq .Level 3)) -}}
   <a href="#{{ .Anchor | safeURL }}" aria-label="Link to {{ .PlainText }}">
     <svg class="anchor-symbol" aria-hidden="true" focusable="false" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
