@@ -1,0 +1,5 @@
+{{ $src := .Get "src" }}{{ $poster := .Get "poster" }}
+<figure class="research-figure{{ if $poster }} has-animation{{ end }}">
+  <div class="figure-media"><img src="{{ default $src $poster | relURL }}"{{ if $poster }} data-animation="{{ $src | relURL }}" data-still="{{ $poster | relURL }}"{{ end }} width="{{ .Get "width" }}" height="{{ .Get "height" }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async"></div>
+  <figcaption>{{ .Get "caption" }}{{ if $poster }}<div class="animation-controls"><button class="animation-toggle" type="button" aria-pressed="false" hidden>Play animation</button><a href="{{ $src | relURL }}">Open GIF</a></div>{{ end }}</figcaption>
+</figure>

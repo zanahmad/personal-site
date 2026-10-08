@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="page-main pa4" id="main-content" tabindex="-1">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb2 fw4">{{ .Title | safeHTML }}</h1>
+        {{ with .Params.buttons }}
+          <div class="mt3 flex items-center flex-wrap">
+            {{ range . }}
+              <a href="{{ .url }}" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank" rel="noopener">
+                <i class="{{ .icon_pack }} fa-{{ .icon }} mr2" aria-hidden="true"></i>{{ .name }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </header>
+      <section class="post-body pt3 pb4">{{ .Content }}</section>
+    </article>
+  </section>
+</main>
+{{ end }}

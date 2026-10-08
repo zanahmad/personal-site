@@ -9,4 +9,4 @@ description: ""
 
 ---
 
-<iframe src="/files/CV.pdf" width="100%" height="600px" style="border: none;" loading="lazy"></iframe>
+<iframe title="Zan Ahmad’s curriculum vitae" src="/files/CV.pdf" width="100%" height="600px" style="border: none;" loading="lazy"></iframe>

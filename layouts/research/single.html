@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="research-article">
+  <header class="research-article-header">
+    <a class="back-link" href="{{ "/research/" | relURL }}">← Research</a>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="research-deck">{{ . }}</p>{{ end }}
+  </header>
+  <div class="research-article-grid">
+    <aside class="research-contents" aria-label="On this page"><p>On this page</p>{{ .TableOfContents }}{{ with .Params.papers }}<a href="#related-papers">Related papers</a>{{ end }}</aside>
+    <div class="research-prose">{{ .Content }}
+      {{ with .Params.papers }}
+      <section class="related-papers" id="related-papers" aria-labelledby="related-papers-title">
+        <h2 id="related-papers-title">Related papers</h2>
+        {{ range $slug := . }}{{ range where $.Site.Data.publications "slug" $slug }}
+        <article class="paper-reference">
+          <h3><a href="{{ .paper }}">{{ .title }}</a></h3>
+          <p>{{ .status }}</p>
+          {{ with .note }}<p class="paper-note">{{ . }}</p>{{ end }}
+          <div class="paper-links"><a href="{{ .paper }}">Paper</a>{{ if .pdf }}<a href="{{ .pdf }}">{{ default "PDF" .pdf_label }}</a>{{ end }}</div>
+        </article>
+        {{ end }}{{ end }}
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

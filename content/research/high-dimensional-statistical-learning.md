@@ -1,63 +1,55 @@
 ---
-title: "High Dimensional Statistics"
-description: ""
+title: "High-Dimensional Learning"
+description: "Studying low-dimensional coordinates, geometric constraints in autoencoders, and reusable random features for image classification."
 layout: single
 draft: false
-buttons:
-- icon: image
-  icon_pack: fas
-  name: IDIES '23
-  url: /files/RandomProjPoster.pdf
+math: true
+papers: ["thinner-latent-spaces"]
 ---
 
-<!-- Main content with larger font -->
-<div style="text-align: justify; font-size: 1.2rem;">
-  High-dimensional statistical learning refers to analyzing data where the number of features or dimensions is very large, often exceeding the number of observations. This approach leverages the fact that despite their high dimensionality, many real-world datasets exhibit low intrinsic dimensionality. High-dimensional learning methods aim to uncover underlying geometric structures—such as manifolds—embedded in the high-dimensional space, allowing data to be meaningfully represented in lower dimensions.
+An image or a simulation snapshot can contain thousands of numbers without having thousands of independent degrees of freedom. I’m interested in finding useful representations of that data, and in understanding what the geometry tells us about the coordinates we learn.
 
-  Mathematically, manifold learning assumes that high-dimensional data points lie on or near a lower-dimensional manifold $\mathcal{M}$ embedded in a high-dimensional space $\mathbb{R}^D$. If the intrinsic dimension of the manifold is $d \ll D$, the data can be mapped from $\mathbb{R}^D$ to a lower-dimensional space $\mathbb{R}^d$ without losing significant structure or meaning. The mapping can be expressed as:
+## Finding the dimension while learning coordinates
 
-  $$
-  f: \mathbb{R}^D \rightarrow \mathbb{R}^d, \quad \text{where } d = \text{dim}(\mathcal{M}).
-  $$
+In **Thinner Latent Spaces**, we study conformal autoencoders: networks that reconstruct their input while encouraging different latent coordinates to have orthogonal gradients.
 
-  One of the key goals of manifold learning techniques is to preserve local geometric properties, such as distances or angles, during this mapping. Given two data points $x_i, x_j \in \mathbb{R}^D$, the geodesic distance between them on the manifold, $d_{\mathcal{M}}(x_i, x_j)$, captures the shortest path along the manifold. A common approximation in manifold learning is to preserve these geodesic distances in the low-dimensional representation:
+An encoder {{< inline-math >}}e_\theta{{< /inline-math >}} maps an observation {{< inline-math >}}x\in\mathbb{R}^D{{< /inline-math >}} to a latent vector {{< inline-math >}}z\in\mathbb{R}^m{{< /inline-math >}}. A decoder {{< inline-math >}}d_\psi{{< /inline-math >}} maps it back:
 
-  $$
-  d_{\mathcal{M}}(x_i, x_j) \approx \lVert f(x_i) - f(x_j) \rVert.
-  $$
+{{< equation >}}
+z=e_\theta(x),
+\qquad \widehat{x}=d_\psi(e_\theta(x)).
+{{< /equation >}}
 
-  Techniques such as **Principal Component Analysis (PCA)**, **Isomap**, **Locally Linear Embedding (LLE)**, and **t-SNE** seek to discover these lower-dimensional structures by projecting the data onto meaningful manifolds. These methods are crucial in tasks like clustering, classification, and visualization, where meaningful patterns can only be observed after reducing the data to its intrinsic dimensions.
+The parameters {{< inline-math >}}\theta{{< /inline-math >}} and {{< inline-math >}}\psi{{< /inline-math >}} are learned. The latent width {{< inline-math >}}m{{< /inline-math >}} is chosen before training; the question is how many of those coordinates the representation actually needs.
 
-  The reduction to intrinsic dimensions also helps overcome the **curse of dimensionality**, which refers to the challenges posed by sparse data distributions in high-dimensional spaces. By learning the low-dimensional manifold $\mathcal{M}$ that underlies the data, high-dimensional statistical learning techniques enable models to generalize better and extract meaningful insights.
+The training objective combines reconstruction with a geometric penalty:
 
-  In summary, high-dimensional statistical learning leverages the geometry of data manifolds to perform dimensionality reduction, revealing latent structures and facilitating tasks like clustering, pattern recognition, and visualization:
+{{< equation >}}
+\begin{aligned}
+\mathcal{L}_{\mathrm{rec}}
+&=\frac{1}{N}\sum_{i=1}^{N}\|x_i-\widehat{x}_i\|^2,\\
+\mathcal{L}_{\mathrm{orth}}
+&=\frac{1}{N}\sum_{i=1}^{N}\sum_{j<k}
+\langle\nabla e_j(x_i),\nabla e_k(x_i)\rangle^2,\\
+\mathcal{L}&=\mathcal{L}_{\mathrm{rec}}+\lambda\mathcal{L}_{\mathrm{orth}}.
+\end{aligned}
+{{< /equation >}}
 
-  $$
-  \{ x_1, x_2, \ldots, x_n \} \subset \mathbb{R}^D \quad \xrightarrow{f} \quad \{ y_1, y_2, \ldots, y_n \} \subset \mathbb{R}^d,
-  $$
+Here {{< inline-math >}}N{{< /inline-math >}} is the number of observations, {{< inline-math >}}e_j{{< /inline-math >}} is the encoder’s {{< inline-math >}}j{{< /inline-math >}}th coordinate, and each gradient is taken with respect to the input. The weight {{< inline-math >}}\lambda{{< /inline-math >}} balances reconstruction and orthogonality.
 
-  where $d \ll D$, and the goal is to preserve the manifold's structure as much as possible in the low-dimensional space.
-</div>
+The geometric idea is that a {{< inline-math >}}d{{< /inline-math >}}-dimensional tangent space can contain at most {{< inline-math >}}d{{< /inline-math >}} independent, mutually orthogonal directions. The paper connects this observation to dimension inference and to coordinates invariant under local group actions. It also distinguishes the ideal tangent-space conditions from the ambient-gradient penalty used in practice: the latter is a useful regularizer, but does not guarantee the correct dimension for every dataset.
 
-<!-- Embed PDF Poster -->
-<figure style="margin-top: 30px; text-align: center;">
-  <iframe 
-    src="/files/RandomProjPoster.pdf" 
-    width="100%" 
-    height="555px" 
-    style="border: none;" 
-    loading="lazy">
-  </iframe>
-  <figcaption style="font-size: 1rem; color: gray; margin-top: 10px;">
-    My work on random features in machine learning earned first place in the Institute for Data Intensive Engineering and Science (IDIES) Poster Contest in 2023.
-  </figcaption>
-</figure>
+## Random features for image classification
 
-<!-- Back Button at the Bottom with Hover Effect -->
-<div style="text-align: left; margin-top: 30px;">
-  <a href="javascript:history.back()" 
-     class="link dim ba br2 ph3 pv2 mb2 dib gray"
-     style="transition: background-color 0.3s ease, color 0.3s ease;">
-    ← Back
-  </a>
-</div>
+With **James Schmidt**, I also explored a simpler representation: sample image patches, keep them fixed as convolutional filters, and learn only the downstream weights. The same feature vector can then be reused for different classification tasks.
+
+A compact way to write the construction is
+
+{{< equation >}}
+\phi_k(I)=\operatorname{AvgPool}\!\left(\operatorname{ReLU}(I*P_k)\right),
+\qquad f_s(I)=\sum_{k=1}^{K}\beta_{s,k}\phi_k(I).
+{{< /equation >}}
+
+{{< inline-math >}}I{{< /inline-math >}} is an image, {{< inline-math >}}P_k{{< /inline-math >}} is a sampled patch, and {{< inline-math >}}*{{< /inline-math >}} denotes convolution. The feature {{< inline-math >}}\phi_k{{< /inline-math >}} pools the activated response to that patch. Each task {{< inline-math >}}s{{< /inline-math >}} has its own fitted weights {{< inline-math >}}\beta_{s,k}{{< /inline-math >}}, while the patches remain fixed. Our experiments compared this approach with a shallow CNN on MNIST and CIFAR-10.
+
+[Read the original poster: Random Convolutional Features and Patch-Based Learning for Multitask Image Classification (PDF)](/files/RandomProjPoster.pdf).

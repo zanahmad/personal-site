@@ -1,73 +1,66 @@
 ---
 title: "Neural Operators for PDEs"
-description: ""
+description: "Learning PDE dynamics across changing geometries using graph Fourier representations and maps to a common reference domain."
 layout: single
 draft: false
-buttons:
-- icon: book
-  icon_pack: fas
-  name: Graph Fourier
-  url: https://arxiv.org/abs/2410.04655
-- icon: book
-  icon_pack: fas
-  name: Diffeomorphic
-  url: https://arxiv.org/pdf/2411.18014
+math: true
+papers: ["Gfunk", "dimon", "ultrasound-deeponet"]
 ---
 
-<!-- Main content with larger font -->
-<div style="text-align: justify; font-size: 1.2rem;">
-  Mathematically, a neural operator $\mathcal{N}^\theta$ is defined as a mapping from an input domain function space $\mathcal{A}(\Omega_{\alpha};\mathbb{R}^{d_a})$ to an output target function space $\mathcal{U}(\Omega_{\alpha};\mathbb{R}^{d_u})$, represented as:
+Solving a partial differential equation once is one problem; solving it for many shapes, parameters, and initial conditions is another. I’m interested in what helps a learned model carry useful information from one geometry to the next.
 
-  $$\mathcal{N}^{\theta}: \mathcal{A}(\Omega_{\alpha};\mathbb{R}^{d_a}) \rightarrow \mathcal{U}(\Omega_{\alpha};\mathbb{R}^{d_u})$$
+## Learning a family of solutions
 
-  where $\theta \in \Theta$ denotes the neural operator's parameters, $\Omega_{\alpha} \subset \mathbb{R}^d$ (or a $d$-dimensional manifold $\mathcal{M}^d$) represents the spatial domain on which the functions are defined and $\alpha \in \mathscr{A}$ denotes the shape of the domain. The dimensions $d_a$ and $d_u$ denote the respective sizes of the input and output function spaces, often subspaces of Sobolev or Banach spaces.
+A neural operator approximates a map between functions. For a domain {{< inline-math >}}\Omega_\alpha{{< /inline-math >}}, we can write
 
-  Neural operators can be applied to various problems such as those described by continuous functions $C(\Omega;\mathbb{R}^{d_a})$ or Sobolev spaces $H^s(\Omega;\mathbb{R}^{d_a})$ for some $s \ge 0$. The neural operator $\mathcal{N}^{\theta}$ is an approximation of a true target operator $\mathcal{N}$, e.g., the solution operator of a partial differential equation (PDE) obtained by training on input-output function pairs $(a_i, u_i)_{i=1}^{m}$, where $a_i \in \mathcal{A}$ and $u_i = \mathcal{N}(a_i) \in \mathcal{U}$. These pairs could be simulation data representing a known, high-fidelity numerical approximation of the PDE.
+{{< equation >}}
+\mathcal{N}_\theta:\mathcal{A}(\Omega_\alpha)\longrightarrow\mathcal{U}(\Omega_\alpha),
+\qquad a\longmapsto u.
+{{< /equation >}}
 
-  My research on this topic aims at developing robust computational and mathematical frameworks for operator/PDE learning on arbitrary domains and enforcing known symmetries of the problem to enhance the data efficiency of these ideas.
-</div>
+Here {{< inline-math >}}a{{< /inline-math >}} collects the input fields, {{< inline-math >}}u{{< /inline-math >}} is the solution field, {{< inline-math >}}\alpha{{< /inline-math >}} specifies the domain, and {{< inline-math >}}\theta{{< /inline-math >}} contains learned parameters. The spaces {{< inline-math >}}\mathcal{A}{{< /inline-math >}} and {{< inline-math >}}\mathcal{U}{{< /inline-math >}} describe admissible inputs and outputs. Training pairs come from numerical simulations. The challenge is choosing a representation that makes the relationships between those pairs easier to learn.
 
-<!-- First Image/GIF with caption -->
-<div style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
-  <img src="/images/rf_heat_3_animated.gif" alt="Visualization of Neural Operators" 
-       style="width: 450px; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 1: Neural operator prediction of solution to the anisotropic 2D heat equation compared with numerical solution.
-  </p>
-</div>
+## Graph Fourier neural kernels
 
-<div style="text-align: justify; font-size: 1.2rem;">
-  These data-driven methods in scientific machine learning aim to avoid the computationally expensive numerical integration methods needed for large-scale simulations of PDE systems. This is especially beneficial for applications like domain optimization and precision medicine, where multiple PDEs need to be solved for varying parameters or domains, requiring significant computational resources. Neural operators learn mappings between high-dimensional (infinite-dimensional) function spaces, allowing them to generalize across a family of PDEs without retraining for varying parameters or conditions.
-</div>
+In **G-FuNK**, we study dynamics with a diffusive leading term:
 
-<!-- Middle Image/GIF with caption -->
-<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-  <img src="/images/random_rect_animation_3.gif" alt="Neuronal Simulation Example" 
-       style="width: 600px; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 2: Neural operator vs. numerical solver for reaction-diffusion on anisotropic 2D rectangle.
-  </p>
-</div>
+{{< equation >}}
+\partial_t u
+=\nabla\cdot(\mathbf{K}\nabla u)
++S(u,\mathbf{x},\nabla u).
+{{< /equation >}}
 
-<div style="text-align: justify; font-size: 1.2rem;">
-  In cardiac electrophysiology, for example, $\mathcal{A}$ might represent the space of initial electrical activation patterns across varying cardiac tissue geometries, whereas $\mathcal{U}$ could correspond to the resultant electrical potential fields over time. Below is an example of a prediction of cardiac electrophysiology dynamics on an unseen left atrial geometry and anisotropic fiber field:
-</div>
+The field {{< inline-math >}}u{{< /inline-math >}} evolves over time, {{< inline-math >}}\mathbf{K}{{< /inline-math >}} describes diffusion—including preferred directions—and {{< inline-math >}}S{{< /inline-math >}} collects the remaining reaction or source terms. A weighted graph represents the spatial domain and its diffusion properties. Its Laplacian supplies a Fourier basis adapted to that particular problem:
 
-<!-- Second Image/GIF with caption -->
-<div style="text-align: center; margin-top: 50px;">
-  <img src="/images/septal_single_atria_animation2.gif" alt="Cardiac Electrophysiology Example" 
-       style="width: 500px; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 3: Cardiac Electrophysiology Simulation using Neural Operators (left: ground truth, right: prediction).
-  </p>
-</div>
+{{< equation >}}
+L=D_g-W=\Psi\Lambda\Psi^{\mathsf T},
+\qquad \widehat a=\Psi^{\mathsf T}a.
+{{< /equation >}}
 
+{{< inline-math >}}W{{< /inline-math >}} is the matrix of graph weights, {{< inline-math >}}D_g{{< /inline-math >}} contains their row sums, and the columns of {{< inline-math >}}\Psi{{< /inline-math >}} are orthonormal eigenvectors. The diagonal matrix {{< inline-math >}}\Lambda{{< /inline-math >}} holds the eigenvalues. Multiplication by {{< inline-math >}}\Psi^{\mathsf T}{{< /inline-math >}} expresses a field in these graph Fourier coordinates.
 
-<!-- Back Button at the Bottom with Hover Effect -->
-<div style="text-align: left; margin-top: 30px;">
-  <a href="javascript:history.back()" 
-     class="link dim ba br2 ph3 pv2 mb2 dib gray"
-     style="transition: background-color 0.3s ease, color 0.3s ease;">
-    ← Back
-  </a>
-</div>
+The network learns an approximation to the time derivative, which an ODE solver then integrates. We tested this approach on heat flow, reaction–diffusion, and cardiac electrophysiology, including test geometries and fiber fields absent from training.
+
+{{< research-figure src="/images/rf_heat_3_animated.gif" poster="/images/research-stills/rf_heat_3_animated.png" width="757" height="491" alt="Comparison of a numerical heat-equation solution and a neural-operator prediction over time" caption="Anisotropic heat flow: numerical solution and neural-operator prediction." >}}
+
+{{< research-figure src="/images/random_rect_animation_3.gif" poster="/images/research-stills/random_rect_animation_3.png" width="942" height="489" alt="Reaction–diffusion dynamics on a rectangular domain, comparing a numerical solver with the learned model" caption="Reaction–diffusion on a rectangular domain with anisotropic diffusion." >}}
+
+{{< research-figure src="/images/septal_single_atria_animation2.gif" poster="/images/research-stills/septal_single_atria_animation2.png" width="2067" height="993" alt="Electrical propagation across a left atrium, with the numerical solution on the left and prediction on the right" caption="Cardiac electrophysiology on a test atrial geometry and fiber field: numerical solution at left, prediction at right." >}}
+
+## Learning on a reference domain
+
+Another approach is to map different domains into a common coordinate system. Let {{< inline-math >}}\varphi_\alpha:\Omega_0\to\Omega_\alpha{{< /inline-math >}} be a smooth invertible map from a reference domain to a target domain. For a scalar input field, the construction is
+
+{{< equation >}}
+u^\alpha\approx
+\mathcal{F}_\theta\!\left(\alpha,a^\alpha\circ\varphi_\alpha\right)
+\circ\varphi_\alpha^{-1}.
+{{< /equation >}}
+
+The input {{< inline-math >}}a^\alpha{{< /inline-math >}} is first expressed on {{< inline-math >}}\Omega_0{{< /inline-math >}}. The latent operator {{< inline-math >}}\mathcal{F}_\theta{{< /inline-math >}} predicts a solution there, and the inverse map returns it to {{< inline-math >}}\Omega_\alpha{{< /inline-math >}}.
+
+The choice of map matters: two maps can align the same shapes while producing very different solution fields in the reference coordinates. Our diffeomorphic-operator study explores this with a two-dimensional Laplace problem, comparing maps that preserve different amounts of the equation’s structure.
+
+## A related application: focused ultrasound
+
+In collaborative work on focused ultrasound, we used a convolutional DeepONet to approximate pressure fields in heterogeneous spinal-cord anatomy. This is another setting where evaluating many simulated configurations motivates a learned surrogate. The linked preprint describes the model and its numerical evaluation.

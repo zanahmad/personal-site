@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="research-intro">
+  <p class="eyebrow">Models, geometry & a little trial and error</p>
+  <h1>{{ .Title }}</h1>
+  <div class="intro-copy">{{ .Content }}</div>
+  <nav class="topic-jumps" aria-label="Research themes">{{ range .Params.groups }}<a href="#{{ .id }}">{{ .title }}</a>{{ end }}</nav>
+</header>
+{{ range .Params.groups }}
+<section class="research-group" id="{{ .id }}" aria-labelledby="heading-{{ .id }}">
+  <header class="group-heading"><h2 id="heading-{{ .id }}">{{ .title }}</h2><p>{{ .description }}</p></header>
+  <div class="topic-grid">
+  {{ range .topics }}
+    {{ $page := $.GetPage .slug }}
+    <article class="topic-card">
+      <a class="topic-image-link" href="{{ $page.RelPermalink }}" tabindex="-1" aria-label="{{ .title }}"><img src="{{ .image | relURL }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}"></a>
+      <div class="topic-card-copy"><h3><a href="{{ $page.RelPermalink }}">{{ .title }}</a></h3><p>{{ .summary }}</p><span class="topic-detail">{{ .detail }}</span></div>
+    </article>
+  {{ end }}
+  </div>
+</section>
+{{ end }}
+<p class="research-outro">The <a href="{{ "/publications/" | relURL }}">publication list</a> has the full references. These pages take the longer route: what the models do, some of the math, and a few things moving around.</p>
+{{ end }}

@@ -34,7 +34,7 @@ enableEmoji = true
 [params]
   orgName = "RStudio"
   orgLocal = "Anywhere"
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  description = "Zan Ahmad — mathematical modeling, scientific machine learning, research, and teaching."
   favicon = "/img/orange.ico"
   logo = "/img/orange.png"
   mainSections = ["blog", "project", "talk"]
@@ -82,7 +82,7 @@ enableEmoji = true
 
   # Configuration of math rendering
   [params.math]
-    renderer = "mathjax" # one of "mathjax" / "katex" 
+    renderer = "katex" # pinned local renderer; see layouts/partials/math.html
 
   # Social icons may appear on homepage and in site header or footer
   # Configure show/hide above - add as many as you like below

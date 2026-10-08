@@ -1,91 +1,56 @@
 ---
-title: "Cardiovascular Modeling"
-description: ""
+title: "Flow and electricity in the heart"
+description: "Connecting cardiac anatomy and motion with blood flow, electrical propagation, and clinical observations."
 layout: single
-draft: false
-buttons:
-- icon: book
-  icon_pack: fas
-  name: Nature Scientific Reports
-  url: https://www.nature.com/articles/s41598-024-59997-2
-- icon: image
-  icon_pack: fas
-  name: HRS '23
-  url: /files/HRS23.pdf
-  image: /path/to/poster_image.png
+math: true
+papers: ["scirep", "predicting-the-when", "abstract-stroke-flow"]
 ---
 
-<!-- Main content with larger font -->
+The heart is a moving domain, an electrical system, and a pump. I work on models that connect these pieces, using anatomical and functional measurements to build simulations for individual hearts.
 
-   
+## Blood flow in a moving atrium
 
-<div style="text-align: justify; font-size: 1.2rem;">
-   Cardiovascular modeling is the use of mathematical models and computer simulations to replicate the complex interactions of blood flow, heart function, and electrical signaling in the cardiovascular system. My work focuses on developing computer models of the heart’s electrical activity and computational fluid dynamics (CFD) models of the heart to study blood flow patterns. 
+In our 2024 study, we combined cardiac MRI measurements with moving-wall simulations of left atrial blood flow. We compared flow and functional measurements in eight patients: four with a history of stroke and four controls. The aim was to explore candidate markers and how they relate to one another; this small study does not establish a clinical prediction rule.
 
-   <div style="text-align: center; margin-top: 40px;">
-  <img src="/images/velocity-volume-rendering.gif" alt="CFD" 
-       style="width: 600; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 1: Cardiac fluid dynamics models of blood flow on patient-specific moving left atrial geometries.
-  </p>
-</div>
-   By integrating these models with patient-specific medical images, we can analyze the unique physiological conditions of individuals, predict disease risks, and optimize treatments. This personalized approach helps improve diagnosis and management of conditions such as arrhythmias, heart failure, and stroke, guiding interventions like stent placement or ablation therapy more effectively.
-<!-- Second Image/GIF with caption -->
-<div style="text-align: center; margin-top: 50px;">
-  <img src="/images/ep-mult.gif" alt="Cardiac Electrophysiology Example" 
-       style="width: 650px; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 2: Cardiac electrophysiology (EP) simulations on patient specific biatrial geometries.
-  </p>
-</div>
+{{< research-figure src="/images/velocity-volume-rendering.gif" poster="/images/research-stills/velocity-volume-rendering.png" width="1159" height="257" alt="Simulated blood velocity over a cardiac cycle in patient-specific left atrial geometries" caption="Blood flow in moving left atrial geometries reconstructed from imaging." >}}
 
-CFD simulations involve solving the **Navier-Stokes equations** using finite element methods, such as the **Arbitrary Lagrangian-Eulerian (ALE) method** to handle moving boundaries (Figure 1). The Navier-Stokes equations, governing the fluid dynamics, are given by:
+A useful mathematical starting point is incompressible flow on a moving domain. In an arbitrary Lagrangian–Eulerian description,
 
-$$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\nabla p + \nu \nabla^2 \mathbf{u} + \mathbf{f}$$ $$\nabla \cdot \mathbf{u} = 0$$
+{{< equation >}}
+\begin{aligned}
+\rho\left(\left.\partial_t\mathbf u\right|_\xi
+ +((\mathbf u-\mathbf w)\cdot\nabla)\mathbf u\right)
+ &= -\nabla p+\mu\Delta\mathbf u,\\
+\nabla\cdot\mathbf u&=0.
+\end{aligned}
+{{< /equation >}}
 
-where $\mathbf{u}$ is the velocity field, $p$ is the pressure, $\nu$ is the kinematic viscosity, and $\mathbf{f}$ represents body forces (e.g., gravity). 
+Here {{< inline-math >}}\mathbf u{{< /inline-math >}} is blood velocity, {{< inline-math >}}\mathbf w{{< /inline-math >}} is mesh velocity, {{< inline-math >}}p{{< /inline-math >}} is pressure, {{< inline-math >}}\rho{{< /inline-math >}} is density, and {{< inline-math >}}\mu{{< /inline-math >}} is dynamic viscosity. The time derivative holds the reference coordinate {{< inline-math >}}\xi{{< /inline-math >}} fixed. The relative velocity {{< inline-math >}}\mathbf u-\mathbf w{{< /inline-math >}} accounts for the moving computational mesh; wall motion enters through the domain and boundary conditions.
 
-The **ALE formulation** introduces a mapping from a reference domain $\Omega_0$ to a time-dependent domain $\Omega(t)$. This mapping can be described by:
+The simulations let us examine quantities such as low-velocity regions and blood residence alongside measured atrial function. Their interpretation depends on the imaging, boundary conditions, and assumptions in the flow model.
 
-$$\mathbf{x} = \mathbf{x}(\boldsymbol{\xi}, t)$$
+## Electrical propagation
 
-where $ \boldsymbol{\xi} $ are the coordinates in the reference domain $\Omega_0$ and $\mathbf{x}$ are the corresponding coordinates in the physical domain $\Omega(t)$. The mesh velocity $\mathbf{w}$ is defined as:
+Cardiac electrical activity brings another set of dynamics to the same complicated anatomy. A schematic monodomain model couples spatial propagation to local cellular states:
 
-$$\mathbf{w} = \frac{\partial \mathbf{x}}{\partial t}$$
+{{< equation >}}
+\begin{aligned}
+C_m\partial_t V&=\nabla\cdot(\mathbf D\nabla V)
+-I_{\mathrm{ion}}(V,\mathbf z)+I_{\mathrm{stim}},\\
+\partial_t\mathbf z&=F(V,\mathbf z).
+\end{aligned}
+{{< /equation >}}
 
-and the velocity field in the ALE formulation becomes:
+{{< inline-math >}}V{{< /inline-math >}} is transmembrane voltage, {{< inline-math >}}\mathbf z{{< /inline-math >}} contains gating and other cellular variables, and {{< inline-math >}}C_m{{< /inline-math >}} is membrane capacitance. The effective conductivity tensor {{< inline-math >}}\mathbf D{{< /inline-math >}} accounts for preferred propagation directions, with geometric factors absorbed into its definition here. Outward ionic current {{< inline-math >}}I_{\mathrm{ion}}{{< /inline-math >}} is positive in this convention; {{< inline-math >}}I_{\mathrm{stim}}{{< /inline-math >}} supplies an applied stimulus.
 
-$$\frac{d \mathbf{u}}{dt} = \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} - \mathbf{w}) \cdot \nabla \mathbf{u}$$
+{{< research-figure src="/images/ep-mult.gif" poster="/images/research-stills/ep-mult.png" width="600" height="300" alt="Electrical wave propagation in several biatrial simulation geometries" caption="Examples of simulated electrical propagation in biatrial geometries." >}}
 
-This formulation ensures that the mesh deforms smoothly with the boundary motion, maintaining numerical stability in the simulation.
+I have also explored lattice Boltzmann methods for these propagation problems. The animation below shows a biatrial simulation. This numerical work connects naturally to the [neural-operator projects](/research/neural-operators-for-pdes/), where we learn approximate dynamics from simulation data.
 
----
+{{< research-figure src="/images/heartep2.gif" poster="/images/research-stills/heartep2.png" width="240" height="168" alt="A lattice Boltzmann simulation of electrical propagation across both atria" caption="Biatrial electrical propagation using a lattice Boltzmann method." >}}
 
-For cardiac electrophysiology (EP) simulations, the **monodomain anisotropic reaction-diffusion equation** is solved either using finite-element method (Figure 2) or the **Lattice Boltzmann Method (LBM)** (Figure 3). The monodomain equation is:
+## From imaging to time-to-recurrence
 
-$$\frac{\partial V}{\partial t} = \nabla \cdot (\mathbf{D} \nabla V) + I_{\text{ion}}(V, w)$$
+A related collaborative project asks when atrial fibrillation recurs after ablation. *Predicting the When* combines biatrial imaging, clinical covariates, and procedural characteristics in a multimodal survival-analysis model. The linked May 2026 manuscript is a medRxiv preprint and has not been peer reviewed.
 
-$$\frac{dw}{dt} = f(V, w)$$
-
-where $ V $ is the transmembrane potential, $\mathbf{D}$ is the anisotropic diffusion tensor, $I_{\text{ion}}$ represents the ionic currents, and $w$ denotes the state variables for ion channels.
-
-The **LBM** discretizes these equations by evolving particle distribution functions $f_i(\mathbf{x}, t)$ along characteristic directions:
-
-$$f_i(\mathbf{x} + \mathbf{c}_i \Delta t, t + \Delta t) - f_i(\mathbf{x}, t) = -\frac{1}{\tau} \left( f_i(\mathbf{x}, t) - f_i^{\text{eq}}(\mathbf{x}, t) \right)$$
-
-where $f_i^{\text{eq}}$ is the equilibrium distribution, $\mathbf{c}_i$ are discrete velocities, and $\tau$ is the relaxation time controlling diffusion. This method captures the anisotropic nature of cardiac tissue efficiently and facilitates large-scale simulations of cardiac dynamics through its compatibility with high performance parallel computing.
-<div style="text-align: center; margin-top: 50px;">
-  <img src="/images/heartep2.gif" alt="Cardiac Electrophysiology Example" 
-       style="width: 300px; height: auto;">
-  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
-    Figure 3: Cardiac electrophysiology (EP) simulations on patient-specific biatrial geometry using the Lattice Boltzmann method.
-  </p>
-</div>
-<!-- Back Button at the Bottom with Hover Effect -->
-<div style="text-align: left; margin-top: 30px;">
-  <a href="javascript:history.back()" 
-     class="link dim ba br2 ph3 pv2 mb2 dib gray"
-     style="transition: background-color 0.3s ease, color 0.3s ease;">
-    ← Back
-  </a>
-</div>
+For a different way of using the anatomy itself, see [elastic shape analysis](/research/riemannian-shape-analysis/).
