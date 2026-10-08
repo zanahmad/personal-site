@@ -1,99 +1,104 @@
 ---
-title: "Small models of living systems"
-description: "Circulation, branching neurons, and muscle mechanics through compartment models, differential equations, and stochastic simulation."
+title: "Mathematical Biology"
+description: ""
 layout: single
-math: true
 draft: false
-papers: [fontan, gravity-hemodynamics]
 ---
 
-Some physiological questions become easier to explore with a deliberately small model. A few connected compartments can describe circulation; a tree of cables can carry an action potential; a population of randomly attaching crossbridges can generate muscle force. These projects look at what those models explain, and where their assumptions matter.
+<!-- Main content with larger font -->
+<div style="text-align: justify; font-size: 1.2rem;">
 
-## A shortcut through the Fontan circulation
+Mathematical biology involves using first principles to simulate physiological systems and processes. My research has included work on:
 
-A fenestration gives blood in a Fontan circulation another route back to the heart. It can lower venous pressure and increase flow, while some blood bypasses the lungs and arterial oxygen saturation falls. With Charles Puelz, Charles Peskin, and collaborators, I worked on models of circulation and oxygen transport to study that tradeoff as the opening changes.
+---
 
-{{< research-figure src="/images/fen-fontan.png" width="322" height="284" alt="Diagram of the Fontan circulation with a fenestration connecting the systemic and pulmonary veins" caption="The fenestration creates a shortcut around the lungs, coupling a change in blood flow to a change in oxygen content." >}}
+####  Optimal Surgical Interventions for Fontan Patients
 
-The circulation is represented by compliant compartments joined by resistive connections. Each compartment obeys a pressure–volume relation and conservation of blood volume:
+<img src="/images/fen-fontan.png" alt="Fontan Patients Figure" style="width:45%; height:auto; margin-top: 15px;">
 
-{{< equation >}}
-\begin{aligned}
-V_i &= V_i^0+C_i(t)P_i,\\
-\frac{dV_i}{dt} &= \sum_j\left(Q_{ji}-Q_{ij}\right).
-\end{aligned}
-{{< /equation >}}
+Reduced-order models of hemodynamics and oxygen transport in the Fontan circulation and the fenestrated Fontan circulation to optimize surgical parameters for maximized $O_2$ delivery. 
 
-Here {{< inline-math >}}V_i{{< /inline-math >}} is volume, {{< inline-math >}}V_i^0{{< /inline-math >}} is unstressed volume, {{< inline-math >}}C_i{{< /inline-math >}} is compliance, and {{< inline-math >}}P_i{{< /inline-math >}} is transmural pressure. The flow {{< inline-math >}}Q_{ij}{{< /inline-math >}} runs from compartment {{< inline-math >}}i{{< /inline-math >}} to {{< inline-math >}}j{{< /inline-math >}}. Time-varying ventricular compliance supplies the heartbeat; separate flow laws describe valves and the fenestration. Tracking oxygen alongside blood makes it possible to distinguish greater flow from greater oxygen delivery.
+<div class="mt3 flex items-center flex-wrap" style="margin-top: 15px;">
+  <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/full#:~:text=A%20fenestration%20is%20a%20shunt,and%20decreases%20systemic%20venous%20pressure." class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-book mr2"></i>Paper
+  </a>
+  <a href="/reports/Optimal_Fontan_Paper.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-chart-bar mr2"></i>Report
+  </a>
+  <a href="https://www.siam.org/publications/siam-news/articles/circulation-models-assess-the-impacts-of-congenital-heart-defects-and-hypergravity" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-image mr2"></i>Article
+  </a>
+</div>
 
-[Optimal Fenestration of the Fontan Circulation — published paper, 2022](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/full) · [Original project report — November 2021](/reports/Optimal_Fontan_Paper.pdf)
+---
 
-## Letting the model change its heart rate
+####  Action Potential Propagation in Neuron Models
+<img src="/images/neuron4.gif" alt="neuron" style="width:45%; height:auto; margin-top: 15px;">
 
-What changes when heart rate becomes part of the model? In this earlier project with Charles Peskin, I added pressure feedback to a pulsatile circulation model. Filtered arterial pressure is compared with a set point, and the error changes heart rate. A change of clock then lets the ventricular compliance cycle speed up or slow down without restarting the heartbeat.
+A generalizable framework for modeling short time scale dynamics in any given neuron geometry. Able to specify any tree structure and axonal and dendritic channel properties.
+<div class="mt3 flex items-center flex-wrap" style="margin-top: 15px;">
+  <a href="\files\AP_Propagation.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-chart-bar mr2"></i>Report
+  </a>
+  <a href="https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB" class="link dim ba br2 ph3 pv2 mb2 dib gray" target="_blank">
+    <i class="fas fa-play-circle mr2"></i>Videos
+  </a>
+</div>
 
-{{< equation >}}
-C(t)=C_0(\tau(t)),\qquad
-\frac{d\tau}{dt}=\frac{F(t)}{F_0}.
-{{< /equation >}}
+---
 
-The reference compliance function {{< inline-math >}}C_0{{< /inline-math >}} repeats at heart rate {{< inline-math >}}F_0{{< /inline-math >}}. The warped clock {{< inline-math >}}\tau{{< /inline-math >}} advances faster when the controlled rate {{< inline-math >}}F(t){{< /inline-math >}} rises. Exercise is represented by a fall in systemic resistance together with a change in the pressure set point, allowing the model to explore the resulting pressure and flow transients.
+####  Modeling Circulation Hemodynamics under Hypergravity
 
-{{< research-figure src="/images/propercontrol.png" width="577" height="433" alt="Plots of simulated cardiac output and arterial pressure rising during exercise and returning toward baseline afterward" caption="Pulsatile and filtered cardiac output (top) and arterial pressure (bottom) in the controlled circulation model." >}}
+<img src="/images/gravity-schematic.png" alt="Hypergravity Simulation" style="width:50%; height:auto; margin-top: 15px;">
 
-[Variable Heart Rate Method for Modeling Exercise in a Pulsatile Circulation Model — report, December 2020](/files/feedback-control.pdf)
+Constructing  reduced-order models of the circulatory system with feedback control to incorporate the effects of hypergravity (e.g., during space flight acceleration or fighter jet acceleration) and calibrating/comparing with centrifuge experimental data to accurately predict G-tolerance. Presented at **SIAM Life Sciences 2022** and **SIAM Control Theory 2023**.
 
-## Circulation under gravity
+<div class="mt3 flex items-center flex-wrap" style="margin-top: 15px;">
+  <a href="https://www.siam.org/publications/siam-news/articles/circulation-models-assess-the-impacts-of-congenital-heart-defects-and-hypergravity" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-image mr2"></i>Article
+  </a>
+  <a href="/files/gravity.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-chart-bar mr2"></i>Report
+  </a>
+  <a href="/files/gravity-poster.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray" target="_blank">
+    <i class="fas fa-image mr2"></i>Poster
+  </a>
+  
+  
+</div>
 
-Gravity changes where blood collects and the pressure needed to return it to the heart. This work splits the circulation into upper and lower compartments, includes partial venous collapse, and models feedback through heart rate and reserve volume. A steady-state reduction lets us examine how body geometry, vascular compliance, and gravitational acceleration affect the circulation.
+---
 
-{{< research-figure src="/images/gravity-schematic.png" width="583" height="428" alt="Compartment model separating upper and lower systemic circulation from the heart and pulmonary circulation" caption="Upper and lower vascular compartments bring height and gravitational pressure differences into the circulation model." >}}
+####  Variable Heart Rate in a Pulsatile Circulation Model with Feedback Control
 
-One piece of the model is the hydrostatic pressure difference:
+<img src="/images/propercontrol.png" alt="Feedback Control Model" style="width:60%; height:auto; margin-top: 15px;">
 
-{{< equation >}}
-P_{\mathrm{sa}}^{\mathrm{lower}}-P_{\mathrm{sa}}^{\mathrm{upper}}
-=\rho g\left(H_{\mathrm{upper}}-H_{\mathrm{lower}}\right).
-{{< /equation >}}
+Incorporating feedback control elements (baroreceptor loop and SA node) into a pulsatile model with a time-varying heart rate function equipped with time-warping ODEs for compliance computations. 
 
-Here {{< inline-math >}}P_{\mathrm{sa}}{{< /inline-math >}} is systemic arterial pressure, {{< inline-math >}}\rho{{< /inline-math >}} is blood density, {{< inline-math >}}g{{< /inline-math >}} is vertical gravitational acceleration, and {{< inline-math >}}H{{< /inline-math >}} is height. This relation sits alongside flow conservation and pressure–volume laws. The later collaborative preprint develops the steady-state analysis and includes a single-subject centrifuge calibration case.
+<div class="mt3 flex items-center flex-wrap" style="margin-top: 15px;">
+  <a href="/files/feedback-control.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
+    <i class="fas fa-chart-bar mr2"></i>Report
+  </a>
+</div>
 
-[Steady-State Analysis of Gravitational Effects on Hemodynamics — preprint, 2025](https://doi.org/10.21203/rs.3.rs-6603346/v1) · [Mathematical model of the circulation under hypergravity — notes, December 2022](/files/gravity.pdf) · [SIAM News overview](https://www.siam.org/publications/siam-news/articles/circulation-models-assess-the-impacts-of-congenital-heart-defects-and-hypergravity)
+---
 
-## Signals at a branch point
+#### Mechanical Aspects of Crossbridge Dynamics during Muscle Contraction
 
-A branching neuron raises a simple question: will an action potential enter both daughter branches, one, or neither? I explored this using Hodgkin–Huxley cable equations on a tree, with a Crank–Nicolson discretization that couples the branches at their junctions. Changing branch diameters and electrotonic lengths produces different propagation patterns.
+<img src="/images/Sarcomere.png" alt="Crossbridge Dynamics" style="width:50%; height:auto; margin-top: 15px;">
 
-{{< research-figure src="/images/neuron4.gif" poster="/images/research-stills/neuron4.png" width="275" height="281" alt="Simulation of an action potential traveling through a branching cable model of a neuron" caption="Action-potential propagation on a branching cable tree. The geometry is three-dimensional; voltage evolves along each cable." >}}
+<div class="mt3 flex items-center flex-wrap" style="margin-top: 15px;">
+  <a href="/files/Crossbridge_Dynamics_Part_1.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray" target="_blank">
+    <i class="fas fa-chart-bar mr2"></i>Report
+  </a>
+</div>
 
-Along a cable, voltage and channel gates satisfy
+</div>
 
-{{< equation >}}
-\begin{aligned}
-C_m\frac{\partial V}{\partial t}
-&=\frac{r}{2\rho_i}\frac{\partial^2V}{\partial x^2}-I_{\mathrm{ion}},\\
-\frac{ds}{dt}&=\alpha_s(V)(1-s)-\beta_s(V)s.
-\end{aligned}
-{{< /equation >}}
-
-Here {{< inline-math >}}V{{< /inline-math >}} is transmembrane voltage, {{< inline-math >}}C_m{{< /inline-math >}} is membrane capacitance per unit area, {{< inline-math >}}r{{< /inline-math >}} is cable radius, and {{< inline-math >}}\rho_i{{< /inline-math >}} is intracellular resistivity. The outward ionic current {{< inline-math >}}I_{\mathrm{ion}}{{< /inline-math >}} depends on voltage and the Hodgkin–Huxley gates {{< inline-math >}}s\in\{m,n,h\}{{< /inline-math >}}; {{< inline-math >}}\alpha_s{{< /inline-math >}} and {{< inline-math >}}\beta_s{{< /inline-math >}} are their opening and closing rates. At a branch point, voltage is shared and current is conserved. Those junction conditions connect local channel dynamics to the geometry of the tree.
-
-[Computer Simulations of 3D Action Potential Propagation in a Branched Cable Network — report, December 2020](/files/AP_Propagation.pdf) · [Simulation videos](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7)
-
-## Muscle force from many small attachments
-
-Muscle force emerges from many small, random attachment-and-detachment events. With Charles Peskin, I compared Monte Carlo simulations of crossbridges in half a sarcomere with a steady-state population model. The comparison connects attachment rates and displacement-dependent forces to the force–velocity curve of a shortening muscle.
-
-{{< research-figure src="/images/Sarcomere.png" width="621" height="402" alt="Sarcomere diagram showing crossbridges between thick and thin filaments and their displacement during sliding" caption="Sarcomere and crossbridge schematic, reproduced in the report from Hoppensteadt and Peskin's Modeling and Simulation in Medicine and the Life Sciences." >}}
-
-The total force is the sum of the contributions from attached crossbridges, expressed as a population integral:
-
-{{< equation >}}
-P=n_0\int_{-\infty}^{\infty}p(x)u(x)\,dx,
-\qquad
-U=\int_{-\infty}^{\infty}u(x)\,dx.
-{{< /equation >}}
-
-Here {{< inline-math >}}n_0{{< /inline-math >}} is the available crossbridge population, {{< inline-math >}}p(x){{< /inline-math >}} is the force from a bridge displaced by {{< inline-math >}}x{{< /inline-math >}}, and {{< inline-math >}}u(x){{< /inline-math >}} is the density of attached bridges over displacement. Its integral {{< inline-math >}}U{{< /inline-math >}} is the attached fraction. The report uses constant attachment and detachment rates to compare an explicit steady-state force–velocity relation with the fluctuations in a finite simulated population.
-
-[Mechanical Aspects of Crossbridge Muscle Dynamics — report, May 2020](/files/Crossbridge_Dynamics_Part_1.pdf)
+<!-- Back Button as Part of Content Flow -->
+<div style="margin-top: 40px;">
+  <a href="javascript:history.back()" 
+     class="link dim ba br2 ph3 pv2 mb2 dib gray">
+    ← Back
+  </a>
+</div>

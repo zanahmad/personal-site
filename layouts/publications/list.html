@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ partial "classical-style.html" . }}
-<main class="page-main"><div class="classical">
+<main id="main-content" tabindex="-1" class="page-main"><div class="classical">
 <h1>{{ .Title }}</h1>
-<p class="intro">Research articles, workshop papers, and preprints, newest first. Links point to the publisher or an open repository; PDF versions are labeled.</p>
+<p class="intro">Research articles, workshop papers, and preprints, newest first. Read available open papers here as PDFs; versions and reuse licenses are labeled. Publication records and DOI links are included alongside each paper.</p>
 <p><a href="https://scholar.google.com/citations?user=_oh0KZwAAAAJ&amp;hl=en">Google Scholar</a> · <a href="#conference-abstracts">Conference abstracts</a></p>
 {{ $year := 0 }}
 {{ range sort (where .Site.Data.publications "kind" "paper") "sort" "desc" }}

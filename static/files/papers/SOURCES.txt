@@ -1,0 +1,87 @@
+PUBLIC PAPER COPIES — verified 2026-10-08
+These PDFs are unmodified copies of public versions from their primary sources.
+Individual licenses apply to the PDFs, not automatically to the rest of this site.
+CC BY-NC-SA copies are shared for noncommercial scholarly use with attribution.
+
+elastic-shape-analysis-v4.pdf
+A computational pipeline for clustering left atrial appendage morphology via elastic shape analysis
+Authors: Zan Ahmad, Minglang Yin, Yashil Sukurdeep, Noam Rotenberg, Eugene Kholmovksi, Natalia Trayanova
+Version: arXiv:2403.08685v4, July 1, 2025
+Canonical record: https://doi.org/10.1016/j.compbiomed.2025.110905
+Original PDF: https://arxiv.org/pdf/2403.08685v4
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: none
+Pages: 30
+SHA-256: 83190f51d38495941f9dfbc89722a60365627226a4c43af8847baf891d12953f
+The hosted PDF is the July 2025 preprint (arXiv:2403.08685v4), which has an expanded author list. This citation follows the published journal metadata.
+
+thinner-latent-spaces-v2.pdf
+Thinner Latent Spaces: Detecting Dimension and Imposing Invariance with Conformal Autoencoders
+Authors: George A. Kevrekidis, Zan Ahmad, Mauro Maggioni, Soledad Villar, Yannis G. Kevrekidis
+Version: arXiv:2408.16138v2, July 11, 2025
+Canonical record: https://arxiv.org/abs/2408.16138
+Original PDF: https://arxiv.org/pdf/2408.16138v2
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: none
+Pages: 28
+SHA-256: aafbdcadf0e04b16f53d07d738ac9d7c7ab89882921206620b06b83296a9a938
+Originally posted in 2024; this citation uses the revised title and author list from 2025.
+
+ultrasound-deeponet-v1.pdf
+Convolutional Deep Operator Networks for Learning Nonlinear Focused Ultrasound Wave Propagation in Heterogeneous Spinal Cord Anatomy
+Authors: Avisha Kumar, Xuzhe Zhi, Zan Ahmad, Minglang Yin, Amir Manbachi
+Version: arXiv:2412.16118v1, December 20, 2024
+Canonical record: https://arxiv.org/abs/2412.16118
+Original PDF: https://arxiv.org/pdf/2412.16118v1
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: none
+Pages: 8
+SHA-256: 8333941bf30b53adad5c4201c38b6c262f2319fd947f258444b89aa3cf76811b
+arXiv preprint first posted December 20, 2024.
+
+diffeomorphic-operators-v2.pdf
+Diffeomorphic Latent Neural Operators for Data-Efficient Learning of Solutions to Partial Differential Equations
+Authors: Zan Ahmad, Shiyi Chen, Minglang Yin, Avisha Kumar, Nicolas Charon, Natalia Trayanova, Mauro Maggioni
+Version: arXiv:2411.18014v2, November 29, 2024
+Canonical record: https://arxiv.org/abs/2411.18014
+Original PDF: https://arxiv.org/pdf/2411.18014v2
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: none
+Pages: 9
+SHA-256: 6cf068f52515e45536e1e063970a562cf03627240ae593f943201a144c6d0799
+arXiv preprint first posted November 27, 2024; revised November 29, 2024.
+
+gfunk-v2.pdf
+Graph Fourier Neural Kernels (G-FuNK): Learning Solutions of Nonlinear Diffusive Parametric PDEs on Multiple Domains
+Authors: Shane E. Loeffler, Zan Ahmad, Syed Yusuf Ali, Carolyna Yamamoto, Dan M. Popescu, Alana Yee, Yash Lal, Natalia Trayanova, Mauro Maggioni
+Version: arXiv:2410.04655v2, October 9, 2024
+Canonical record: https://arxiv.org/abs/2410.04655
+Original PDF: https://arxiv.org/pdf/2410.04655v2
+License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: none
+Pages: 20
+SHA-256: e4e11d01cb77f2db84c720151bd6f710958e9bf605aca99b297f4bcae0b40a39
+
+
+stroke-assessment-2024.pdf
+A comprehensive stroke risk assessment by combining atrial computational fluid dynamics simulations and functional patient data
+Authors: Alberto Zingaro, Zan Ahmad, Eugene Kholmovski, Kensuke Sakata, Luca Dede’, Alan K. Morris, Alfio Quarteroni, Natalia A. Trayanova
+Version: Published journal article, April 25, 2024
+Canonical record: https://www.nature.com/articles/s41598-024-59997-2
+Original PDF: https://www.nature.com/articles/s41598-024-59997-2.pdf
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Changes: none
+Pages: 17
+SHA-256: 1c40d8e206a116d793ab2888a71ad3891ad79c46c2587b07d6b7f28b0a04e990
+
+
+fontan-2022.pdf
+Optimal Fenestration of the Fontan Circulation
+Authors: Zan Ahmad, Lynn H. Jin, Daniel J. Penny, Craig G. Rusin, Charles S. Peskin, Charles Puelz
+Version: Published journal article, June 30, 2022
+Canonical record: https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/full
+Original PDF: https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/pdf
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Changes: none
+Pages: 13
+SHA-256: c801c296b4d6424e37e3d4bbf1c22e74c308aac268f639feace8e86ae3f53c4b

@@ -1,41 +1,46 @@
 ---
-title: "Comparing anatomical shapes"
-description: "Elastic geometry gives us a way to compare surfaces without requiring matching mesh vertices."
+title: "Riemannian Shape Analysis"
+description: ""
 layout: single
-math: true
-papers: ["ESA", "abstract-shape-stroke"]
+draft: false
+buttons:
+- icon: book
+  icon_pack: fas
+  name: arXiv
+  url: https://arxiv.org/abs/2403.08685
 ---
 
-How different are two anatomical shapes? Comparing vertex coordinates only works if we already know which points correspond. Elastic shape analysis takes a different route: measure the deformation needed to move from one surface to another.
+<!-- Main content with larger font -->
+<div style="text-align: justify; font-size: 1.2rem;">
 
-## Distance as deformation
+Riemannian shape analysis studies the geometric properties of shapes by embedding them into Riemannian manifolds, where each shape corresponds to a point on a shape space manifold. A shape space manifold, $\mathcal{M}$, is equipped with a Riemannian metric $g$, which defines distances and enables geodesics—curves representing optimal shape transformations between shapes. Mathematically, given two shapes $S_1$ and $S_2$ on the manifold, their geodesic distance $d(S_1, S_2)$ reflects the minimal energy required for an optimal deformation to morph one shape into another:
 
-Let {{< inline-math >}}q(t){{< /inline-math >}} be a path of surfaces joining {{< inline-math >}}q_0{{< /inline-math >}} to {{< inline-math >}}q_1{{< /inline-math >}}, and let {{< inline-math >}}G_q{{< /inline-math >}} measure the cost of a deformation at the surface {{< inline-math >}}q{{< /inline-math >}}. On a unit time interval, the squared geodesic distance is the minimum path energy:
+$$d(S_1, S_2) = \inf_{\gamma \in \Gamma} \int_0^1 \sqrt{g(\dot{\gamma}(t), \dot{\gamma}(t))} \, dt,$$
 
-{{< equation >}}
-d_G(q_0,q_1)^2
-=\inf_{\substack{q(0)=q_0\\q(1)=q_1}}
-\int_0^1G_{q(t)}\!\left(\dot q(t),\dot q(t)\right)\,dt.
-{{< /equation >}}
+where $\Gamma$ is the set of all smooth paths connecting $S_1$ and $S_2$, and $\gamma(t)$ is a geodesic path parameterized by $t \in [0, 1]$.
+<!-- Second Image/GIF with caption -->
+<div style="text-align: center; margin-top: 50px;">
+  <img src="/images/shape.png" alt="geodesic" 
+       style="width: 500px; height: auto;">
+  <p style="font-size: 0.9rem; color: gray; margin-top: 5px;">
+    Figure 1: Geodesic between source shape and target shape of left atrial appendages (LAAs).
+  </p>
+</div>
 
-The tangent vector {{< inline-math >}}\dot q(t){{< /inline-math >}} describes how the surface moves. An elastic Sobolev metric assigns costs to different kinds of deformation rather than treating every coordinate change alike. The metric is part of the model: it determines what we mean by “similar.”
+In medical image analysis, Riemannian shape spaces are used to study anatomical variability. For example, clustering **left atrial appendages (LAAs)** based on their geometric properties can aid in stratifying patients by anatomical risk factors for stroke. By representing LAAs as points on a shape manifold, one can use geodesic distances to cluster similar shapes and detect outliers:
 
-If we care about shapes rather than their parametrizations, we also optimize over reparametrizations of the target surface. Writing {{< inline-math >}}[q]{{< /inline-math >}} for the shape represented by {{< inline-math >}}q{{< /inline-math >}},
+$$\{ S_1, S_2, \ldots, S_n \} \mapsto \mathcal{C}_1, \mathcal{C}_2, \ldots, \mathcal{C}_k,$$
 
-{{< equation >}}
-d_{\mathrm{shape}}([q_0],[q_1])
-=\inf_{\varphi\in\operatorname{Diff}(M)}
-d_G(q_0,q_1\circ\varphi).
-{{< /equation >}}
+where each $\mathcal{C}_i$ is a cluster of shapes. This approach enables automated classification, patient-specific risk assessment, and treatment planning, such as determining the optimal occlusion device for stroke prevention.
 
-Here {{< inline-math >}}M{{< /inline-math >}} is the common parameter surface and {{< inline-math >}}\operatorname{Diff}(M){{< /inline-math >}} is the set of smooth invertible reparametrizations. This separates a change in surface shape from a change in how its points are labeled.
 
-{{< research-figure src="/images/shape.png" width="1402" height="308" alt="Intermediate surfaces along a computed deformation between two left atrial appendage shapes" caption="A computed deformation path between left atrial appendage surfaces." >}}
 
-## Left atrial appendage morphology
 
-Our computational pipeline uses elastic shape analysis to compare and cluster left atrial appendage surfaces. The appendage has substantial anatomical variation, which makes it a useful setting for studying shape representations beyond a small set of hand-chosen measurements.
-
-The resulting distances and clusters provide a way to describe variation in a collection of shapes. They are not, by themselves, a validated patient-level stroke predictor or a rule for choosing a device. The 2025 *Computers in Biology and Medicine* article describes the pipeline and its evaluation; the earlier preprint remains available from the publication list.
-
-This project sits close to my work on [cardiac flow and electrical models](/research/cardiovascular-modeling/): geometry is both something to compare and the domain on which dynamics unfold.
+<!-- Back Button at the Bottom with Hover Effect -->
+<div style="text-align: left; margin-top: 30px;">
+  <a href="javascript:history.back()" 
+     class="link dim ba br2 ph3 pv2 mb2 dib gray"
+     style="transition: background-color 0.3s ease, color 0.3s ease;">
+    ← Back
+  </a>
+</div>

@@ -129,10 +129,15 @@
     "status": "Computers in Biology and Medicine 196 (Part C), 110905 (2025).",
     "doi": "10.1016/j.compbiomed.2025.110905",
     "paper": "https://doi.org/10.1016/j.compbiomed.2025.110905",
-    "pdf": "https://arxiv.org/pdf/2403.08685",
+    "pdf": "/files/papers/elastic-shape-analysis-v4.pdf",
     "pdf_label": "Preprint PDF",
-    "note": "Journal version of “Elastic Shape Analysis for Unsupervised Clustering of Left Atrial Appendage Morphology” (arXiv:2403.08685). The linked preprint has a different author list; this citation follows the published journal metadata.",
-    "kind": "paper"
+    "note": "The hosted PDF is the July 2025 preprint (arXiv:2403.08685v4), which has an expanded author list. This citation follows the published journal metadata.",
+    "kind": "paper",
+    "pdf_source": "https://arxiv.org/pdf/2403.08685v4",
+    "pdf_version": "arXiv:2403.08685v4, July 1, 2025",
+    "pdf_license": "CC BY-NC-SA 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "thinner-latent-spaces",
@@ -149,10 +154,15 @@
     "status": "arXiv:2408.16138, revised preprint v2, July 11, 2025.",
     "doi": "10.48550/arXiv.2408.16138",
     "paper": "https://arxiv.org/abs/2408.16138",
-    "pdf": "https://arxiv.org/pdf/2408.16138",
+    "pdf": "/files/papers/thinner-latent-spaces-v2.pdf",
     "pdf_label": "Preprint PDF",
     "note": "Originally posted in 2024; this citation uses the revised title and author list from 2025.",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://arxiv.org/pdf/2408.16138v2",
+    "pdf_version": "arXiv:2408.16138v2, July 11, 2025",
+    "pdf_license": "CC BY-NC-SA 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "seizure-consciousness",
@@ -222,10 +232,15 @@
     "status": "AAAI 2025 Workshop on AI to Accelerate Science and Engineering (oral presentation).",
     "doi": "10.48550/arXiv.2412.16118",
     "paper": "https://arxiv.org/abs/2412.16118",
-    "pdf": "https://arxiv.org/pdf/2412.16118",
+    "pdf": "/files/papers/ultrasound-deeponet-v1.pdf",
     "pdf_label": "Preprint PDF",
     "note": "arXiv preprint first posted December 20, 2024.",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://arxiv.org/pdf/2412.16118v1",
+    "pdf_version": "arXiv:2412.16118v1, December 20, 2024",
+    "pdf_license": "CC BY-NC-SA 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "dimon",
@@ -244,10 +259,15 @@
     "status": "AAAI 2025 Workshop on AI to Accelerate Science and Engineering.",
     "doi": "10.48550/arXiv.2411.18014",
     "paper": "https://arxiv.org/abs/2411.18014",
-    "pdf": "https://arxiv.org/pdf/2411.18014",
+    "pdf": "/files/papers/diffeomorphic-operators-v2.pdf",
     "pdf_label": "Preprint PDF",
     "note": "arXiv preprint first posted November 27, 2024; revised November 29, 2024.",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://arxiv.org/pdf/2411.18014v2",
+    "pdf_version": "arXiv:2411.18014v2, November 29, 2024",
+    "pdf_license": "CC BY-NC-SA 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "Gfunk",
@@ -268,10 +288,15 @@
     "status": "arXiv:2410.04655, preprint v2, October 9, 2024.",
     "doi": "10.48550/arXiv.2410.04655",
     "paper": "https://arxiv.org/abs/2410.04655",
-    "pdf": "https://arxiv.org/pdf/2410.04655",
+    "pdf": "/files/papers/gfunk-v2.pdf",
     "pdf_label": "Preprint PDF",
     "note": "",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://arxiv.org/pdf/2410.04655v2",
+    "pdf_version": "arXiv:2410.04655v2, October 9, 2024",
+    "pdf_license": "CC BY-NC-SA 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "scirep",
@@ -291,10 +316,15 @@
     "status": "Scientific Reports 14, article 9515 (April 25, 2024).",
     "doi": "10.1038/s41598-024-59997-2",
     "paper": "https://www.nature.com/articles/s41598-024-59997-2",
-    "pdf": "https://www.nature.com/articles/s41598-024-59997-2.pdf",
+    "pdf": "/files/papers/stroke-assessment-2024.pdf",
     "pdf_label": "Journal PDF",
     "note": "",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://www.nature.com/articles/s41598-024-59997-2.pdf",
+    "pdf_version": "Published journal article, April 25, 2024",
+    "pdf_license": "CC BY 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "fontan",
@@ -312,10 +342,15 @@
     "status": "Frontiers in Physiology 13, article 867995 (June 30, 2022).",
     "doi": "10.3389/fphys.2022.867995",
     "paper": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/full",
-    "pdf": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/pdf",
+    "pdf": "/files/papers/fontan-2022.pdf",
     "pdf_label": "Journal PDF",
     "note": "",
-    "kind": "paper"
+    "kind": "paper",
+    "pdf_source": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.867995/pdf",
+    "pdf_version": "Published journal article, June 30, 2022",
+    "pdf_license": "CC BY 4.0",
+    "pdf_license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "pdf_verified": "2026-10-08"
   },
   {
     "slug": "abstract-shape-stroke",

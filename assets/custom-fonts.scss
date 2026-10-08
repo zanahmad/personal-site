@@ -1,6 +1,5 @@
 /* fraunces-regular - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 400;
@@ -10,7 +9,6 @@
 
 /* fraunces-italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Fraunces';
   font-style: italic;
   font-weight: 400;
@@ -20,7 +18,6 @@
 
 /* Metropolis-regular - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Metropolis';
   font-style: normal;
   font-weight: 400;
@@ -31,7 +28,6 @@
 
 /* Metropolis-italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Metropolis';
   font-style: italic;
   font-weight: 400;
@@ -42,7 +38,6 @@
 
 /* bitter-300 - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 300;
@@ -53,7 +48,6 @@
 
 /* bitter-300italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Bitter';
   font-style: italic;
   font-weight: 300;
@@ -65,7 +59,6 @@
 
 /* commissioner-regular - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Commissioner';
   font-style: normal;
   font-weight: 400;
@@ -75,7 +68,6 @@
 
 /* commissioner-italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'Commissioner';
   font-style: italic;
   font-weight: 400;
@@ -85,7 +77,6 @@
 
 /* eb-garamond-regular - latin */
 @font-face {
-  font-display: swap;
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
@@ -96,7 +87,6 @@
 
 /* eb-garamond-600 - latin */
 @font-face {
-  font-display: swap;
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 600;
@@ -107,7 +97,6 @@
 
 /* eb-garamond-italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'EB Garamond';
   font-style: italic;
   font-weight: 400;
@@ -118,7 +107,6 @@
 
 /* eb-garamond-600italic - latin */
 @font-face {
-  font-display: swap;
   font-family: 'EB Garamond';
   font-style: italic;
   font-weight: 600;
@@ -128,43 +116,39 @@
 }
 
 @font-face {
-  font-display: swap;
   font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 400;
   src: local(''),
        url('#{$font-path}/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
-       url('#{$font-path}/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+       url('#{$font-path}/Atkinson-Hyperlegible-Regular-102.woff2') format('woff');
 }
 
 @font-face {
-  font-display: swap;
   font-family: 'Atkinson Hyperlegible';
   font-style: italic;
   font-weight: 400;
   src: local(''),
        url('#{$font-path}/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
-       url('#{$font-path}/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
+       url('#{$font-path}/Atkinson-Hyperlegible-Italic-102.woff2') format('woff');
 }
 
 @font-face {
-  font-display: swap;
   font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 700;
   src: local(''),
        url('#{$font-path}/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
-       url('#{$font-path}/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+       url('#{$font-path}/Atkinson-Hyperlegible-Bold-102.woff2') format('woff');
 }
 
 @font-face {
-  font-display: swap;
   font-family: 'Atkinson Hyperlegible';
   font-style: italic;
   font-weight: 700;
   src: local(''),
        url('#{$font-path}/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
-       url('#{$font-path}/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
+       url('#{$font-path}/Atkinson-Hyperlegible-BoldItalic-102.woff2') format('woff');
 }
 
 

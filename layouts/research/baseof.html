@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" dir="ltr">
-{{ partial "head.html" . }}
-<body class="research-site">
-  {{ partial "header.html" . }}
-  <main id="main-content" class="page-main research-main">{{ block "main" . }}{{ end }}</main>
-  <footer class="research-footer"><a href="{{ "/research/" | relURL }}">Research</a><span aria-hidden="true"> · </span><a href="{{ "/publications/" | relURL }}">All publications</a><span aria-hidden="true"> · </span><a href="{{ "/teaching/" | relURL }}">Teaching</a></footer>
-</body>
-</html>

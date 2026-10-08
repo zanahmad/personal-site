@@ -1,6 +1,7 @@
 {{ define "main" }}{{ partial "classical-style.html" . }}
-<main class="page-main"><div class="classical"><p class="backlink"><a href="/publications/">← All papers</a></p>
+<main id="main-content" tabindex="-1" class="page-main"><div class="classical"><p class="backlink"><a href="/publications/">← All papers</a></p>
 {{ $id := .Params.publication_id }}{{ range where .Site.Data.publications "slug" $id }}
 <h1>{{ .title }}</h1><p class="authors">{{ delimit .authors ", " }}.</p><p>{{ .status }}</p>
-<p class="paper-links"><a href="{{ .paper }}">Paper</a>{{ if .pdf }}<a href="{{ .pdf }}">{{ .pdf_label }}</a>{{ end }}<a href="https://doi.org/{{ .doi }}">DOI: {{ .doi }}</a></p>{{ with .note }}<p>{{ . }}</p>{{ end }}
+<p class="paper-links">{{ if .pdf }}<a href="{{ .pdf }}">{{ .pdf_label }}</a>{{ end }}<a href="{{ .paper }}">{{ if eq .kind "abstract" }}Abstract{{ else }}Publication record{{ end }}</a><a href="https://doi.org/{{ .doi }}">DOI: {{ .doi }}</a></p>
+{{ $p := . }}{{ with .pdf_license }}<p class="paper-note">Unmodified {{ $p.pdf_version }} · <a href="{{ $p.pdf_license_url }}">{{ . }}</a> · <a href="{{ $p.pdf_source }}">Original source</a></p>{{ end }}{{ with .note }}<p>{{ . }}</p>{{ end }}
 {{ end }}</div></main>{{ end }}
