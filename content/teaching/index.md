@@ -32,9 +32,9 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 #### New York University
 ##### Teaching Assistant:
-- [**NEURL-UA 302 Computational Neuroscience: From Channels to Networks**](https://as.nyu.edu/departments/cns/UndergraduateProgram/Courses/Channels/ComputationalNeuroscienceFromChannelstoNetworksSampleSyllabus.html) – Spring 2021
+- **NEURL-UA 302 Computational Neuroscience: From Channels to Networks** – Spring 2021
 
-  Developed and demonstrated code for a multicompartmental neuron model with [3D visualizations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7&pp=gAQBiAQB) of action potential propagation.
+  Developed and demonstrated code for a multicompartmental neuron model with [3D simulations](https://www.youtube.com/watch?v=3RDD7zvEwiA&list=PLQ_KsQ99ZUQMcyG-MsnAIeghDuepldWs7) of action potential propagation.
 
 
 
