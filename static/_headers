@@ -4,3 +4,6 @@
   X-Frame-Options: DENY
   Referrer-Policy: no-referrer
   Cache-Control: no-store
+
+/files/peskin-heart-geometry.pdf
+  X-Robots-Tag: noindex
