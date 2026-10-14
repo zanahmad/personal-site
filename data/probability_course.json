@@ -130,6 +130,11 @@
       "current": true,
       "links": [
         {
+          "label": "CLT group practice: sums, averages, and normal probabilities · 1 page",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/clt-normal-group-problems.pdf"
+        },
+        {
           "label": "Click-through animated slides",
           "type": "slides",
           "url": "/lectures/probability-statistics/chapter-6/"
