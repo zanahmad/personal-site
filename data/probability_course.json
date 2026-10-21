@@ -127,7 +127,6 @@
       "title": "Continuous random variables & the normal distribution",
       "description": "Move from probability mass to density and area. Explore cumulative probability, uniform and normal distributions, standardization, and percentiles.",
       "preview": "continuous",
-      "current": true,
       "links": [
         {
           "label": "CLT notes, group practice & worked solutions · 4 pages",
@@ -138,6 +137,22 @@
           "label": "Click-through animated slides",
           "type": "slides",
           "url": "/lectures/probability-statistics/chapter-6/"
+        }
+      ]
+    },
+    {
+      "id": "chapter-7",
+      "date": "October 21",
+      "chapter": "Chapter 7",
+      "title": "Confidence intervals",
+      "description": "Build confidence intervals for means and proportions, interpret confidence and precision, and plan sample sizes. Follow the notes in class order and try three practice problems.",
+      "preview": "continuous",
+      "current": true,
+      "links": [
+        {
+          "label": "Student notes & practice · 18 pages · no solutions",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf"
         }
       ]
     }
