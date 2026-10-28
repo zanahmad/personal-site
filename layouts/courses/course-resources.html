@@ -17,8 +17,32 @@
       <p class="course-kicker">Johns Hopkins University · Fall 2026 · EN.553.211</p>
       <h1>Probability &amp; Statistics<br><span>for the Life Sciences</span></h1>
       <p class="course-deck">A place to revisit class. Read the notes, follow an idea through the slides, and check your understanding.</p>
-      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#chapter-7">This week: Confidence intervals ↓</a></div>
+      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p>{{ if .Site.Data.probability_course.recorded_lectures }}<a href="#recorded-lectures">This week: Hypothesis testing ↓</a>{{ else }}<a href="#chapter-7">This week: Confidence intervals ↓</a>{{ end }}</div>
     </header>
+
+    {{ with .Site.Data.probability_course.recorded_lectures }}
+    <section class="course-recordings" id="recorded-lectures" aria-labelledby="recordings-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">October 28, 2026</p><h2 id="recordings-heading">Recorded lectures</h2></div><p>Watch, pause, and work along</p></div>
+      <aside class="course-next-class" aria-labelledby="next-class-heading">
+        <h3 id="next-class-heading">Before class Friday, October 30</h3>
+        <p>Complete Chapter 7 Problem 3(b)–(d). The first recording walks through part (a). Bring your reasoning and any questions to class.</p>
+        <a href="/teaching/probability-statistics/chapter7-chronological-student-notes.pdf#page=17">Open Problem 3 · student notes, page 17 <span aria-hidden="true">↗</span></a>
+        <p><a href="/teaching/probability-statistics/chapter7-to-hypothesis-testing-student-2026-10-30.pdf">Friday extension · 2 pages · no solutions <span aria-hidden="true">↗</span></a></p>
+      </aside>
+      <div class="course-recording-grid">
+        {{ range . }}
+        <article class="course-recording">
+          <div class="course-recording-copy"><p class="resource-meta">{{ .chapter }} <span aria-hidden="true">·</span> {{ .duration }}</p><h3 id="{{ .id }}-heading">{{ .title }}</h3><p>{{ .description }}</p></div>
+          <video controls playsinline preload="metadata" aria-labelledby="{{ .id }}-heading"{{ with .poster }} poster="{{ . }}"{{ end }}>
+            <source src="{{ .url }}" type="video/mp4">
+            Your browser does not support embedded video. Use the MP4 link below.
+          </video>
+          <div class="course-recording-copy"><a class="recording-download" href="{{ .url }}">Open or download MP4 <span aria-hidden="true">↗</span></a>{{ with .endpoint }}<p class="recording-endpoint">{{ . }}</p>{{ end }}</div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
 
     <section aria-labelledby="lecture-heading">
       <div class="course-section-heading"><div><p class="course-kicker">Follow the course</p><h2 id="lecture-heading">Notes &amp; animated lectures</h2></div><p>In class order · earliest to latest</p></div>

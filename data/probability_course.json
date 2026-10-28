@@ -147,7 +147,6 @@
       "title": "Confidence intervals",
       "description": "Build confidence intervals for means and proportions, interpret confidence and precision, and plan sample sizes. Follow the notes in class order and try three practice problems.",
       "preview": "continuous",
-      "current": true,
       "links": [
         {
           "label": "Student notes & practice · 18 pages · no solutions",
@@ -187,6 +186,27 @@
       "description": "Further intuition for the normal distribution and the Central Limit Theorem. You do not need to know the binomial-to-normal approximation formulas.",
       "url": "https://www.youtube.com/watch?v=zeJD6dqJ5lo",
       "topic": "Normal distribution · further intuition"
+    }
+  ],
+  "recorded_lectures": [
+    {
+      "id": "chapter7-problem3a",
+      "chapter": "Chapter 7 · Problem 3(a)",
+      "duration": "42:11",
+      "title": "A confidence interval for the usable-sample rate",
+      "description": "Work through the usable-kit proportion, its standard error, the 95% confidence interval, and a careful interpretation. The walkthrough ends after part (a).",
+      "url": "/teaching/probability-statistics/videos/chapter7-problem3a-solution-2026-10-28.mp4",
+      "poster": "/images/course-recordings/chapter7-problem3a-2026-10-28.jpg"
+    },
+    {
+      "id": "chapter8-introduction",
+      "chapter": "Chapter 8 · Introduction",
+      "duration": "42:18",
+      "title": "Hypotheses, p-values, and significance",
+      "description": "Build a null reference model, calculate one- and two-sided p-values, and use the GPA example to make a significance decision.",
+      "url": "/teaching/probability-statistics/videos/chapter8-introduction-2026-10-28.mp4",
+      "endpoint": "Covered through original slide 20, “Significance level,” including the qualitative p-value evidence bands. We resume at slide 21, “Significance level & critical values.”",
+      "poster": "/images/course-recordings/chapter8-introduction-2026-10-28.jpg"
     }
   ]
 }

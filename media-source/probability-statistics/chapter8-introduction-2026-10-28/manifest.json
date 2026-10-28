@@ -1,0 +1,67 @@
+{
+  "file": "chapter8-introduction-2026-10-28.mp4",
+  "bytes": 93849418,
+  "sha256": "de2bf2570020f960d12079acbf3d985efe9e7d181a2d60af43513541a8af440e",
+  "parts": [
+    {
+      "file": "part-001",
+      "bytes": 8388608,
+      "sha256": "5b8243247603359e5e40962d649179ec3aced1f610b15b58f61a0b94e099db25"
+    },
+    {
+      "file": "part-002",
+      "bytes": 8388608,
+      "sha256": "010885db242f777dc575b5c75d1a6dbeaa53ba0d39d979d99d4e6ba2733cad95"
+    },
+    {
+      "file": "part-003",
+      "bytes": 8388608,
+      "sha256": "baec6e3c4713ba81e069b2422b8de3410ebe3da74330671a848bfb529c4cedb3"
+    },
+    {
+      "file": "part-004",
+      "bytes": 8388608,
+      "sha256": "6ba2d8c8024420cf72c4c5925dabb2c6f18b4ab2a2b04c271d3de3f9736101ec"
+    },
+    {
+      "file": "part-005",
+      "bytes": 8388608,
+      "sha256": "2ba4755c7b154e11596f6df658451524b14057c982e96c8428c67599f44c30b1"
+    },
+    {
+      "file": "part-006",
+      "bytes": 8388608,
+      "sha256": "1b8d5525c6e9aaba5fedac39a5bb7ac0ff5a364ffbc9d31d8e687ae586d8272f"
+    },
+    {
+      "file": "part-007",
+      "bytes": 8388608,
+      "sha256": "c86de4c3b5746ff3cd6d8b9020cf06ddc2863a0a41a34bfd26546daf025122bd"
+    },
+    {
+      "file": "part-008",
+      "bytes": 8388608,
+      "sha256": "9573e2e9a4d758c53afda99e3920f18ba78da6f41ce0b72ca12f34ccf2bec7ae"
+    },
+    {
+      "file": "part-009",
+      "bytes": 8388608,
+      "sha256": "e149af04ef309519a4893b244b38641bb76336fad673c77716394ad41f95fbaa"
+    },
+    {
+      "file": "part-010",
+      "bytes": 8388608,
+      "sha256": "794fd76639b47c71a8869524868d80c4054c7489b0c68c616ddb7fa84ac0bf13"
+    },
+    {
+      "file": "part-011",
+      "bytes": 8388608,
+      "sha256": "1e93a8cb6de2c0df70fe4a944dac5a38bf231d1c9679ea21f629e1a07be2a691"
+    },
+    {
+      "file": "part-012",
+      "bytes": 1574730,
+      "sha256": "510cee9dcca606212f970551ecda9306bbe3eaec4a457ce1b2074090b9311d9c"
+    }
+  ]
+}
