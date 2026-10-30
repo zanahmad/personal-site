@@ -154,6 +154,22 @@
           "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf"
         }
       ]
+    },
+    {
+      "id": "chapter-8",
+      "date": "October 28–30",
+      "chapter": "Chapter 8",
+      "title": "Hypothesis testing",
+      "description": "Connect hypotheses, null distributions, p-values, and significance. Friday practice links these ideas to Chapter 7 confidence intervals. Questions begin on page 4; the final page is an optional continuation.",
+      "preview": "continuous",
+      "current": true,
+      "links": [
+        {
+          "label": "Updated student notes & Friday practice · 9 pages · no worked solutions",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
+        }
+      ]
     }
   ],
   "videos": [
