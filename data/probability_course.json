@@ -152,6 +152,11 @@
           "label": "Student notes & practice · 18 pages · no solutions",
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf"
+        },
+        {
+          "label": "Problem 3 · questions & worked solutions · 2 pages",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/chapter7-problem3-solutions.pdf"
         }
       ]
     },
@@ -168,6 +173,11 @@
           "label": "Updated student notes & Friday practice · 9 pages · no worked solutions",
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
+        },
+        {
+          "label": "Problem 1 · questions & worked solutions · 2 pages",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/chapter8-problem1-solutions.pdf"
         }
       ]
     }
