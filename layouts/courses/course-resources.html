@@ -16,24 +16,53 @@
       <a class="course-back" href="/teaching/">← All teaching</a>
       <p class="course-kicker">Johns Hopkins University · Fall 2026 · EN.553.211</p>
       <h1>Probability &amp; Statistics<br><span>for the Life Sciences</span></h1>
-      <p class="course-deck">A place to revisit class. Read the notes, follow an idea through the slides, and check your understanding.</p>
-      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p>{{ if .Site.Data.probability_course.recorded_lectures }}<a href="#recorded-lectures">This week: Hypothesis testing ↓</a>{{ else }}<a href="#chapter-7">This week: Confidence intervals ↓</a>{{ end }}</div>
+      <p class="course-deck">Lecture notes, practice problems, worked solutions and recordings.</p>
+      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#chapter-6">Chapters 6–9 ↓</a></div>
     </header>
+    <nav class="course-index" aria-label="Course resources">
+      <span>Chapters 6–9</span>
+      <a href="#chapter-6">6 · Normal distributions</a>
+      <a href="#chapter-7">7 · Confidence intervals</a>
+      <a href="#chapter-8">8 · Hypothesis testing</a>
+      <a href="#chapter-9">9 · Small-sample inference</a>
+      <a href="#recorded-lectures">Recordings</a>
+    </nav>
+
+    <section aria-labelledby="lecture-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">Course materials</p><h2 id="lecture-heading">Notes, practice &amp; solutions</h2></div><p>In chapter and class order</p></div>
+      <div class="course-grid">
+        {{ range $i, $unit := .Site.Data.probability_course.units }}
+        <article class="resource-card{{ if or .groups .pending }} resource-chapter{{ end }}" id="{{ .id }}">
+          {{ if not (or .groups .pending) }}<div class="resource-preview" aria-hidden="true"><img src="/images/course-resources/{{ .preview }}.svg" alt="" width="600" height="260" loading="lazy"><span class="resource-number">{{ printf "%02d" (add $i 1) }}</span></div>{{ end }}
+          <div class="resource-content">
+            <p class="resource-meta">{{ .date }} <span aria-hidden="true">·</span> {{ .chapter }}</p>
+            <h3>{{ .title }}</h3>
+            <p class="resource-description">{{ .description }}</p>
+            {{ if .groups }}
+            <div class="resource-groups">
+              {{ range .groups }}
+              <section class="resource-group" aria-label="{{ .title }} for {{ $unit.chapter }}">
+                <h4>{{ .title }}</h4>
+                <ul>{{ range .links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
+              </section>
+              {{ end }}
+            </div>
+            {{ else }}
+            <div class="resource-links" aria-label="Resources for {{ .title }}">{{ range .links }}<a class="resource-link resource-{{ .type }}" href="{{ .url }}" aria-label="{{ .label }} — {{ $unit.title }}"><span class="resource-kind">{{ if eq .type "pdf" }}PDF{{ else if eq .type "slides" }}SLIDES{{ else if eq .type "practice" }}PRACTICE{{ else }}GUIDE{{ end }}</span><span>{{ .label }}</span><span aria-hidden="true">↗</span></a>{{ end }}</div>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      <p class="course-help">Slides pause at each step. Use the arrow keys or on-screen controls; a laptop or tablet works best for the animations.</p>
+    </section>
 
     {{ with .Site.Data.probability_course.recorded_lectures }}
     <section class="course-recordings" id="recorded-lectures" aria-labelledby="recordings-heading">
-      <div class="course-section-heading"><div><p class="course-kicker">October 28, 2026</p><h2 id="recordings-heading">Recorded lectures</h2></div><p>Watch, pause, and work along</p></div>
-      <aside class="course-next-class" aria-labelledby="next-class-heading">
-        <h3 id="next-class-heading">Before class Friday, October 30</h3>
-        <p>Complete Chapter 7 Problem 3(b)–(d). The first recording walks through part (a). Bring your reasoning and any questions to class.</p>
-        <a href="/teaching/probability-statistics/chapter7-chronological-student-notes.pdf#page=17">Open Problem 3 · student notes, page 17 <span aria-hidden="true">↗</span></a>
-        <p><a href="/teaching/probability-statistics/chapter8-student-notes.pdf">Chapter 8 notes &amp; Friday practice with solutions · 13 pages <span aria-hidden="true">↗</span></a></p>
-        <p>Friday questions remain on pages 4–8, with space for your work. The optional continuation is on page 9; matching solutions are appended on pages 10–13. <a href="/teaching/probability-statistics/chapter8-student-notes-questions-only-2026-10-30.pdf">Download the original question-only notes</a>.</p>
-        <p>Worked solutions: <a href="/teaching/probability-statistics/chapter7-problem3-solutions.pdf">Chapter 7 Problem 3 · all parts</a> and <a href="/teaching/probability-statistics/chapter8-problem1-solutions.pdf">Chapter 8 Problem 1 · all parts</a>.</p>
-      </aside>
+      <div class="course-section-heading"><div><p class="course-kicker">October 28, 2026</p><h2 id="recordings-heading">Recorded lectures</h2></div><p>October 28 class material</p></div>
       <div class="course-recording-grid">
         {{ range . }}
-        <article class="course-recording">
+        <article class="course-recording" id="{{ .id }}">
           <div class="course-recording-copy"><p class="resource-meta">{{ .chapter }} <span aria-hidden="true">·</span> {{ .duration }}</p><h3 id="{{ .id }}-heading">{{ .title }}</h3><p>{{ .description }}</p></div>
           <video controls playsinline preload="metadata" aria-labelledby="{{ .id }}-heading"{{ with .poster }} poster="{{ . }}"{{ end }}>
             <source src="{{ .url }}" type="video/mp4">
@@ -46,26 +75,8 @@
     </section>
     {{ end }}
 
-    <section aria-labelledby="lecture-heading">
-      <div class="course-section-heading"><div><p class="course-kicker">Follow the course</p><h2 id="lecture-heading">Notes &amp; animated lectures</h2></div><p>In class order · earliest to latest</p></div>
-      <div class="course-grid">
-        {{ range $i, $unit := .Site.Data.probability_course.units }}
-        <article class="resource-card{{ if .current }} resource-current{{ end }}" id="{{ .id }}">
-          <div class="resource-preview" aria-hidden="true"><img src="/images/course-resources/{{ .preview }}.svg" alt="" width="600" height="260" loading="lazy"><span class="resource-number">{{ printf "%02d" (add $i 1) }}</span>{{ if .current }}<span class="resource-this-week">This week</span>{{ end }}</div>
-          <div class="resource-content">
-            <p class="resource-meta">{{ .date }} <span aria-hidden="true">·</span> {{ .chapter }}</p>
-            <h3>{{ .title }}</h3>
-            <p class="resource-description">{{ .description }}</p>
-            <div class="resource-links" aria-label="Resources for {{ .title }}">{{ range .links }}<a class="resource-link resource-{{ .type }}" href="{{ .url }}" aria-label="{{ .label }} — {{ $unit.title }}"><span class="resource-kind">{{ if eq .type "pdf" }}PDF{{ else if eq .type "slides" }}SLIDES{{ else if eq .type "practice" }}PRACTICE{{ else }}GUIDE{{ end }}</span><span>{{ .label }}</span><span aria-hidden="true">↗</span></a>{{ end }}</div>
-          </div>
-        </article>
-        {{ end }}
-      </div>
-      <p class="course-help">Slides pause at each step. Use the arrow keys or on-screen controls; a laptop or tablet works best for the animations.</p>
-    </section>
-
     <section class="course-video-section" aria-labelledby="video-heading">
-      <div class="course-section-heading"><div><p class="course-kicker">Another way to see it</p><h2 id="video-heading">Selected 3Blue1Brown videos</h2></div><p>Optional visual companions</p></div>
+      <div class="course-section-heading"><div><p class="course-kicker">Supplementary material</p><h2 id="video-heading">Selected 3Blue1Brown videos</h2></div><p>Optional videos</p></div>
       <div class="course-video-grid">{{ range .Site.Data.probability_course.videos }}<article class="course-video"><p class="resource-meta">{{ .topic }}</p><h3><a href="{{ .url }}">{{ .title }} <span aria-hidden="true">↗</span></a></h3><p>{{ .description }}</p><span class="video-source">3Blue1Brown · YouTube</span></article>{{ end }}</div>
       <p class="course-help">The final video includes a discussion of independence alongside the Bayes proof.</p>
     </section>

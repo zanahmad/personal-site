@@ -125,7 +125,7 @@
       "date": "October 5",
       "chapter": "Chapter 6",
       "title": "Continuous random variables & the normal distribution",
-      "description": "Move from probability mass to density and area. Explore cumulative probability, uniform and normal distributions, standardization, and percentiles.",
+      "description": "Densities, normal probabilities, sampling distributions and the Central Limit Theorem.",
       "preview": "continuous",
       "links": [
         {
@@ -138,14 +138,51 @@
           "type": "slides",
           "url": "/lectures/probability-statistics/chapter-6/"
         }
+      ],
+      "groups": [
+        {
+          "title": "Notes and slides",
+          "links": [
+            {
+              "label": "Continuous distributions · lecture slides",
+              "type": "slides",
+              "url": "/lectures/probability-statistics/chapter-6/"
+            },
+            {
+              "label": "CLT and normal distribution · notes, pp. 1–2",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/clt-normal-group-problems.pdf#page=1"
+            }
+          ]
+        },
+        {
+          "title": "Practice",
+          "links": [
+            {
+              "label": "Two group problems · p. 3",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/clt-normal-group-problems.pdf#page=3"
+            }
+          ]
+        },
+        {
+          "title": "Solutions",
+          "links": [
+            {
+              "label": "Group problems · worked solutions, p. 4",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/clt-normal-group-problems.pdf#page=4"
+            }
+          ]
+        }
       ]
     },
     {
       "id": "chapter-7",
-      "date": "October 21",
+      "date": "October 21–30",
       "chapter": "Chapter 7",
       "title": "Confidence intervals",
-      "description": "Build confidence intervals for means and proportions, interpret confidence and precision, and plan sample sizes. Follow the notes in class order and try three practice problems.",
+      "description": "Confidence intervals for means and proportions, precision, sample size and finite-population sampling.",
       "preview": "continuous",
       "links": [
         {
@@ -158,6 +195,58 @@
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter7-problem3-solutions.pdf"
         }
+      ],
+      "groups": [
+        {
+          "title": "Notes",
+          "links": [
+            {
+              "label": "Confidence intervals · 18-page student notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Practice",
+          "links": [
+            {
+              "label": "Practice 1 · one mean, p. 5",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf#page=5"
+            },
+            {
+              "label": "Problem 2 · two means, p. 16",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf#page=16"
+            },
+            {
+              "label": "Problem 3 · one proportion, p. 17",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf#page=17"
+            }
+          ]
+        },
+        {
+          "title": "Solutions",
+          "links": [
+            {
+              "label": "Problem 3 · all parts, 2 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-problem3-solutions.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Recording",
+          "links": [
+            {
+              "label": "October 28 · Problem 3(a), 42:11",
+              "type": "recording",
+              "url": "#chapter7-problem3a"
+            }
+          ]
+        }
       ]
     },
     {
@@ -165,9 +254,8 @@
       "date": "October 28–30",
       "chapter": "Chapter 8",
       "title": "Hypothesis testing",
-      "description": "Connect hypotheses, null distributions, p-values, and significance. Friday questions are on pages 4–8, the optional continuation is on page 9, and matching worked solutions follow on pages 10–13.",
+      "description": "Hypotheses, null distributions, one- and two-sided p-values, and significance. The October 28 recording ends at original slide 20; slide 21 is next.",
       "preview": "continuous",
-      "current": true,
       "links": [
         {
           "label": "Student notes & Friday practice with solutions · 13 pages",
@@ -184,7 +272,78 @@
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter8-problem1-solutions.pdf"
         }
+      ],
+      "groups": [
+        {
+          "title": "Notes",
+          "links": [
+            {
+              "label": "October 28–30 · notes and Friday practice, 13 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
+            },
+            {
+              "label": "Original question-only version · 9 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes-questions-only-2026-10-30.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Practice",
+          "links": [
+            {
+              "label": "Chapter 7 review · p. 4",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=4"
+            },
+            {
+              "label": "Problem 1 · GPA and test definitions, pp. 5–6",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=5"
+            },
+            {
+              "label": "Problem 2 · confidence intervals and tests, pp. 7–8",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=7"
+            }
+          ]
+        },
+        {
+          "title": "Solutions",
+          "links": [
+            {
+              "label": "Friday practice · appended solutions, pp. 10–13",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=10"
+            },
+            {
+              "label": "Problem 1 · separate worked solutions, 2 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-problem1-solutions.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Recording",
+          "links": [
+            {
+              "label": "October 28 · Introduction through slide 20, 42:18",
+              "type": "recording",
+              "url": "#chapter8-introduction"
+            }
+          ]
+        }
       ]
+    },
+    {
+      "id": "chapter-9",
+      "date": "Not yet posted",
+      "chapter": "Chapter 9",
+      "title": "Small-sample inference",
+      "description": "Student notes will be listed here when available.",
+      "pending": true,
+      "links": []
     }
   ],
   "videos": [
@@ -225,19 +384,21 @@
       "chapter": "Chapter 7 · Problem 3(a)",
       "duration": "42:11",
       "title": "A confidence interval for the usable-sample rate",
-      "description": "Work through the usable-kit proportion, its standard error, the 95% confidence interval, and a careful interpretation. The walkthrough ends after part (a).",
+      "description": "Worked solution to part (a): the sample proportion, standard error, 95% confidence interval and its interpretation.",
       "url": "/teaching/probability-statistics/videos/chapter7-problem3a-solution-2026-10-28.mp4",
-      "poster": "/images/course-recordings/chapter7-problem3a-2026-10-28.jpg"
+      "poster": "/images/course-recordings/chapter7-problem3a-2026-10-28.jpg",
+      "date": "October 28, 2026"
     },
     {
       "id": "chapter8-introduction",
       "chapter": "Chapter 8 · Introduction",
       "duration": "42:18",
       "title": "Hypotheses, p-values, and significance",
-      "description": "Build a null reference model, calculate one- and two-sided p-values, and use the GPA example to make a significance decision.",
+      "description": "Null and alternative hypotheses, the mean z statistic, one- and two-sided p-values, and significance decisions using the GPA example.",
       "url": "/teaching/probability-statistics/videos/chapter8-introduction-2026-10-28.mp4",
       "endpoint": "Covered through original slide 20, “Significance level,” including the qualitative p-value evidence bands. We resume at slide 21, “Significance level & critical values.”",
-      "poster": "/images/course-recordings/chapter8-introduction-2026-10-28.jpg"
+      "poster": "/images/course-recordings/chapter8-introduction-2026-10-28.jpg",
+      "date": "October 28, 2026"
     }
   ]
 }

@@ -4,3 +4,26 @@
 .course-recordings{margin:0 0 4rem;scroll-margin-top:2rem}.course-next-class{border-left:4px solid #1e615d;background:#f0eee3;padding:1.3rem 1.6rem;margin:1.4rem 0 1.8rem}.course-next-class h3{font-size:1.2rem;margin:0 0 .5rem}.course-next-class p{margin:.35rem 0 .65rem;max-width:72ch}.course-next-class a,.recording-download{color:#175a57;text-decoration:underline;text-underline-offset:.2em}.course-recording-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem}.course-recording{border:1px solid #d7d8ca;border-radius:12px;overflow:hidden;background:#fffdf7}.course-recording-copy{padding:1.3rem 1.4rem}.course-recording h3{font-size:1.45rem;line-height:1.2;margin:.5rem 0 .7rem}.course-recording-copy>p{line-height:1.55}.course-recording video{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#182324}.course-recording .recording-endpoint{font-size:.95rem;margin:.9rem 0 0;color:#485851}.recording-download{display:inline-block;min-height:2rem}.course-recording a:focus-visible,.course-next-class a:focus-visible{outline:3px solid #b06e2b;outline-offset:4px}@media(max-width:720px){.course-recording-grid{grid-template-columns:1fr}.course-recording-copy{padding:1.15rem}.course-next-class{padding:1.1rem 1.2rem}}
 
 @media(min-width:721px){.course-recording-copy:first-child{min-height:13rem}}
+
+/* Course index and chapter reading lists, November 2026. */
+.course-intro h1{font-size:clamp(34px,4.6vw,54px);line-height:1.12}
+.course-intro>.course-kicker{margin-top:25px}
+.course-deck{font-size:17px;margin-bottom:18px}
+.course-index{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:baseline;padding:23px 0;border-bottom:1px solid #d7dfdf;font-size:14px;line-height:1.6}
+.course-index>span{font-weight:700;color:#253d45}
+.resource-card{border-radius:5px;box-shadow:none}
+.resource-chapter{grid-column:1/-1;scroll-margin-top:24px}
+.resource-chapter .resource-content{padding:28px 32px}
+.resource-chapter .resource-description{min-height:0;max-width:78ch;margin-bottom:22px;font-size:15px}
+.resource-chapter h3{font-size:30px;line-height:1.25}
+.resource-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 40px}
+.resource-group{border-top:1px solid #dbe3e2;padding-top:12px;min-width:0}
+.resource-group h4{font-size:14px;color:#253d45;font-weight:700;margin:0 0 9px}
+.resource-group ul{list-style:none;padding:0;margin:0}
+.resource-group li{font-size:15px;line-height:1.6;margin:0 0 9px;overflow-wrap:anywhere}
+.resource-group a{display:inline-block;padding:2px 0}
+.course-recordings{margin:2rem 0 3rem}
+.course-recording{border-radius:5px;scroll-margin-top:20px}
+.course-recording-copy:first-child{min-height:0}
+.course-recording h3{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-size:26px;line-height:1.25}
+@media(max-width:680px){.course-index{gap:10px 20px}.course-index>span{flex-basis:100%}.resource-chapter .resource-content{padding:22px}.resource-groups{grid-template-columns:1fr;gap:15px}.resource-chapter h3{font-size:27px}}
