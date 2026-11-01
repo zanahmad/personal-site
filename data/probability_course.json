@@ -191,6 +191,11 @@
           "url": "/teaching/probability-statistics/chapter7-chronological-student-notes.pdf"
         },
         {
+          "label": "Practice 1 and Problem 2 · worked solutions, 4 pages",
+          "type": "pdf",
+          "url": "/teaching/probability-statistics/chapter7-practice1-problem2-solutions.pdf"
+        },
+        {
           "label": "Problem 3 · questions & worked solutions · 2 pages",
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter7-problem3-solutions.pdf"
@@ -230,6 +235,11 @@
         {
           "title": "Solutions",
           "links": [
+            {
+              "label": "Practice 1 and Problem 2 · worked solutions, 4 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-practice1-problem2-solutions.pdf"
+            },
             {
               "label": "Problem 3 · all parts, 2 pages",
               "type": "pdf",
