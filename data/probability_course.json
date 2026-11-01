@@ -261,14 +261,14 @@
     },
     {
       "id": "chapter-8",
-      "date": "October 28–30",
+      "date": "October 28–November 1",
       "chapter": "Chapter 8",
       "title": "Hypothesis testing",
-      "description": "Hypotheses, null distributions, one- and two-sided p-values, and significance. The October 28 recording ends at original slide 20; slide 21 is next.",
+      "description": "Complete Chapter 8 notes: null distributions, critical regions, Type I and Type II errors, power, and tests for means and proportions. Includes Friday practice and worked examples.",
       "preview": "continuous",
       "links": [
         {
-          "label": "Student notes & Friday practice with solutions · 13 pages",
+          "label": "Complete Chapter 8 notes and worked examples · 32 pages",
           "type": "pdf",
           "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
         },
@@ -288,9 +288,14 @@
           "title": "Notes",
           "links": [
             {
-              "label": "October 28–30 · notes and Friday practice, 13 pages",
+              "label": "Complete Chapter 8 · notes, practice and solutions, 32 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
+            },
+            {
+              "label": "Continuation from slide 21 · begin at p. 14",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=14"
             },
             {
               "label": "Original question-only version · 9 pages",
@@ -331,6 +336,11 @@
               "label": "Problem 1 · separate worked solutions, 2 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-problem1-solutions.pdf"
+            },
+            {
+              "label": "Carpenter test, Type I/II errors and power · pp. 16–18",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=16"
             }
           ]
         },
