@@ -27,3 +27,13 @@
 .course-recording-copy:first-child{min-height:0}
 .course-recording h3{font-family:"EB Garamond",Georgia,serif;font-weight:500;font-size:26px;line-height:1.25}
 @media(max-width:680px){.course-index{gap:10px 20px}.course-index>span{flex-basis:100%}.resource-chapter .resource-content{padding:22px}.resource-groups{grid-template-columns:1fr;gap:15px}.resource-chapter h3{font-size:27px}}
+
+/* Chapter 6–9 study sequence: one guide, followed by the existing chapter lists. */
+.course-index-heading{font-weight:700}
+.course-study-section{scroll-margin-top:24px}
+.course-study-guide{margin:0 0 26px;padding:24px 30px;background:#edf3f4;border-left:3px solid #55747c}
+.course-study-guide h3{font-family:"EB Garamond",Georgia,serif;font-size:27px;font-weight:500;line-height:1.25;margin:0 0 16px}
+.course-study-guide ol{margin:0;padding-left:22px;max-width:90ch}
+.course-study-guide li{font-size:15px;line-height:1.7;margin-bottom:12px;padding-left:4px}
+.course-study-guide p{font-size:14px;line-height:1.7;max-width:90ch;margin:16px 0 0}
+@media(max-width:680px){.course-study-guide{padding:20px}.course-study-guide h3{font-size:25px}.course-study-guide li{padding-left:2px}.course-index-heading{flex-basis:100%}}

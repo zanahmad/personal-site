@@ -17,10 +17,10 @@
       <p class="course-kicker">Johns Hopkins University · Fall 2026 · EN.553.211</p>
       <h1>Probability &amp; Statistics<br><span>for the Life Sciences</span></h1>
       <p class="course-deck">Lecture notes, practice problems, worked solutions and recordings.</p>
-      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#chapter-6">Chapters 6–9 ↓</a></div>
+      <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#study-chapters-6-9">Chapters 6–9 study resources ↓</a></div>
     </header>
     <nav class="course-index" aria-label="Course resources">
-      <span>Chapters 6–9</span>
+      <a class="course-index-heading" href="#study-chapters-6-9">Study guide</a>
       <a href="#chapter-6">6 · Normal distributions</a>
       <a href="#chapter-7">7 · Confidence intervals</a>
       <a href="#chapter-8">8 · Hypothesis testing</a>
@@ -28,33 +28,33 @@
       <a href="#recorded-lectures">Recordings</a>
     </nav>
 
+    {{ $studyIDs := slice "chapter-6" "chapter-7" "chapter-8" "chapter-9" }}
     <section aria-labelledby="lecture-heading">
-      <div class="course-section-heading"><div><p class="course-kicker">Course materials</p><h2 id="lecture-heading">Notes, practice &amp; solutions</h2></div><p>In chapter and class order</p></div>
+      <div class="course-section-heading"><div><p class="course-kicker">Course materials</p><h2 id="lecture-heading">Earlier chapters</h2></div><p>Chapters 1–5</p></div>
       <div class="course-grid">
         {{ range $i, $unit := .Site.Data.probability_course.units }}
-        <article class="resource-card{{ if or .groups .pending }} resource-chapter{{ end }}" id="{{ .id }}">
-          {{ if not (or .groups .pending) }}<div class="resource-preview" aria-hidden="true"><img src="/images/course-resources/{{ .preview }}.svg" alt="" width="600" height="260" loading="lazy"><span class="resource-number">{{ printf "%02d" (add $i 1) }}</span></div>{{ end }}
-          <div class="resource-content">
-            <p class="resource-meta">{{ .date }} <span aria-hidden="true">·</span> {{ .chapter }}</p>
-            <h3>{{ .title }}</h3>
-            <p class="resource-description">{{ .description }}</p>
-            {{ if .groups }}
-            <div class="resource-groups">
-              {{ range .groups }}
-              <section class="resource-group" aria-label="{{ .title }} for {{ $unit.chapter }}">
-                <h4>{{ .title }}</h4>
-                <ul>{{ range .links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
-              </section>
-              {{ end }}
-            </div>
-            {{ else }}
-            <div class="resource-links" aria-label="Resources for {{ .title }}">{{ range .links }}<a class="resource-link resource-{{ .type }}" href="{{ .url }}" aria-label="{{ .label }} — {{ $unit.title }}"><span class="resource-kind">{{ if eq .type "pdf" }}PDF{{ else if eq .type "slides" }}SLIDES{{ else if eq .type "practice" }}PRACTICE{{ else }}GUIDE{{ end }}</span><span>{{ .label }}</span><span aria-hidden="true">↗</span></a>{{ end }}</div>
-            {{ end }}
-          </div>
-        </article>
+          {{ if not (in $studyIDs .id) }}{{ partial "course-resource-card.html" (dict "unit" $unit "index" $i) }}{{ end }}
         {{ end }}
       </div>
-      <p class="course-help">Slides pause at each step. Use the arrow keys or on-screen controls; a laptop or tablet works best for the animations.</p>
+      <p class="course-help">For animated slides, use the arrow keys or on-screen controls to advance each step.</p>
+    </section>
+
+    <section class="course-study-section" id="study-chapters-6-9" aria-labelledby="study-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">Study resources</p><h2 id="study-heading">Chapters 6–9</h2></div><p>Notes, practice and available slides</p></div>
+      <div class="course-study-guide" aria-labelledby="study-guide-heading">
+        <h3 id="study-guide-heading">How to use these materials</h3>
+        <ol>
+          <li><strong>Review the concepts.</strong> Begin with the slides and notes for a chapter. In Chapters 8 and 9, use the matched section links to move between the explanation in the notes and the corresponding lecture slides.</li>
+          <li><strong>Try the questions independently.</strong> Use a question-only version where available, or stop before the solution pages. Identify the population parameter, sampling design and assumptions, then show your calculation and interpretation.</li>
+          <li><strong>Compare with released solutions.</strong> Check the reasoning as well as the final answer. Write down what you misunderstood, revisit the matching notes or slide section, and try that step again without the solution.</li>
+        </ol>
+        <p>Chapter 9 notes are available for preparation; the Chapter 9 lecture is Wednesday, November 4. The practice and solutions listed below are the materials released so far.</p>
+      </div>
+      <div class="course-grid">
+        {{ range $i, $unit := .Site.Data.probability_course.units }}
+          {{ if in $studyIDs .id }}{{ partial "course-resource-card.html" (dict "unit" $unit "index" $i) }}{{ end }}
+        {{ end }}
+      </div>
     </section>
 
     {{ with .Site.Data.probability_course.recorded_lectures }}

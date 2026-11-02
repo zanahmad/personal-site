@@ -1,0 +1,24 @@
+{{ $unit := .unit }}
+{{ $i := .index }}
+{{ with $unit }}
+        <article class="resource-card{{ if or .groups .pending }} resource-chapter{{ end }}" id="{{ .id }}">
+          {{ if not (or .groups .pending) }}<div class="resource-preview" aria-hidden="true"><img src="/images/course-resources/{{ .preview }}.svg" alt="" width="600" height="260" loading="lazy"><span class="resource-number">{{ printf "%02d" (add $i 1) }}</span></div>{{ end }}
+          <div class="resource-content">
+            <p class="resource-meta">{{ .date }} <span aria-hidden="true">·</span> {{ .chapter }}</p>
+            <h3>{{ .title }}</h3>
+            <p class="resource-description">{{ .description }}</p>
+            {{ if .groups }}
+            <div class="resource-groups">
+              {{ range .groups }}
+              <section class="resource-group" aria-label="{{ .title }} for {{ $unit.chapter }}">
+                <h4>{{ .title }}</h4>
+                <ul>{{ range .links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
+              </section>
+              {{ end }}
+            </div>
+            {{ else }}
+            <div class="resource-links" aria-label="Resources for {{ .title }}">{{ range .links }}<a class="resource-link resource-{{ .type }}" href="{{ .url }}" aria-label="{{ .label }} — {{ $unit.title }}"><span class="resource-kind">{{ if eq .type "pdf" }}PDF{{ else if eq .type "slides" }}SLIDES{{ else if eq .type "practice" }}PRACTICE{{ else }}GUIDE{{ end }}</span><span>{{ .label }}</span><span aria-hidden="true">↗</span></a>{{ end }}</div>
+            {{ end }}
+          </div>
+        </article>
+{{ end }}
