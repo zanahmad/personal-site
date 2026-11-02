@@ -144,6 +144,16 @@
           "title": "Notes and slides",
           "links": [
             {
+              "label": "Notes and slides · matched section index",
+              "type": "guide",
+              "url": "/teaching/probability-statistics/chapter-6/"
+            },
+            {
+              "label": "Lecture slides PDF · 95 pages, with links to notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter6-lecture-slides.pdf"
+            },
+            {
               "label": "Continuous distributions · lecture slides",
               "type": "slides",
               "url": "/lectures/probability-statistics/chapter-6/"
@@ -205,6 +215,16 @@
         {
           "title": "Notes",
           "links": [
+            {
+              "label": "Notes and slides · matched section index",
+              "type": "guide",
+              "url": "/teaching/probability-statistics/chapter-7/"
+            },
+            {
+              "label": "Lecture slides PDF · 83 pages, with links to notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-lecture-slides.pdf"
+            },
             {
               "label": "Confidence intervals · 18-page student notes",
               "type": "pdf",
