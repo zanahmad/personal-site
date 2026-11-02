@@ -288,6 +288,16 @@
           "title": "Notes",
           "links": [
             {
+              "label": "Notes and slides · matched section index",
+              "type": "guide",
+              "url": "/teaching/probability-statistics/chapter-8/"
+            },
+            {
+              "label": "Lecture slides PDF · 90 pages, with links to notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-lecture-slides.pdf"
+            },
+            {
               "label": "Complete Chapter 8 · notes, practice and solutions, 32 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-student-notes.pdf"
@@ -363,12 +373,34 @@
     },
     {
       "id": "chapter-9",
-      "date": "Not yet posted",
+      "date": "November 2 · study material",
       "chapter": "Chapter 9",
       "title": "Small-sample inference",
-      "description": "Student notes will be listed here when available.",
-      "pending": true,
-      "links": []
+      "description": "One-sample, independent pooled and paired t inference. Student explanations, assumptions and worked examples follow the current lecture slides.",
+      "pending": false,
+      "links": [],
+      "groups": [
+        {
+          "title": "Notes",
+          "links": [
+            {
+              "label": "Notes and slides · matched section index",
+              "type": "guide",
+              "url": "/teaching/probability-statistics/chapter-9/"
+            },
+            {
+              "label": "Lecture slides PDF · 62 pages, with links to notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-lecture-slides.pdf"
+            },
+            {
+              "label": "Student notes · explanations and worked slide examples, 17 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf"
+            }
+          ]
+        }
+      ]
     }
   ],
   "videos": [
