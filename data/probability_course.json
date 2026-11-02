@@ -261,7 +261,7 @@
     },
     {
       "id": "chapter-8",
-      "date": "October 28–November 1",
+      "date": "October 28–November 2",
       "chapter": "Chapter 8",
       "title": "Hypothesis testing",
       "description": "Complete Chapter 8 notes: null distributions, critical regions, Type I and Type II errors, power, and tests for means and proportions. Includes Friday practice and worked examples.",
@@ -321,6 +321,11 @@
               "label": "Problem 2 · confidence intervals and tests, pp. 7–8",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=7"
+            },
+            {
+              "label": "November 2 · Comparing germination proportions · question only, 1 page",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-two-proportions-practice-2026-11-02.pdf"
             }
           ]
         },
