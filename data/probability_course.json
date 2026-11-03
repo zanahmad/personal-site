@@ -144,6 +144,16 @@
           "title": "Notes and slides",
           "links": [
             {
+              "label": "Detailed student notes · 17 pages, following the full slide deck",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter6-detailed-student-notes.pdf"
+            },
+            {
+              "label": "Quick exam-prep guide · 3 pages, linked to detailed notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter6-exam-prep.pdf"
+            },
+            {
               "label": "Notes and slides · matched section index",
               "type": "guide",
               "url": "/teaching/probability-statistics/chapter-6/"
@@ -215,6 +225,11 @@
         {
           "title": "Notes",
           "links": [
+            {
+              "label": "Quick exam-prep guide · 4 pages, linked to detailed notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter7-exam-prep.pdf"
+            },
             {
               "label": "Notes and slides · matched section index",
               "type": "guide",
@@ -307,6 +322,11 @@
         {
           "title": "Notes",
           "links": [
+            {
+              "label": "Quick exam-prep guide · 5 pages, linked to detailed notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-exam-prep.pdf"
+            },
             {
               "label": "Notes and slides · matched section index",
               "type": "guide",
@@ -403,6 +423,11 @@
         {
           "title": "Notes",
           "links": [
+            {
+              "label": "Quick exam-prep guide · 4 pages, linked to detailed notes",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-exam-prep.pdf"
+            },
             {
               "label": "Notes and slides · matched section index",
               "type": "guide",
