@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="578.462031pt" height="127.978125pt" viewBox="0 0 578.462031 127.978125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T11:26:24.427600</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 127.978125 
+L 578.462031 127.978125 
+L 578.462031 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.202031 106.26 
+L 573.422031 106.26 
+L 573.422031 5.04 
+L 19.202031 5.04 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mcf4bd4ee4c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mcf4bd4ee4c" x="60.255365" y="106.26" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font: 10px 'DejaVu Sans'; text-anchor: middle" x="60.255365" y="120.858438" transform="rotate(-0 60.255365 120.858438)">Before</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mcf4bd4ee4c" x="265.522031" y="106.26" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 10px 'DejaVu Sans'; text-anchor: middle" x="265.522031" y="120.858438" transform="rotate(-0 265.522031 120.858438)">After</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_3">
+     <text style="font: 10.5px 'DejaVu Sans'; text-anchor: middle" x="13.018359" y="55.65" transform="rotate(-90 13.018359 55.65)">Measurement</text>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <path d="M 60.255365 101.659091 
+L 265.522031 87.345152 
+" clip-path="url(#p66931d112f)" style="fill: none; stroke: #287b86; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="mb726591eab" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #287b86"/>
+    </defs>
+    <g clip-path="url(#p66931d112f)">
+     <use xlink:href="#mb726591eab" x="60.255365" y="101.659091" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mb726591eab" x="265.522031" y="87.345152" style="fill: #287b86; stroke: #287b86"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <path d="M 60.255365 73.031212 
+L 265.522031 63.829394 
+" clip-path="url(#p66931d112f)" style="fill: none; stroke: #287b86; stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#p66931d112f)">
+     <use xlink:href="#mb726591eab" x="60.255365" y="73.031212" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mb726591eab" x="265.522031" y="63.829394" style="fill: #287b86; stroke: #287b86"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <path d="M 60.255365 49.515455 
+L 265.522031 38.268788 
+" clip-path="url(#p66931d112f)" style="fill: none; stroke: #287b86; stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#p66931d112f)">
+     <use xlink:href="#mb726591eab" x="60.255365" y="49.515455" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mb726591eab" x="265.522031" y="38.268788" style="fill: #287b86; stroke: #287b86"/>
+    </g>
+   </g>
+   <g id="line2d_6">
+    <path d="M 60.255365 24.977273 
+L 265.522031 9.640909 
+" clip-path="url(#p66931d112f)" style="fill: none; stroke: #287b86; stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#p66931d112f)">
+     <use xlink:href="#mb726591eab" x="60.255365" y="24.977273" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mb726591eab" x="265.522031" y="9.640909" style="fill: #287b86; stroke: #287b86"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 19.202031 106.26 
+L 19.202031 5.04 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 19.202031 106.26 
+L 573.422031 106.26 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <!-- $D_i=\mathrm{after}_i-\mathrm{before}_i$ -->
+    <g transform="translate(324.023031 24.190712)">
+     <text>
+      <tspan style="font: oblique 10px 'DejaVu Sans'" x="0" y="-0.40625">D</tspan>
+      <tspan style="font: oblique 7px 'DejaVu Sans'" x="7.700195 46.122559 93.114258" y="1.234375">iii</tspan>
+      <tspan style="font: 10px 'DejaVu Sans'" x="11.866699 22.193848 28.321777 31.842285 35.763184 41.915527 50.289062 60.616211 66.963867 73.116211 76.636719 82.754883 86.866211" y="-0.40625">=after−before</tspan>
+     </text>
+    </g>
+    <!-- Analyze $\bar D$ with SE $S_D/\sqrt{n}$. -->
+    <g transform="translate(324.023031 37.4304)">
+     <text>
+      <tspan style="font: 10px 'DejaVu Sans'" x="0 6.84082 13.178711 19.306641 22.084961 28.00293 33.251953 39.404297 49.258789 50.283203 53.461914 61.640625 64.418945 68.339844 74.677734 77.856445 84.204102 90.522461 105.712402 109.081543 124.291504" y="-0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -2.546875 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375 -0.734375">Analyze ̄ with SE /√.</tspan>
+      <tspan style="font: oblique 10px 'DejaVu Sans'" x="42.583008 93.701172 116.703613" y="-0.734375 -0.734375 -1.2249999999999996">DSn</tspan>
+      <tspan style="font: oblique 7px 'DejaVu Sans'" x="100.048828" y="0.90625">D</tspan>
+     </text>
+     <rect x="115.453613" y="-9.19375" width="8.837891" height="0.625"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font: 10px 'DejaVu Sans'" transform="translate(324.023031 79.879188)">Each line = one pair.</text>
+    <text style="font: 10px 'DejaVu Sans'" transform="translate(324.023031 91.077)">Different pairs are independent.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p66931d112f">
+   <rect x="19.202031" y="5.04" width="554.22" height="101.22"/>
+  </clipPath>
+ </defs>
+</svg>

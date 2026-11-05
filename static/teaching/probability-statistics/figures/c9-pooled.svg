@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="578.361719pt" height="124.603pt" viewBox="0 0 578.361719 124.603" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T11:26:25.256517</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 124.603 
+L 578.361719 124.603 
+L 578.361719 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 48.021719 103.068 
+L 573.321719 103.068 
+L 573.321719 5.04 
+L 48.021719 5.04 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mc45280c18d" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #287b86"/>
+    </defs>
+    <g clip-path="url(#p724268392f)">
+     <use xlink:href="#mc45280c18d" x="142.575719" y="77.495478" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mc45280c18d" x="189.852719" y="77.495478" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mc45280c18d" x="237.129719" y="77.495478" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mc45280c18d" x="415.731719" y="34.874609" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mc45280c18d" x="457.755719" y="34.874609" style="fill: #287b86; stroke: #287b86"/>
+     <use xlink:href="#mc45280c18d" x="484.020719" y="34.874609" style="fill: #287b86; stroke: #287b86"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <!-- $s^2=[(n_1-1)s_1^2+(n_2-1)s_2^2]/(n_1+n_2-2)$ -->
+     <g transform="translate(204.201719 116.623)">
+      <text>
+       <tspan style="font: oblique 10.5px 'DejaVu Sans'" x="0 32.003368 67.287962 95.194894 130.479489 153.131294 177.639033" y="-0.5171875000000021">snsnsnn</tspan>
+       <tspan style="font: 7.35px 'DejaVu Sans'" x="5.957542 38.658153 72.758421 73.245505 101.849679 135.949948 136.437031 159.786079 184.293818" y="-4.542187500000002 1.2078124999999975 2.357812499999998 -4.542187500000001 1.2078124999999975 2.357812499999998 -4.542187500000001 1.2078124999999975 1.2078124999999975">211222212</tspan>
+       <tspan style="font: 10.5px 'DejaVu Sans'" x="12.966991 23.810496 27.906932 45.667601 56.511107 63.191527 80.254953 91.098459 108.859128 119.702633 126.383053 141.400825 145.497261 149.034858 166.795527 191.303267 202.146772 208.827192" y="-0.5171875000000021">=[(−1)+(−1)]/(+−2)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m5f5190fb90" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5f5190fb90" x="48.021719" y="77.495478" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="41.021719" y="80.914775" transform="rotate(-0 41.021719 80.914775)">Group 1</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m5f5190fb90" x="48.021719" y="34.874609" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="41.021719" y="38.293906" transform="rotate(-0 41.021719 38.293906)">Group 2</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 189.852719 87.298278 
+L 189.852719 67.692678 
+" clip-path="url(#p724268392f)" style="fill: none; stroke: #ad5538; stroke-width: 2"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 452.502719 44.677409 
+L 452.502719 25.071809 
+" clip-path="url(#p724268392f)" style="fill: none; stroke: #ad5538; stroke-width: 2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 48.021719 103.068 
+L 48.021719 5.04 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 48.021719 103.068 
+L 573.321719 103.068 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font: 10px 'DejaVu Sans'; text-anchor: start" x="53.274719" y="14.8428" transform="rotate(-0 53.274719 14.8428)">Pool deviations about each group mean, not the grand mean.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p724268392f">
+   <rect x="48.021719" y="5.04" width="525.3" height="98.028"/>
+  </clipPath>
+ </defs>
+</svg>
