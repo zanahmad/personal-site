@@ -58,7 +58,7 @@ Constructing  reduced-order models of the circulatory system with feedback contr
     <i class="fas fa-image mr2"></i>Article
   </a>
   <a href="/files/gravity.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray mr2" target="_blank">
-    <i class="fas fa-chart-bar mr2"></i>Report
+    <i class="fas fa-book mr2"></i>Paper
   </a>
   <a href="/files/gravity-poster.pdf" class="link dim ba br2 ph3 pv2 mb2 dib gray" target="_blank">
     <i class="fas fa-image mr2"></i>Poster
