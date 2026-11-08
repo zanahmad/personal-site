@@ -189,7 +189,12 @@
           "title": "Solutions",
           "links": [
             {
-              "label": "Group problems · worked solutions, p. 4",
+              "label": "Both group problems · each question followed by its worked solution · 4 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter6-group-practice-solutions.pdf"
+            },
+            {
+              "label": "Original combined notes · questions p. 3, solutions p. 4",
               "type": "pdf",
               "url": "/teaching/probability-statistics/clt-normal-group-problems.pdf#page=4"
             }
@@ -276,7 +281,7 @@
               "url": "/teaching/probability-statistics/chapter7-practice1-problem2-solutions.pdf"
             },
             {
-              "label": "Problem 3 · all parts, 2 pages",
+              "label": "Problem 3 · full question and all worked parts, 2 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter7-problem3-solutions.pdf"
             }
@@ -383,12 +388,17 @@
           "title": "Solutions",
           "links": [
             {
-              "label": "Friday practice · appended solutions, pp. 10–13",
+              "label": "October 30 practice and short checks · full questions followed by solutions, 9 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter8-friday-practice-solutions.pdf"
+            },
+            {
+              "label": "Original complete notes · questions pp. 4–9, solutions pp. 10–13",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-student-notes.pdf#page=10"
             },
             {
-              "label": "Problem 1 · separate worked solutions, 2 pages",
+              "label": "Problem 1 · full question and worked solutions, 2 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter8-problem1-solutions.pdf"
             },
@@ -418,10 +428,10 @@
     },
     {
       "id": "chapter-9",
-      "date": "November 2 · study material",
+      "date": "November 9 · Monday in-class practice",
       "chapter": "Chapter 9",
       "title": "Small-sample inference",
-      "description": "One-sample, independent pooled and paired t inference. Student explanations, assumptions and worked examples follow the current lecture slides.",
+      "description": "Covered through slide PDF p. 55: one-sample and independent pooled t inference. Paired samples and the car-tire examples begin on p. 56. Monday’s two in-class questions are posted without solutions.",
       "pending": false,
       "links": [],
       "groups": [
@@ -447,6 +457,56 @@
               "label": "Student notes · explanations and worked slide examples, 17 pages",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter9-student-notes.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Monday in-class practice",
+          "links": [
+            {
+              "label": "Monday, November 9 · two Chapter 9 problems and t-table · 3 pages · no solutions",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Worked examples covered in class",
+          "links": [
+            {
+              "label": "Diamond confidence interval · question and solution, notes p. 6",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=6"
+            },
+            {
+              "label": "Simulation comparison: why the t interval is wider · notes p. 7",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=7"
+            },
+            {
+              "label": "Paint-coverage test · question and solution, notes p. 9",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=9"
+            },
+            {
+              "label": "Online/classroom comparison · question, corrected interval and test, notes pp. 12–14",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=12"
+            }
+          ]
+        },
+        {
+          "title": "Next topic",
+          "links": [
+            {
+              "label": "Paired samples and car-tire examples · slide PDF pp. 56–62",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-lecture-slides.pdf#page=56"
+            },
+            {
+              "label": "Paired-sample explanations and worked tire example · notes pp. 15–16",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=15"
             }
           ]
         }

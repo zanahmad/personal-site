@@ -20,7 +20,10 @@
       <div class="course-intro-bottom"><p>Zan Ahmad <span aria-hidden="true">·</span> Sections 05 &amp; 06</p><a href="#study-chapters-6-9">Chapters 6–9 study resources ↓</a></div>
     </header>
     <nav class="course-index" aria-label="Course resources">
-      <a class="course-index-heading" href="#study-chapters-6-9">Study guide</a>
+      <a class="course-index-heading" href="#monday-in-class-practice">Monday practice</a>
+      <a href="#practice-and-solutions">Practice &amp; solutions</a>
+      <a href="#study-chapters-6-9">Study guide</a>
+      <a href="#earlier-chapters">Chapters 1–5</a>
       <a href="#chapter-6">6 · Normal distributions</a>
       <a href="#chapter-7">7 · Confidence intervals</a>
       <a href="#chapter-8">8 · Hypothesis testing</a>
@@ -28,16 +31,27 @@
       <a href="#recorded-lectures">Recordings</a>
     </nav>
 
-    {{ $studyIDs := slice "chapter-6" "chapter-7" "chapter-8" "chapter-9" }}
-    <section aria-labelledby="lecture-heading">
-      <div class="course-section-heading"><div><p class="course-kicker">Course materials</p><h2 id="lecture-heading">Earlier chapters</h2></div><p>Chapters 1–5</p></div>
-      <div class="course-grid">
-        {{ range $i, $unit := .Site.Data.probability_course.units }}
-          {{ if not (in $studyIDs .id) }}{{ partial "course-resource-card.html" (dict "unit" $unit "index" $i) }}{{ end }}
-        {{ end }}
-      </div>
-      <p class="course-help">For animated slides, use the arrow keys or on-screen controls to advance each step.</p>
+    <section class="course-next-class" id="monday-in-class-practice" aria-labelledby="monday-heading">
+      <p class="course-kicker">Monday, November 9, 2026</p>
+      <h2 id="monday-heading">Monday in-class practice problems</h2>
+      <p><a href="/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf"><strong>Download the two Chapter 9 questions and shared t-table</strong> · 3 pages</a></p>
+      <p>Sampling design and Student’s t: nutrient-treatment growth and algal biomass. These two problems are posted without solutions for in-class work.</p>
+      <p><strong>Where we stopped:</strong> Chapter 9 slide PDF p. 55, just before paired samples and the car-tire examples on p. 56. <a href="/teaching/probability-statistics/chapter9-lecture-slides.pdf#page=56">Resume the slides at p. 56</a>.</p>
     </section>
+    <section class="course-study-guide" id="practice-and-solutions" aria-labelledby="practice-heading">
+      <h2 id="practice-heading">Practice and worked solutions</h2>
+      <p>Try a question first, then check the full worked solution in the same PDF. The two Monday Chapter 9 questions above are the only released practice problems with solutions withheld.</p>
+      <ul class="course-practice-index">
+        <li><strong>Earlier chapters:</strong> <a href="/files/bayes-and-independence-student-notes-2026-09-24.pdf#page=7">Chapter 4 questions and answers</a> · <a href="/practice/independence-bernoulli-binomial/">Counting-models quiz with explanations</a></li>
+        <li><strong>Chapter 6:</strong> <a href="/teaching/probability-statistics/clt-normal-group-problems.pdf#page=3">Group questions</a> · <a href="/teaching/probability-statistics/chapter6-group-practice-solutions.pdf">Questions followed by solutions</a></li>
+        <li><strong>Chapter 7:</strong> <a href="#chapter-7-practice">All practice questions</a> · <a href="/teaching/probability-statistics/chapter7-practice1-problem2-solutions.pdf">Practice 1 and Problem 2, with solutions</a> · <a href="/teaching/probability-statistics/chapter7-problem3-solutions.pdf">Problem 3, with solutions</a></li>
+        <li><strong>Chapter 8:</strong> <a href="/teaching/probability-statistics/chapter8-friday-practice-solutions.pdf">October 30 questions, short checks and solutions</a> · <a href="/teaching/probability-statistics/chapter8-two-proportions-solution-2026-11-02.pdf">Germination question and solution</a></li>
+        <li><strong>Chapter 9:</strong> <a href="#chapter-9-worked-examples-covered-in-class">Worked examples through our stopping point</a> · <a href="#monday-in-class-practice">Monday questions, no solutions</a></li>
+      </ul>
+    </section>
+
+    {{ $studyIDs := slice "chapter-6" "chapter-7" "chapter-8" "chapter-9" }}
+
 
     <section class="course-study-section" id="study-chapters-6-9" aria-labelledby="study-heading">
       <div class="course-section-heading"><div><p class="course-kicker">Study resources</p><h2 id="study-heading">Chapters 6–9</h2></div><p>Notes, practice and available slides</p></div>
@@ -51,13 +65,23 @@
           <li><strong>Check released solutions and revisit gaps.</strong> Compare the reasoning as well as the answer. Return to the linked explanation, then retry the part you missed without the solution.</li>
           <li><strong>Mix methods.</strong> Revisit questions from different chapters and explain why each asks for a sampling probability, confidence interval or hypothesis test, and whether observations are independent or paired.</li>
         </ol>
-        <p>The November 5 notes revision aligns course notation and adds figures to the detailed notes and quick guides. Page numbers and existing links are unchanged. Matched section pages include figures that can be enlarged on smaller screens. The practice and solutions listed below are the materials released so far.</p>
+        <p>The November 5 notes revision aligns course notation and adds figures to the detailed notes and quick guides. Page numbers and existing links are unchanged. Matched section pages include figures that can be enlarged on smaller screens. Use the practice-and-solutions index above for self-contained worked practice. Existing question-only copies remain available for independent practice; their solutions are linked alongside them.</p>
       </div>
       <div class="course-grid">
         {{ range $i, $unit := .Site.Data.probability_course.units }}
           {{ if in $studyIDs .id }}{{ partial "course-resource-card.html" (dict "unit" $unit "index" $i) }}{{ end }}
         {{ end }}
       </div>
+    </section>
+
+    <section id="earlier-chapters" aria-labelledby="lecture-heading">
+      <div class="course-section-heading"><div><p class="course-kicker">Course materials</p><h2 id="lecture-heading">Earlier chapters</h2></div><p>Chapters 1–5</p></div>
+      <div class="course-grid">
+        {{ range $i, $unit := .Site.Data.probability_course.units }}
+          {{ if not (in $studyIDs .id) }}{{ partial "course-resource-card.html" (dict "unit" $unit "index" $i) }}{{ end }}
+        {{ end }}
+      </div>
+      <p class="course-help">For animated slides, use the arrow keys or on-screen controls to advance each step.</p>
     </section>
 
     {{ with .Site.Data.probability_course.recorded_lectures }}

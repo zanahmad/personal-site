@@ -37,3 +37,10 @@
 .course-study-guide li{font-size:15px;line-height:1.7;margin-bottom:12px;padding-left:4px}
 .course-study-guide p{font-size:14px;line-height:1.7;max-width:90ch;margin:16px 0 0}
 @media(max-width:680px){.course-study-guide{padding:20px}.course-study-guide h3{font-size:25px}.course-study-guide li{padding-left:2px}.course-index-heading{flex-basis:100%}}
+
+/* Current class and sequential practice navigation. */
+.course-next-class,.course-study-guide,.resource-group,#earlier-chapters{scroll-margin-top:24px}
+.course-next-class h2,.course-study-guide h2{font-family:"EB Garamond",Georgia,serif;font-size:27px;font-weight:500;line-height:1.25;margin:0 0 14px}
+.course-next-class p{font-size:15px;line-height:1.7}
+.course-practice-index{padding-left:20px;margin:16px 0 0}
+.course-practice-index li{font-size:15px;line-height:1.7;margin:12px 0}
