@@ -325,6 +325,21 @@
       ],
       "groups": [
         {
+          "title": "Alpha, beta & power review",
+          "links": [
+            {
+              "label": "Main review · short exam cram · 2 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/alpha-beta-power-exam-cram.pdf"
+            },
+            {
+              "label": "Detailed review · explanations and worked examples · 10 pages",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/alpha-beta-power.pdf"
+            }
+          ]
+        },
+        {
           "title": "Notes",
           "links": [
             {
