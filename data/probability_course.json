@@ -431,7 +431,7 @@
       "date": "November 9 · Monday in-class practice",
       "chapter": "Chapter 9",
       "title": "Small-sample inference",
-      "description": "Covered through slide PDF p. 55: one-sample and independent pooled t inference. Paired samples and the car-tire examples begin on p. 56. Monday’s two in-class questions are posted without solutions.",
+      "description": "Covered through slide PDF p. 55: one-sample and independent pooled t inference. Paired samples and the car-tire examples begin on p. 56. Monday’s two in-class questions and a separate worked-solutions document are available below.",
       "pending": false,
       "links": [],
       "groups": [
@@ -467,6 +467,11 @@
               "label": "Monday, November 9 · two Chapter 9 problems and t-table · 3 pages · no solutions",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf"
+            },
+            {
+              "label": "Monday, November 9 · worked solutions, each question part followed by its solution",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-solutions-2026-11-09.pdf"
             }
           ]
         },
