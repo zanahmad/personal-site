@@ -15,3 +15,10 @@ command = 'sh scripts/build-course-media.sh && hugo -F -b $DEPLOY_PRIME_URL'
 [context.production]
 [context.production.environment]
 HUGO_ENV = 'production'
+
+# Keep older shared GFuNK PDF links on the current arXiv version.
+[[redirects]]
+from = "/files/papers/gfunk-v2.pdf"
+to = "https://arxiv.org/pdf/2410.04655"
+status = 301
+force = true

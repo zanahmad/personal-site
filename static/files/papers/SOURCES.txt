@@ -51,11 +51,11 @@ Pages: 9
 SHA-256: 6cf068f52515e45536e1e063970a562cf03627240ae593f943201a144c6d0799
 arXiv preprint first posted November 27, 2024; revised November 29, 2024.
 
-gfunk-v2.pdf
+gfunk-v2.pdf (archived; requests redirect to the current arXiv PDF)
 Graph Fourier Neural Kernels (G-FuNK): Learning Solutions of Nonlinear Diffusive Parametric PDEs on Multiple Domains
 Authors: Shane E. Loeffler, Zan Ahmad, Syed Yusuf Ali, Carolyna Yamamoto, Dan M. Popescu, Alana Yee, Yash Lal, Natalia Trayanova, Mauro Maggioni
 Version: arXiv:2410.04655v2, October 9, 2024
-Canonical record: https://arxiv.org/abs/2410.04655
+Current reference: https://arxiv.org/pdf/2410.04655
 Original PDF: https://arxiv.org/pdf/2410.04655v2
 License: CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/
 Changes: none

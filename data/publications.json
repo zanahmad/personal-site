@@ -283,20 +283,16 @@
       "Natalia Trayanova",
       "Mauro Maggioni"
     ],
-    "year": 2024,
-    "sort": 20241009,
-    "status": "arXiv:2410.04655, preprint v2, October 9, 2024.",
+    "year": 2026,
+    "sort": 20261110,
+    "status": "arXiv preprint, 2026. Under review, PNAS.",
     "doi": "10.48550/arXiv.2410.04655",
-    "paper": "https://arxiv.org/abs/2410.04655",
-    "pdf": "/files/papers/gfunk-v2.pdf",
+    "paper": "https://arxiv.org/pdf/2410.04655",
+    "pdf": "https://arxiv.org/pdf/2410.04655",
     "pdf_label": "Preprint PDF",
     "note": "",
     "kind": "paper",
-    "pdf_source": "https://arxiv.org/pdf/2410.04655v2",
-    "pdf_version": "arXiv:2410.04655v2, October 9, 2024",
-    "pdf_license": "CC BY-NC-SA 4.0",
-    "pdf_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "pdf_verified": "2026-10-08"
+    "pdf_source": "https://arxiv.org/pdf/2410.04655"
   },
   {
     "slug": "scirep",
