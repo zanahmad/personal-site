@@ -5,7 +5,7 @@ draft: false
 description: ""
 ---
 
-Academic CV · Updated November 7, 2026 · 6 pages
+Academic CV · Updated November 9, 2026 · 6 pages
 
 <a href="/files/CV.pdf" download><strong>Download PDF</strong></a> · <a href="/files/CV.pdf" target="_blank" rel="noopener"><strong>View online</strong></a>
 
