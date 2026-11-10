@@ -10,7 +10,7 @@
             {{ if .groups }}
             <div class="resource-groups">
               {{ range .groups }}
-              <section class="resource-group" id="{{ $unit.id }}-{{ .title | urlize }}" aria-label="{{ .title }} for {{ $unit.chapter }}">
+              <section class="resource-group" id="{{ with .id }}{{ . }}{{ else }}{{ $unit.id }}-{{ .title | urlize }}{{ end }}" aria-label="{{ .title }} for {{ $unit.chapter }}">
                 <h4>{{ .title }}</h4>
                 <ul>{{ range .links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
               </section>

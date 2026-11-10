@@ -446,7 +446,7 @@
       "date": "November 9 · Monday in-class practice",
       "chapter": "Chapter 9",
       "title": "Small-sample inference",
-      "description": "Covered through slide PDF p. 55: one-sample and independent pooled t inference. Paired samples and the car-tire examples begin on p. 56. Monday’s two in-class questions and a separate worked-solutions document are available below.",
+      "description": "All Chapter 9 slides are complete: one-sample, independent pooled and paired-sample t inference. Problem 1 from the November 9 question sheet is complete; Problem 2 is assigned for practice. The question-only sheet and separate worked solutions are linked below.",
       "pending": false,
       "links": [],
       "groups": [
@@ -479,7 +479,17 @@
           "title": "Monday in-class practice",
           "links": [
             {
-              "label": "Monday, November 9 · two Chapter 9 problems and t-table · 3 pages · no solutions",
+              "label": "Problem 2 · assigned for practice · algal biomass and confidence intervals, p. 2",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf#page=2"
+            },
+            {
+              "label": "Problem 1 · completed in class · nutrient-treatment growth, p. 1",
+              "type": "pdf",
+              "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf#page=1"
+            },
+            {
+              "label": "November 9 question sheet · both problems and t-table · 3 pages · questions only",
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter9-monday-in-class-practice-2026-11-09.pdf"
             },
@@ -516,7 +526,7 @@
           ]
         },
         {
-          "title": "Next topic",
+          "title": "Paired samples · covered in class",
           "links": [
             {
               "label": "Paired samples and car-tire examples · slide PDF pp. 56–62",
@@ -528,7 +538,8 @@
               "type": "pdf",
               "url": "/teaching/probability-statistics/chapter9-student-notes.pdf#page=15"
             }
-          ]
+          ],
+          "id": "chapter-9-next-topic"
         }
       ]
     }
