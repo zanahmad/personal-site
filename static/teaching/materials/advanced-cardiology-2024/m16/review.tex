@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Probability calibration and missing-modality evaluation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 16}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Probability calibration and missing-modality evaluation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Ranking, calibration and probability scores answer different questions.
+\item Calibration parameters are fitted on separate validation groups.
+\item A positive temperature preserves ranking and threshold-0.5 decisions.
+\item Evaluate modalities on the same cases and freeze the missing-data rule.
+\item Missingness stress tests require a stated intervention and limited claim.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Call a lower Brier score proof of better calibration alone.} Inspect reliability summaries and their counts; Brier also reflects discrimination.
+
+\textbf{Refit the imputer when test B values disappear.} Use the stored training median and all fitted parameters unchanged.
+
+\textbf{Expect AB with no B to equal a separately fitted A model.} The models have different coefficients and calibration parameters.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What happens at temperature one?
+\item What does a zero-count reliability bin tell us?
+\item What should remain fixed during the missingness test?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish ranking discrimination, probability quality and calibration.
+\item Fit a single temperature using validation groups while keeping test groups untouched.
+\item Compare one- and two-modality models on the identical held-out group population.
+\item Evaluate a frozen missing-data rule and state what a synthetic stress test can support.
+\end{itemize}
+\end{document}

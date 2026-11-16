@@ -1,0 +1,55 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Surrogate error, amortized cost and training-step bias / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 19}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Surrogate error, amortized cost and training-step bias --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A useful claim includes regime, observable and acceptance threshold.
+\item Setup and per-query cost answer different questions.
+\item Reference accuracy must be checked independently.
+\item A learned generator can depend on the training discretization.
+\item A computational benchmark is not biological validation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Reporting only a favorable warm inference time.} State the boundary and separately account for setup and geometry costs.
+
+\textbf{Assuming a higher-order integrator always improves target accuracy.} Test the learned equation and training/inference discretizations together.
+
+\textbf{Treating reference labels as error-free reality.} Separate reference verification from model validation.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item When does a positive setup break-even threshold exist?
+\item What can a smaller step converge toward?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Separate surrogate error, reference-solver error and biological validation evidence.
+\item Measure query costs with an explicit timing boundary and compute a setup break-even condition.
+\item Explain how a fitted generator can depend on its training time step.
+\item Design a falsifiable, bounded comparison with grouped test regimes and failure criteria.
+\end{itemize}
+\end{document}

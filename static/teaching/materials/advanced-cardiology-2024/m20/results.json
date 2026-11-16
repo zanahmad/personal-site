@@ -1,0 +1,54 @@
+{
+  "model": "synthetic audit around an analytic nondimensional heat solution; no patient or trained-model outputs",
+  "final_time": 0.2,
+  "grid_cells": 128,
+  "candidates": [
+    {
+      "candidate": "Exact",
+      "final_errors": {
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_error": 0.0,
+        "mean_error": 0.0
+      },
+      "final_spatial_correlation": 0.9999999999999999,
+      "initial_rms_mismatch": 0.0,
+      "max_mean_error_vs_prescribed_initial": 2.220446049250313e-16,
+      "max_own_mean_change": 2.220446049250313e-16
+    },
+    {
+      "candidate": "Biased",
+      "final_errors": {
+        "rms": 0.19999999999999996,
+        "relative_l2": 0.19680001590086993,
+        "max_error": 0.20000000000000007,
+        "mean_error": 0.2
+      },
+      "final_spatial_correlation": 1.0,
+      "initial_rms_mismatch": 0.19999999999999993,
+      "max_mean_error_vs_prescribed_initial": 0.20000000000000018,
+      "max_own_mean_change": 4.440892098500626e-16
+    },
+    {
+      "candidate": "Mean only",
+      "final_errors": {
+        "rms": 0.18106504687287464,
+        "relative_l2": 0.17816802051836747,
+        "max_error": 0.3312386581075246,
+        "mean_error": 2.1260476625696596e-17
+      },
+      "final_spatial_correlation": null,
+      "initial_rms_mismatch": 0.2474873734152916,
+      "max_mean_error_vs_prescribed_initial": 2.220446049250313e-16,
+      "max_own_mean_change": 2.220446049250313e-16
+    }
+  ],
+  "checks": {
+    "affine_correlation_identity": true,
+    "constant_correlation_undefined": true,
+    "zero_reference_relative_error_undefined": true,
+    "all_own_means_preserved": true,
+    "counterexamples_detected_by_field_metric": true
+  },
+  "runtime_seconds": 0.5105153825134039
+}

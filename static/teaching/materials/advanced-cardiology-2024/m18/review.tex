@@ -1,0 +1,55 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Spectral attenuation surrogates and graph-basis limitations / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 18}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Spectral attenuation surrogates and graph-basis limitations --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Low error can follow from exact representability.
+\item Retained modes and parameter ranges define the baseline contract.
+\item Mean preservation does not imply field accuracy.
+\item Graph normalization and basis conventions affect interpretation.
+\item Research analogy is different from reproduction.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating finer-grid evaluation as new-physics evidence.} Keep representation and physical-parameter tests separate.
+
+\textbf{Assuming an unexcited mode has a fitted gain of zero.} It is unidentifiable without additional assumptions.
+
+\textbf{Using published GFuNK performance to describe this companion.} Report only this companion's own calculations and limitations.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Why does a consistent basis sign flip cancel?
+\item What time map does the companion fit?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Explain the verified GFuNK pipeline at the level of graph basis, learned generator and integration.
+\item Fit and verify a three-mode linear baseline without calling it a neural-operator reproduction.
+\item Measure same-family grid transfer separately from changed-parameter and omitted-mode errors.
+\item Identify representation, conservation and identifiability assumptions in a spectral model.
+\end{itemize}
+\end{document}

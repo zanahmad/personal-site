@@ -1,0 +1,31 @@
+{
+  "model": "nondimensional sealed heat equation; analytic cosine benchmark, not cardiac",
+  "train_cases": 48,
+  "test_cases": 16,
+  "train_seed": 1701,
+  "test_seed": 1702,
+  "train_test_case_overlap": 0,
+  "input_modes": 3,
+  "kappa": 0.1,
+  "output_time": 0.1,
+  "spatial_errors": [
+    0.0005330727894844241,
+    0.00013323922968888177,
+    3.3307773564440014e-05,
+    8.326812782535546e-06
+  ],
+  "spatial_orders": [
+    2.000313623767387,
+    2.0000880919568425,
+    2.000022628930159
+  ],
+  "checks": {
+    "analytic_semigroup": true,
+    "mean_conservation": true,
+    "dense_semidiscrete_reference": true,
+    "coefficient_recovery_across_grids": true,
+    "constant_fd_state": true,
+    "invalid_cases_rejected": 3
+  },
+  "runtime_seconds": 0.6271279593929648
+}

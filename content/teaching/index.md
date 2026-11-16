@@ -13,7 +13,7 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 - [**EN.500.312 Advanced Topics in Computational Cardiology**](/teaching/heroic/) – Fall 2024
 
-  Original course projects and notes (PDF). [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
+  Twenty lectures with notes, slides, code, and interactive CFD and shape modules. [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
     
 - [**EN.500.111 Mathematical Modeling and Computer Simulation**](/teaching/modeling/)  – Fall 2024  
  

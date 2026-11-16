@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "nx": 80,
+    "ny": 20,
+    "L": 0.02,
+    "H": 0.002,
+    "G": 100.0,
+    "mu": 0.004,
+    "D": 2e-06,
+    "end": 4.0,
+    "pulse": 0.3
+  },
+  "units": "SI; concentration normalized by the inlet pulse level",
+  "dt_max_s": 0.001648351648351698,
+  "range": [
+    0.0,
+    0.9976871270634527
+  ],
+  "max_mass_defect_m2": 2.371692252312041e-20,
+  "checks": {
+    "quadratic_velocity_exact_at_nodes": true,
+    "forcing_linearity": true,
+    "zero_forcing": true,
+    "constant_transport_state": true,
+    "zero_transport_state": true,
+    "boundary_budget_conservation": true,
+    "positivity_without_clipping": true,
+    "advective_limit": true,
+    "mass_defect_m2": 2.541098841762901e-21,
+    "refinement_meshes": [
+      [
+        20,
+        8
+      ],
+      [
+        40,
+        16
+      ],
+      [
+        80,
+        32
+      ]
+    ],
+    "mass_at_1s_m2": [
+      5.04462318791349e-06,
+      5.012129630844611e-06,
+      5.003386567530009e-06
+    ]
+  }
+}
