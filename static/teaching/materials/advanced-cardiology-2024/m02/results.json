@@ -1,0 +1,16 @@
+{
+  "max_total_drift_L": 1.1031175972675555e-12,
+  "max_balance_residual_L_min": 3.66819907782201e-11,
+  "max_solves": 2,
+  "initial_total_L": 5.136159999999999,
+  "rate_bpm": 80.0,
+  "rs_mmHg_min_L": 17.86,
+  "dt_s": 0.001875,
+  "last_cycle_pressure_difference_mmHg": 0.07255268302043305,
+  "wrong_fixed_compliance_audit_drift_L": 2.260852768945603,
+  "coarse_fine_endpoint_pressure_difference_mmHg": 0.030843520199780983,
+  "rs8_short_volume_drift_L": 8.79296635503124e-14,
+  "volume_reconstruction_pass": true,
+  "ideal_valves_nonnegative": true,
+  "constant_shared_phase_pass": true
+}

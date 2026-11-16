@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Implicit pressure equations and ideal-valve complementarity / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 3}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Implicit pressure equations and ideal-valve complementarity --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Differentiate or discretize stored CP when compliance varies.
+\item An active link adds a symmetric conductance block to the pressure matrix.
+\item A fixed valve guess creates a linear solve; consistency remains to be checked.
+\item Conservation alone cannot select the correct valve state.
+\item An independent constant-compliance reference reveals time error.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Replacing the volume derivative with C times pressure derivative while C changes.} Retain P times compliance derivative, or directly difference CP.
+
+\textbf{Clipping valve flow after solving once.} Change the valve state and solve its new coupled balance.
+
+\textbf{Calling a conserved implicit result exact.} Compare the same problem under refinement and with an independent reference.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What units must h/R have in the pressure matrix?
+\item What happens to the active conductance terms when all compartment balances are summed?
+\item Can both open and closed labels describe the same state at zero pressure difference?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Derive the changing-compliance volume balance without dropping the compliance derivative.
+\item Assemble a backward-Euler pressure system for a fixed valve-state guess.
+\item Trace a concrete rejected closed guess and accepted open solve.
+\item Check conservation, valve complementarity, units and time-step sensitivity separately.
+\item Implement a two-compartment matrix in a guided scaffold and connect it to the six-compartment method.
+\end{itemize}
+\end{document}

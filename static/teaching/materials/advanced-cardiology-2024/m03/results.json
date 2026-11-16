@@ -1,0 +1,40 @@
+{
+  "trace": [
+    {
+      "assumed_open": false,
+      "pressure_mmHg": [
+        24.0,
+        3.0
+      ],
+      "consistent": false
+    },
+    {
+      "assumed_open": true,
+      "pressure_mmHg": [
+        14.666666666666666,
+        5.333333333333332
+      ],
+      "consistent": true
+    }
+  ],
+  "final_pressure_mmHg": [
+    14.666666666666666,
+    5.333333333333332
+  ],
+  "flow_L_min": 4.666666666666667,
+  "total_volume_L": 0.36,
+  "max_balance_residual_L_min": 2.6645352591003757e-15,
+  "exact_relaxation_rate_per_min": 62.5,
+  "upstream_final_errors_mmHg": [
+    0.38736594373845534,
+    0.16594984613374564,
+    0.07388095199106459
+  ],
+  "checks": {
+    "wrong_initial_guess_same_solution": true,
+    "reverse_pressure_closes_valve": true,
+    "equal_pressure_zero_flow": true,
+    "refinement_errors_decrease": true,
+    "invalid_cases_rejected": 3
+  }
+}

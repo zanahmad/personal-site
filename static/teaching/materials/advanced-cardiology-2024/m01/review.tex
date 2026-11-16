@@ -1,0 +1,54 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Circulatory models and parameter identifiability / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 1}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Circulatory models and parameter identifiability --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Question and observable determine useful resolution.
+\item The six-region boundary represents a closed circulation, not six anatomical heart chambers.
+\item Mean flow is a product under the stated repeated-cycle assumption.
+\item Equal outputs can arise from different hidden parameters.
+\item Verification and validation answer different questions.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Inferring a unique internal mechanism from one successful fit.} Look for transformations that leave the observable unchanged and identify additional measurements.
+
+\textbf{Using a pressure gauge shift as if it were a change of transmural loading.} Track the exterior pressure and the storage relation too.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What converts rate times stroke volume from mL/min to L/min?
+\item Can a more detailed model remove missing measurement information by itself?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace the two-pump circulation and justify a six-region lumped boundary.
+\item Map three scientific questions to assumptions, model resolution and measurable outputs.
+\item Calculate mean flow and effective resistance with compatible units.
+\item Demonstrate a non-identifiable parameter pair and select an additional observation.
+\item Distinguish numerical verification, parameter estimation and experimental validation.
+\end{itemize}
+\end{document}

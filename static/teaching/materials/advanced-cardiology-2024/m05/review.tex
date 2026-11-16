@@ -1,0 +1,52 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Finite-volume advection and diffusion / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 5}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Finite-volume advection and diffusion --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Store cell averages and update amounts through shared interface fluxes.
+\item Advection follows a prescribed velocity; diffusion follows a negative concentration gradient.
+\item Boundary flux determines the correct total-amount account.
+\item Conservation, positivity, direction and accuracy require separate checks.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating all pulse smoothing as physical diffusion.} Upwind discretization can smooth even with D=\allowbreak{}0; examine refinement.
+
+\textbf{Keeping the same time step after halving cell width.} Recompute both the advective and diffusive restrictions.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What survives when all cell balances are summed?
+\item Why can a stable conservative calculation still need refinement?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Derive a cell balance with a single shared flux at each interface.
+\item Distinguish transport by bulk velocity from diffusion down a concentration gradient.
+\item Check a boundary budget, constant state and nonnegative solution separately.
+\item Implement a conservative update and predict the effects of changing velocity, diffusion or boundary conditions.
+\end{itemize}
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Cardiac phase and pressure feedback in a pulsatile circulation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 4}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Cardiac phase and pressure feedback in a pulsatile circulation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Choose the model boundary first: six compartments conserve total blood; the two-compartment reservoir model does not have that invariant.
+\item Update C P when compliance varies. Backward Euler plus valve consistency is the hydraulic method.
+\item Euler filter, gain sign, bounded rate and accumulated shared phase must be stated separately.
+\item Changing resistance must change both hydraulic conductances and reported flows.
+\item Fixed rate permits changing stroke volume; determine rather than prescribe the sign of output change.
+\item Conservation, convergence, cross-language agreement and physiological validation answer different questions.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Call the entire circulation model forward Euler.} Only filter and clock are explicit Euler here; pressures come from an implicit valve-consistent solve.
+
+\textbf{Change Rs while retaining conductance matrices and flow caches.} Build and report using current conductance; test the state and flow equation separately.
+
+\textbf{Drive just one ventricle with the new clock.} Evaluate both compliances using the same accumulated phase.
+
+\textbf{Expect proportional feedback to reach exactly the pressure target.} A persistent error can be needed to sustain a rate different from the reference.
+
+\textbf{Treat a smooth, conserved curve as sufficient numerical validation.} Check valve conditions, balances, limiting cases and observable-specific refinement.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What changes pressure during an isolated ventricular contraction?
+\item What unit conversion belongs in the phase step when time is displayed in seconds?
+\item What exact zero-gain limit should the code recover?
+\item Why is an exponential filter not an exact coupled circulation solver?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Derive a six-compartment pressure update that conserves total blood volume with changing ventricular compliance.
+\item Distinguish the implicit hydraulic solve from the explicit filter and clock updates.
+\item Implement and check one Euler feedback-and-clock step, then use its common phase for both ventricular compliances.
+\item Diagnose a stale-conductance error and interpret a resistance perturbation without prescribing the sign of cardiac output.
+\item Specify independent checks and a refinement experiment before trusting a feedback response.
+\end{itemize}
+\end{document}

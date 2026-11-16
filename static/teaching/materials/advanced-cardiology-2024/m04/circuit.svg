@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="590.4pt" height="302.4pt" viewBox="0 0 590.4 302.4" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <title id="figure-title">Six-compartment closed circulation</title><desc id="figure-description">Six chambers form a directed loop with four ideal valves and systemic and pulmonary resistance beds. One cardiac phase drives both ventricular compliances.</desc><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T14:31:07.052171</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 302.4  L 590.4 302.4  L 590.4 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 79.2 111.771429  C 93.998333 111.771429 108.192557 108.700753 118.656558 103.235683  C 129.12056 97.770613 135 90.357347 135 82.628571  C 135 74.899795 129.12056 67.486529 118.656558 62.02146  C 108.192557 56.55639 93.998333 53.485714 79.2 53.485714  C 64.401667 53.485714 50.207443 56.55639 39.743442 62.02146  C 29.27944 67.486529 23.4 74.899795 23.4 82.628571  C 23.4 90.357347 29.27944 97.770613 39.743442 103.235683  C 50.207443 108.700753 64.401667 111.771429 79.2 111.771429  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 295.2 111.771429  C 309.998333 111.771429 324.192557 108.700753 334.656558 103.235683  C 345.12056 97.770613 351 90.357347 351 82.628571  C 351 74.899795 345.12056 67.486529 334.656558 62.02146  C 324.192557 56.55639 309.998333 53.485714 295.2 53.485714  C 280.401667 53.485714 266.207443 56.55639 255.743442 62.02146  C 245.27944 67.486529 239.4 74.899795 239.4 82.628571  C 239.4 90.357347 245.27944 97.770613 255.743442 103.235683  C 266.207443 108.700753 280.401667 111.771429 295.2 111.771429  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 511.2 111.771429  C 525.998333 111.771429 540.192557 108.700753 550.656558 103.235683  C 561.12056 97.770613 567 90.357347 567 82.628571  C 567 74.899795 561.12056 67.486529 550.656558 62.02146  C 540.192557 56.55639 525.998333 53.485714 511.2 53.485714  C 496.401667 53.485714 482.207443 56.55639 471.743442 62.02146  C 461.27944 67.486529 455.4 74.899795 455.4 82.628571  C 455.4 90.357347 461.27944 97.770613 471.743442 103.235683  C 482.207443 108.700753 496.401667 111.771429 511.2 111.771429  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 511.2 269.485714  C 525.998333 269.485714 540.192557 266.415039 550.656558 260.949969  C 561.12056 255.484899 567 248.071633 567 240.342857  C 567 232.614081 561.12056 225.200815 550.656558 219.735745  C 540.192557 214.270675 525.998333 211.2 511.2 211.2  C 496.401667 211.2 482.207443 214.270675 471.743442 219.735745  C 461.27944 225.200815 455.4 232.614081 455.4 240.342857  C 455.4 248.071633 461.27944 255.484899 471.743442 260.949969  C 482.207443 266.415039 496.401667 269.485714 511.2 269.485714  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 295.2 269.485714  C 309.998333 269.485714 324.192557 266.415039 334.656558 260.949969  C 345.12056 255.484899 351 248.071633 351 240.342857  C 351 232.614081 345.12056 225.200815 334.656558 219.735745  C 324.192557 214.270675 309.998333 211.2 295.2 211.2  C 280.401667 211.2 266.207443 214.270675 255.743442 219.735745  C 245.27944 225.200815 239.4 232.614081 239.4 240.342857  C 239.4 248.071633 245.27944 255.484899 255.743442 260.949969  C 266.207443 266.415039 280.401667 269.485714 295.2 269.485714  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 79.2 269.485714  C 93.998333 269.485714 108.192557 266.415039 118.656558 260.949969  C 129.12056 255.484899 135 248.071633 135 240.342857  C 135 232.614081 129.12056 225.200815 118.656558 219.735745  C 108.192557 214.270675 93.998333 211.2 79.2 211.2  C 64.401667 211.2 50.207443 214.270675 39.743442 219.735745  C 29.27944 225.200815 23.4 232.614081 23.4 240.342857  C 23.4 248.071633 29.27944 255.484899 39.743442 260.949969  C 50.207443 266.415039 64.401667 269.485714 79.2 269.485714  z " clip-path="url(#p230422b3fd)" style="fill: #eef2f3; stroke: #293e4c; stroke-width: 1.3; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 138.802588 82.628571  Q 187.201802 82.628571 234.035769 82.628571  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 228.835769 80.028571  L 234.035769 82.628571  L 228.835769 85.228571  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="patch_9">
+    <path d="M 354.802588 82.628571  Q 403.201802 82.628571 450.035769 82.628571  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 444.835769 80.028571  L 450.035769 82.628571  L 444.835769 85.228571  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="patch_10">
+    <path d="M 511.2 139.486691  Q 511.2 161.485308 511.2 181.918678  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 513.8 176.718678  L 511.2 181.918678  L 508.6 176.718678  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="patch_11">
+    <path d="M 451.597412 240.342857  Q 403.198198 240.342857 356.364231 240.342857  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 361.564231 242.942857  L 356.364231 240.342857  L 361.564231 237.742857  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="patch_12">
+    <path d="M 235.597412 240.342857  Q 187.198198 240.342857 140.364231 240.342857  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 145.564231 242.942857  L 140.364231 240.342857  L 145.564231 237.742857  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="patch_13">
+    <path d="M 79.2 183.484738  Q 79.2 161.48612 79.2 141.05275  " clip-path="url(#p230422b3fd)" style="fill: none; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+    <path d="M 76.6 146.25275  L 79.2 141.05275  L 81.8 146.25275  z " clip-path="url(#p230422b3fd)" style="fill: #293e4c; stroke: #293e4c; stroke-width: 1.4; stroke-linecap: round" />
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(49.661016 79.565583)">Left ventricle</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(35.007188 90.368044)">C varies with phase</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(255.910781 79.565935)">Systemic arteries</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(271.065938 90.367693)">constant C</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(477.386016 79.565935)">Systemic veins</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(487.065938 90.367693)">constant C</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(478.278281 237.279869)">Right ventricle</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(467.007187 248.08233)">C varies with phase</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(252.419766 237.28022)">Pulmonary arteries</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(271.065938 248.081978)">constant C</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(41.895 237.28022)">Pulmonary veins</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(55.065938 248.081978)">constant C</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="187.2" y="67.00834" transform="rotate(-0 187.2 67.00834)">aortic valve</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="403.2" y="67.00834" transform="rotate(-0 403.2 67.00834)">systemic resistance</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(536.44834 192.682706) rotate(-90)">tricuspid valve</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="403.2" y="263.122626" transform="rotate(-0 403.2 263.122626)">pulmonic valve</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="187.2" y="263.122626" transform="rotate(-0 187.2 263.122626)">pulmonary resistance</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(56.20834 186.786496) rotate(-90)">mitral valve</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(176.910937 158.082394)">One accumulated phase drives both ventricles.</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(162.082812 170.085128)">No external reservoir: total blood volume stays fixed.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p230422b3fd">
+   <rect x="7.2" y="7.2" width="576" height="288" />
+  </clipPath>
+ </defs>
+</svg>

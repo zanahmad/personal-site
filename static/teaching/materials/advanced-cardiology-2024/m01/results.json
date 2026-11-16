@@ -1,0 +1,36 @@
+{
+  "model": "illustrative mean-flow observation map",
+  "pairs_rate_bpm_stroke_ml": [
+    [
+      60,
+      100
+    ],
+    [
+      80,
+      75
+    ],
+    [
+      120,
+      50
+    ]
+  ],
+  "observables": [
+    {
+      "flow_L_min": 6.0,
+      "resistance_mmHg_min_L": 15.0
+    },
+    {
+      "flow_L_min": 6.0,
+      "resistance_mmHg_min_L": 15.0
+    },
+    {
+      "flow_L_min": 6.0,
+      "resistance_mmHg_min_L": 15.0
+    }
+  ],
+  "checks": {
+    "equal_products_equal_flow": true,
+    "product_preserving_perturbation": true,
+    "invalid_cases_rejected": 4
+  }
+}

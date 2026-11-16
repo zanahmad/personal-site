@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={A periodically forced circulation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 2}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{A periodically forced circulation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A baseline records parameters, initial states, units, method and duration.
+\item Volume reconstruction uses Vd plus compliance at the saved phase times pressure.
+\item Internal flows cancel in the total-volume balance.
+\item Startup change, conservation residual and time-step error are different diagnostics.
+\item An implicit hydraulic step requires a coupled solve and valve consistency.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Calling any changing waveform conservation drift.} Compute the summed volume account and inspect cycle-to-cycle change separately.
+
+\textbf{Using seconds directly with flows in L/min.} Convert the step to minutes before multiplying flow.
+
+\textbf{Treating Rs=\allowbreak{}8 and Rs=\allowbreak{}17.86 as the same baseline.} Record parameter identity and label new choices explicitly.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item How long is a beat at 80 beats/min?
+\item Does conservation prove the waveform is accurate?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Identify six pressure states, six stored volumes, four ideal valves and two vascular beds in the supplied baseline.
+\item Convert the seconds-based interface to minute-based hydraulic increments.
+\item Reconstruct total volume from phase-dependent compliance, pressures and unstressed volumes.
+\item Distinguish startup transients, conservation drift and time-step error.
+\item Implement a volume audit and report the evidence needed before interpreting a parameter change.
+\end{itemize}
+\end{document}
