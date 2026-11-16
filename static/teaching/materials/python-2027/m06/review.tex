@@ -1,0 +1,59 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Embeddings and scaled dot-product attention / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 6}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Embeddings and scaled dot-product attention --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Array axes distinguish positions from feature coordinates.
+\item Queries and keys determine scores; values supply coordinates to mix.
+\item Row-normalized attention weights sum to one over allowed keys.
+\item Apply a mask inside normalization and reject rows with no permitted keys.
+\item A fixed forward pass is distinct from parameter training, generation and scientific validation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating the output vector as token probabilities.} Z contains mixed value coordinates; no vocabulary classifier is supplied.
+
+\textbf{Interpreting invented embeddings as learned meaning.} These coordinates and projection coefficients were chosen by hand.
+
+\textbf{Erasing weights after normalization without rescaling.} Normalize only across permitted keys.
+
+\textbf{Accepting a scientific claim because its explanation sounds plausible.} Specify what the calculation establishes and obtain the appropriate independent evidence for claims outside it.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What does softmax return for equal scores over two permitted keys?
+\item Why subtract a row maximum before exponentiation?
+\item What parameters are learned in this demonstration?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace embedding, query, key, value, score and output array shapes.
+\item Compute one scaled dot-product attention row by hand.
+\item Explain stable row normalization and the effect of a causal mask.
+\item Distinguish a fixed-parameter calculation from training and from text generation.
+\item Test a numerical claim independently and document what an automated explanation has not established.
+\end{itemize}
+\end{document}

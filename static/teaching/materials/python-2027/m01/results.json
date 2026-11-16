@@ -1,0 +1,23 @@
+{
+  "object_A": {
+    "elapsed_s": 8.0,
+    "start_mm": 10.0,
+    "end_mm": 26.0,
+    "displacement_mm": 16.0,
+    "average_velocity_mm_s": 2.0
+  },
+  "object_B": {
+    "elapsed_s": 8.0,
+    "start_mm": 0.0,
+    "end_mm": 24.0,
+    "displacement_mm": 24.0,
+    "average_velocity_mm_s": 3.0
+  },
+  "checks": {
+    "larger_position_not_larger_average_velocity": true,
+    "origin_shift_preserves_velocity": true,
+    "mm_cm_conversion_consistent": true,
+    "negative_displacement_retained": true,
+    "invalid_inputs_rejected": 4
+  }
+}

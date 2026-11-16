@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Python and sampled measurements / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 1}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Python and sampled measurements --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Names and values need units and a clear meaning.
+\item A string containing digits is still text.
+\item Assignment uses the values available when it runs.
+\item Unit conversion changes numbers according to a relationship.
+\item Points, connectors and model predictions are different evidence.
+\item A clean ordered run checks notebook dependencies.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Change a label without changing values.} Convert the numbers and update the unit label together.
+
+\textbf{Treat an earlier assignment as automatically refreshed.} Rerun dependent calculations after changing an input.
+
+\textbf{Call the endpoint rate an instantaneous derivative.} It is an average over the stated interval.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item How many minutes are 210 seconds?
+\item Does a shared Celsius-to-kelvin offset change temperature differences?
+\item What does restarting a notebook check?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Run a supplied cell or script and distinguish code, output and an error message.
+\item Store and print numerical values and text labels without confusing their types.
+\item Convert a time and a temperature unit while retaining the scientific meaning.
+\item Read a labeled plot and distinguish an observation from an interpolated or modeled value.
+\item Restart and rerun a short notebook in order to check reproducibility.
+\end{itemize}
+\end{document}

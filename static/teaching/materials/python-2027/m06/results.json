@@ -1,0 +1,52 @@
+{
+  "tokens": [
+    "red",
+    "cell",
+    "moves",
+    "slowly"
+  ],
+  "embedding_shape": [
+    4,
+    3
+  ],
+  "projection_shape": [
+    3,
+    2
+  ],
+  "score_shape": [
+    4,
+    4
+  ],
+  "value_shape": [
+    4,
+    2
+  ],
+  "output_shape": [
+    4,
+    2
+  ],
+  "hand_scores": [
+    [
+      0.7071067811865475,
+      0.0
+    ]
+  ],
+  "hand_weights": [
+    [
+      0.6697615493266569,
+      0.3302384506733431
+    ]
+  ],
+  "hand_output": [
+    [
+      1.3395230986533138,
+      1.3209538026933725
+    ]
+  ],
+  "maximum_row_sum_error": 0.0,
+  "causal_future_change_error": 0.0,
+  "unmasked_future_change_effect": 18.538916083489806,
+  "permutation_equivariance_error": 2.220446049250313e-16,
+  "invalid_requests_rejected": 7,
+  "training_performed": false
+}

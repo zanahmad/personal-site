@@ -1,0 +1,84 @@
+{
+  "split": {
+    "train": 100,
+    "test": 50,
+    "training_class_counts": [
+      52,
+      48
+    ],
+    "test_class_counts": [
+      29,
+      21
+    ]
+  },
+  "regression": {
+    "coefficients_intercept_mg_temperature_mg_per_C_dwell_mg_per_min": [
+      1.7587163932210266,
+      0.04313242899409375,
+      1.238276235173134
+    ],
+    "test_RMSE_mg": 0.8515871898654934,
+    "training_mean_baseline_test_RMSE_mg": 1.2944131531733676
+  },
+  "classification": {
+    "threshold": 0.5,
+    "confusion_rows_actual_cols_predicted": [
+      [
+        17,
+        12
+      ],
+      [
+        5,
+        16
+      ]
+    ],
+    "accuracy": 0.66,
+    "precision_class1": 0.5714285714285714,
+    "recall_class1": 0.7619047619047619,
+    "sample_count": 50
+  },
+  "constant_training_majority_class": 0,
+  "constant_baseline": {
+    "threshold": 0.5,
+    "confusion_rows_actual_cols_predicted": [
+      [
+        29,
+        0
+      ],
+      [
+        21,
+        0
+      ]
+    ],
+    "accuracy": 0.58,
+    "precision_class1": null,
+    "recall_class1": 0.0,
+    "sample_count": 50
+  },
+  "pca_first_variance_fraction": 0.5274613216676958,
+  "training_scaler": {
+    "mean_C_min": [
+      55.755018286579826,
+      3.101935856208718
+    ],
+    "scale_C_min": [
+      15.650953871739599,
+      1.066451041455135
+    ]
+  },
+  "classification_training_loss": {
+    "initial": 0.6931471805599453,
+    "final": 0.26504189039049325
+  },
+  "checks": {
+    "disjoint_complete_split": true,
+    "heldout_changes_do_not_change_scaler": true,
+    "unit_conversion_standardization_invariant": true,
+    "exact_plane_recovered": true,
+    "PCA_orthogonality_and_full_reconstruction": true,
+    "undefined_precision_recall_explicit": true,
+    "threshold_equality_positive": true,
+    "cluster_objective_nonincreasing": true,
+    "invalid_inputs_rejected": 5
+  }
+}

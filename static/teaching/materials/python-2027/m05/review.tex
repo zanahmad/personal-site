@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Neural-network gradients and spatial filters / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 5}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\setlength{\parskip}{4pt}\setlist{itemsep=2pt,topsep=3pt,leftmargin=*}
+\section*{Neural-network gradients and spatial filters --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Affine maps combine features; nonlinearities make compositions richer.
+\item Loss specifies the fitting objective; gradients guide local parameter changes.
+\item Batch and spatial axes have different meanings.
+\item A shared image filter is a repeated local weighted sum.
+\item Fixed filters and a trained CNN are different claims.
+\item Choose fitting procedures before the final test evaluation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Any neural network trained on flattened images is a CNN.} The sample trained network is fully connected. Its separate fixed-filter demonstration has convolutional structure but no learned filters.
+
+\textbf{A falling training loss establishes held-out performance.} Training loss and held-out evaluation answer different questions.
+
+\textbf{A negative filter response is invalid.} Signed directional filters encode which way intensity changes.
+
+\textbf{Perfect synthetic accuracy proves robust real-world recognition.} It only demonstrates success on the particular held-out generator distribution.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is an epoch?
+\item Why keep training mean and scale for inference?
+\item What output shape results from an 8$\times$8 image and a 3$\times$3 valid stride 1 filter?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace the shapes in a batched affine--nonlinearity--output calculation.
+\item Explain loss, gradient update, epoch and mini-batch in the actual runnable model.
+\item Interpret signed responses of two fixed 3$\times$3 image filters and predict output shape.
+\item Compare a trained network with held-out baselines without using test data for fitting.
+\item State why synthetic test accuracy does not establish general image or clinical performance.
+\end{itemize}
+\end{document}

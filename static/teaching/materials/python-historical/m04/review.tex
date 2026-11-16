@@ -1,0 +1,63 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={ODE integration, root finding, and parameter estimation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 4}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{ODE integration, root finding, and parameter estimation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item One model can support several distinct numerical questions.
+\item A rate law and initial value define an initial-value problem.
+\item Exact-model comparisons check numerical implementation, not real-world validity.
+\item A bracketed root needs a suitable continuous residual and endpoint evidence.
+\item Interpolation adds a between-sample assumption and has a declared domain.
+\item Optional optimization fits a parameter within bounds; residuals and independent evidence still matter.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Giving k units of minutes.} k must have reciprocal-minute units so k times t is dimensionless.
+
+\textbf{Treating solver tolerance as a guaranteed global error bound.} Measure the relevant error against an independent reference when available.
+
+\textbf{Calling a target equal to ambient a finite crossing.} The exponential reaches that limit only asymptotically.
+
+\textbf{Treating more interpolation plot points as new measurements.} The same knots and linear assumption define all those plotted values.
+
+\textbf{Treating the best tested parameter as model validation.} A smaller residual does not establish the physical model; compare independent observations.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What happens when k is zero?
+\item Why compare a root with both an analytic time and a residual?
+\item What is the interpolation domain?
+\item What must be added to assess a model beyond synthetic recovery?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item State a one-state cooling model with consistent time and temperature units.
+\item Run a supplied initial-value solver and compare its output with an exact solution of the same model.
+\item Translate a target-temperature question into a bracketed scalar root.
+\item Interpolate inside a sampled interval and explain why interpolation is not the ODE model.
+\item Use limiting behavior and residuals to check numerical outputs.
+\end{itemize}
+\end{document}

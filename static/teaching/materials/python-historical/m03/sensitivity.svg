@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="652.534297pt" height="278.828859pt" viewBox="0 0 652.534297 278.828859" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:title id="figure-title">Sensitivity to nearly redundant detector channels</ns0:title><ns0:desc id="figure-description">Identical small signal perturbations barely change the inferred concentrations for distinct channels but noticeably change both estimates for nearly redundant channels. Both solve residuals remain near machine precision.</ns0:desc><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T14:55:25.257767</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 278.828859  L 652.534297 278.828859  L 652.534297 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 46.694297 238.628  L 338.324297 238.628  L 338.324297 72.336645  L 46.694297 72.336645  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 59.950206 238.628  L 115.440058 238.628  L 115.440058 110.711573  L 59.950206 110.711573  z " clip-path="url(#p217e532778)" style="fill: #8096a7" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 214.088684 238.628  L 269.578536 238.628  L 269.578536 174.669786  L 214.088684 174.669786  z " clip-path="url(#p217e532778)" style="fill: #8096a7" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 115.440058 238.628  L 170.92991 238.628  L 170.92991 110.63093  L 115.440058 110.63093  z " clip-path="url(#p217e532778)" style="fill: #294e70" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 269.578536 238.628  L 325.068388 238.628  L 325.068388 174.736525  L 269.578536 174.736525  z " clip-path="url(#p217e532778)" style="fill: #294e70" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1">
+      <ns0:defs>
+       <ns0:path id="mb3a3e2efd9" d="M 0 0  L 0 3.5  " style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#mb3a3e2efd9" x="115.440058" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="115.440058" y="253.985422" transform="rotate(-0 115.440058 253.985422)">Component A</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2">
+      <ns0:g>
+       <ns0:use ns4:href="#mb3a3e2efd9" x="269.578536" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="269.578536" y="253.985422" transform="rotate(-0 269.578536 253.985422)">Component B</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_3">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="192.509297" y="268.986281" transform="rotate(-0 192.509297 268.986281)">Same signal perturbation: (+0.001, −0.001) AU</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_3">
+      <ns0:defs>
+       <ns0:path id="m1611ec8381" d="M 0 0  L -3.5 0  " style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="242.806711" transform="rotate(-0 39.694297 242.806711)">0.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_4">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="206.648893" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="210.827604" transform="rotate(-0 39.694297 210.827604)">0.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_5">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="174.669786" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="178.848497" transform="rotate(-0 39.694297 178.848497)">1.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_6">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="142.69068" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_7">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="146.86939" transform="rotate(-0 39.694297 146.86939)">1.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_7">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="110.711573" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_8">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="114.890284" transform="rotate(-0 39.694297 114.890284)">2.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_6">
+     <ns0:g id="line2d_8">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="46.694297" y="78.732466" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_9">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="39.694297" y="82.911177" transform="rotate(-0 39.694297 82.911177)">2.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_10">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="15.558281" y="155.482322" transform="rotate(-90 15.558281 155.482322)">Concentration (mM)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 46.694297 238.628  L 46.694297 72.336645  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_8">
+    <ns0:path d="M 46.694297 238.628  L 338.324297 238.628  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(145.154297 53.133637)">Distinct channels</ns0:text>
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(123.515234 66.336645)">condition number = 1.58</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_2">
+   <ns0:g id="patch_9">
+    <ns0:path d="M 353.704297 238.628  L 645.334297 238.628  L 645.334297 72.336645  L 353.704297 72.336645  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 366.960206 238.628  L 422.450058 238.628  L 422.450058 110.711573  L 366.960206 110.711573  z " clip-path="url(#p795ebce4b3)" style="fill: #8096a7" />
+   </ns0:g>
+   <ns0:g id="patch_11">
+    <ns0:path d="M 521.098684 238.628  L 576.588536 238.628  L 576.588536 174.669786  L 521.098684 174.669786  z " clip-path="url(#p795ebce4b3)" style="fill: #8096a7" />
+   </ns0:g>
+   <ns0:g id="patch_12">
+    <ns0:path d="M 422.450058 238.628  L 477.93991 238.628  L 477.93991 97.855972  L 422.450058 97.855972  z " clip-path="url(#p795ebce4b3)" style="fill: #294e70" />
+   </ns0:g>
+   <ns0:g id="patch_13">
+    <ns0:path d="M 576.588536 238.628  L 632.078388 238.628  L 632.078388 187.461429  L 576.588536 187.461429  z " clip-path="url(#p795ebce4b3)" style="fill: #294e70" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_3">
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_9">
+      <ns0:g>
+       <ns0:use ns4:href="#mb3a3e2efd9" x="422.450058" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_12">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="422.450058" y="253.985422" transform="rotate(-0 422.450058 253.985422)">Component A</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_10">
+      <ns0:g>
+       <ns0:use ns4:href="#mb3a3e2efd9" x="576.588536" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_13">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="576.588536" y="253.985422" transform="rotate(-0 576.588536 253.985422)">Component B</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_14">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="499.519297" y="268.986281" transform="rotate(-0 499.519297 268.986281)">Same signal perturbation: (+0.001, −0.001) AU</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_4">
+    <ns0:g id="ytick_7">
+     <ns0:g id="line2d_11">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="238.628" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_8">
+     <ns0:g id="line2d_12">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="206.648893" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_9">
+     <ns0:g id="line2d_13">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="174.669786" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_10">
+     <ns0:g id="line2d_14">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="142.69068" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_11">
+     <ns0:g id="line2d_15">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="110.711573" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_12">
+     <ns0:g id="line2d_16">
+      <ns0:g>
+       <ns0:use ns4:href="#m1611ec8381" x="353.704297" y="78.732466" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_14">
+    <ns0:path d="M 353.704297 238.628  L 353.704297 72.336645  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_15">
+    <ns0:path d="M 353.704297 238.628  L 645.334297 238.628  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_15">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(424.99 53.133637)">Nearly redundant channels</ns0:text>
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(423.526484 66.336645)">condition number = 402.01</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="legend_1">
+   <ns0:g id="patch_16">
+    <ns0:path d="M 135.767578 19.958281  L 157.767578 19.958281  L 157.767578 12.258281  L 135.767578 12.258281  z " style="fill: #8096a7" />
+   </ns0:g>
+   <ns0:g id="text_16">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="166.567578" y="19.958281" transform="rotate(-0 166.567578 19.958281)">Known synthetic amount</ns0:text>
+   </ns0:g>
+   <ns0:g id="patch_17">
+    <ns0:path d="M 325.563984 19.958281  L 347.563984 19.958281  L 347.563984 12.258281  L 325.563984 12.258281  z " style="fill: #294e70" />
+   </ns0:g>
+   <ns0:g id="text_17">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="356.363984" y="19.958281" transform="rotate(-0 356.363984 19.958281)">Recovered after perturbation</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p217e532778">
+   <ns0:rect x="46.694297" y="72.336645" width="291.63" height="166.291355" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p795ebce4b3">
+   <ns0:rect x="353.704297" y="72.336645" width="291.63" height="166.291355" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

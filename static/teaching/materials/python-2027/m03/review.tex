@@ -1,0 +1,59 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Linear observations and a two-compartment exchange model / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 3}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\setlength{\parskip}{4pt}\setlist{itemsep=2pt,topsep=3pt,leftmargin=*}
+\section*{Linear observations and a two-compartment exchange model --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item The observation map and state evolution are different equations.
+\item One transfer creates equal-and-opposite mass rates.
+\item The sum is conserved while the difference decays.
+\item Conservation does not measure individual-state integration error.
+\item Fitting requires data informative about the parameter.
+\item Verification, fit and scientific validation support different claims.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Use k rather than 2k in the difference decay.} Both masses change toward each other, so subtracting derivatives gives -2k times the difference.
+
+\textbf{Call t\_eval the fixed integration step.} It specifies returned times; adaptive internal steps are separate.
+
+\textbf{Treat low fit residual as validation of the mechanism.} It measures agreement under the selected model and objective only.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is the equilibrium for a closed equal-volume pair totaling 14 mg?
+\item What happens at k=\allowbreak{}0?
+\item What units does k h have?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Recover two initial masses from a stated linear sensor map and check its residual.
+\item Translate one transfer rate into equal-and-opposite state derivatives with units.
+\item Compare an ODE solver and Euler steps against an exact solution and mass conservation.
+\item Fit one exchange parameter to synthetic observations while distinguishing fit residual from integration error.
+\item Identify a data configuration that cannot determine the exchange rate.
+\end{itemize}
+\end{document}

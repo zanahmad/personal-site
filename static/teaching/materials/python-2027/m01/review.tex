@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Coordinates, sampled motion, and Python expressions / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 1}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Coordinates, sampled motion, and Python expressions --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Choose the quantity before choosing a command.
+\item Displacement subtracts the starting coordinate.
+\item Average velocity does not reveal unobserved path length.
+\item Assignment stores a value at execution time.
+\item Origin shifts and unit conversions give predictable checks.
+\item A clean run and a bounded explanation belong together.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Divide final position by elapsed time.} Subtract the starting position first.
+
+\textbf{Call displacement/time the true average path speed.} It is signed interval-average velocity; path length may be unknown.
+
+\textbf{Change a unit label alone.} Convert the numerical values too.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item A moves from 5 to -1 mm in 3 s. What is its average velocity?
+\item What does an origin shift change?
+\item What does a clean kernel run establish?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Separate final position, displacement and interval-average velocity in a stated question.
+\item Use numerical values, text labels, assignment and list indices to calculate a quantity with units.
+\item Predict how changing a coordinate origin or length unit changes a result.
+\item Distinguish observed points from unobserved motion between samples.
+\item Restart and rerun a short notebook and explain its scientific limits.
+\end{itemize}
+\end{document}

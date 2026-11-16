@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Functions, array axes, and planar trajectories / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 2}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Functions, array axes, and planar trajectories --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A function exposes an input--output contract.
+\item Return values can feed later calculations.
+\item Loops make repeated index meanings visible.
+\item Name every axis before broadcasting or reducing.
+\item A rotation uses matrix multiplication and preserves lengths.
+\item A threshold is a declared decision rule, not a scientific truth.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treat the final array axis as time automatically.} Here the final axis is coordinates; time is axis 1.
+
+\textbf{Divide a batch by a duration array with no axis reasoning.} Align durations as (1, intervals, 1).
+
+\textbf{Call every norm an observed path speed.} It is the magnitude of average velocity over sampled intervals.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What shape follows time differencing of (8,10,2)?
+\item Which of > and >=\allowbreak{} includes equality?
+\item What remains invariant under a rigid rotation?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Write and test a function with inputs, a return value and a declared invalid-input case.
+\item Trace a loop and a strict comparison at its boundary.
+\item Label trial, time and coordinate axes in a three-dimensional NumPy array.
+\item Compute interval-average velocity components and their magnitudes with explicit broadcasting.
+\item Use a matrix rotation and check that it preserves displacement lengths.
+\end{itemize}
+\end{document}

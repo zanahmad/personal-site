@@ -1,0 +1,66 @@
+{
+  "shapes": {
+    "positions": [
+      3,
+      5,
+      2
+    ],
+    "velocity": [
+      3,
+      4,
+      2
+    ],
+    "speed": [
+      3,
+      4
+    ]
+  },
+  "average_velocity_magnitude_mm_s": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    [
+      1.4142135623730951,
+      1.4142135623730951,
+      3.0,
+      1.4142135623730951
+    ]
+  ],
+  "strictly_above_2_mm_s": [
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      true,
+      false
+    ]
+  ],
+  "rotation_max_speed_difference": 4.440892098500626e-16,
+  "checks": {
+    "loop_vectorized_agreement": true,
+    "rotation_preserves_speed": true,
+    "translation_preserves_speed": true,
+    "equality_not_flagged": true,
+    "invalid_inputs_rejected": 4
+  }
+}

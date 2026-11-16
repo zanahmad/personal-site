@@ -1,0 +1,30 @@
+{
+  "model": {
+    "initial_C": 80,
+    "ambient_C": 20,
+    "rate_per_min": 0.4
+  },
+  "max_ODE_error_C": 1.8881571861584234e-07,
+  "coarse_ODE_error_C": 0.02017937048957208,
+  "function_evaluations": {
+    "tight": 182,
+    "coarse": 32
+  },
+  "crossing": {
+    "time_min": 3.4657359028015393,
+    "temperature_residual_C": -1.0878409284487134e-11,
+    "iterations": 9
+  },
+  "analytic_crossing_min": 3.465735902799726,
+  "max_two_minute_interpolation_error_C": 3.2741909245994663,
+  "optional_new_optimization": {
+    "rate_per_min": 0.3990158111855997,
+    "mean_square_residual_C2": 0.05075432867805976
+  },
+  "checks": {
+    "zero_rate_constant": true,
+    "interpolation_at_knots": true,
+    "noiseless_parameter_recovery": true,
+    "invalid_inputs_rejected": 5
+  }
+}

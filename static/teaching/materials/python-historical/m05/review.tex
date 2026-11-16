@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Least squares, principal components, and clustering / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 5}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Least squares, principal components, and clustering --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Choose a scientific output before selecting a method.
+\item Regression uses a target; PCA and clustering here do not.
+\item Report test error with its units, split and simple baseline.
+\item Centering and scaling are fitted transformations.
+\item Projection can discard information, while a full basis change need not.
+\item Cluster labels are arbitrary; metric and number of centers are choices.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Fitting preprocessing on all rows before a test split.} Split first and fit transformations on training rows.
+
+\textbf{Reading explained variance as prediction accuracy.} It describes feature variation under the chosen metric.
+
+\textbf{Treating raw cluster numbers as class predictions.} Group identities require external meaning; label permutations are equivalent.
+
+\textbf{Claiming a unit conversion changed the specimens.} It changed raw numerical geometry; state the metric or standardization.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What are the units of a response residual?
+\item Why can a PCA direction change sign without changing reconstruction?
+\item What does a rank-deficient line fit reveal?
+\item What is needed to interpret a cluster scientifically?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Fit a straight-line baseline with an explicit response and coefficient units.
+\item Calculate held-out RMSE and compare it with a training-mean baseline.
+\item Center and project two-feature data while explaining what PCA preserves.
+\item Trace one two-center assignment/update and distinguish cluster labels from known classes.
+\item Fit transformations on training rows and test the effect of changing a feature unit.
+\end{itemize}
+\end{document}

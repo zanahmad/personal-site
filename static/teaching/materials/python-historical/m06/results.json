@@ -1,0 +1,108 @@
+{
+  "data": {
+    "train": 160,
+    "test": 80,
+    "train_class_counts": [
+      80,
+      80
+    ],
+    "test_class_counts": [
+      40,
+      40
+    ],
+    "scaling_fit": "training rows only"
+  },
+  "settings": {
+    "steps": 2500,
+    "learning_rate": 0.08,
+    "weight_penalty": 0.001,
+    "hidden_units": 8,
+    "network_parameters": 33
+  },
+  "linear_test": {
+    "threshold": 0.5,
+    "confusion_rows_actual_cols_predicted": [
+      [
+        14,
+        26
+      ],
+      [
+        20,
+        20
+      ]
+    ],
+    "accuracy": 0.425,
+    "precision_class1": 0.43478260869565216,
+    "recall_class1": 0.5,
+    "sample_count": 80
+  },
+  "network_test": {
+    "threshold": 0.5,
+    "confusion_rows_actual_cols_predicted": [
+      [
+        39,
+        1
+      ],
+      [
+        0,
+        40
+      ]
+    ],
+    "accuracy": 0.9875,
+    "precision_class1": 0.975609756097561,
+    "recall_class1": 1.0,
+    "sample_count": 80
+  },
+  "constant_class0_test": {
+    "threshold": 0.5,
+    "confusion_rows_actual_cols_predicted": [
+      [
+        40,
+        0
+      ],
+      [
+        40,
+        0
+      ]
+    ],
+    "accuracy": 0.5,
+    "precision_class1": null,
+    "recall_class1": 0.0,
+    "sample_count": 80
+  },
+  "optional_radius_rule": {
+    "threshold_dimensionless": 1.0567651376027225,
+    "test": {
+      "threshold": 0.5,
+      "confusion_rows_actual_cols_predicted": [
+        [
+          40,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "accuracy": 1.0,
+      "precision_class1": 1.0,
+      "recall_class1": 1.0,
+      "sample_count": 80
+    },
+    "meaning": "A supplied scientific feature can replace a learned representation; this rule is fitted only using training labels."
+  },
+  "training_objective": {
+    "linear_initial": 0.6931471805599453,
+    "linear_final": 0.6926113675138653,
+    "network_initial": 0.7358553170689747,
+    "network_final": 0.11732928723092709
+  },
+  "checks": {
+    "disjoint_split": true,
+    "test_mutation_does_not_change_training_scaler": true,
+    "finite_difference_max_gradient_error": 7.452746753067174e-11,
+    "undefined_precision_and_recall_explicit": true,
+    "threshold_equality_is_positive": true,
+    "invalid_inputs_rejected": 4
+  }
+}

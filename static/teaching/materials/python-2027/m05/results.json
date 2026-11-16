@@ -1,0 +1,55 @@
+{
+  "task": "original synthetic 8x8 vertical/horizontal stripes; no patient or external data",
+  "training_examples": 192,
+  "test_examples": 96,
+  "seeds": {
+    "train_images": 42,
+    "test_images": 142,
+    "weights": 24,
+    "batches": 77
+  },
+  "architecture": [
+    64,
+    8,
+    1
+  ],
+  "batch_size": 32,
+  "epochs": 160,
+  "learning_rate": 0.08,
+  "initial_training_loss": 0.7101945573661786,
+  "final_training_loss": 0.0040460472598186584,
+  "test_scores": {
+    "Constant training-majority baseline": 0.5,
+    "Fixed filters + pooling": 1.0,
+    "Small trained MLP": 1.0
+  },
+  "MLP_confusion_rows_true_columns_predicted": [
+    [
+      48,
+      0
+    ],
+    [
+      0,
+      48
+    ]
+  ],
+  "maximum_checked_gradient_error": 2.971844992316619e-12,
+  "checks": {
+    "fixed_filters_zero_on_constant_image": true,
+    "output_shape": [
+      2,
+      6,
+      6,
+      2
+    ],
+    "probability_bounds": true,
+    "training_only_preprocessing": true,
+    "deterministic_inference": true,
+    "invalid_inputs_rejected": 4
+  },
+  "limits": [
+    "fixed filters are not learned CNN filters",
+    "independent images from same synthetic generator do not test distribution shift",
+    "test set is not used in fitting or parameter selection"
+  ]
+}

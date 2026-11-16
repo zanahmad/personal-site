@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="724.839609pt" height="232.416859pt" viewBox="0 0 724.839609 232.416859" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:title id="figure-title">Three matrices in a batched sensor calculation</ns0:title><ns0:desc id="figure-description">Three specimens with two component concentrations multiply a two by two response transpose to produce three rows of two signals. Every matrix entry and axis role is labeled.</ns0:desc><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T14:55:24.981124</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 232.416859  L 724.839609 232.416859  L 724.839609 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 32.699609 195.716  L 261.367109 195.716  L 261.367109 79.519691  L 32.699609 79.519691  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g clip-path="url(#pfd5d56832c)">
+    <ns0:image ns4:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAT4AAAChCAYAAABef9MSAAACU0lEQVR4nO3WIRVCQQBEUZYMBKAKTShEDAqQgAQIPAb1DR63tGDFuzfBqHdm3J7b3AGE7FcPAPg34QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAnPH+fOfqETSdr4/VE4jy+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAnHG5v+bqETSdjofVE4jy+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4g5wd3fA3iyvKWsgAAAABJRU5ErkJggg==" id="image951652e536" transform="scale(1 -1) translate(0 -115.92)" x="32.4" y="-79.776859" width="228.96" height="115.92" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1" />
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="89.866484" y="207.573422" transform="rotate(-0 89.866484 207.573422)">A</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2" />
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="204.200234" y="207.573422" transform="rotate(-0 204.200234 207.573422)">B</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_3">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="147.033359" y="222.573422" transform="rotate(-0 147.033359 222.573422)">component</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_3" />
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="29.199609" y="103.064454" transform="rotate(-0 29.199609 103.064454)">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_4" />
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="29.199609" y="141.796557" transform="rotate(-0 29.199609 141.796557)">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_5" />
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="29.199609" y="180.52866" transform="rotate(-0 29.199609 180.52866)">3</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_7">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="15.558281" y="137.617846" transform="rotate(-90 15.558281 137.617846)">specimen</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 32.699609 195.716  L 32.699609 79.519691  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 32.699609 195.716  L 261.367109 195.716  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="89.866484" y="101.743165" transform="rotate(-0 89.866484 101.743165)">2</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="204.200234" y="101.743165" transform="rotate(-0 204.200234 101.743165)">1</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="89.866484" y="140.475268" transform="rotate(-0 89.866484 140.475268)">0.5</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="204.200234" y="140.475268" transform="rotate(-0 204.200234 140.475268)">3</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_12">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="89.866484" y="179.20737" transform="rotate(-0 89.866484 179.20737)">1.5</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_13">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="204.200234" y="179.20737" transform="rotate(-0 204.200234 179.20737)">1.5</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_14">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(68.12125 60.317543)">C: specimens × components</ns0:text>
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(118.648203 73.519691)">(3, 2), mM</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_2">
+   <ns0:g id="patch_5">
+    <ns0:path d="M 298.947109 195.716  L 451.392109 195.716  L 451.392109 79.519691  L 298.947109 79.519691  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g clip-path="url(#p36bc0ffb66)">
+    <ns0:image ns4:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAANQAAAChCAYAAAC/MZFqAAAB/0lEQVR4nO3VMQ3CUABFUUrqCDuMaMFHJ2QgoQpqAAGsYOEPN/mEnKPgLTdvOV7vz4mfd3vssycw4Dx7APwTQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhNb785i9gQHb9TJ7AgM8FIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFBSFAQEhSEBAUhQUFIUBASFIQEBSFBQUhQEBIUhAQFIUFB6AtKNgosj1lWcwAAAABJRU5ErkJggg==" id="image8dce7a47b8" transform="scale(1 -1) translate(0 -115.92)" x="298.8" y="-79.776859" width="152.64" height="115.92" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_3">
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_6" />
+     <ns0:g id="text_15">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="337.058359" y="207.573422" transform="rotate(-0 337.058359 207.573422)">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_7" />
+     <ns0:g id="text_16">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="413.280859" y="207.573422" transform="rotate(-0 413.280859 207.573422)">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_17">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="375.169609" y="222.574281" transform="rotate(-0 375.169609 222.574281)">channel</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_4">
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_8" />
+     <ns0:g id="text_18">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.447109" y="112.747479" transform="rotate(-0 295.447109 112.747479)">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_9" />
+     <ns0:g id="text_19">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.447109" y="170.845634" transform="rotate(-0 295.447109 170.845634)">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_20">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="281.805781" y="137.617846" transform="rotate(-90 281.805781 137.617846)">component</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 298.947109 195.716  L 298.947109 79.519691  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 298.947109 195.716  L 451.392109 195.716  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_21">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="337.058359" y="111.42619" transform="rotate(-0 337.058359 111.42619)">1</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_22">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="413.280859" y="111.42619" transform="rotate(-0 413.280859 111.42619)">0.2</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_23">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="337.058359" y="169.524345" transform="rotate(-0 337.058359 169.524345)">0.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_24">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="413.280859" y="169.524345" transform="rotate(-0 413.280859 169.524345)">1.2</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_25">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(298.975703 60.317543)">Aᵀ: components × channels</ns0:text>
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(337.143984 73.519691)">(2, 2), AU/mM</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_3">
+   <ns0:g id="patch_8">
+    <ns0:path d="M 488.972109 195.716  L 717.639609 195.716  L 717.639609 79.519691  L 488.972109 79.519691  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g clip-path="url(#pebdfb12b63)">
+    <ns0:image ns4:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAT4AAAChCAYAAABef9MSAAACWklEQVR4nO3WsQkCUQBEQU+MRMQGzCzRbmxCrML0wALMrMDs4OzCH7yZCjZ67HSfP+sGBvguy+gJRG1HDwD4N+EDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gBzhA3KED8gRPiBH+IAc4QNyhA/IET4gR/iAHOEDcoQPyBE+IEf4gJzd+bgfvYGo6+M1egJRHh+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkDPdnu919AiaLqfD6AlEeXxAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkCN8QI7wATnCB+QIH5AjfECO8AE5wgfkCB+QI3xAjvABOcIH5AgfkPMDMmENSFbLBWEAAAAASUVORK5CYII=" id="imageed11add4d7" transform="scale(1 -1) translate(0 -115.92)" x="488.88" y="-79.776859" width="228.96" height="115.92" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_5">
+    <ns0:g id="xtick_5">
+     <ns0:g id="line2d_10" />
+     <ns0:g id="text_26">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="546.138984" y="207.573422" transform="rotate(-0 546.138984 207.573422)">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_6">
+     <ns0:g id="line2d_11" />
+     <ns0:g id="text_27">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="660.472734" y="207.573422" transform="rotate(-0 660.472734 207.573422)">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_28">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="603.305859" y="222.574281" transform="rotate(-0 603.305859 222.574281)">channel</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_6">
+    <ns0:g id="ytick_6">
+     <ns0:g id="line2d_12" />
+     <ns0:g id="text_29">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="485.472109" y="103.064454" transform="rotate(-0 485.472109 103.064454)">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_7">
+     <ns0:g id="line2d_13" />
+     <ns0:g id="text_30">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="485.472109" y="141.796557" transform="rotate(-0 485.472109 141.796557)">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_8">
+     <ns0:g id="line2d_14" />
+     <ns0:g id="text_31">
+      <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="485.472109" y="180.52866" transform="rotate(-0 485.472109 180.52866)">3</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_32">
+     <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="471.830781" y="137.617846" transform="rotate(-90 471.830781 137.617846)">specimen</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 488.972109 195.716  L 488.972109 79.519691  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 488.972109 195.716  L 717.639609 195.716  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_33">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="546.138984" y="101.743165" transform="rotate(-0 546.138984 101.743165)">2.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_34">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="660.472734" y="101.743165" transform="rotate(-0 660.472734 101.743165)">1.6</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_35">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="546.138984" y="140.475268" transform="rotate(-0 546.138984 140.475268)">1.25</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_36">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="660.472734" y="140.475268" transform="rotate(-0 660.472734 140.475268)">3.7</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_37">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="546.138984" y="179.20737" transform="rotate(-0 546.138984 179.20737)">1.88</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_38">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #10253d" x="660.472734" y="179.20737" transform="rotate(-0 660.472734 179.20737)">2.1</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_39">
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(534.957187 60.317543)">Y: specimens × channels</ns0:text>
+    <ns0:text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(577.235859 73.519691)">(3, 2), AU</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="text_40">
+   <ns0:text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="362.319609" y="17.077969" transform="rotate(-0 362.319609 17.077969)">Batch measurements: Y = C @ A.T</ns0:text>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pfd5d56832c">
+   <ns0:rect x="32.699609" y="79.519691" width="228.6675" height="116.196309" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p36bc0ffb66">
+   <ns0:rect x="298.947109" y="79.519691" width="152.445" height="116.196309" />
+  </ns0:clipPath>
+  <ns0:clipPath id="pebdfb12b63">
+   <ns0:rect x="488.972109" y="79.519691" width="228.6675" height="116.196309" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

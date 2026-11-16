@@ -1,0 +1,28 @@
+{
+  "target_C": 40.0,
+  "counts": {
+    "above": 3,
+    "at_or_below": 5,
+    "missing": 1
+  },
+  "known_readings": 8,
+  "fraction_of_known_at_or_below": 0.625,
+  "first_recorded_time_min": 3.0,
+  "states": [
+    "above",
+    "above",
+    "above",
+    "at_or_below",
+    "at_or_below",
+    "missing",
+    "at_or_below",
+    "at_or_below",
+    "at_or_below"
+  ],
+  "checks": {
+    "equality_included": true,
+    "all_missing_fraction_is_None": true,
+    "zero_first_time_preserved": true,
+    "invalid_inputs_rejected": 4
+  }
+}

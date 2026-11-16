@@ -1,0 +1,14 @@
+{
+  "observations": 5,
+  "elapsed_minutes": 4.0,
+  "first_temperature_C": 80.0,
+  "last_temperature_C": 31.0,
+  "temperature_change_C": -49.0,
+  "average_change_C_per_min": -12.25,
+  "arithmetic_mean_C": 51.8,
+  "checks": {
+    "same_changes_in_C_and_K": true,
+    "seconds_minutes_roundtrip": true,
+    "invalid_records_rejected": 6
+  }
+}

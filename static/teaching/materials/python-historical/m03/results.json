@@ -1,0 +1,92 @@
+{
+  "model": "synthetic linear mixture; not an experimental assay",
+  "response_AU_per_mM": [
+    [
+      1.0,
+      0.25
+    ],
+    [
+      0.2,
+      1.2
+    ]
+  ],
+  "concentrations_mM": [
+    [
+      2.0,
+      1.0
+    ],
+    [
+      0.5,
+      3.0
+    ],
+    [
+      1.5,
+      1.5
+    ]
+  ],
+  "signals_AU": [
+    [
+      2.25,
+      1.6
+    ],
+    [
+      1.25,
+      3.6999999999999997
+    ],
+    [
+      1.875,
+      2.1
+    ]
+  ],
+  "maximum_recovery_error_mM": 2.220446049250313e-16,
+  "comparisons": [
+    {
+      "label": "Distinct channels",
+      "condition_number_2": 1.5765887474663995,
+      "signal": [
+        2.25,
+        1.6
+      ],
+      "perturbed_signal": [
+        2.251,
+        1.5990000000000002
+      ],
+      "estimated_concentrations": [
+        2.0012608695652174,
+        0.9989565217391307
+      ],
+      "concentration_error": [
+        0.0012608695652174262,
+        -0.0010434782608692572
+      ],
+      "residual_norm": 4.965068306494546e-16
+    },
+    {
+      "label": "Nearly redundant channels",
+      "condition_number_2": 402.0075124842952,
+      "signal": [
+        3.0,
+        3.01
+      ],
+      "perturbed_signal": [
+        3.001,
+        3.009
+      ],
+      "estimated_concentrations": [
+        2.2009999999999996,
+        0.8
+      ],
+      "concentration_error": [
+        0.20099999999999962,
+        -0.19999999999999996
+      ],
+      "residual_norm": 6.280369834735101e-16
+    }
+  ],
+  "checks": {
+    "loop_and_matrix_agree": true,
+    "zero_and_scaling_limits": true,
+    "exact_synthetic_recovery": true,
+    "invalid_inputs_rejected": 4
+  }
+}

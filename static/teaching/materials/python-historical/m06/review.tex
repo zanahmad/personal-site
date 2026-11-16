@@ -1,0 +1,64 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Logistic regression and a neural-network classifier / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 6}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Logistic regression and a neural-network classifier --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Define labels, score thresholds and the equality case.
+\item Fit preprocessing and weights with training data only.
+\item A nonlinear hidden map changes representational capacity.
+\item Trace shapes before treating a matrix output as a prediction.
+\item Confusion counts reveal errors hidden by one accuracy number.
+\item Compare with simple and scientifically meaningful baselines.
+\item A fixed synthetic test result is limited evidence, not a general guarantee.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Calling a bounded score a calibrated probability.} Calibration requires separate evidence; the present model comparison does not establish it.
+
+\textbf{Transposing confusion counts without relabeling axes.} State actual rows and predicted columns before computing metrics.
+
+\textbf{Returning zero for every undefined metric.} Report absent denominators explicitly; this helper uses None.
+
+\textbf{Choosing a model from final test scores.} Use separate validation for choices and preserve untouched final evidence.
+
+\textbf{Confusing a classification target with a measured mechanism.} The fitted classifier describes the supplied labels; its predictions do not establish a causal mechanism.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item How many trainable parameters are in the 2-to-8-to-1 network?
+\item Which denominator defines precision?
+\item What does removing hidden nonlinearity do?
+\item Why does a radius comparator belong in the discussion?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item State the meaning of a binary label and a declared score threshold.
+\item Calculate confusion counts, accuracy, precision and recall with explicit denominators.
+\item Trace shapes through a two-input, eight-hidden-unit neural network.
+\item Compare frozen models using the same held-out rows and a transparent baseline.
+\item Distinguish training improvement, representation choices and evidence for generalization.
+\end{itemize}
+\end{document}

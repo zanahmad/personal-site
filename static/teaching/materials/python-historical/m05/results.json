@@ -1,0 +1,34 @@
+{
+  "split": {
+    "train": 90,
+    "test": 30,
+    "disjoint": true
+  },
+  "regression": {
+    "intercept_mV": 5.365551749237545,
+    "slope_mV_per_mm": 1.4859445295386196,
+    "train_RMSE_mV": 1.2418845324353176,
+    "test_RMSE_mV": 1.5361877560379458,
+    "training_mean_baseline_test_RMSE_mV": 4.683291420083419
+  },
+  "PCA_first_variance_ratio": {
+    "raw_mm_g": 0.6899987290739169,
+    "raw_mm_mg": 0.9999982398532072,
+    "standardized": 0.6204518760027872
+  },
+  "standardized_test_scores_shape": [
+    30,
+    2
+  ],
+  "raw_unit_conversion_changed_coassigned_pairs": 1800,
+  "standardized_clustering_inertia": 86.66843907564305,
+  "checks": {
+    "exact_line_recovery": true,
+    "full_PCA_reconstruction": true,
+    "orthonormal_components": true,
+    "standardized_unit_conversion_invariant": true,
+    "cluster_label_permutation_handled": true,
+    "nonincreasing_Lloyd_objective": true,
+    "invalid_inputs_rejected": 4
+  }
+}

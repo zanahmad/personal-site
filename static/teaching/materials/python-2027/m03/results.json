@@ -1,0 +1,32 @@
+{
+  "sensor_reading_mg_equivalent": [
+    8.4,
+    2.8
+  ],
+  "recovered_initial_mg": [
+    8.0,
+    1.9999999999999998
+  ],
+  "linear_residual_mg_equivalent": 0.0,
+  "maximum_ODE_error_mg": 9.304693016076726e-09,
+  "Euler_maximum_errors_mg": {
+    "step_0.5_min": 0.19070897922179775,
+    "step_0.25_min": 0.08826043234679792
+  },
+  "fit": {
+    "rate_per_min": 0.29745516940110694,
+    "mean_squared_residual_mg2": 0.000975874681756971,
+    "bounds_per_min": [
+      0.01,
+      1.0
+    ]
+  },
+  "checks": {
+    "total_mass_conserved": true,
+    "zero_rate_constant": true,
+    "Euler_refinement_improves_error": true,
+    "noiseless_parameter_recovery": true,
+    "zero_time_identifiability_rejected": true,
+    "invalid_inputs_rejected": 5
+  }
+}

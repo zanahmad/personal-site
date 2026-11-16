@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Regression, classification, and multivariate data / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python / 2027}\fancyhead[R]{\small Lecture 4}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\setlength{\parskip}{4pt}\setlist{itemsep=2pt,topsep=3pt,leftmargin=*}
+\section*{Regression, classification, and multivariate data --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Prediction time determines legitimate features.
+\item Fit transformations on training rows and reuse them on test rows.
+\item A baseline gives a metric a useful comparison.
+\item Precision and recall have different denominators.
+\item PCA preserves input variance; it does not choose labels.
+\item Cluster numbers are arbitrary and need scientific interpretation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Use the measured target as a predictor of its own label.} Keep only features available at the intended prediction time.
+
+\textbf{Fit preprocessing on all rows.} Fit on training rows and apply the stored transform to held-out rows.
+
+\textbf{Interpret a cluster number as a known class.} Compare partitions and labels only with an explicit evaluation question.
+
+\textbf{Tune after seeing the test score and keep calling it untouched evaluation.} Use training-only validation for choices and a separate final evaluation.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What are the units of RMSE for a yield measured in mg?
+\item What denominator defines precision?
+\item Does a sign flip of PC1 change the projection axis?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Declare features, a continuous target and a binary label without leaking the outcome into inputs.
+\item Fit preprocessing and models on training rows, then report held-out comparisons to constant baselines.
+\item Calculate RMSE, accuracy, precision and recall with the correct units and denominators.
+\item Interpret PCA as a variance-based projection and two-center clustering as a distance-based grouping.
+\item Distinguish supervised prediction from unsupervised structure and state limits of a synthetic benchmark.
+\end{itemize}
+\end{document}

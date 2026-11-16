@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={NumPy arrays and linear inverse problems / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 3}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{NumPy arrays and linear inverse problems --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Label axes before operating on arrays.
+\item Matrix multiplication sums over a shared dimension; elementwise multiplication does not.
+\item Solve a system instead of explicitly forming an inverse.
+\item Use independent hand/limit checks and report units.
+\item Residual checks the equations; sensitivity checks the effect of uncertain input.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{A square matrix product runs, so its axis convention must be correct.} Equal dimension sizes can hide swapped roles. Check a hand-computed entry and axis labels.
+
+\textbf{Transposing a shape (2, ) array makes it a column.} A one-dimensional transpose has the same shape. Use an explicit (2, 1) or (1, 2) representation when needed.
+
+\textbf{The residual is tiny, so measurement error is negligible.} An ill-conditioned model can fit noisy signals exactly while recovering inaccurate parameters.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What shape results from (7, 2)@(2, 3)?
+\item What units does a detector residual have?
+\item What problem does a singular response reveal?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Annotate specimen, component and detector axes before multiplying arrays.
+\item Predict the shape and units of a batch calculation.
+\item Use a linear solve to recover synthetic concentrations and check the residual.
+\item Distinguish a small solve residual from insensitivity to measurement error.
+\end{itemize}
+\end{document}

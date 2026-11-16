@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Functions, control flow, and threshold statistics / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Scientific Computing in Python}\fancyhead[R]{\small Lecture 2}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\setlength{\parskip}{4pt}\setlist{itemsep=2pt,topsep=3pt,leftmargin=*}
+\section*{Functions, control flow, and threshold statistics --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item State the scientific rule before choosing a comparison operator.
+\item A function returns a result that another calculation can use.
+\item Check missingness before numerical comparison.
+\item A loop invariant links counters to the observations processed.
+\item Zero is a valid time; None means no time has been recorded.
+\item Report the denominator and distinguish a recorded time from a modeled crossing.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating None as a zero temperature.} Keep a missing category; a replacement would introduce an assumption.
+
+\textbf{Overwriting a first time of zero.} Use an explicit is None sentinel test.
+
+\textbf{Calling 5/9 the fraction among known readings.} There are eight known readings, so that fraction is 5/8.
+
+\textbf{Changing <=\allowbreak{} to < without changing the stated question.} The equality boundary must match the scientific rule.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Why must paired list lengths be checked before zip?
+\item What should an all-missing known fraction be?
+\item What remains fixed when the target changes?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Write a small function with an explicit input, return value and scientific meaning.
+\item Implement an at-or-below rule with the equality case stated.
+\item Use a loop to count categories and preserve the first matching recorded time.
+\item Treat a missing reading separately from a measured zero.
+\item Check boundary cases before interpreting a summary.
+\end{itemize}
+\end{document}
