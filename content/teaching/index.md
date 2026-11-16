@@ -7,13 +7,17 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
 #### Johns Hopkins University
 ##### Creator/Instructor:
+- [**EN.553.285 Introduction to Scientific Programming in Python**](/teaching/scientific-python-2027/) – Winter 2027; dates pending
+
+  Six lessons from scientific computing to neural networks and attention.
+
 - [**EN.500.312 Advanced Topics in Computational Cardiology**](/teaching/heroic/) – Fall 2024
 
   Original course projects and notes (PDF). [Original syllabus](/files/Fall_2024_HEROIC_Syllabus.pdf).
     
-- [**EN.500.111 Mathematical Modeling and Computer Simulation**](/files/Fall_2024_HEART_Syllabus.pdf)  – Fall 2024  
+- [**EN.500.111 Mathematical Modeling and Computer Simulation**](/teaching/modeling/)  – Fall 2024  
  
-- [**EN.500.111 Mathematical Cardiology**](/files/Fall_2023_HEART_Syllabus.pdf)   – Fall 2023  
+- [**EN.500.111 Mathematical Cardiology**](/teaching/mathematical-cardiology/)   – Fall 2023  
 
 
 ##### Instructor:
@@ -21,11 +25,15 @@ description: "Courses I've designed, instructed, and assisted (organized by inst
 
   PDF notes, animated slides, and practice resources, organized in class order.
 
-- [**EN.553.285 Introduction to Scientific Programming in Python**](/teaching/scientific-python/) – Winter 2026, Winter 2025
+- [**EN.553.285 Introduction to Scientific Programming in Python**](/teaching/scientific-python/) – Winter 2026
 
-  Original Winter 2026 lecture slides and course materials (PDF).
+  Six lessons with PDF notes, slides, code and practice.
 
-- [**EN.800.130 Biomedical Engineering Innovation**](/files/BMEISyllabus.pdf) – Summer 2025, Spring 2025, Fall 2024, Summer 2024, Summer 2023  
+- **EN.553.285 Introduction to Scientific Programming in Python** – Winter 2025
+
+- **EN.800.130 Biomedical Engineering Innovation** – Summer 2025 · [Syllabus](/files/BMEISyllabus.pdf)
+
+  Previous offerings: Spring 2025, Fall 2024, Summer 2024, Summer 2023  
 
 
 ---

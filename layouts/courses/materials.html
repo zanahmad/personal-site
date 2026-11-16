@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+{{ partial "classical-head.html" . }}
+<body>
+  {{ partial "classical-style.html" . }}
+  <style>
+    .materials-skip{position:absolute;left:-10000px;top:0}.materials-skip:focus{left:1rem;top:1rem;padding:.7rem;background:white;z-index:10}
+    .classical .materials-intro{margin-bottom:2rem}.classical .materials-term{font-size:.95rem;color:#536171;margin:.3rem 0 1rem}
+    .classical .materials-nav,.classical .lesson-links{display:flex;flex-wrap:wrap;gap:.6rem 1.25rem}
+    .classical .materials-list{list-style:none;margin:1.3rem 0 0;padding:0}
+    .classical .materials-lesson{padding:1.3rem 0;border-top:1px solid #d3d9df;display:grid;grid-template-columns:2.6rem 1fr;gap:.8rem}
+    .classical .lesson-number{font-size:.94rem;color:#536171;padding-top:.15rem}.classical .materials-lesson h3{font-size:1.2rem;margin:0 0 .6rem}
+    .classical .lesson-links{font-size:.95rem}.classical .lesson-links a{padding:.2rem 0}.classical .materials-modules{margin:1.7rem 0}
+    .classical .materials-modules li{margin:.7rem 0}.classical .materials-modules p{margin:.15rem 0;font-size:.98rem}
+    .classical .materials-footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #d3d9df}
+    @media(max-width:480px){.classical .materials-lesson{grid-template-columns:1.7rem 1fr;gap:.5rem}.classical .lesson-links{gap:.45rem 1rem}}
+    @media print{.materials-lesson{break-inside:avoid}}
+  </style>
+  <a class="materials-skip" href="#lecture-list">Skip to lectures</a>
+  <div class="grid-container">
+    {{ partial "header.html" . }}
+    <main class="page-main" id="course-content">
+      <article class="classical">
+        <header class="materials-intro">
+          <p class="backlink"><a href="/teaching/">← All teaching</a> · <a href="/teaching/materials/index.html">Lecture collection</a></p>
+          <p class="materials-term">{{ .Params.term }}</p>
+          <h1>{{ .Title }}</h1>
+          <p class="intro">{{ .Description }}</p>
+          <nav class="materials-nav" aria-label="Course sections"><a href="#lecture-list">Lectures</a><a href="#course-resources">Course resources</a>{{ with .Params.modules }}<a href="#interactive-modules">Interactive modules</a>{{ end }}</nav>
+        </header>
+        {{ with .Params.modules }}
+        <section class="materials-modules" id="interactive-modules" aria-labelledby="modules-heading">
+          <h2 id="modules-heading">Interactive modules</h2>
+          <ul>{{ range . }}<li><a href="{{ .url }}">{{ .title }}</a><p>{{ .description }}</p></li>{{ end }}</ul>
+        </section>
+        {{ end }}
+        <section id="lecture-list" aria-labelledby="lectures-heading">
+          <h2 id="lectures-heading">Lecture notes and slides</h2>
+          <p>Read the notes, follow the step-by-step slides, or open the PDF handout. Code and practice are collected on each lecture page.</p>
+          <ol class="materials-list">
+            {{ range $i, $lesson := .Params.lessons }}
+            {{ $base := printf "/teaching/materials/%s/%s/" $.Params.materials_id .id }}
+            <li class="materials-lesson" id="{{ .id }}">
+              <span class="lesson-number" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+              <div><h3><a href="{{ $base }}index.html">{{ .title }}</a></h3>
+                <nav class="lesson-links" aria-label="Resources for {{ .title }}">
+                  <a href="{{ $base }}notes.pdf" aria-label="Notes PDF — {{ .title }}">Notes (PDF)</a>
+                  <a href="{{ $base }}slides.html" aria-label="Slides — {{ .title }}">Slides</a>
+                  <a href="{{ $base }}slides-handout.pdf" aria-label="Slide PDF — {{ .title }}">Slides (PDF)</a>
+                  <a href="{{ $base }}index.html" aria-label="Code and practice — {{ .title }}">Code &amp; practice</a>
+                </nav>
+              </div>
+            </li>
+            {{ end }}
+          </ol>
+        </section>
+        <section id="course-resources" aria-labelledby="resources-heading"><h2 id="resources-heading">Course resources</h2>{{ .Content }}</section>
+        <footer class="materials-footer"><a href="/teaching/">← All teaching</a> · <a href="/teaching/materials/index.html">Lecture collection</a></footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
