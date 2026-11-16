@@ -1,0 +1,52 @@
+{
+  "model": "original three-mode diagonal linear spectral regression; not G-FuNK",
+  "training_cases": 48,
+  "test_cases": 16,
+  "training_grid": 64,
+  "fixed_kappa": 0.1,
+  "fixed_output_time": 0.1,
+  "fitted_gains": [
+    0.9060180557889224,
+    0.6738254512314337,
+    0.411369107350625
+  ],
+  "analytic_gains": [
+    0.9060180557889229,
+    0.6738254512314336,
+    0.4113691073506249
+  ],
+  "max_id_relative_l2": 3.409656137883662e-16,
+  "transfer_grids": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "same_family_grid_errors": [
+    1.450951033521181e-16,
+    1.0700305451613401e-16,
+    1.833310494526958e-16,
+    1.519341277825554e-16
+  ],
+  "changed_kappa": 0.02,
+  "changed_parameter_error": {
+    "rms": 0.043135726840657036,
+    "relative_l2": 0.041969054972006516,
+    "max_error": 0.10241358163108727,
+    "mean_error": 7.461688261201196e-18
+  },
+  "omitted_fourth_mode_error": {
+    "rms": 0.07288608945244844,
+    "relative_l2": 0.07254532011813408,
+    "max_error": 0.10295233605808651,
+    "mean_error": 1.2769459150063059e-17
+  },
+  "checks": {
+    "complete_case_split_disjoint": true,
+    "basis_sign_invariance": true,
+    "normalized_graph_degree_null_mode": true,
+    "mean_preserved_by_construction": true,
+    "unidentifiable_modes_rejected": true
+  },
+  "runtime_seconds": 0.6069121155887842
+}

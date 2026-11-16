@@ -1,0 +1,52 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Heat-flow operators, generators and finite spectral families / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 17}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Heat-flow operators, generators and finite spectral families --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A function and its sampled vector are different objects.
+\item Generators, flows and observables answer different questions.
+\item A dataset split must match the desired generalization unit.
+\item An exact synthetic reference allows targeted numerical checks.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Calling any fixed-size regression a universally transferable operator.} State the tested family and discretizations.
+
+\textbf{Splitting snapshots or nodes from one case across sets.} Group by the scientific unit intended to be unseen.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What does the zero-frequency heat mode do?
+\item Does semigroup consistency establish biological validity?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish a field, its samples, a scalar observable, a generator and a solution map.
+\item Specify an operator-learning problem with its domain, parameters, boundary conditions and prediction horizon.
+\item Construct complete-case train/test regimes and identify unsupported distribution changes.
+\item Check a simple diffusion operator against analytic and discrete references.
+\end{itemize}
+\end{document}

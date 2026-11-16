@@ -1,0 +1,102 @@
+{
+  "model": "nondimensional heat cost audit plus independent scalar fitted-generator example",
+  "timing_protocol": {
+    "repeats": 7,
+    "queries_per_batch": 10,
+    "warmup_calls": 1,
+    "clock": "perf_counter",
+    "hardware": "current local CPU; no portability claim"
+  },
+  "analytic_training_label_generation_seconds": 0.0004890477284789085,
+  "fit_seconds": 0.00015110615640878677,
+  "setup_seconds": 0.0006401538848876953,
+  "query_methods": [
+    {
+      "method": "BE reference",
+      "median_seconds_per_query": 0.004928990453481674,
+      "timing_samples_seconds": [
+        0.004676264896988869,
+        0.004928990453481674,
+        0.004937758948653936,
+        0.004959212709218263,
+        0.004951388854533434,
+        0.004886063002049923,
+        0.0046200893819332125
+      ],
+      "error": {
+        "rms": 7.681545556807753e-05,
+        "relative_l2": 7.521919794216353e-05,
+        "max_error": 0.00015267190908274664,
+        "mean_error": 4.3989118921038676e-14
+      }
+    },
+    {
+      "method": "Analytic spectral",
+      "median_seconds_per_query": 6.838170811533928e-05,
+      "timing_samples_seconds": [
+        7.017310708761215e-05,
+        6.780559197068214e-05,
+        6.874240934848786e-05,
+        7.068105041980743e-05,
+        6.774049252271652e-05,
+        6.838170811533928e-05,
+        6.731366738677025e-05
+      ],
+      "error": {
+        "rms": 1.0055412576335686e-16,
+        "relative_l2": 9.846456853975071e-17,
+        "max_error": 2.220446049250313e-16,
+        "mean_error": 2.6020852139652106e-18
+      }
+    },
+    {
+      "method": "3-mode fit",
+      "median_seconds_per_query": 5.143657326698303e-05,
+      "timing_samples_seconds": [
+        5.249660462141037e-05,
+        5.294252187013626e-05,
+        5.1043927669525146e-05,
+        5.096867680549621e-05,
+        5.1271356642246244e-05,
+        5.209390074014664e-05,
+        5.143657326698303e-05
+      ],
+      "error": {
+        "rms": 1.4288057044435644e-16,
+        "relative_l2": 1.3991145181477784e-16,
+        "max_error": 2.220446049250313e-16,
+        "mean_error": 8.673617379884035e-18
+      }
+    }
+  ],
+  "measured_setup_break_even_queries_vs_BE": 0.1312448617911563,
+  "training_step": 0.1,
+  "true_rate": 2.0,
+  "learned_generator": -1.8126924692201813,
+  "inference_steps": [
+    0.1,
+    0.05,
+    0.025,
+    0.0125
+  ],
+  "inference_values": [
+    0.3678794411714422,
+    0.3867088820539591,
+    0.395531382456595,
+    0.39980740974445933
+  ],
+  "true_state_at_half": 0.36787944117144233,
+  "exact_learned_flow_at_half": 0.4039976432368763,
+  "absolute_errors": [
+    1.1102230246251565e-16,
+    0.018829440882516757,
+    0.027651941285152692,
+    0.031927968573016996
+  ],
+  "checks": {
+    "training_step_matches_sampled_truth": true,
+    "smaller_step_bias_exposed": true,
+    "analytic_baseline_included": true
+  },
+  "runtime_seconds": 0.8524586660787463
+}

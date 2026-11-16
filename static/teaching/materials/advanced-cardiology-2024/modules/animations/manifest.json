@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Conservation and channel flow",
+    "slug": "conservation-flow",
+    "notes": "../cfd/notes.pdf",
+    "back": "../../m05/index.html",
+    "segments": [
+      {
+        "id": "shared-face",
+        "title": "A shared face",
+        "caption": "Predict the sign of the right face contribution to cell i. Then describe the same face from the neighboring cell.",
+        "video": "conservation-flow/01-shared-face.mp4",
+        "poster": "conservation-flow/01-shared-face.png",
+        "notes": "../cfd/notes.pdf#page=4",
+        "duration": 4.125
+      },
+      {
+        "id": "global-budget",
+        "title": "The global budget",
+        "caption": "Sum the three updates. Identify precisely which terms cancel and which boundary terms survive.",
+        "video": "conservation-flow/02-global-budget.mp4",
+        "poster": "conservation-flow/02-global-budget.png",
+        "notes": "../cfd/notes.pdf#page=5",
+        "duration": 2.625
+      },
+      {
+        "id": "channel",
+        "title": "Pressure-driven velocity",
+        "caption": "Integrate the reduced momentum equation twice. Explain the no-slip boundary data and the units of q.",
+        "video": "conservation-flow/03-channel.mp4",
+        "poster": "conservation-flow/03-channel.png",
+        "notes": "../cfd/notes.pdf#page=2",
+        "duration": 4.791667
+      },
+      {
+        "id": "tracer",
+        "title": "A transported packet",
+        "caption": "Compare the center and wall regions. Explain why physical diffusivity and numerical diffusion require separate experiments.",
+        "video": "conservation-flow/04-tracer.mp4",
+        "poster": "conservation-flow/04-tracer.png",
+        "notes": "../cfd/notes.pdf#page=4",
+        "duration": 9.875
+      },
+      {
+        "id": "budget-check",
+        "title": "A conservation check",
+        "caption": "Explain why agreement of the two curves verifies the discrete budget but does not establish physical validity.",
+        "video": "conservation-flow/05-budget-check.mp4",
+        "poster": "conservation-flow/05-budget-check.png",
+        "notes": "../cfd/notes.pdf#page=5",
+        "duration": 4.791667
+      }
+    ],
+    "render": "Manim Community 0.20.1, Cairo, 1920x1080, 24fps, H264/yuv420p"
+  },
+  {
+    "title": "Excitation and propagation",
+    "slug": "excitable-wave",
+    "notes": "../../m10/notes.pdf",
+    "back": "../../m10/index.html",
+    "segments": [
+      {
+        "id": "reaction",
+        "title": "Reaction and recovery",
+        "caption": "Identify the depolarizing and outward terms. State what happens to h above and below the gate threshold.",
+        "video": "excitable-wave/01-reaction.mp4",
+        "poster": "excitable-wave/01-reaction.png",
+        "notes": "../../m10/notes.pdf#page=1",
+        "duration": 2.291667
+      },
+      {
+        "id": "stimulus",
+        "title": "Localized stimulation",
+        "caption": "Locate the stimulus in space and time. Explain why a local source can change voltage elsewhere when D is positive.",
+        "video": "excitable-wave/02-stimulus.mp4",
+        "poster": "excitable-wave/02-stimulus.png",
+        "notes": "../../m10/notes.pdf#page=3",
+        "duration": 4.791667
+      },
+      {
+        "id": "propagation",
+        "title": "An advancing front",
+        "caption": "Compare voltage and availability behind the front. Do not infer a complete recovery time from this window.",
+        "video": "excitable-wave/03-propagation.mp4",
+        "poster": "excitable-wave/03-propagation.png",
+        "notes": "../../m10/notes.pdf#page=4",
+        "duration": 7.791667
+      },
+      {
+        "id": "arrival",
+        "title": "Propagation through the strand",
+        "caption": "Keep the physical sensor positions fixed. Predict which threshold crossing occurs first.",
+        "video": "excitable-wave/04-arrival.mp4",
+        "poster": "excitable-wave/04-arrival.png",
+        "notes": "../../m10/notes.pdf#page=4",
+        "duration": 6.791667
+      },
+      {
+        "id": "speed",
+        "title": "Conduction-speed measurement",
+        "caption": "Compute 6 mm divided by the arrival-time difference. Convert mm/ms to m/s and discuss timing error.",
+        "video": "excitable-wave/05-speed.mp4",
+        "poster": "excitable-wave/05-speed.png",
+        "notes": "../../m10/notes.pdf#page=4",
+        "duration": 3.791667
+      }
+    ],
+    "render": "Manim Community 0.20.1, Cairo, 1920x1080, 24fps, H264/yuv420p"
+  },
+  {
+    "title": "Correspondence, interpolation and flow",
+    "slug": "landmark-flow",
+    "notes": "../shape-lab/notes.pdf",
+    "back": "../../m14/index.html",
+    "segments": [
+      {
+        "id": "correspondence",
+        "title": "Corresponding landmarks",
+        "caption": "Distinguish the physical point set from its labels. Decide which transformations should be removed before comparing shapes.",
+        "video": "landmark-flow/01-correspondence.mp4",
+        "poster": "landmark-flow/01-correspondence.png",
+        "notes": "../shape-lab/notes.pdf#page=1",
+        "duration": 1.791667
+      },
+      {
+        "id": "linear-collapse",
+        "title": "Coordinate interpolation",
+        "caption": "At t=1/2 calculate the image of every point. Explain why the map is not injective.",
+        "video": "landmark-flow/02-linear-collapse.mp4",
+        "poster": "landmark-flow/02-linear-collapse.png",
+        "notes": "../shape-lab/notes.pdf#page=4",
+        "duration": 4.791667
+      },
+      {
+        "id": "linear-endpoint",
+        "title": "The endpoint does not certify the path",
+        "caption": "Compare the final half-turn with the singular midpoint. Checking only the endpoint determinant misses the collapse.",
+        "video": "landmark-flow/03-linear-endpoint.mp4",
+        "poster": "landmark-flow/03-linear-endpoint.png",
+        "notes": "../shape-lab/notes.pdf#page=4",
+        "duration": 4.791667
+      },
+      {
+        "id": "rotation-flow",
+        "title": "Rotation as an ambient flow",
+        "caption": "Track a point and a nearby grid cell through the first half of the rotation. Show that the determinant stays one.",
+        "video": "landmark-flow/04-rotation-flow.mp4",
+        "poster": "landmark-flow/04-rotation-flow.png",
+        "notes": "../shape-lab/notes.pdf#page=4",
+        "duration": 4.791667
+      },
+      {
+        "id": "rotation-endpoint",
+        "title": "A common endpoint, a different path",
+        "caption": "Both paths end at a half-turn, but only the rotation remains invertible at every intermediate time.",
+        "video": "landmark-flow/05-rotation-endpoint.mp4",
+        "poster": "landmark-flow/05-rotation-endpoint.png",
+        "notes": "../shape-lab/notes.pdf#page=4",
+        "duration": 4.791667
+      },
+      {
+        "id": "jacobian",
+        "title": "The Jacobian evolution",
+        "caption": "Core: evaluate the determinant for rotation and explain why finitely sampled numerical determinants are only diagnostics. Optional: derive the determinant formula from the matrix variational equation.",
+        "video": "landmark-flow/06-jacobian.mp4",
+        "poster": "landmark-flow/06-jacobian.png",
+        "notes": "../shape-lab/notes.pdf#page=5",
+        "duration": 2.791667
+      }
+    ],
+    "render": "Manim Community 0.20.1, Cairo, 1920x1080, 24fps, H264/yuv420p"
+  }
+]
