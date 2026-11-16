@@ -1,0 +1,465 @@
+{
+  "definition": "360 original synthetic groups, two rows each; one stable outcome per group. A/B are dimensionless noisy latent measurements.",
+  "split_group_counts": {
+    "train": 180,
+    "validation": 80,
+    "test": 100
+  },
+  "aggregation": "Mean logit across two rows per group; one outcome and one evaluated probability per group.",
+  "deliberate_teaching_confidence_multiplier": 2.5,
+  "models": {
+    "A": {
+      "preprocessing": {
+        "mode": "A",
+        "B_median": 0.0,
+        "mean": [
+          0.003779146295991974
+        ],
+        "sd": [
+          1.1434774538480326
+        ]
+      },
+      "theta": [
+        0.4454830730018634,
+        -0.423554097964556
+      ],
+      "temperature": 1.8640545865598723
+    },
+    "AB": {
+      "preprocessing": {
+        "mode": "AB",
+        "B_median": 0.01358234899995156,
+        "mean": [
+          0.003779146295991958,
+          0.009625745902288528,
+          0.16666666666666666
+        ],
+        "sd": [
+          1.1434774538480328,
+          1.004986213895758,
+          0.37267799624996545
+        ]
+      },
+      "theta": [
+        0.5913060289578644,
+        1.009583307037776,
+        0.07913600638012487,
+        -0.5298872771807082
+      ],
+      "temperature": 1.6697661666211463
+    }
+  },
+  "test_metrics": {
+    "A": {
+      "before": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.2551744199561016,
+        "log_loss_clipped_1e_15": 0.733933105343954,
+        "AUC": 0.6182266009852216,
+        "accuracy_at_0_5": 0.63,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 40,
+            "mean_probability": 0.1194323465361545,
+            "event_fraction": 0.375
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 42,
+            "mean_probability": 0.3032586345310798,
+            "event_fraction": 0.35714285714285715
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 13,
+            "mean_probability": 0.48817472625036673,
+            "event_fraction": 0.6923076923076923
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 4,
+            "mean_probability": 0.6501565710766961,
+            "event_fraction": 0.5
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 1,
+            "mean_probability": 0.8114832384924817,
+            "event_fraction": 1.0
+          }
+        ]
+      },
+      "after": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.2351711234929404,
+        "log_loss_clipped_1e_15": 0.6633623478923423,
+        "AUC": 0.6182266009852216,
+        "accuracy_at_0_5": 0.63,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 8,
+            "mean_probability": 0.17267160901139358,
+            "event_fraction": 0.125
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 56,
+            "mean_probability": 0.30942424826734233,
+            "event_fraction": 0.39285714285714285
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 35,
+            "mean_probability": 0.4664682688689324,
+            "event_fraction": 0.5142857142857142
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 1,
+            "mean_probability": 0.6863404197181807,
+            "event_fraction": 1.0
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 0,
+            "mean_probability": null,
+            "event_fraction": null
+          }
+        ]
+      }
+    },
+    "AB": {
+      "before": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.2306446467867745,
+        "log_loss_clipped_1e_15": 0.7411122711267365,
+        "AUC": 0.7454844006568144,
+        "accuracy_at_0_5": 0.67,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 53,
+            "mean_probability": 0.05854240229038131,
+            "event_fraction": 0.2641509433962264
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 19,
+            "mean_probability": 0.283269227073831,
+            "event_fraction": 0.47368421052631576
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 7,
+            "mean_probability": 0.5078308915819381,
+            "event_fraction": 0.42857142857142855
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 8,
+            "mean_probability": 0.6722407627445861,
+            "event_fraction": 0.625
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 13,
+            "mean_probability": 0.9058468463135385,
+            "event_fraction": 0.8461538461538461
+          }
+        ]
+      },
+      "after": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.20834317621324977,
+        "log_loss_clipped_1e_15": 0.6125517005920411,
+        "AUC": 0.7454844006568144,
+        "accuracy_at_0_5": 0.67,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 38,
+            "mean_probability": 0.09178676339160315,
+            "event_fraction": 0.21052631578947367
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 32,
+            "mean_probability": 0.3054342705692135,
+            "event_fraction": 0.4375
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 13,
+            "mean_probability": 0.5148847041115385,
+            "event_fraction": 0.46153846153846156
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 11,
+            "mean_probability": 0.7056815123593719,
+            "event_fraction": 0.7272727272727273
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 6,
+            "mean_probability": 0.887011629713344,
+            "event_fraction": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "missingness_stress": [
+    {
+      "additional_drop_fraction": 0.0,
+      "groups_without_B": 19,
+      "metrics": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.20834317621324977,
+        "log_loss_clipped_1e_15": 0.6125517005920411,
+        "AUC": 0.7454844006568144,
+        "accuracy_at_0_5": 0.67,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 38,
+            "mean_probability": 0.09178676339160315,
+            "event_fraction": 0.21052631578947367
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 32,
+            "mean_probability": 0.3054342705692135,
+            "event_fraction": 0.4375
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 13,
+            "mean_probability": 0.5148847041115385,
+            "event_fraction": 0.46153846153846156
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 11,
+            "mean_probability": 0.7056815123593719,
+            "event_fraction": 0.7272727272727273
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 6,
+            "mean_probability": 0.887011629713344,
+            "event_fraction": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "additional_drop_fraction": 0.5,
+      "groups_without_B": 61,
+      "metrics": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.22060078279369433,
+        "log_loss_clipped_1e_15": 0.6473786378428927,
+        "AUC": 0.6999178981937603,
+        "accuracy_at_0_5": 0.68,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 30,
+            "mean_probability": 0.10337696943591237,
+            "event_fraction": 0.23333333333333334
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 31,
+            "mean_probability": 0.30281640636728924,
+            "event_fraction": 0.3870967741935484
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 26,
+            "mean_probability": 0.4803415869685445,
+            "event_fraction": 0.5
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 10,
+            "mean_probability": 0.6901845755656344,
+            "event_fraction": 0.7
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 3,
+            "mean_probability": 0.9068589213527681,
+            "event_fraction": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "additional_drop_fraction": 1.0,
+      "groups_without_B": 100,
+      "metrics": {
+        "groups": 100,
+        "events": 42,
+        "Brier": 0.23629975471790712,
+        "log_loss_clipped_1e_15": 0.6680311097486286,
+        "AUC": 0.6182266009852216,
+        "accuracy_at_0_5": 0.64,
+        "reliability_bins": [
+          {
+            "bin": [
+              0.0,
+              0.2
+            ],
+            "count": 17,
+            "mean_probability": 0.15105996488512646,
+            "event_fraction": 0.29411764705882354
+          },
+          {
+            "bin": [
+              0.2,
+              0.4
+            ],
+            "count": 40,
+            "mean_probability": 0.3039976268847018,
+            "event_fraction": 0.375
+          },
+          {
+            "bin": [
+              0.4,
+              0.6
+            ],
+            "count": 34,
+            "mean_probability": 0.47239856114629103,
+            "event_fraction": 0.4411764705882353
+          },
+          {
+            "bin": [
+              0.6,
+              0.8
+            ],
+            "count": 8,
+            "mean_probability": 0.6663400665530901,
+            "event_fraction": 0.75
+          },
+          {
+            "bin": [
+              0.8,
+              1.0
+            ],
+            "count": 1,
+            "mean_probability": 0.8145118019389213,
+            "event_fraction": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "group_disjoint_splits": true,
+    "positive_temperature_preserves_AUC_and_0_5_decisions": true,
+    "all_missing_test_B_supported_with_frozen_imputer": true,
+    "perfect_forecasts_Brier_zero": true,
+    "tied_scores_AUC_half": true,
+    "unit_temperature_identity": true
+  }
+}
