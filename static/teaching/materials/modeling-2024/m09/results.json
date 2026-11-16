@@ -1,0 +1,19 @@
+{
+  "rest_mV": -69.89767289636794,
+  "rest_current_uA_cm2": 8.43769498715119e-15,
+  "weak_peak_mV": -68.26225810535843,
+  "strong_peak_mV": 33.96217211622026,
+  "gate_range": [
+    0.013562699724249602,
+    0.9936018761583811
+  ],
+  "prescribed_charge_density_uA_ms_cm2": 9.999999999999975,
+  "gate_hand_example": 0.2348509478575048,
+  "voltage_refinement_max_gaps_mV": [
+    0.020897983335209425,
+    0.005225064201106022
+  ],
+  "gap_ratio": 3.9995648916210094,
+  "invalid_cases_rejected": 4,
+  "runtime_seconds": 5.880951238796115
+}

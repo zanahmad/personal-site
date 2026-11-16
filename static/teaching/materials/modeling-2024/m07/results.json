@@ -1,0 +1,61 @@
+{
+  "model": "neutral diploid Wright-Fisher sampling; synthetic demonstration",
+  "p0": 0.3,
+  "genotype_probabilities": [
+    0.09,
+    0.42,
+    0.48999999999999994
+  ],
+  "counting_example_frequency": 0.45,
+  "trajectories": {
+    "25": {
+      "final_frequencies": [
+        0.0,
+        0.0,
+        0.84,
+        1.0,
+        0.0,
+        0.0,
+        0.14,
+        0.0
+      ],
+      "one_step_variance_at_p0": 0.0042
+    },
+    "250": {
+      "final_frequencies": [
+        0.53,
+        0.356,
+        0.17,
+        0.216,
+        0.356,
+        0.202,
+        0.318,
+        0.282
+      ],
+      "one_step_variance_at_p0": 0.00041999999999999996
+    }
+  },
+  "one_generation_ensemble": {
+    "replicates": 100000,
+    "mean_copies": 15.01497,
+    "variance_copies": 10.5046658991,
+    "expected_mean": 15.0,
+    "expected_variance": 10.5
+  },
+  "checks": {
+    "probabilities_sum_to_one": true,
+    "absent_allele_cannot_appear": true,
+    "fixation_absorbing": true,
+    "seed_reproducible": true,
+    "copy_grid_and_bounds": true,
+    "conditional_moments": true,
+    "invalid_inputs_rejected": 8
+  },
+  "limitations": [
+    "one locus and two alleles",
+    "fixed diploid population",
+    "independent sampling and nonoverlapping generations",
+    "no selection mutation or migration",
+    "no prediction for an actual species or population"
+  ]
+}

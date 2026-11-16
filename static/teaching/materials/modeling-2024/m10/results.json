@@ -1,0 +1,71 @@
+{
+  "probe_labels": [
+    "Start",
+    "Junction",
+    "Upper tip",
+    "Lower tip"
+  ],
+  "arrival_definition": "first upward crossing of 0 mV, linearly interpolated",
+  "probe_arrival_ms": [
+    2.188703484087372,
+    3.7993682561504034,
+    4.692250707365337,
+    4.912751908805438
+  ],
+  "probe_peak_mV": [
+    32.251207016796876,
+    32.151602118983526,
+    36.84870354069141,
+    36.84783413394704
+  ],
+  "nodes": 71,
+  "membrane_area_cm2": 0.0020106192982974683,
+  "delivered_charge_uA_ms": 0.005999999999999995,
+  "max_step_budget_error_uA_ms": 2.270048298641525e-17,
+  "gate_range": [
+    0.013560013723649393,
+    0.9947868685405966
+  ],
+  "tip_refinement_arrivals_ms": [
+    [
+      4.692250707365337,
+      4.912751908805438
+    ],
+    [
+      4.687487233768783,
+      4.907792394009196
+    ],
+    [
+      4.685127439416292,
+      4.905336300739851
+    ]
+  ],
+  "tip_refinement_gaps_ms": [
+    0.004959514796242459,
+    0.0024560932693447057
+  ],
+  "tree_dense_solve_max_error": 4.440892098500626e-16,
+  "passive_spatial_errors_mV": [
+    0.005124293468033336,
+    0.001283626801511062,
+    0.0003210663964168248,
+    8.027658182552244e-05
+  ],
+  "passive_spatial_orders": [
+    1.9971272832928255,
+    1.9992822356902396,
+    1.9998205838146137
+  ],
+  "passive_temporal_errors_mV": [
+    0.009124408630114544,
+    0.004591858543811611,
+    0.0023034259012106872
+  ],
+  "passive_temporal_orders": [
+    0.9906528589373282,
+    0.9952970105190462
+  ],
+  "symmetric_tip_gap_mV": 0.0,
+  "invalid_cases_rejected": 5,
+  "runtime_seconds": 6.5595693718642
+}

@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Membrane currents and Hodgkin--Huxley gate kinetics / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 9}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Membrane currents and Hodgkin--Huxley gate kinetics --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Current balance controls voltage rate under a declared sign convention.
+\item An ion current needs both conductance and a driving difference.
+\item m, h and n are fractions; their combinations determine conductances.
+\item A voltage clamp fixes rates; a free spike couples gates and voltage.
+\item Equal pulse timing and initial conditions support a controlled comparison.
+\item Numerical accuracy and biological validity require different evidence.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating h as sodium current.} h is a dimensionless availability fraction; current also needs m, a maximal conductance and V - E\_Na.
+
+\textbf{Calling a clamped-voltage gate trace a predicted voltage spike.} The clamp supplies the voltage. A free-voltage experiment must solve current balance.
+
+\textbf{Assuming bounded gates make a coarse trajectory accurate.} Bounds check admissibility. Compare smaller steps and independent references for accuracy.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is current through a pathway at its reversal potential?
+\item For alpha =\allowbreak{} beta =\allowbreak{} 1/ms, what is the equilibrium gate fraction?
+\item Does doubling membrane area at fixed density double the voltage input per area?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Use a stated current sign convention to predict whether membrane voltage rises or falls.
+\item Interpret m, h and n as gate fractions and connect them to conductance.
+\item Distinguish a voltage clamp from a freely evolving voltage.
+\item Compare two controlled stimuli and identify positive feedback and recovery.
+\item Separate numerical checks from evidence about an actual neuron or heart cell.
+\end{itemize}
+\end{document}

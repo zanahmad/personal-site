@@ -1,0 +1,45 @@
+{
+  "model": "ideal impermeant solute and water-only membrane; synthetic",
+  "amount_fmol": 300,
+  "initial_volume_pl": 1,
+  "coefficient_pl_per_s_mm": 0.002,
+  "step_s": 0.05,
+  "scenarios": {
+    "150": {
+      "equilibrium_pl": 2.0,
+      "final_volume_pl": 1.9933832406523782,
+      "initial_flow_pl_per_s": 0.3
+    },
+    "300": {
+      "equilibrium_pl": 1.0,
+      "final_volume_pl": 1.0,
+      "initial_flow_pl_per_s": 0.0
+    },
+    "450": {
+      "equilibrium_pl": 0.6666666666666666,
+      "final_volume_pl": 0.6666666666666674,
+      "initial_flow_pl_per_s": -0.3
+    }
+  },
+  "first_0_2s_euler_volume_pl": 1.06,
+  "endpoint_refinement_gaps_pl": {
+    "0.2_to_0.1": 0.0030446131464800796,
+    "0.1_to_0.05": 0.0015099404042282494
+  },
+  "checks": {
+    "positive_bounded_monotone_volume": true,
+    "constant_impermeant_amount": true,
+    "matched_concentrations_static": true,
+    "zero_conductance_static": true,
+    "amount_volume_coefficient_scaling": true,
+    "step_refinement": true,
+    "invalid_inputs_rejected": 7
+  },
+  "limitations": [
+    "no permeant solutes or ion pumps",
+    "outside concentration fixed by a large reservoir",
+    "hydrostatic pressure difference set to zero",
+    "no membrane tension elasticity or rupture",
+    "fixed water coefficient and temperature"
+  ]
+}

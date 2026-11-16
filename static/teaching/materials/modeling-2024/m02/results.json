@@ -1,0 +1,48 @@
+{
+  "model": "original synthetic steady linear-resistance network, not a specific patient or anatomical circuit",
+  "pressure_mmHg": {
+    "source": 96.0,
+    "sink": 6.0,
+    "A": 42.0,
+    "B": 60.00000000000001
+  },
+  "reference_edges": [
+    [
+      "source",
+      "A"
+    ],
+    [
+      "A",
+      "sink"
+    ],
+    [
+      "source",
+      "B"
+    ],
+    [
+      "B",
+      "sink"
+    ],
+    [
+      "A",
+      "B"
+    ]
+  ],
+  "flow_L_min": [
+    2.7,
+    3.6,
+    3.599999999999999,
+    2.7,
+    -0.9000000000000004
+  ],
+  "total_source_flow_L_min": 6.299999999999999,
+  "checks": {
+    "maximum_internal_balance_residual_L_min": 1.3322676295501878e-15,
+    "equal_boundary_zero_flow": true,
+    "pressure_reference_shift_invariant": true,
+    "uniform_resistance_scaling": true,
+    "pressure_work_equals_dissipation": true,
+    "dissipation_mmHg_L_min": 567.0,
+    "invalid_cases_rejected": 6
+  }
+}

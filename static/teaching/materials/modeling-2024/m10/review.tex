@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Cable equations and propagation through a branch / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 10}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Cable equations and propagation through a branch --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Axial current couples local membrane balances.
+\item One edge carries one shared current; one junction has one shared voltage.
+\item Membrane current density must be multiplied by area when using total currents.
+\item A time trace fixes location; a spatial snapshot fixes time.
+\item Arrival speed requires a declared event and physical path distance.
+\item Conservation, numerical accuracy and biological validity are distinct claims.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Creating a separate junction voltage for each branch.} This connected cable uses one shared junction state and sums all incident contributions.
+
+\textbf{Calling a steady attenuating profile a traveling spike.} Travel requires time-dependent observations; regenerative channel feedback must be represented for this active model.
+
+\textbf{Treating implicit stepping as proof of accuracy.} Implicit coupling helps solve the discrete balance. Time and spatial errors still require assessment.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item For an edge with K =\allowbreak{} 0.0001 mS and V\_i - V\_j =\allowbreak{} 20 mV, what current leaves i?
+\item Where is the common junction in both snapshot panels?
+\item If a sealed active cable changes its mean voltage, is that automatically a conservation failure?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Explain how axial current couples neighboring membrane regions.
+\item Distinguish a voltage trace at one place from a spatial snapshot at one time.
+\item Apply one shared-voltage and current-balance rule at a branch.
+\item Measure arrival delay using a declared threshold and physical path length.
+\item Explain why conservation, numerical refinement and biological validation are different tests.
+\end{itemize}
+\end{document}

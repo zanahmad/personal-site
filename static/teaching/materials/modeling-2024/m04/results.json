@@ -1,0 +1,15 @@
+{
+  "max_total_drift_L": 1.1031175972675555e-12,
+  "max_balance_residual_L_min": 3.66819907782201e-11,
+  "max_solves": 2,
+  "initial_total_L": 5.136159999999999,
+  "rate_bpm": 80.0,
+  "rs_mmHg_min_L": 17.86,
+  "dt_s": 0.001875,
+  "independent_balance_residual_L_min": 3.668210180052256e-11,
+  "coarse_fine_pressure_gap_mmHg": 0.030843520199780983,
+  "forward_valve_formula_pass": true,
+  "matched_phase_storage_pass": true,
+  "invalid_valve_inputs_rejected": 5,
+  "first_step_transfer_example_mL": 10.0
+}

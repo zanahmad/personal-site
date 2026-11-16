@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Population transfers: SIR dynamics, thresholds, and numerical conservation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 6}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Population transfers: SIR dynamics, thresholds, and numerical conservation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Internal transfers change group composition while conserving a closed total.
+\item Infection flow $\beta$SI/N and recovery flow $\gamma$I have units people/day.
+\item The initial direction of I follows the comparison $\beta$S/N versus $\gamma$.
+\item A sufficient nonnegative-step condition does not guarantee numerical accuracy.
+\item Synthetic scenarios and validated forecasts require different evidence.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Subtracting recovered people from total N.} R remains inside this closed population; recovery moves people between categories.
+
+\textbf{Calling $\beta$ a probability with no time unit.} In this model $\beta$ is an effective rate in 1/day; a transfer also depends on current group sizes and interval length.
+
+\textbf{Treating a constant total as proof that the entire trajectory is correct.} Check bounds, limiting cases and step refinement as well as conservation.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Which two changes cancel for an infection transfer?
+\item Can a positive $\beta$ start an outbreak when I0 =\allowbreak{} 0 in this closed model?
+\item Why compare solutions at common times when changing the step?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Draw a closed-population transfer diagram with clearly defined categories.
+\item Compute infection and recovery transfers over a short interval.
+\item Check conservation and nonnegative group sizes in a numerical update.
+\item Predict whether the infectious group initially increases from the competing rates.
+\item Distinguish a controlled synthetic scenario from a validated population forecast.
+\end{itemize}
+\end{document}

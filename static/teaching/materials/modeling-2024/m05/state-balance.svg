@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="668.88pt" height="308.837344pt" viewBox="0 0 668.88 308.837344" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">Original two-state model. Attachment takes fraction from detached 1 minus A at rate f times 1 minus A; detachment returns fraction at rate g times A. Both fluxes have units per second. Total fraction is one.</ns0:desc><ns0:title id="figure-title">Attached and detached fractions</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T15:00:09.170363</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 308.837344  L 668.88 308.837344  L 668.88 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 46.4688 220.181344  L 262.4472 220.181344  Q 268.992 220.181344 268.992 214.750944  L 268.992 117.003744  Q 268.992 111.573344 262.4472 111.573344  L 46.4688 111.573344  Q 39.924 111.573344 39.924 117.003744  L 39.924 214.750944  Q 39.924 220.181344 46.4688 220.181344  z " clip-path="url(#p1dcb374b74)" style="fill: #e4f1f2; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 399.888 220.181344  L 615.8664 220.181344  Q 622.4112 220.181344 622.4112 214.750944  L 622.4112 117.003744  Q 622.4112 111.573344 615.8664 111.573344  L 399.888 111.573344  Q 393.3432 111.573344 393.3432 117.003744  L 393.3432 214.750944  Q 393.3432 220.181344 399.888 220.181344  z " clip-path="url(#p1dcb374b74)" style="fill: #e4f1f2; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 270.993309 125.149344  Q 334.439565 125.149344 395.649753 125.149344  " clip-path="url(#p1dcb374b74)" style="fill: none; stroke: #087e8b; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 386.849753 120.749344  L 395.649753 125.149344  L 386.849753 129.549344  " clip-path="url(#p1dcb374b74)" style="fill: none; stroke: #087e8b; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 397.886691 209.320544  Q 334.440435 209.320544 273.230247 209.320544  " clip-path="url(#p1dcb374b74)" style="fill: none; stroke: #a54e2c; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 282.030247 213.720544  L 273.230247 209.320544  L 282.030247 204.920544  " clip-path="url(#p1dcb374b74)" style="fill: none; stroke: #a54e2c; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(108.630891 159.411035)">Detached</ns0:text>
+    <ns0:text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(88.404797 182.21623)">fraction 1 − A</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(465.153919 159.411035)">Attached</ns0:text>
+    <ns0:text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(461.867512 182.21623)">fraction A</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 17px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="334.44" y="92.566944" transform="rotate(-0 334.44 92.566944)">Attachment flux: f (1 − A)</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 17px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="334.44" y="247.333344" transform="rotate(-0 334.44 247.333344)">Detachment flux: g A</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 17px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="334.44" y="20.117344" transform="rotate(-0 334.44 20.117344)">Two categories; one conserved population</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p1dcb374b74">
+   <ns0:rect x="7.2" y="30.117344" width="654.48" height="271.52" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

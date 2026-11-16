@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Conservation of volume / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 1}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Conservation of volume --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Choose a question and boundary before calculating.
+\item A stock has amount units; a rate has amount/time units.
+\item Final storage =\allowbreak{} initial storage +\allowbreak{} total entry - total exit.
+\item Equal flows maintain storage even when fluid moves.
+\item An internal transfer cancels when the boundary includes both regions.
+\item Numerical checks and measurements test different claims.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Adding a rate directly to a volume.} Multiply the rate by a compatible elapsed time first.
+
+\textbf{Counting internal flow as a loss from the combined system.} Cancel the matched departure and arrival.
+
+\textbf{Accepting a negative stored volume because the arithmetic ran.} Locate the emptying event and revise the outflow assumption.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What units distinguish volume from flow?
+\item Can 100 mL/min enter a steady-volume reservoir?
+\item What independent evidence would challenge a correct budget program?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item State a modeling question, a system boundary and two explicit assumptions.
+\item Distinguish stored volume from volume flow using units.
+\item Compute accumulation over an interval and check a complete volume budget.
+\item Explain why a steady stored volume can coexist with moving fluid.
+\item Name a measurement that could challenge the model.
+\end{itemize}
+\end{document}

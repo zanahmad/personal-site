@@ -1,0 +1,59 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Pulsatile circulation: changing compliance and self-consistent valves / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 4}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Pulsatile circulation: changing compliance and self-consistent valves --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A closed circulation boundary permits changing regional volumes while conserving their total.
+\item An ideal forward valve carries max(upstream pressure - downstream pressure, 0)/R.
+\item Prescribed compliance changes represent pumping in this model.
+\item The outer loop advances time; the inner loop finds consistent pressures and valve states.
+\item Implicit updates use new-state flows; conservation and time accuracy are separate checks.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Calling six storage regions six heart chambers.} There are two ventricular regions and four vascular regions; atrial storage is omitted.
+
+\textbf{Using seconds directly with flow in L/min.} Divide elapsed seconds by 60 before multiplying by a minute-based flow.
+
+\textbf{Auditing volume with the wrong compliance.} Use pressure and compliance from the same saved phase.
+
+\textbf{Treating conservation as clinical validation.} Conservation checks accounting; appropriate numerical references and independent physiological evidence answer other questions.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is the ideal forward flow for upstream 60, downstream 75 and resistance 3 in consistent units?
+\item At 80 beats per minute, how long is one cycle?
+\item Why might the first cycle differ from a later cycle?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace the two pumps and two vascular beds in a six-region model.
+\item Use a forward pressure difference to predict an ideal valve flow.
+\item Explain how a changing pressure-volume relation represents pumping.
+\item Distinguish an outer time loop from an inner valve-consistency calculation.
+\item Audit total stored volume while explaining what conservation cannot establish.
+\end{itemize}
+\end{document}

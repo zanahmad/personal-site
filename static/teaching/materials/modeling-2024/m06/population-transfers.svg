@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="731.52pt" height="306.717187pt" viewBox="0 0 731.52 306.717187" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">Original schematic with susceptible, infectious and recovered categories. Infection transfers beta times S times I divided by N per day from S to I. Recovery transfers gamma times I per day from I to R. No births, deaths, migration, latent stage or return to susceptibility is modeled.</ns0:desc><ns0:title id="figure-title">Transfers in a closed SIR population</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T15:27:43.178461</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M -0 306.717187  L 731.52 306.717187  L 731.52 0  L -0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 25.128 224.857987  L 168.552 224.857987  Q 174.528 224.857987 174.528 219.525187  L 174.528 123.534787  Q 174.528 118.201987 168.552 118.201987  L 25.128 118.201987  Q 19.152 118.201987 19.152 123.534787  L 19.152 219.525187  Q 19.152 224.857987 25.128 224.857987  z " clip-path="url(#pd2798745a8)" style="fill: #dcebf1; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 294.048 224.857987  L 437.472 224.857987  Q 443.448 224.857987 443.448 219.525187  L 443.448 123.534787  Q 443.448 118.201987 437.472 118.201987  L 294.048 118.201987  Q 288.072 118.201987 288.072 123.534787  L 288.072 219.525187  Q 288.072 224.857987 294.048 224.857987  z " clip-path="url(#pd2798745a8)" style="fill: #f1dfd2; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 562.968 224.857987  L 706.392 224.857987  Q 712.368 224.857987 712.368 219.525187  L 712.368 123.534787  Q 712.368 118.201987 706.392 118.201987  L 562.968 118.201987  Q 556.992 118.201987 556.992 123.534787  L 556.992 219.525187  Q 556.992 224.857987 562.968 224.857987  z " clip-path="url(#pd2798745a8)" style="fill: #d9eae2; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 176.527356 171.529987  Q 231.300583 171.529987 283.837742 171.529987  " clip-path="url(#pd2798745a8)" style="fill: none; stroke: #18384a; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 275.037742 167.129987  L 283.837742 171.529987  L 275.037742 175.929987  " clip-path="url(#pd2798745a8)" style="fill: none; stroke: #18384a; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 445.447356 171.529987  Q 500.220583 171.529987 552.757742 171.529987  " clip-path="url(#pd2798745a8)" style="fill: none; stroke: #18384a; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 543.957742 167.129987  L 552.757742 171.529987  L 543.957742 175.929987  " clip-path="url(#pd2798745a8)" style="fill: none; stroke: #18384a; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(90.491563 164.722566)">S</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(38.966563 188.728034)">Susceptible</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(362.81 164.722566)">I</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(316.936562 188.728034)">Infectious</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(627.731563 164.722566)">R</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(581.945625 188.728034)">Recovered</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="231.3" y="102.203587" transform="rotate(-0 231.3 102.203587)">β S I / N</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="500.22" y="102.203587" transform="rotate(-0 500.22 102.203587)">γ I</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="365.76" y="264.853987" transform="rotate(-0 365.76 264.853987)">Same transfer leaves one group and enters the next</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="365.76" y="20.877187" transform="rotate(-0 365.76 20.877187)">Closed population: S + I + R = N</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pd2798745a8">
+   <ns0:rect x="7.2" y="32.877187" width="717.12" height="266.64" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

@@ -1,0 +1,35 @@
+{
+  "units": {
+    "time": "min",
+    "volume": "mL"
+  },
+  "trajectory": {
+    "time_min": [
+      0.0,
+      3.0,
+      6.0
+    ],
+    "volume_ml": [
+      500.0,
+      560.0,
+      500.0
+    ],
+    "cumulative_in_ml": [
+      0.0,
+      300.0,
+      600.0
+    ],
+    "cumulative_out_ml": [
+      0.0,
+      240.0,
+      600.0
+    ]
+  },
+  "checks": {
+    "budget_residual_ml": 0.0,
+    "equal_flow_constant_volume": true,
+    "closed_reservoir_constant_volume": true,
+    "unit_conversion_agrees": true,
+    "invalid_cases_rejected": 6
+  }
+}

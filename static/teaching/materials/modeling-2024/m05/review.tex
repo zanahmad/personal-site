@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Crossbridge populations: transition kinetics and mechanical force / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 5}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Crossbridge populations: transition kinetics and mechanical force --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Attachment and detachment fluxes depend on the available source fractions.
+\item Equal opposing fluxes give a steady population fraction without stopping individual transitions.
+\item For positive rate sum, equilibrium is f/(f+\allowbreak{}g) and relaxation time is 1/(f+\allowbreak{}g).
+\item A fixed-force readout adds assumptions that occupancy alone does not establish.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treating a rate constant as a fraction or a total flux.} Rates have units 1/s; multiply by the available fraction to obtain a transition flux.
+
+\textbf{Doubling both rates must double the final fraction.} The ratio is unchanged, so the equilibrium is unchanged; the approach is faster.
+
+\textbf{A force trace validates a force-velocity theory.} The model does not contain velocity or strain, so that claim exceeds its equations.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item At f =\allowbreak{} 3/s, g =\allowbreak{} 1/s and A =\allowbreak{} 0.75, what are the two fluxes?
+\item What is carried across an instantaneous change in rate constants?
+\item Name one independent observation needed to test the occupancy explanation.
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Separate a state fraction from an attachment or detachment rate.
+\item Compute the competing transition fluxes and predict whether attachment increases.
+\item Find the equilibrium fraction by balancing gains and losses.
+\item Explain why scaling both rates changes the timescale but not the equilibrium.
+\item Identify what additional information is needed to predict shortening or metabolic energy.
+\end{itemize}
+\end{document}

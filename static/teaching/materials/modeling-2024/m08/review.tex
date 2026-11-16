@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Osmotic water transport and cell volume / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 8}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Osmotic water transport and cell volume --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Amount n, volume V and concentration n/V are distinct.
+\item Under equal hydrostatic pressure, ideal net water flow points toward higher impermeant-particle concentration.
+\item With positive L, equilibrium volume is n/c\_out; conductance sets response speed.
+\item The external concentration is fixed because the outside is modeled as a large reservoir.
+\item Conservation, numerical accuracy and biological validation require different checks.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Assuming concentration cannot change unless solute crosses.} Water movement changes V and therefore n/V even with fixed n.
+
+\textbf{Using the initial flow unchanged for every later step.} Recompute inside concentration and flow from the current volume.
+
+\textbf{Reading a stable numerical volume as proof of cell survival.} The model has no mechanics, rupture or viability process.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item For n =\allowbreak{} 300 fmol and c\_out =\allowbreak{} 200 mM, what is V\_eq when L > 0?
+\item If volume halves with fixed amount, what happens to concentration?
+\item Why must the special case L =\allowbreak{} 0 be treated separately?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish trapped solute amount, water volume and concentration.
+\item Predict inward or outward water flow under the stated osmotic assumptions.
+\item Compute a short volume update with consistent units.
+\item Derive an equilibrium volume and separate it from the speed of approach.
+\item Check conserved solute, positive volume and numerical refinement without inferring cell survival.
+\end{itemize}
+\end{document}

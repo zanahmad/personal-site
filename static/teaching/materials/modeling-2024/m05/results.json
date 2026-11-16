@@ -1,0 +1,28 @@
+{
+  "model": "two-state occupancy; fixed per-head force is a separate illustrative readout",
+  "equilibrium_for_f3_g1": 0.75,
+  "relaxation_time_s": 0.25,
+  "force_for_1000_heads_2pN_each_at_equilibrium_pN": 1500,
+  "protocol_fraction_at_0_1_2_3_seconds": [
+    0.5,
+    0.5,
+    0.7454210902778164,
+    0.27422509412881035
+  ],
+  "checks": {
+    "bounds": true,
+    "zero_rates_preserve_state": true,
+    "equilibrium_preserved": true,
+    "rate_time_scaling": true,
+    "semigroup": true,
+    "pure_detachment": true,
+    "invalid_cases_rejected": 5
+  },
+  "limitations": [
+    "no strain distribution",
+    "no sliding or shortening speed",
+    "no ATP consumption model",
+    "no calcium activation dynamics",
+    "not a ventricular force prediction"
+  ]
+}

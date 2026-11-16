@@ -1,0 +1,43 @@
+{
+  "model": "synthetic closed homogeneous SIR; explicit Euler with nonnegative-transfer step bound",
+  "parameters": {
+    "N": 1000,
+    "beta_per_day": 0.3,
+    "gamma_per_day": 0.1,
+    "step_days": 0.1
+  },
+  "first_one_day_Euler_state": [
+    987.03,
+    11.97,
+    1.0
+  ],
+  "initial_infectious_net_rate_people_per_day": 1.97,
+  "sampled_peak": {
+    "day": 26.8,
+    "infectious": 304.9876502188907
+  },
+  "population_drift_max": 9.094947017729282e-13,
+  "endpoint_step_refinement_gaps": {
+    "0.2_to_0.1": 1.4338879771697464,
+    "0.1_to_0.05": 0.7077809789876426
+  },
+  "checks": {
+    "closed_population": true,
+    "nonnegative_states": true,
+    "no_seed_no_outbreak": true,
+    "zero_rates_static": true,
+    "pure_recovery_discrete_reference": true,
+    "susceptible_nonincreasing": true,
+    "recovered_nondecreasing": true,
+    "low_beta_infectious_declines": true,
+    "invalid_inputs_rejected": 5
+  },
+  "limitations": [
+    "all rates synthetic and fixed",
+    "homogeneous mixing",
+    "no exposed stage or waning immunity",
+    "no births deaths or migration",
+    "no individual stochastic events",
+    "not a forecast for an actual population"
+  ]
+}

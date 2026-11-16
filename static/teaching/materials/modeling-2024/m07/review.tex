@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Finite-population genetics: inheritance, drift, and fixation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Modeling}\fancyhead[R]{\small Lecture 7}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Finite-population genetics: inheritance, drift, and fixation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Diploid allele frequencies count copies; genotype frequencies count individuals.
+\item Independent gametes give probabilities p$^2$, 2p(1-p), (1-p)$^2$.
+\item Neutral drift can change one trajectory while preserving ensemble expected frequency.
+\item At fixed p, one-generation frequency variance scales as 1/(2N).
+\item Without mutation or migration, zero and one are absorbing boundaries.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Using AB frequency as A allele frequency.} Count two A copies per AA and one per AB, then divide by 2N.
+
+\textbf{Interpreting the dashed expectation as a required trajectory.} One finite-population realization can differ; even a finite ensemble mean fluctuates.
+
+\textbf{Declaring every upward fluctuation evidence of selection.} Neutral random sampling can produce upward changes; compare competing explanations with appropriate data.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item At p =\allowbreak{} 0.5, what are the three genotype probabilities?
+\item At fixed p, what happens to one-generation variance when N doubles?
+\item Why does sampling without replacement from the entire pool fail to create the modeled drift?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Compute allele frequency from diploid genotype counts without confusing copies and individuals.
+\item Derive the three offspring genotype probabilities for independent gametes.
+\item Explain the difference between an expected frequency and one finite-population trajectory.
+\item Predict how population size changes one-generation sampling variation.
+\item Check probability totals, attainable frequencies and absorbing limits.
+\end{itemize}
+\end{document}
