@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="774.72pt" height="422.604562pt" viewBox="0 0 774.72 422.604562" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">The controller subtracts measured pressure from target, updates rate, and uses fixed stroke volume and resistance to produce next pressure. The distinct static column has lower pressure above and higher pressure below a reference; at half a meter the difference is about 39 mmHg. Height is not used in the controller.</ns0:desc><ns0:title id="figure-title">Discrete feedback and a separate hydrostatic column</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T15:17:44.437759</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 422.604562  L 774.72 422.604562  L 774.72 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 183.811071 118.785802  L 327.009237 118.785802  Q 329.8732 118.785802 329.8732 115.558762  L 329.8732 69.842362  Q 329.8732 66.615322 327.009237 66.615322  L 183.811071 66.615322  Q 180.947108 66.615322 180.947108 69.842362  L 180.947108 115.558762  Q 180.947108 118.785802 183.811071 118.785802  z " clip-path="url(#pc5e41dcbf7)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.5; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 183.811071 204.840202  L 327.009237 204.840202  Q 329.8732 204.840202 329.8732 201.613162  L 329.8732 155.896762  Q 329.8732 152.669722 327.009237 152.669722  L 183.811071 152.669722  Q 180.947108 152.669722 180.947108 155.896762  L 180.947108 201.613162  Q 180.947108 204.840202 183.811071 204.840202  z " clip-path="url(#pc5e41dcbf7)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.5; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 183.811071 290.894602  L 327.009237 290.894602  Q 329.8732 290.894602 329.8732 287.667562  L 329.8732 241.951162  Q 329.8732 238.724122 327.009237 238.724122  L 183.811071 238.724122  Q 180.947108 238.724122 180.947108 241.951162  L 180.947108 287.667562  Q 180.947108 290.894602 183.811071 290.894602  z " clip-path="url(#pc5e41dcbf7)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.5; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 183.811071 376.949002  L 327.009237 376.949002  Q 329.8732 376.949002 329.8732 373.721962  L 329.8732 328.005562  Q 329.8732 324.778522 327.009237 324.778522  L 183.811071 324.778522  Q 180.947108 324.778522 180.947108 328.005562  L 180.947108 373.721962  Q 180.947108 376.949002 183.811071 376.949002  z " clip-path="url(#pc5e41dcbf7)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.5; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 255.410154 121.589766  Q 255.410154 135.726743 255.410154 147.851258  " clip-path="url(#pc5e41dcbf7)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+    <ns0:path d="M 259.410154 139.851258  L 255.410154 147.851258  L 251.410154 139.851258  z " clip-path="url(#pc5e41dcbf7)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 255.410154 207.644166  Q 255.410154 221.781143 255.410154 233.905658  " clip-path="url(#pc5e41dcbf7)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+    <ns0:path d="M 259.410154 225.905658  L 255.410154 233.905658  L 251.410154 225.905658  z " clip-path="url(#pc5e41dcbf7)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_8">
+    <ns0:path d="M 255.410154 293.698566  Q 255.410154 307.835543 255.410154 319.960058  " clip-path="url(#pc5e41dcbf7)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+    <ns0:path d="M 259.410154 311.960058  L 255.410154 319.960058  L 251.410154 311.960058  z " clip-path="url(#pc5e41dcbf7)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 157.172926 92.700562  Q 167.105802 92.700562 175.026218 92.700562  " clip-path="url(#pc5e41dcbf7)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+    <ns0:path d="M 167.026218 88.700562  L 175.026218 92.700562  L 167.026218 96.700562  z " clip-path="url(#pc5e41dcbf7)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="line2d_1">
+    <ns0:path d="M 179.037799 350.863762  L 83.572355 350.863762  L 83.572355 92.700562  L 179.037799 92.700562  " clip-path="url(#pc5e41dcbf7)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="255.410154" y="97.895875" transform="rotate(-0 255.410154 97.895875)">Target − P</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="255.410154" y="183.951056" transform="rotate(-0 255.410154 183.951056)">Update rate</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="255.410154" y="270.004675" transform="rotate(-0 255.410154 270.004675)">Pump + R</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="255.410154" y="356.059856" transform="rotate(-0 255.410154 356.059856)">Measured P</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(38.579537 295.812125) rotate(-90)">Measurement</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(62.583443 262.944937) rotate(-90)">returns</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="348.488962" y="135.727762" transform="rotate(-0 348.488962 135.727762)">error</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="341.329053" y="221.782162" transform="rotate(-0 341.329053 221.782162)">H</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle" x="198.130888" y="23.916562" transform="rotate(-0 198.130888 23.916562)">Discrete feedback</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_2">
+   <ns0:g id="FillBetweenPolyCollection_1">
+    <ns0:defs>
+     <ns0:path id="me1a56b9be7" d="M 538.244814 -57.3984  L 498.71461 -57.3984  L 498.71461 -333.4896  L 538.244814 -333.4896  L 538.244814 -333.4896  L 538.244814 -57.3984  z " style="stroke: #dbe9eb" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p0a786212fa)">
+     <ns0:use ns4:href="#me1a56b9be7" x="0" y="422.604562" style="fill: #dbe9eb; stroke: #dbe9eb" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 469.725793 300.458989  Q 469.725793 227.160897 469.725793 155.875266  " clip-path="url(#p0a786212fa)" style="fill: none; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+    <ns0:path d="M 465.725793 163.875266  L 469.725793 155.875266  L 473.725793 163.875266  z " clip-path="url(#p0a786212fa)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.8; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="line2d_2">
+    <ns0:path d="M 498.71461 365.206162  L 498.71461 89.114962  L 538.244814 89.114962  L 538.244814 365.206162  " clip-path="url(#p0a786212fa)" style="fill: none; stroke: #244c59; stroke-width: 2; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_3">
+    <ns0:path d="M 498.71461 101.664562  L 551.421549 101.664562  " clip-path="url(#p0a786212fa)" style="fill: none; stroke: #244c59; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_4">
+    <ns0:path d="M 498.71461 227.160562  L 551.421549 227.160562  " clip-path="url(#p0a786212fa)" style="fill: none; stroke: #244c59; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_5">
+    <ns0:path d="M 498.71461 352.656562  L 551.421549 352.656562  " clip-path="url(#p0a786212fa)" style="fill: none; stroke: #244c59; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 94.857922)">z = +0.5 m</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 118.861828)">ΔP ≈ −39 mmHg</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 220.353141)">z = 0</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 244.358609)">Reference pressure</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 345.849922)">z = −0.5 m</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(561.962937 369.853828)">ΔP ≈ +39 mmHg</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_12">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(458.569198 273.844937) rotate(-90)">Upward z</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_13">
+    <ns0:text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle" x="601.493141" y="23.916562" transform="rotate(-0 601.493141 23.916562)">Separate static column</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pc5e41dcbf7">
+   <ns0:rect x="7.2" y="38.916562" width="381.861775" height="376.488" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p0a786212fa">
+   <ns0:rect x="435.466282" y="38.916562" width="332.053718" height="376.488" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

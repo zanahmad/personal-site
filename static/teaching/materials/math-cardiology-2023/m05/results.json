@@ -1,0 +1,26 @@
+{
+  "model": "prescribed-output parallel branches with fixed return oxygen contents; not Fontan",
+  "worked_example": {
+    "q_p_L_min": 3.0000000000000004,
+    "q_s_L_min": 2.0,
+    "common_drop_mmHg": 30.000000000000004,
+    "mixed_content_mL_O2_L": 168.0,
+    "systemic_delivery_mL_O2_min": 336.0
+  },
+  "reduced_pulmonary_resistance": {
+    "q_p_L_min": 3.75,
+    "q_s_L_min": 1.25,
+    "common_drop_mmHg": 18.75,
+    "mixed_content_mL_O2_L": 180.0,
+    "systemic_delivery_mL_O2_min": 225.0
+  },
+  "checks": {
+    "flow_conservation": true,
+    "equal_branch_drop": true,
+    "mixing_bounds": true,
+    "equal_resistances": true,
+    "zero_output_undefined_mixture": true,
+    "large_resistance_limit": true,
+    "invalid_controls_rejected": 7
+  }
+}

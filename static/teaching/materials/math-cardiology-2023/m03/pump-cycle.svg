@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="656.434687pt" height="433.434375pt" viewBox="0 0 656.434687 433.434375" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">Counterclockwise loop: fill from 50 to 120 mL at 10 mmHg; raise pressure at fixed volume to 100; eject to 50 mL at 100; relax at fixed volume to 10. The shaded net work area is 6300 mmHg mL, about 0.840 J. Valve labels are idealizations; real loops are curved.</ns0:desc><ns0:title id="figure-title">Four phases of an idealized pressure-volume loop</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T15:09:49.460823</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 433.434375  L 656.434687 433.434375  L 656.434687 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 70.558906 379.232969  L 649.234688 379.232969  L 649.234688 26.877187  L 70.558906 26.877187  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 183.471254 350.81718  L 512.798934 350.81718  L 512.798934 95.075081  L 183.471254 95.075081  z " clip-path="url(#p61490a84fd)" style="fill: #dcebf1; opacity: 0.8; stroke: #dcebf1; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1">
+      <ns0:defs>
+       <ns0:path id="md6444adca1" d="M 0 0  L 0 3.5  " style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="136.424442" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="136.424442" y="399.90875" transform="rotate(-0 136.424442 399.90875)">40</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_2">
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="230.518065" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="230.518065" y="399.90875" transform="rotate(-0 230.518065 399.90875)">60</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_3">
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="324.611688" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_3">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="324.611688" y="399.90875" transform="rotate(-0 324.611688 399.90875)">80</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_4">
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="418.705311" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="418.705311" y="399.90875" transform="rotate(-0 418.705311 399.90875)">100</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_5">
+     <ns0:g id="line2d_5">
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="512.798934" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="512.798934" y="399.90875" transform="rotate(-0 512.798934 399.90875)">120</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_6">
+     <ns0:g id="line2d_6">
+      <ns0:g>
+       <ns0:use ns4:href="#md6444adca1" x="606.892557" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="606.892557" y="399.90875" transform="rotate(-0 606.892557 399.90875)">140</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_7">
+     <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="359.896797" y="421.910156" transform="rotate(-0 359.896797 421.910156)">Ventricular volume (mL)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_7">
+      <ns0:defs>
+       <ns0:path id="mcf0ace57f1" d="M 0 0  L -3.5 0  " style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="379.232969" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_8">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="386.070859" transform="rotate(-0 63.558906 386.070859)">0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_8">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="322.401391" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_9">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="329.239282" transform="rotate(-0 63.558906 329.239282)">20</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_9">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="265.569814" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_10">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="272.407704" transform="rotate(-0 63.558906 272.407704)">40</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_10">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="208.738236" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_11">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="215.576127" transform="rotate(-0 63.558906 215.576127)">60</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_11">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="151.906658" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_12">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="158.744549" transform="rotate(-0 63.558906 158.744549)">80</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_6">
+     <ns0:g id="line2d_12">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="95.075081" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_13">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="101.912971" transform="rotate(-0 63.558906 101.912971)">100</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_7">
+     <ns0:g id="line2d_13">
+      <ns0:g>
+       <ns0:use ns4:href="#mcf0ace57f1" x="70.558906" y="38.243503" style="stroke: #000000; stroke-width: 0.8" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_14">
+      <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: end" x="63.558906" y="45.081394" transform="rotate(-0 63.558906 45.081394)">120</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_15">
+     <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="20.877188" y="203.055078" transform="rotate(-90 20.877188 203.055078)">Ventricular pressure (mmHg)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_14">
+    <ns0:path d="M 183.471254 350.81718  L 512.798934 350.81718  L 512.798934 95.075081  L 183.471254 95.075081  L 183.471254 350.81718  " clip-path="url(#p61490a84fd)" style="fill: none; stroke: #18384a; stroke-width: 2.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 70.558906 379.232969  L 70.558906 26.877188  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 70.558906 379.232969  L 649.234688 379.232969  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 310.617789 350.81718  Q 348.136939 350.81718 382.301988 350.81718  " style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: round" />
+    <ns0:path d="M 375.901988 347.61718  L 382.301988 350.81718  L 375.901988 354.01718  " style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 512.798934 251.638446  Q 512.798934 222.946271 512.798934 197.608198  " style="fill: none; stroke: #a54e2c; stroke-width: 3; stroke-linecap: round" />
+    <ns0:path d="M 509.598934 204.008198  L 512.798934 197.608198  L 515.998934 204.008198  " style="fill: none; stroke: #a54e2c; stroke-width: 3; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_8">
+    <ns0:path d="M 385.652399 95.075081  Q 348.133249 95.075081 313.9682 95.075081  " style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: round" />
+    <ns0:path d="M 320.3682 98.275081  L 313.9682 95.075081  L 320.3682 91.875081  " style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 183.471254 194.253815  Q 183.471254 222.94599 183.471254 248.284063  " style="fill: none; stroke: #a54e2c; stroke-width: 3; stroke-linecap: round" />
+    <ns0:path d="M 186.671254 241.884063  L 183.471254 248.284063  L 180.271254 241.884063  " style="fill: none; stroke: #a54e2c; stroke-width: 3; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_16">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(313.608844 308.878387)">1 Filling</ns0:text>
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(302.887594 330.483309)">Inlet open</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_17">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(522.208296 216.820154)">2 Both</ns0:text>
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(522.208296 238.425076)">closed</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_18">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="348.135094" y="79.384546" transform="rotate(-0 348.135094 79.384546)">3 Ejection: outlet open</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_19">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(115.061267 216.820154)">4 Both</ns0:text>
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(116.270642 238.425076)">closed</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_20">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(287.317594 195.659457)">Net loop area</ns0:text>
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'" transform="translate(252.048844 217.262973)">= 70 mL × 90 mmHg</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_21">
+    <ns0:text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle" x="359.896797" y="20.877187" transform="rotate(-0 359.896797 20.877187)">Prescribed rectangular pump cycle</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p61490a84fd">
+   <ns0:rect x="70.558906" y="26.877187" width="578.675781" height="352.355781" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

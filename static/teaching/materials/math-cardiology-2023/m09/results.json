@@ -1,0 +1,26 @@
+{
+  "scope": "well-mixed compartment surrogate, not resolved CFD",
+  "volume_ml": 100.0,
+  "fraction_at2s_Q25_50_100": [
+    0.6065306597126334,
+    0.36787944117144233,
+    0.1353352832366127
+  ],
+  "time_constant_s_Q25_50_100": [
+    4.0,
+    2.0,
+    1.0
+  ],
+  "mask_pixel_counts_at_thresholds04_05_06": [
+    1699,
+    1641,
+    1563
+  ],
+  "checks": {
+    "initial_fraction_one": true,
+    "no_flow_no_washout": true,
+    "ratio_invariance": true,
+    "threshold_masks_nested": true,
+    "invalid_inputs_rejected": 4
+  }
+}

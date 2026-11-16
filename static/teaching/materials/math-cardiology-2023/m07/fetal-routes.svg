@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="686.88pt" height="455.916562pt" viewBox="0 0 686.88 455.916562" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">Foramen ovale connects right and left atria. Ductus arteriosus connects pulmonary artery to aorta; the chosen positive direction is pulmonary to aortic. Lungs receive a nonzero branch flow. Right and left ventricles are grouped with their arterial outlets; body and placenta are grouped. Umbilical vessels and ductus venosus are discussed in notes but not separately resolved. The graph is not anatomical geometry.</ns0:desc><ns0:title id="figure-title">Grouped fetal circulation routes</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T16:24:48.307111</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 455.916562  L 686.88 455.916562  L 686.88 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 104.532632 121.788668  L 252.006316 121.788668  Q 255.545684 121.788668 255.545684 118.513931  L 255.545684 69.392878  Q 255.545684 66.118141 252.006316 66.118141  L 104.532632 66.118141  Q 100.993263 66.118141 100.993263 69.392878  L 100.993263 118.513931  Q 100.993263 121.788668 104.532632 121.788668  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 458.469474 121.788668  L 605.943158 121.788668  Q 609.482526 121.788668 609.482526 118.513931  L 609.482526 69.392878  Q 609.482526 66.118141 605.943158 66.118141  L 458.469474 66.118141  Q 454.930105 66.118141 454.930105 69.392878  L 454.930105 118.513931  Q 454.930105 121.788668 458.469474 121.788668  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 77.987368 304.628141  L 278.551579 304.628141  Q 282.090947 304.628141 282.090947 301.353405  L 282.090947 235.858668  Q 282.090947 232.583931 278.551579 232.583931  L 77.987368 232.583931  Q 74.448 232.583931 74.448 235.858668  L 74.448 301.353405  Q 74.448 304.628141 77.987368 304.628141  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 449.621053 304.628141  L 614.791579 304.628141  Q 618.330947 304.628141 618.330947 301.353405  L 618.330947 235.858668  Q 618.330947 232.583931 614.791579 232.583931  L 449.621053 232.583931  Q 446.081684 232.583931 446.081684 235.858668  L 446.081684 301.353405  Q 446.081684 304.628141 449.621053 304.628141  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 299.197895 209.114984  L 411.277895 209.114984  Q 414.817263 209.114984 414.817263 205.840247  L 414.817263 156.719194  Q 414.817263 153.444457 411.277895 153.444457  L 299.197895 153.444457  Q 295.658526 153.444457 295.658526 156.719194  L 295.658526 205.840247  Q 295.658526 209.114984 299.197895 209.114984  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 249.056842 427.430773  L 461.418947 427.430773  Q 464.958316 427.430773 464.958316 424.156036  L 464.958316 375.034984  Q 464.958316 371.760247 461.418947 371.760247  L 249.056842 371.760247  Q 245.517474 371.760247 245.517474 375.034984  L 245.517474 424.156036  Q 245.517474 427.430773 249.056842 427.430773  z " clip-path="url(#p3f7b07fad0)" style="fill: #eef4f4; stroke: #244c59; stroke-width: 1.6; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_8">
+    <ns0:path d="M 178.269474 124.333148  Q 178.269474 177.184785 178.269474 227.912157  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 182.469474 219.512157  L 178.269474 227.912157  L 174.069474 219.512157  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 532.206316 124.333148  Q 532.206316 177.184785 532.206316 227.912157  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 536.406316 219.512157  L 532.206316 227.912157  L 528.006316 219.512157  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 259.904313 93.953405  Q 355.2364 93.953405 448.444222 93.953405  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 440.044222 89.753405  L 448.444222 93.953405  L 440.044222 98.153405  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_11">
+    <ns0:path d="M 284.683186 268.606036  Q 364.088814 268.606036 441.370177 268.606036  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 432.970177 264.406036  L 441.370177 268.606036  L 432.970177 272.806036  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_12">
+    <ns0:path d="M 259.755705 231.281218  Q 285.926047 220.576242 310.130254 210.675513  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 300.765426 209.968403  L 310.130254 210.675513  L 303.945669 217.743109  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_13">
+    <ns0:path d="M 395.319701 151.358438  Q 426.02543 133.795941 454.887204 117.288114  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 445.510388 117.812827  L 454.887204 117.288114  L 449.680885 125.104395  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_14">
+    <ns0:path d="M 530.667941 306.449677  Q 492.387862 338.194657 455.742942 368.58363  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 464.889902 366.454518  L 455.742942 368.58363  L 459.527828 359.988595  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_15">
+    <ns0:path d="M 77.036638 93.953405  Q 87.129367 93.953405 95.097831 93.953405  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+    <ns0:path d="M 86.697831 89.753405  L 95.097831 93.953405  L 86.697831 98.153405  z " clip-path="url(#p3f7b07fad0)" style="fill: #244c59; stroke: #244c59; stroke-width: 1.9; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="line2d_1">
+    <ns0:path d="M 244.337684 399.59551  L 63.24 399.59551  L 63.24 93.953405  L 99.223579 93.953405  " clip-path="url(#p3f7b07fad0)" style="fill: none; stroke: #244c59; stroke-width: 1.9; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="178.269474" y="99.149498" transform="rotate(-0 178.269474 99.149498)">Right atrium</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="532.206316" y="99.149498" transform="rotate(-0 532.206316 99.149498)">Left atrium</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(105.110099 261.799396)">Right ventricle</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(79.372599 285.804864)">→ pulmonary artery</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(466.564128 261.800177)">Left ventricle</ns0:text>
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(494.242253 285.804083)">→ aorta</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="355.237895" y="186.475033" transform="rotate(-0 355.237895 186.475033)">Lungs</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="355.237895" y="404.791604" transform="rotate(-0 355.237895 404.791604)">Body + placenta</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start" x="193.016842" y="186.475033" transform="rotate(-0 193.016842 186.475033)">QR</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start" x="546.953684" y="186.475033" transform="rotate(-0 546.953684 186.475033)">QL</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="355.237895" y="76.488141" transform="rotate(-0 355.237895 76.488141)">FO: Qf ≥ 0</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="364.086316" y="301.353405" transform="rotate(-0 364.086316 301.353405)">DA: signed Qd</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="266.753684" y="205.840247" transform="rotate(-0 266.753684 205.840247)">Qp</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_12">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="517.458947" y="347.74551" transform="rotate(-0 517.458947 347.74551)">Qs</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_13">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'" transform="translate(45.992664 315.17898) rotate(-90)">Systemic return</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_14">
+    <ns0:text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle" x="343.44" y="23.916562" transform="rotate(-0 343.44 23.916562)">Grouped fetal routes — not anatomical geometry</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p3f7b07fad0">
+   <ns0:rect x="7.2" y="33.916562" width="672.48" height="414.8" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

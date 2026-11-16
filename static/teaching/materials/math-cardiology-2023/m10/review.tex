@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Local image filters and learned classification / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 10}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Local image filters and learned classification --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A local filter map is different from an image label.
+\item Weight sharing reuses a local rule; pooling deliberately loses location information.
+\item This demonstration fits class centers, not convolutional filters.
+\item Report held-out results and predeclared failures with the scope of the generator.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{A fixed-filter demo trained a CNN.} Only its output class centers were fitted; convolutional weights stayed fixed.
+
+\textbf{Perfect synthetic accuracy proves medical usefulness.} It describes a simple same-generator test, not clinical evidence.
+
+\textbf{Every image augmentation preserves the label.} Check the target: rotating wide/tall images swaps their labels.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is the valid output size for 16 by 16 input and a 3 by 3 stride 1 filter?
+\item What does a constant image produce under a zero-sum directional filter?
+\item When is the course project due?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Compute one local filter response and distinguish it from a class label.
+\item Explain weight sharing, a nonlinearity and pooling using a small image.
+\item State which parts of this demonstration are fixed and which are fitted.
+\item Evaluate new synthetic images and explain a contrast-related failure.
+\item Present a bounded evidence chain for an existing course project.
+\end{itemize}
+\end{document}

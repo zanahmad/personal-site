@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Fetal pathways and signed junction balances / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 7}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Fetal pathways and signed junction balances --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item The placenta supplies fetal exchange; pulmonary perfusion is not zero.
+\item Foramen ovale links atria; ductus arteriosus links pulmonary artery and aorta.
+\item Flow reversal and pathway closure are different.
+\item At steady junctions, inflow equals outflow with the chosen signs.
+\item A topology change requires a newly consistent state.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Fetal blood is blue before it reaches the lungs.} Blood is red; oxygen content varies, and the placenta is the main fetal exchange organ.
+
+\textbf{Zero flow proves permanent closure.} Equal pressures or directional restriction can also produce zero flow.
+
+\textbf{All other flows stay fixed when a shunt is erased.} Recheck every junction balance after changing the connection rule.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Which connection bypasses part of hepatic circulation?
+\item What does Qd < 0 mean?
+\item What do the current equations fail to predict?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace placental supply, foramen ovale and ductus arteriosus pathways using named anatomy.
+\item Distinguish pressure-driven flow reversal from functional or anatomical closure.
+\item Calculate a signed ductus flow and a one-way foramen surrogate.
+\item Check four junction balances before and after a prescribed topology change.
+\item State which birth-transition mechanisms the network calculation leaves out.
+\end{itemize}
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Feedback, stability, and hydrostatic pressure / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 6}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Feedback, stability, and hydrostatic pressure --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Name stimulus, measurement, target, error and action separately.
+\item A result depends on what is held fixed.
+\item Negative feedback can reduce error, but gain and bounds matter.
+\item Hydrostatic pressure is not itself a prediction of circulation flow.
+\item Submit the required project idea by this meeting.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Lower resistance always doubles output.} Output changes depend on pump behavior and control assumptions; state what is fixed.
+
+\textbf{More updates always achieve the target.} A rate bound can leave a persistent error.
+
+\textbf{The recurrence models standing because gravity was discussed.} Height and venous storage are absent from the recurrence.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Why is the measurement at step n used for rate at step n+\allowbreak{}1?
+\item Which units convert stroke volume times rate to L/min?
+\item What distinguishes verification from validation?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Separate stimulus, measured response, target, error and feedback action.
+\item Calculate cardiac output and pressure in a stated fixed-stroke-volume model.
+\item Update a discrete feedback rule by hand and identify actuator saturation.
+\item Explain a hydrostatic pressure difference without equating it with net circulation flow.
+\item Submit a bounded project idea with a comparison and validation plan.
+\end{itemize}
+\end{document}

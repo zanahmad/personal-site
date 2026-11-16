@@ -1,0 +1,18 @@
+{
+  "description": "Synthetic fixed-pressure passive resistance; algebraic calculation, no time solver.",
+  "p_in_mmHg": 95,
+  "p_out_mmHg": 5,
+  "resistance_mmHg_min_per_L": 18,
+  "flow_L_per_min": 5.0,
+  "checks": {
+    "baseline_5_L_per_min": true,
+    "equal_pressures_zero_flow": true,
+    "pressure_reference_shift_invariant": true,
+    "doubling_resistance_halves_flow_at_fixed_pressures": true,
+    "reversing_difference_reverses_passive_flow": true,
+    "no_net_storage_when_inflow_equals_outflow": true,
+    "constant_flow_volume_balance": true,
+    "invalid_parameters_rejected": true
+  },
+  "figure_parameters": "Figures always show the documented baseline and doubled-resistance comparison; CLI edits affect the reported experiment only."
+}

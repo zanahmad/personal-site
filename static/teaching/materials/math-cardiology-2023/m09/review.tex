@@ -1,0 +1,55 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={From image geometry to a tracer balance / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 9}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{From image geometry to a tracer balance --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Image, mask, mesh and solution are different objects.
+\item Boundary conditions and wall assumptions affect the calculated flow.
+\item The classroom washout model is a single compartment, not CFD.
+\item Numerical checks and independent validation answer different questions.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{An attractive mesh proves the geometry is correct.} Inspect source-image agreement, physical scale, connectivity and boundary labels.
+
+\textbf{V/Q is the exact departure time of each particle.} It is the time constant of the ideal well-mixed concentration curve.
+
+\textbf{A washout curve predicts stroke.} It is a model output; outcome claims need separate biological and validation evidence.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What remains when Q=\allowbreak{}0?
+\item What happens to the curve when Q and V both double?
+\item What would make the small pocket behave differently here?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish an intensity image, a segmentation, a mesh and a flow solution.
+\item Specify the missing boundary and wall assumptions for a synthetic chamber.
+\item Interpret a well-mixed washout comparison without calling it spatial CFD.
+\item Separate a numerical check from validation against independent observations.
+\end{itemize}
+\end{document}

@@ -1,0 +1,33 @@
+{
+  "model": "prescribed shape delayed by distance/speed; no ionic or tissue dynamics",
+  "units": {
+    "distance": "mm",
+    "time": "ms",
+    "speed": "mm/ms",
+    "voltage": "mV"
+  },
+  "arrival_times_at_0_20_40_mm": [
+    0,
+    50,
+    100
+  ],
+  "front_at_80_ms_mm": {
+    "speed_0.4": 32,
+    "speed_0.2": 16
+  },
+  "checks": {
+    "delay_matches_distance_over_speed": true,
+    "half_speed_doubles_delay": true,
+    "trace_translation": true,
+    "rest_before_after": true,
+    "voltage_bounds": true,
+    "invalid_inputs_rejected": 4
+  },
+  "limitations": [
+    "no spontaneous pacemaker",
+    "no refractoriness or reentry dynamics",
+    "no ion currents or calcium coupling",
+    "planar homogeneous propagation prescribed rather than solved",
+    "not ECG or anatomical ventricular model"
+  ]
+}

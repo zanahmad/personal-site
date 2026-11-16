@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="474.624pt" height="339.840438pt" viewBox="0 0 474.624 339.840438" version="1.1" role="img" aria-labelledby="network-title network-desc">
+ <title id="network-title">Adult circulation as a directed network</title><desc id="network-desc">Follow the closed route: body tissues, systemic veins and venae cavae, right atrium, tricuspid valve, right ventricle, pulmonary valve and arteries, lungs, pulmonary veins, left atrium, mitral valve, left ventricle, aortic valve, aorta and systemic arteries, body tissue capillaries. Four heart chambers are named. Labels indicate lower or higher oxygen; colors are a diagram key, not literal blood colors. Arterioles and venules are included in the connecting vessels rather than shown as separate nodes. The drawing does not specify anatomic placement, geometry, pressure, or timing.</desc><title>Adult circulation as a directed network</title>
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title>Adult circulation as a directed network</dc:title>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 339.840438  L 474.624 339.840438  L 474.624 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 17.93856 117.371437  L 134.52864 117.371437  Q 137.5968 117.371437 137.5968 114.639037  L 137.5968 73.994587  Q 137.5968 71.262187 134.52864 71.262187  L 17.93856 71.262187  Q 14.8704 71.262187 14.8704 73.994587  L 14.8704 114.639037  Q 14.8704 117.371437 17.93856 117.371437  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #6b233a; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 179.01696 117.371437  L 295.60704 117.371437  Q 298.6752 117.371437 298.6752 114.639037  L 298.6752 73.994587  Q 298.6752 71.262187 295.60704 71.262187  L 179.01696 71.262187  Q 175.9488 71.262187 175.9488 73.994587  L 175.9488 114.639037  Q 175.9488 117.371437 179.01696 117.371437  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #6b233a; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 340.09536 117.371437  L 456.68544 117.371437  Q 459.7536 117.371437 459.7536 114.639037  L 459.7536 73.994587  Q 459.7536 71.262187 456.68544 71.262187  L 340.09536 71.262187  Q 337.0272 71.262187 337.0272 73.994587  L 337.0272 114.639037  Q 337.0272 117.371437 340.09536 117.371437  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #087e8b; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 340.09536 242.037187  L 456.68544 242.037187  Q 459.7536 242.037187 459.7536 239.304787  L 459.7536 198.660337  Q 459.7536 195.927937 456.68544 195.927937  L 340.09536 195.927937  Q 337.0272 195.927937 337.0272 198.660337  L 337.0272 239.304787  Q 337.0272 242.037187 340.09536 242.037187  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #b43c31; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 179.01696 242.037187  L 295.60704 242.037187  Q 298.6752 242.037187 298.6752 239.304787  L 298.6752 198.660337  Q 298.6752 195.927937 295.60704 195.927937  L 179.01696 195.927937  Q 175.9488 195.927937 175.9488 198.660337  L 175.9488 239.304787  Q 175.9488 242.037187 179.01696 242.037187  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #b43c31; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 17.93856 242.037187  L 134.52864 242.037187  Q 137.5968 242.037187 137.5968 239.304787  L 137.5968 198.660337  Q 137.5968 195.927937 134.52864 195.927937  L 17.93856 195.927937  Q 14.8704 195.927937 14.8704 198.660337  L 14.8704 239.304787  Q 14.8704 242.037187 17.93856 242.037187  z " clip-path="url(#p28510aaa43)" style="fill: #ffffff; stroke: #087e8b; stroke-width: 1.7; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 139.976103 94.316812  Q 156.769312 94.316812 171.661862 94.316812  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 165.661862 91.316812  L 171.661862 94.316812  L 165.661862 97.316812  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="patch_9">
+    <path d="M 301.054503 94.316812  Q 317.847712 94.316812 332.740262 94.316812  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 326.740262 91.316812  L 332.740262 94.316812  L 326.740262 97.316812  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="patch_10">
+    <path d="M 334.647897 218.982562  Q 317.854688 218.982562 302.962138 218.982562  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 308.962138 221.982562  L 302.962138 218.982562  L 308.962138 215.982562  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="patch_11">
+    <path d="M 173.569497 218.982562  Q 156.776288 218.982562 141.883738 218.982562  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 147.883738 221.982562  L 141.883738 218.982562  L 147.883738 215.982562  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="patch_12">
+    <path d="M 398.3904 120.741534  Q 398.3904 156.653639 398.3904 190.665087  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 401.3904 184.665087  L 398.3904 190.665087  L 395.3904 184.665087  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="patch_13">
+    <path d="M 76.2336 192.557841  Q 76.2336 156.645736 76.2336 122.634288  " clip-path="url(#p28510aaa43)" style="fill: none; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 73.2336 128.634288  L 76.2336 122.634288  L 79.2336 128.634288  z " clip-path="url(#p28510aaa43)" style="fill: #18384a; stroke: #18384a; stroke-width: 1.7; stroke-linecap: round" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="76.2336" y="91.446255" transform="rotate(-0 76.2336 91.446255)">Right atrium</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b233a" x="76.2336" y="106.214248" transform="rotate(-0 76.2336 106.214248)">Lower oxygen</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="237.312" y="91.446255" transform="rotate(-0 237.312 91.446255)">Right ventricle</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b233a" x="237.312" y="106.214248" transform="rotate(-0 237.312 106.214248)">Lower oxygen</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="398.3904" y="91.445814" transform="rotate(-0 398.3904 91.445814)">Lungs</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087e8b" x="398.3904" y="106.214651" transform="rotate(-0 398.3904 106.214651)">Add oxygen</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="398.3904" y="216.112005" transform="rotate(-0 398.3904 216.112005)">Left atrium</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b43c31" x="398.3904" y="230.880401" transform="rotate(-0 398.3904 230.880401)">Higher oxygen</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="237.312" y="216.112005" transform="rotate(-0 237.312 216.112005)">Left ventricle</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b43c31" x="237.312" y="230.880401" transform="rotate(-0 237.312 230.880401)">Higher oxygen</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18384a" x="76.2336" y="216.112005" transform="rotate(-0 76.2336 216.112005)">Body tissues</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087e8b" x="76.2336" y="230.879998" transform="rotate(-0 76.2336 230.879998)">Use oxygen</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(134.088659 46.409893)">Tricuspid</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(142.920909 58.772709)">valve</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(274.9002 46.409893)">Pulmonary valve</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(286.664731 58.772709)">and arteries</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(124.566792 260.561743)">Aortic valve;</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(110.350378 272.924559)">aorta and arteries</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(303.254169 260.561743)">Mitral</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(303.999309 272.924559)">valve</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(328.12485 153.998143)">Pulmonary</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(355.860819 166.360959)">veins</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(91.5744 153.998545)">Systemic veins /</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(91.5744 166.360557)">venae cavae</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18384a" x="7.2" y="17.837812" transform="rotate(-0 7.2 17.837812)">Adult circulation: a directed network</text>
+   </g>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(21.888 315.149812)">Functional connections, not anatomical positions or sizes.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #18384a" transform="translate(21.888 328.649812)">Blood is red at both oxygen levels.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p28510aaa43">
+   <rect x="7.2" y="32.837812" width="460.224" height="245.916" />
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "model": "prescribed rectangular loop and separate illustrative muscle relation",
+  "summary": {
+    "stroke_volume_mL": 70.0,
+    "ejection_fraction": 0.5833333333333334,
+    "cardiac_output_L_min": 5.25,
+    "net_work_mmHg_mL": 6300.0,
+    "net_work_J": 0.8399286
+  },
+  "checks": {
+    "polygon_area_matches_rectangle": true,
+    "zero_width_zero_work": true,
+    "zero_height_zero_work": true,
+    "zero_rate_zero_output": true,
+    "load_speed_limits": true,
+    "invalid_inputs_rejected": 4
+  },
+  "limitations": [
+    "not a measured ventricular loop",
+    "no coupled muscle-valve dynamics",
+    "loop work is not total metabolic energy",
+    "normalized muscle curve does not predict ventricular ejection"
+  ]
+}

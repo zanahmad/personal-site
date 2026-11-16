@@ -1,0 +1,63 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={The circulation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 1}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{The circulation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A circulation diagram states connections; it does not by itself specify geometry, pressures, or timing.
+\item Arteries carry blood away from the heart; veins return it. Oxygen content does not define those names.
+\item V is volume; Q is volume per time; P is pressure. Units distinguish the quantities.
+\item A passive linear resistance obeys Q =\allowbreak{} (P\_in - P\_out)/R with R > 0.
+\item Comparisons must state what is held fixed.
+\item Input minus output changes stored volume; steady volume requires equal total flows.
+\item A useful project question names an input, output, controlled comparison, validation check, and limitation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Use inlet pressure alone to calculate flow.} Subtract the outlet pressure and divide by the specified resistance.
+
+\textbf{Interpret L/min as stored blood volume.} L/min is a rate. Multiply by time in minutes to obtain a passing volume in L.
+
+\textbf{Call every oxygen-poor vessel a vein, or say venous blood is blue.} Use direction relative to the heart; pulmonary arteries are a counterexample. Blood is red at both oxygen levels.
+
+\textbf{Say unequal instantaneous inflow and outflow violate conservation.} The difference changes stored volume; equality follows only when there is no accumulation.
+
+\textbf{Treat the fixed-pressure resistor result as an exercise-response prediction.} The calculation holds boundary pressures fixed and omits pump dynamics and feedback.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Which additional number besides R is needed when you know only P\_in?
+\item What unit should R have if P is in mmHg and Q in L/min?
+\item What must be true of total inflow and outflow if stored volume is constant?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Trace the adult systemic and pulmonary circulation through the four heart chambers and identify the direction used to name arteries and veins.
+\item Distinguish volume, volume flow rate, and pressure, giving a unit for each.
+\item Calculate and interpret flow through one passive resistance using a pressure difference and stated assumptions.
+\item Use an input-minus-output volume balance to test a proposed steady circulation.
+\item State a small investigable project question with an input, an observable output, a controlled comparison, and a limitation.
+\end{itemize}
+\end{document}

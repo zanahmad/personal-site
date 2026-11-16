@@ -1,0 +1,37 @@
+{
+  "model": "static prescribed states; no closure timing, gas exchange or coupled pressure solver",
+  "flow_units": "mL/min",
+  "static_states": {
+    "pre_transition_example": {
+      "Qp": 100.0,
+      "Qd": 50.0,
+      "Qf": 40.0,
+      "QR": 150.0,
+      "QL": 140.0,
+      "Qs": 190.0
+    },
+    "reversed_ductus_example": {
+      "Qp": 300.0,
+      "Qd": -100.0,
+      "Qf": 0.0,
+      "QR": 200.0,
+      "QL": 300.0,
+      "Qs": 200.0
+    },
+    "closed_shunts_example": {
+      "Qp": 200.0,
+      "Qd": 0.0,
+      "Qf": 0.0,
+      "QR": 200.0,
+      "QL": 200.0,
+      "Qs": 200.0
+    }
+  },
+  "checks": {
+    "ductus_sign_and_zero": true,
+    "declared_closure": true,
+    "one_way_foramen": true,
+    "four_junction_balances": true,
+    "invalid_controls_rejected": 10
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "model": "linear passive compliant reservoir; constant external/outlet pressure",
+  "units": {
+    "pressure": "mmHg",
+    "flow": "mL/s",
+    "volume": "mL",
+    "time": "s"
+  },
+  "steady_pressure": 25,
+  "time_constant_seconds": 20,
+  "pressure_at_20_s": 17.64241117657115,
+  "checks": {
+    "volume_budget": true,
+    "no_input_equilibrium": true,
+    "initial_equilibrium": true,
+    "compliance_time_scaling": true,
+    "invalid_inputs_rejected": 4
+  },
+  "limitations": [
+    "no pulsatile heart input",
+    "no spatial gradients within compartment",
+    "no valves or feedback",
+    "linear compliance over assumed range"
+  ]
+}

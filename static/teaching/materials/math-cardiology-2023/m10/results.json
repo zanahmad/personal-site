@@ -1,0 +1,32 @@
+{
+  "architecture": "fixed3x3filters -> ReLU -> global mean pooling -> trained nearest centroid classifier",
+  "trained_CNN": false,
+  "train_images": 80,
+  "test_images": 40,
+  "test_confusion_true_rows_predicted_columns": [
+    [
+      20,
+      0
+    ],
+    [
+      0,
+      20
+    ]
+  ],
+  "contrasts": [
+    1.0,
+    0.5,
+    0.0
+  ],
+  "test_accuracies": [
+    1.0,
+    1.0,
+    0.5
+  ],
+  "checks": {
+    "constant_image_zero_directional_response": true,
+    "valid_output_shape": true,
+    "transpose_swaps_features": true,
+    "finite_nonnegative_pooled_features": true
+  }
+}

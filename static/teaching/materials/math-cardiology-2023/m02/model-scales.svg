@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="757.44pt" height="378.144pt" viewBox="0 0 757.44 378.144" version="1.1" role="img" aria-labelledby="figure-title figure-description">
+ <ns0:desc id="figure-description">Original schematic: a 0D storage compartment, a 1D vessel with cross-sections, and a perspective sketch of a 3D flow region. These are representations, not computed flow solutions or patient anatomy.</ns0:desc><ns0:title id="figure-title">Three levels of blood-flow description</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-14T14:49:31.952657</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 378.144  L 757.44 378.144  L 757.44 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 78.048 296.985199  L 172.512 296.985199  Q 177.2352 296.985199 177.2352 289.941504  L 177.2352 184.286074  Q 177.2352 177.242379 172.512 177.242379  L 78.048 177.242379  Q 73.3248 177.242379 73.3248 184.286074  L 73.3248 289.941504  Q 73.3248 296.985199 78.048 296.985199  z " clip-path="url(#p2f538acfad)" style="fill: #dcebf1; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 21.007086 240.635637  Q 46.164869 240.635637 69.086583 240.635637  " clip-path="url(#p2f538acfad)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 61.886583 237.035637  L 69.086583 240.635637  L 61.886583 244.235637  " clip-path="url(#p2f538acfad)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 179.234286 240.635637  Q 204.392069 240.635637 227.313783 240.635637  " clip-path="url(#p2f538acfad)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: round" />
+    <ns0:path d="M 220.113783 237.035637  L 227.313783 240.635637  L 220.113783 244.235637  " clip-path="url(#p2f538acfad)" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(81.135 189.734633)">One stored</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(95.6425 208.939008)">volume</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="125.28" y="261.766723" transform="rotate(-0 125.28 261.766723)">P(t), V(t)</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="46.1664" y="219.504551" transform="rotate(-0 46.1664 219.504551)">in</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="204.3936" y="219.504551" transform="rotate(-0 204.3936 219.504551)">out</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(76.38375 316.522398)">Storage and</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(65.49625 335.725523)">mean pressure</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(54.37875 63.993063)">0D: compartment</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(88.36 83.196188)">averages</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_2">
+   <ns0:g id="line2d_1">
+    <ns0:path d="M 272.448 225.269941  L 278.384983 223.098684  L 283.13457 221.560174  L 287.884156 220.241485  L 292.633743 219.176678  L 297.38333 218.393259  L 300.94552 218.002819  L 304.507709 217.787882  L 308.069899 217.751573  L 311.632089 217.89442  L 315.194279 218.214347  L 318.756469 218.7067  L 323.506056 219.618665  L 328.255642 220.8006  L 333.005229 222.221976  L 338.942212 224.278962  L 346.066592 227.047502  L 368.627128 236.157478  L 374.564112 238.175947  L 379.313698 239.55894  L 384.063285 240.696826  L 388.812872 241.560212  L 392.375061 242.013912  L 395.937251 242.293904  L 399.499441 242.396118  L 403.061631 242.319065  L 406.623821 242.063867  L 410.186011 241.634236  L 414.935598 240.801207  L 419.685184 239.690983  L 424.434771 238.332241  L 429.184358 236.760079  L 435.121341 234.557064  L 443.433117 231.190335  L 457.681877 225.364624  L 463.61886 223.183554  L 468.368447 221.634707  L 473.118034 220.303755  L 477.86762 219.225077  L 482.617207 218.426538  L 484.992 218.139064  L 484.992 218.139064  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_2">
+    <ns0:path d="M 272.448 270.088723  L 278.384983 272.25998  L 283.13457 273.79849  L 287.884156 275.11718  L 292.633743 276.181986  L 297.38333 276.965405  L 300.94552 277.355845  L 304.507709 277.570782  L 308.069899 277.607091  L 311.632089 277.464244  L 315.194279 277.144317  L 318.756469 276.651964  L 323.506056 275.74  L 328.255642 274.558064  L 333.005229 273.136688  L 338.942212 271.079702  L 346.066592 268.311162  L 368.627128 259.201187  L 374.564112 257.182717  L 379.313698 255.799724  L 384.063285 254.661838  L 388.812872 253.798452  L 392.375061 253.344752  L 395.937251 253.06476  L 399.499441 252.962547  L 403.061631 253.039599  L 406.623821 253.294797  L 410.186011 253.724428  L 414.935598 254.557457  L 419.685184 255.667681  L 424.434771 257.026423  L 429.184358 258.598585  L 435.121341 260.8016  L 443.433117 264.168329  L 457.681877 269.99404  L 463.61886 272.17511  L 468.368447 273.723957  L 473.118034 275.054909  L 477.86762 276.133587  L 482.617207 276.932127  L 484.992 277.2196  L 484.992 277.2196  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #087e8b; stroke-width: 3; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_3">
+    <ns0:path d="M 296.064 276.777319  L 296.064 218.581345  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #9ba8b0; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_4">
+    <ns0:path d="M 350.3808 266.538696  L 350.3808 228.819968  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #9ba8b0; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_5">
+    <ns0:path d="M 404.6976 253.134845  L 404.6976 242.223819  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #9ba8b0; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_6">
+    <ns0:path d="M 459.0144 270.503349  L 459.0144 224.855315  " clip-path="url(#p75eb2baf0d)" style="fill: none; stroke: #9ba8b0; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_5">
+    <ns0:path d="M 309.874113 191.32977  Q 378.721355 191.32977 446.450563 191.32977  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+    <ns0:path d="M 440.050563 188.12977  L 446.450563 191.32977  L 440.050563 194.52977  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378.72" y="177.242379" transform="rotate(-0 378.72 177.242379)">distance x</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(337.345 316.521148)">Travel and</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(336.83375 335.725523)">reflections</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(340.06375 63.991813)">1D: along</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(346.1375 83.196188)">a vessel</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_3">
+   <ns0:g id="patch_6">
+    <ns0:path d="M 644.275722 279.711908  C 664.874373 268.53121 683.355542 252.576365 695.648965 235.361243  C 707.942387 218.14612 713.04436 201.076257 709.831233 187.911094  C 706.618106 174.745931 695.352217 166.560345 678.514747 165.157116  C 661.677277 163.753887 640.64293 169.247583 620.044278 180.42828  C 599.445627 191.608977 580.964458 207.563822 568.671035 224.778945  C 556.377613 241.994068 551.27564 259.06393 554.488767 272.229093  C 557.701894 285.394256 568.967783 293.579842 585.805253 294.983071  C 602.642723 296.3863 623.67707 290.892605 644.275722 279.711908  z " clip-path="url(#p3d07060fdf)" style="fill: #edf2f5; stroke: #18384a; stroke-width: 2; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 592.0128 230.070094  L 585.383278 238.21199  L 584.412587 234.448259  L 561.316239 247.695768  L 561.307761 247.662897  L 584.404109 234.415388  L 583.433418 230.651658  z " clip-path="url(#p3d07060fdf)" style="fill: #087e8b; stroke: #087e8b; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_8">
+    <ns0:path d="M 625.0752 240.635637  L 619.405977 250.256271  L 618.043494 246.773069  L 596.74195 265.303781  L 596.73005 265.27336  L 618.031594 246.742648  L 616.669111 243.259446  z " clip-path="url(#p3d07060fdf)" style="fill: #087e8b; stroke: #087e8b; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 667.584 226.548246  L 660.127319 232.902605  L 659.597015 228.948398  L 632.162316 237.131056  L 632.157684 237.096522  L 659.592384 228.913863  L 659.062079 224.959656  z " clip-path="url(#p3d07060fdf)" style="fill: #087e8b; stroke: #087e8b; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 674.6688 212.460855  L 666.105857 213.443155  L 666.761681 209.53104  L 655.773136 205.434244  L 655.778864 205.400077  L 666.767408 209.496873  L 667.423233 205.584759  z " clip-path="url(#p3d07060fdf)" style="fill: #087e8b; stroke: #087e8b; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(599.98 316.521148)">Jets and</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(580.96375 335.725523)">wall stresses</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(555.7175 63.991813)">3D: local geometry</ns0:text>
+    <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(598.09 83.196188)">and flow</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="text_12">
+   <ns0:text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378.72" y="19.3575" transform="rotate(-0 378.72 19.3575)">Choose the detail needed by the question</ns0:text>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="p2f538acfad">
+   <ns0:rect x="7.2" y="89.196188" width="236.16" height="281.747813" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p75eb2baf0d">
+   <ns0:rect x="260.64" y="89.196188" width="236.16" height="281.747813" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p3d07060fdf">
+   <ns0:rect x="514.08" y="89.196188" width="236.16" height="281.747813" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

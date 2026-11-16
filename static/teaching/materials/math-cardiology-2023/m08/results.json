@@ -1,0 +1,24 @@
+{
+  "conductance_L_min_mmHg": 0.04966666666666667,
+  "resistance_mmHg_min_L": 20.13422818791946,
+  "held_out_flow_mae_L_min": 0.09444444444444455,
+  "classification_confusion_true_rows_predicted_columns": [
+    [
+      12,
+      4
+    ],
+    [
+      0,
+      16
+    ]
+  ],
+  "classification_test_accuracy": 0.875,
+  "training_cases": 48,
+  "test_cases": 32,
+  "checks": {
+    "disjoint_case_ids": true,
+    "exact_line_recovered": true,
+    "unit_rescaling": true,
+    "invalid_calibrations_rejected": 4
+  }
+}

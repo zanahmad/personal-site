@@ -1,0 +1,52 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Resistance, compliance, and the reservoir equation / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 2}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Resistance, compliance, and the reservoir equation --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Flow responds to an along-path pressure drop and resistance.
+\item Compliance links stored-volume change to distending-pressure change.
+\item Inflow minus outflow accounts for storage.
+\item The simplest useful spatial model depends on the question.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Compliance and resistance are interchangeable.} Their units differ: mL/mmHg versus mmHg s/mL; one represents storage and the other a flow relation.
+
+\textbf{Equal flows imply zero volume.} They imply unchanged volume.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What sets the final pressure in the constant-inflow reservoir?
+\item Name an observation that a single compartment cannot resolve.
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish a pressure drop along a pathway from the distending pressure across its wall.
+\item Compute a flow and a stored-volume change with consistent units.
+\item Explain how compliance changes a filling transient without changing this model's final pressure.
+\item Choose a 0D, 1D or 3D description to match a stated question and identify missing evidence.
+\end{itemize}
+\end{document}

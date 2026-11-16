@@ -1,0 +1,53 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Calibrating a flow law and constructing a classifier / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Mathematical Cardiology}\fancyhead[R]{\small Lecture 8}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Calibrating a flow law and constructing a classifier --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Calibration estimates a model parameter; classification predicts a label.
+\item Parameter and error units matter.
+\item Freeze training choices before held-out evaluation.
+\item Directional error counts add information beyond overall accuracy.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{A small training error validates the mechanism.} It only shows fit to those observations; test new predictions and missing mechanisms.
+
+\textbf{Compute normalization from all rows.} Estimate it on training rows and reuse the same values on held-out rows.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What does G=\allowbreak{}.05 L/(min mmHg) predict at a 20 mmHg difference?
+\item Can all-zero pressure differences identify G?
+\item What does a confusion-table row count?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Fit and interpret one conductance parameter with units.
+\item Distinguish a numerical flow prediction from a categorical prediction.
+\item Separate training examples from held-out cases before fitting.
+\item Calculate and interpret an error summary and a confusion count.
+\end{itemize}
+\end{document}
