@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="757.19952pt" height="361.19952pt" viewBox="0 0 757.19952 361.19952" xmlns="http://www.w3.org/2000/svg" version="1.1"><title>A group audit with matched row counts</title><desc>Both training sets have 240 rows from 80 groups; the identical 40 final-visit test rows represent 40 groups. The proper training set has no test-group overlap. The deliberately contaminated set replaces 40 proper training groups with the 40 test groups and uses only their other visits. Test row IDs remain disjoint in both cases.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 361.19952 
+L 757.19952 361.19952 
+L 757.19952 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.90623 170.892649 
+L 360.14953 170.892649 
+Q 365.664366 170.892649 365.664366 166.031405 
+L 365.664366 78.529006 
+Q 365.664366 73.667762 360.14953 73.667762 
+L 21.90623 73.667762 
+Q 16.391394 73.667762 16.391394 78.529006 
+L 16.391394 166.031405 
+Q 16.391394 170.892649 21.90623 170.892649 
+z
+" clip-path="url(#p9a19377d56)" style="fill: #e0f2f1; stroke: #264653; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 21.90623 319.970809 
+L 360.14953 319.970809 
+Q 365.664366 319.970809 365.664366 315.109565 
+L 365.664366 227.607167 
+Q 365.664366 222.745922 360.14953 222.745922 
+L 21.90623 222.745922 
+Q 16.391394 222.745922 16.391394 227.607167 
+L 16.391394 315.109565 
+Q 16.391394 319.970809 21.90623 319.970809 
+z
+" clip-path="url(#p9a19377d56)" style="fill: #edf0f4; stroke: #264653; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(104.401318 115.472784)">TRAIN: 80 groups</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(128.37788 139.478252)">3 visits each</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(110.54038 264.550944)">TEST: 40 groups</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(133.587255 288.556413)">1 visit each</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #087e8b" x="191.02788" y="211.737868" transform="rotate(-0 191.02788 211.737868)">0 group IDs overlap</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="191.02788" y="23.916562" transform="rotate(-0 191.02788 23.916562)">Unseen-group protocol</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 397.04999 170.892649 
+L 735.29329 170.892649 
+Q 740.808126 170.892649 740.808126 166.031405 
+L 740.808126 78.529006 
+Q 740.808126 73.667762 735.29329 73.667762 
+L 397.04999 73.667762 
+Q 391.535154 73.667762 391.535154 78.529006 
+L 391.535154 166.031405 
+Q 391.535154 170.892649 397.04999 170.892649 
+z
+" clip-path="url(#paaea8eada3)" style="fill: #e0f2f1; stroke: #264653; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 397.04999 319.970809 
+L 735.29329 319.970809 
+Q 740.808126 319.970809 740.808126 315.109565 
+L 740.808126 227.607167 
+Q 740.808126 222.745922 735.29329 222.745922 
+L 397.04999 222.745922 
+Q 391.535154 222.745922 391.535154 227.607167 
+L 391.535154 315.109565 
+Q 391.535154 319.970809 397.04999 319.970809 
+z
+" clip-path="url(#paaea8eada3)" style="fill: #edf0f4; stroke: #264653; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(479.545078 115.472784)">TRAIN: 80 groups</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(503.52164 139.478252)">3 visits each</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(485.68414 264.550944)">TEST: 40 groups</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(508.731015 288.556413)">1 visit each</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #9a4d15" x="566.17164" y="211.737868" transform="rotate(-0 566.17164 211.737868)">40 group IDs overlap</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="566.17164" y="23.916562" transform="rotate(-0 566.17164 23.916562)">Seen-group contamination</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9a19377d56">
+   <rect x="7.2" y="29.916562" width="367.65576" height="324.082958"/>
+  </clipPath>
+  <clipPath id="paaea8eada3">
+   <rect x="382.34376" y="29.916562" width="367.65576" height="324.082958"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,55 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Image coordinates, pixel-cell meshes and geometric sensitivity / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 11}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Image coordinates, pixel-cell meshes and geometric sensitivity --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Physical geometry depends on spacing, origin, direction and index convention.
+\item Pixel-cell triangulation can be verified exactly for a fixed mask.
+\item Threshold, resampling and mesh refinement are different interventions.
+\item Provenance supports reproducibility; independent evidence supports anatomical validation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Use row/column directly as x/y.} Write the explicit [column,row] geometric vector and apply spacing before direction.
+
+\textbf{Take an equal-area diameter as an anatomical width.} It is one scalar summary; retain local features and topology.
+
+\textbf{Describe the 2D mesh as a completed CFD model.} State the missing domain, boundary, material and solver ingredients.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item How does doubling both spacings affect area?
+\item Which check can an origin error evade?
+\item What does a hash fail to establish?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Map a row/column location into physical coordinates with units.
+\item Construct a conforming triangular mesh of a synthetic foreground mask and verify its area.
+\item Separate threshold sensitivity from mesh refinement and from validation against anatomy.
+\item Record enough provenance to reproduce the image-to-geometry calculation.
+\end{itemize}
+\end{document}

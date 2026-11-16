@@ -1,0 +1,176 @@
+{
+  "proper": {
+    "audit": {
+      "training_rows": 240,
+      "test_rows": 40,
+      "training_groups": 80,
+      "test_groups": 40,
+      "overlap_groups": 0
+    },
+    "scaler_mean": [
+      -0.16989612369661036,
+      0.009957496812932447,
+      -0.02389470222791865,
+      -0.043486763297025756,
+      0.09784980827708155,
+      -0.01195237053864667,
+      -0.008872095976890761,
+      -0.026539425343677467,
+      -0.015353550563529387
+    ],
+    "scaler_sd": [
+      1.262888570472311,
+      1.0821963301004058,
+      0.8374586783085534,
+      0.9607898315467563,
+      1.132805303882997,
+      0.9526181623167577,
+      1.0323629194122075,
+      0.999521823984163,
+      1.029238122928631
+    ],
+    "training_prior": 0.5,
+    "models": {
+      "constant": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            0
+          ]
+        ],
+        "accuracy": 0.5,
+        "recall_class0": 1.0,
+        "recall_class1": 0.0,
+        "balanced_accuracy": 0.5
+      },
+      "signal_logistic": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            13,
+            7
+          ],
+          [
+            4,
+            16
+          ]
+        ],
+        "accuracy": 0.725,
+        "recall_class0": 0.65,
+        "recall_class1": 0.8,
+        "balanced_accuracy": 0.7250000000000001
+      },
+      "all_feature_1nn": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            14,
+            6
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "accuracy": 0.65,
+        "recall_class0": 0.7,
+        "recall_class1": 0.6,
+        "balanced_accuracy": 0.6499999999999999
+      }
+    }
+  },
+  "leaky": {
+    "audit": {
+      "training_rows": 240,
+      "test_rows": 40,
+      "training_groups": 80,
+      "test_groups": 40,
+      "overlap_groups": 40
+    },
+    "scaler_mean": [
+      -0.020456426073463627,
+      -0.08737641902007075,
+      0.11716309181102814,
+      -0.20255939184932353,
+      -0.014156359987607257,
+      -0.009563508304793423,
+      0.05837246465610483,
+      -0.043007792002041176,
+      -0.008276399281391164
+    ],
+    "scaler_sd": [
+      1.3186916537354394,
+      1.1147457849935107,
+      1.029716349812095,
+      0.9516438208231209,
+      0.96113102933794,
+      0.8923792862398711,
+      1.1530028462921176,
+      1.0747909722136444,
+      0.9440748952864251
+    ],
+    "training_prior": 0.5,
+    "models": {
+      "constant": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            0
+          ]
+        ],
+        "accuracy": 0.5,
+        "recall_class0": 1.0,
+        "recall_class1": 0.0,
+        "balanced_accuracy": 0.5
+      },
+      "signal_logistic": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            14,
+            6
+          ],
+          [
+            4,
+            16
+          ]
+        ],
+        "accuracy": 0.75,
+        "recall_class0": 0.7,
+        "recall_class1": 0.8,
+        "balanced_accuracy": 0.75
+      },
+      "all_feature_1nn": {
+        "confusion_true_rows_predicted_columns": [
+          [
+            20,
+            0
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        "accuracy": 1.0,
+        "recall_class0": 1.0,
+        "recall_class1": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    }
+  },
+  "checks": {
+    "matched_training_rows": true,
+    "identical_test_cases": true,
+    "disjoint_test_row_ids_both_protocols": true,
+    "proper_group_disjointness": true,
+    "leaky_split_rejected_when_guard_enabled": true,
+    "test_perturbation_does_not_change_scaler": true,
+    "nearest_neighbor_known_case": true
+  },
+  "data_definition": "120 synthetic groups; four repeated rows each; stable binary group outcome; one weak signal and eight independent group fingerprint features; no clinical meanings."
+}

@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Shape comparisons, deformation penalties and geometric matching / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 14}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Shape comparisons, deformation penalties and geometric matching --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A distance requires a representation, units, correspondence and declared invariances.
+\item Finite cyclic shifts remove the choice of first index while preserving direction and local order.
+\item Proper rigid fits preserve physical size.
+\item The finite score separates amplitude and neighbor variation on a fixed grid.
+\item Elastic path energy and endpoint matching have distinct roles.
+\item Synthetic grouping is evidence about the implemented comparison, not clinical categories.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Comparing shades across matrices with different color scales.} Read numerical entries and each colorbar in mm.
+
+\textbf{Calling a quadratic score a full elastic geodesic.} Document the actual fixed-array calculation and its missing path/geometry operations.
+
+\textbf{Assuming a tiny endpoint error implies a cheap deformation.} Distinguish endpoint fidelity from path cost.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Which known pairs should have near-zero rigid/cyclic RMS?
+\item How does E change when every displacement is doubled?
+\item What happens to the roughness term for a constant displacement?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Compare raw and rigid/cyclic RMS matrices while naming the removed nuisance transformations.
+\item Explain why size differences survive the chosen alignment rule.
+\item Compute a finite displacement score and distinguish amplitude from neighbor variation.
+\item Separate a deformation-path cost from an endpoint matching term and state the limited role of the implemented toy.
+\item Write a small synthetic cohort report with units, invariances, numerical checks and a bounded conclusion.
+\end{itemize}
+\end{document}

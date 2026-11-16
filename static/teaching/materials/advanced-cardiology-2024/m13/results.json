@@ -1,0 +1,33 @@
+{
+  "pose_before_mm": 12.665681274653572,
+  "pose_after_mm": 5.8672193426199026e-15,
+  "rotation_determinant": 0.9999999999999992,
+  "sampling_columns": [
+    "input_vertices",
+    "index_match_RMS_mm",
+    "arclength_match_RMS_mm"
+  ],
+  "sampling": [
+    [
+      16.0,
+      4.47088192881276,
+      0.294384576066117
+    ],
+    [
+      32.0,
+      4.46927786605116,
+      0.08170849581052815
+    ],
+    [
+      64.0,
+      4.469277866051151,
+      0.021070122457654505
+    ],
+    [
+      128.0,
+      4.469277866051151,
+      0.005142619830983512
+    ]
+  ],
+  "scope": "Synthetic fixed correspondence; no scale normalization, reflection, clinical data or full registration."
+}

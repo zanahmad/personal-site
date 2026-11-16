@@ -1,0 +1,39 @@
+{
+  "spacing_xy_mm": [
+    1.25,
+    2.0
+  ],
+  "origin_xy_mm": [
+    -20.0,
+    -10.0
+  ],
+  "direction": [
+    [
+      0.9396926207859084,
+      -0.3420201433256687
+    ],
+    [
+      0.3420201433256687,
+      0.9396926207859084
+    ]
+  ],
+  "units": "mm",
+  "array_order": "row,column",
+  "point_order": "x,y = column,row before spatial transform",
+  "threshold": 0.5,
+  "comparison": ">=",
+  "synthetic_seed": 111,
+  "shape": [
+    28,
+    36
+  ],
+  "image_sha256": "4c5f6f5c7c3084f9f6748ecd7a1a35a507b353fe0761b8beb7d70b7dcfd13898",
+  "hash_encoding": "C order, little-endian float64 bytes",
+  "geometry_type": "2D union of foreground pixel cells; two triangles per cell",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  },
+  "generator": "demo.make_image: ellipses, Gaussian blur sigma0.85 pixels, noise sigma0.012",
+  "purpose": "Teaching geometry only; no patient data and no fluid simulation"
+}

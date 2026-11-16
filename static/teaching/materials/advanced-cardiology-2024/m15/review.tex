@@ -1,0 +1,55 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Repeated observations, group leakage and predictive baselines / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 15}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Repeated observations, group leakage and predictive baselines --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Define the target before choosing the split.
+\item Audit both rows and groups; exact-row separation is insufficient for unseen people.
+\item All fitted preprocessing belongs inside the training boundary.
+\item Baselines and class-specific metrics make the claim inspectable.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Treat a perfect contaminated score as new-person performance.} It measures a task with already represented groups; use the target-matched protocol.
+
+\textbf{Fit the scaler on the full table.} Fit on training rows and reuse the stored transform.
+
+\textbf{Treat class balance in this generator as population prevalence.} It is a teaching design choice.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What is the proper split's shared-group count?
+\item Why does matching training row counts help?
+\item Does grouping by person answer every site-shift question?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Define a prediction target and its appropriate unit of separation.
+\item Audit both row-index and group-identity overlap in a proposed split.
+\item Fit transparent baselines with training-only preprocessing and interpret class-specific metrics.
+\item Explain why a strong contaminated score does not estimate performance on new groups.
+\end{itemize}
+\end{document}

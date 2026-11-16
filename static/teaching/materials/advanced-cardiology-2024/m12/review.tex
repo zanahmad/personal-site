@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Local convolutional segmentation and geometric error / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 12}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Local convolutional segmentation and geometric error --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item A shared 3$\times$3 layer learns ten parameters including bias.
+\item Loss gradients can be checked numerically before trusting a training run.
+\item The split unit should match the intended unit of generalization.
+\item Overlap, boundary distance, area and connectivity describe different failures.
+\item Synthetic improvement is evidence about the declared generator, not clinical validation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Call the small scaffold U-Net.} It has one trained convolution and sigmoid; the U-Net reading is an architecture comparison.
+
+\textbf{Tune a threshold after inspecting test masks.} Choose with training/validation information, freeze it, then evaluate the test protocol.
+
+\textbf{Treat a missing predicted object as zero boundary error.} Mark the nonempty/empty distance unavailable and report the failure.
+
+\textbf{Accept high Dice as proof that topology is preserved.} Check the feature relevant to the downstream question, such as connected components.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item Why can area error be zero with an incorrect boundary?
+\item What does a central finite-difference check compare?
+\item How does this assignment fit the course policy?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Distinguish a fixed intensity baseline from a trained shared-convolution segmenter.
+\item Trace a ten-parameter model from local image patches through a loss and gradient update.
+\item Evaluate complete held-out images using overlap, physical boundary distances and connectivity.
+\item Combine geometry provenance and a sensitivity counterexample in a short Assignment 3 report.
+\end{itemize}
+\end{document}

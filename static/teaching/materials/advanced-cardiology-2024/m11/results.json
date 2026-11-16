@@ -1,0 +1,61 @@
+{
+  "foreground_pixels": 295,
+  "triangles": 590,
+  "vertices": 337,
+  "area_mm2": 737.5,
+  "minimum_signed_triangle_area_mm2": 1.2499999999999947,
+  "thresholds": [
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "counts": [
+    326,
+    311,
+    299,
+    295,
+    292,
+    283,
+    273
+  ],
+  "areas_mm2": [
+    815.0,
+    777.5,
+    747.5,
+    737.5,
+    730.0,
+    707.5,
+    682.5
+  ],
+  "equivalent_diameters_mm": [
+    32.21319960760119,
+    31.463371498165753,
+    30.85038994388133,
+    30.643338007504706,
+    30.487126261041215,
+    30.013613209677498,
+    29.47856830447755
+  ],
+  "components_4_connected": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "generator_area_mm2": 747.5,
+  "checks": {
+    "mesh_equals_pixel_area": true,
+    "positive_signed_elements": true,
+    "rigid_transform_preserves_area": true,
+    "doubling_both_spacings_quadruples_area": true,
+    "threshold_masks_nested": true,
+    "edge_incidence_one_or_two": true
+  }
+}
