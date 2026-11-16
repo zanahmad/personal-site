@@ -1,0 +1,43 @@
+{
+  "stationary": {
+    "flux_per_width": 1.6550925925925924e-05,
+    "exact_flux_per_width": 1.6666666666666667e-05,
+    "max_profile_error": 6.071532165918825e-18,
+    "max_algebraic_residual": 2.8189256484623115e-18
+  },
+  "center_speed_m_s": 0.0125,
+  "gap_m": 0.002,
+  "viscosity_Pa_s": 0.004,
+  "gradient_Pa_m": 100.0,
+  "width_m": 0.01,
+  "total_flow_mL_s": 0.16666666666666669,
+  "reynolds_based_on_gap": 4.416666666666667,
+  "n_values": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "flux_absolute_errors_m2_s": [
+    1.0416666666666638e-06,
+    2.604166666666651e-07,
+    6.510416666666627e-08,
+    1.6276041666705532e-08,
+    4.0690104167949675e-09
+  ],
+  "observed_flux_orders": [
+    2.000000000000005,
+    2.0,
+    1.9999999999965463,
+    1.999999999957955
+  ],
+  "checks": {
+    "zero_gradient_rest": true,
+    "reverse_gradient_reverses_flow": true,
+    "Couette_linear_solution": true,
+    "double_gradient_doubles_velocity": true,
+    "invalid_cases_rejected": 5
+  },
+  "runtime_seconds": 0.37301788106560707
+}

@@ -1,0 +1,48 @@
+{
+  "model": "neuronal HH, current Ahmad report convention; not cardiac",
+  "rest_state": [
+    -69.89767289636794,
+    0.05357460923233313,
+    0.5925376590066963,
+    0.3192461672222171
+  ],
+  "rest_current_residual_uA_cm2": 8.43769498715119e-15,
+  "stimulus_amplitudes_uA_cm2": [
+    2,
+    5,
+    10
+  ],
+  "peaks_mV": [
+    -68.26225810535843,
+    -65.69027513727988,
+    33.96217211622026
+  ],
+  "gate_min": 0.013562699724249602,
+  "gate_max": 0.9936018761583811,
+  "reference_voltage_at_1ms": 17.23330631106073,
+  "dt_values_ms": [
+    0.01,
+    0.005,
+    0.0025,
+    0.00125
+  ],
+  "voltage_errors_mV": [
+    2.2369693135151785,
+    1.1535170326640802,
+    0.5855499679147336,
+    0.29497456269314526
+  ],
+  "observed_orders": [
+    0.9555061590075283,
+    0.978175113308603,
+    0.9892017402076492
+  ],
+  "checks": {
+    "rest_preserved": true,
+    "removable_singularities": true,
+    "exact_frozen_gate": true,
+    "non_grid_pulse_charge": 5.803000000000002,
+    "invalid_cases_rejected": 3
+  },
+  "runtime_seconds": 3.1414727037772536
+}

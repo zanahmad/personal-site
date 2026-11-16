@@ -1,0 +1,52 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Fourier-mode error analysis of a transport discretization / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 6}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Fourier-mode error analysis of a transport discretization --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Match equation, boundaries, initial state and state representation in a benchmark.
+\item Observed order is measured from a controlled error sequence.
+\item Use a fixed spatial model to isolate time error.
+\item A zero-sum unstable mode can pass global conservation.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Calling any two closer curves a convergence study.} Specify the reference, error norm, controlled refinement and endpoint.
+
+\textbf{Treating formal order as a universal measured result.} Measure observed order for the actual scheme, boundaries and tested solution.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item If halving h divides error by eight, what order is observed?
+\item What is the checkerboard factor at $\mu$=\allowbreak{}0.5?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Construct an exact periodic transport benchmark with compatible initial and boundary data.
+\item Measure observed error order from a controlled refinement table.
+\item Separate time error from space error rather than changing both without a reference.
+\item Identify an unstable diffusion setting and explain why conservation cannot rescue it.
+\end{itemize}
+\end{document}

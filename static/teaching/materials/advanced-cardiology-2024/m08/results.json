@@ -1,0 +1,55 @@
+{
+  "model": "prescribed kinematic verification fixture; no momentum solve",
+  "n_values": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "velocity_rms_errors_m_s": [
+    0.0003340581896348021,
+    8.489313240792877e-05,
+    2.1384532074542392e-05,
+    5.365649731133324e-06
+  ],
+  "observed_orders": [
+    1.976379673764766,
+    1.9890802096879592,
+    1.9947428553865745
+  ],
+  "max_cell_flux_residual_m2_s": 2.541098841762901e-21,
+  "exact_port_flow_mL_s": 4.0,
+  "volume_mL": 21.0,
+  "volume_over_flow_s": 5.25,
+  "boundary_factors": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "boundary_turnover_scales_s": [
+    6.5625,
+    5.25,
+    4.375
+  ],
+  "importable_velocity_diagnostics": {
+    "divergence_rms_per_s": 0.0022609599748518875,
+    "net_outward_boundary_flow_mL_s": 0.0,
+    "inlet_flow_mL_s": 3.9990234374999996,
+    "outlet_flow_mL_s": 3.9990234374999996,
+    "wall_outward_flow_mL_s": 0.0,
+    "momentum_residual": "not assessed; pressure, viscous stress, time derivative and forcing are not supplied"
+  },
+  "deliberate_leak_detected_mL_s": 1.2,
+  "two_fields_max_speeds_m_s": [
+    0.030000000000000002,
+    0.0452197265625
+  ],
+  "checks": {
+    "same_port_flow_different_interior": true,
+    "no_slip_side_walls": true,
+    "prescribed_input_linear_velocity_response": true,
+    "parabolic_port_quadrature_error": true,
+    "invalid_cases_rejected": 6
+  },
+  "runtime_seconds": 0.9078612383455038
+}

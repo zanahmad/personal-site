@@ -1,0 +1,57 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Membrane current balance and voltage-dependent gates / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 9}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Membrane current balance and voltage-dependent gates --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Current signs and density units determine the voltage balance.
+\item The gate equilibrium depends on voltage; rest is a coupled current-balance root.
+\item Removable rate singularities require finite continuous evaluation.
+\item Exact frozen substeps preserve admissibility but do not remove coupling error.
+\item Neuronal and cardiac cell models answer different biological questions.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Clipping an unstable gate to zero or one.} Use an admissible update and diagnose the step or equation; clipping changes the dynamics.
+
+\textbf{Calling any spike-shaped trace a cardiac action potential.} Name the model, parameter convention and intended observable.
+
+\textbf{Changing pulse duration inadvertently during refinement.} Treat pulse edges as timeline events and audit the integral.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What are the units of alpha and beta?
+\item What does zero net current establish at gate equilibrium?
+\item Why compare with an independent ODE solver?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Derive the voltage-current balance with consistent units and outward-positive ionic currents.
+\item Implement a frozen-rate gate update and explain its interval-preserving property.
+\item Evaluate removable rate singularities and compute a coupled resting state.
+\item Compare stimulus responses and test time accuracy without equating bounded gates with an accurate trajectory.
+\item Distinguish a neuronal HH cell from a reduced cardiac cell model.
+\end{itemize}
+\end{document}

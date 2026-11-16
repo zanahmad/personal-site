@@ -1,0 +1,52 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={Planar viscous flow and boundary-value discretization / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 7}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{Planar viscous flow and boundary-value discretization --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item Incompressibility is a local volume constraint, not a complete velocity law.
+\item The reduced momentum equation plus wall values selects the profile.
+\item Flow per width and total flow have different units.
+\item A nodally exact quadratic can still have a quadrature error.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Using a pressure drop where the equation requires a pressure gradient.} Divide pressure drop by channel length to obtain G.
+
+\textbf{Reporting an order-two profile error from the trapezoidal flux plot.} The plotted error belongs to integration; the quadratic nodal solution is exact to roundoff in this scheme.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What changes when viscosity doubles at fixed gradient and walls?
+\item Which test checks nonzero boundary insertion?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Explain divergence-free velocity as the local constant-density volume balance.
+\item Derive planar Poiseuille flow from a stated reduced momentum balance and two wall conditions.
+\item Check SI units, no-slip walls, flow rate and limiting cases in a finite-difference boundary-value solve.
+\item Distinguish algebraic residual, nodal profile error and flow-integration error.
+\end{itemize}
+\end{document}

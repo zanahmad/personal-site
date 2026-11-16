@@ -1,0 +1,58 @@
+\documentclass[11pt,letterpaper]{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=.83in,top=.8in,bottom=.8in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,bm,booktabs,array,graphicx,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,patterns}
+\definecolor{ink}{HTML}{17344D}\definecolor{accent}{HTML}{087E8B}\definecolor{pale}{HTML}{EDF5F5}\definecolor{gold}{HTML}{AD6B19}
+\providecommand{\dd}{\,\mathrm{d}}\providecommand{\R}{\mathbb{R}}
+\providecommand{\E}{\mathbb{E}}\providecommand{\Var}{\operatorname{Var}}
+\providecommand{\Cov}{\operatorname{Cov}}\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left|#1\right|}
+\usepackage{microtype,hyperref,fancyhdr,enumitem,amsthm,sectsty,needspace}
+\allsectionsfont{\raggedright}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Zan Ahmad},pdftitle={A reduced cardiac reaction--diffusion wave / Review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\linespread{1.07}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=*}
+\emergencystretch=2em\clubpenalty=10000\widowpenalty=10000
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Computational Cardiology}\fancyhead[R]{\small Lecture 10}
+\fancyfoot[L]{\footnotesize Zan Ahmad}\fancyfoot[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{.3pt}
+\newtheorem{proposition}{Proposition}\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}\newtheorem{definition}{Definition}\newtheorem{example}{Example}
+\numberwithin{equation}{section}
+\begin{document}
+\section*{A reduced cardiac reaction--diffusion wave --- review sheet}
+Use this after attempting the worked examples and practice. Explain each claim in words before calculating.
+
+\section*{Key ideas}
+\begin{itemize}
+\item The reduced cardiac model uses scaled voltage and a recovery gate, not the neuronal HH state.
+\item Shared-face diffusion cancels internally under sealed boundaries.
+\item Only diffusion conserves the stated voltage integral; reaction and stimulus change it.
+\item Physical stimulus overlap and interpolated sensor coordinates keep refinement experiments consistent.
+\item Component verification and active-wave sensitivity answer different questions.
+\end{itemize}
+\section*{Common errors and repairs}
+\textbf{Reporting scaled voltage as millivolts without a conversion.} Keep the dimensionless axis or explicitly state and justify a voltage scale.
+
+\textbf{Treating a missing arrival as zero speed.} Report the observation window and undefined two-sensor speed.
+
+\textbf{Changing both mesh and time step and assigning an error order from one table.} Separate the controls and use an appropriate reference or qualified successive-difference comparison.
+
+\section*{Retrieve without your notes}
+\begin{itemize}
+\item What are the units of D here?
+\item Why can backward-Euler diffusion preserve constants?
+\item What is one cm/ms in m/s?
+\item What extra evidence is needed for biological validation?
+\end{itemize}
+\section*{Readiness check}
+\begin{itemize}
+\item Write the scaled two-current cardiac reaction equations with explicit units and limitations.
+\item Derive sealed-strand diffusion as a shared-face flux balance.
+\item Implement a threshold-crossing interpolation and convert a two-sensor delay into speed.
+\item Separate rest, diffusion conservation, gate admissibility and numerical accuracy checks.
+\item Compare spatial and temporal refinement at fixed physical sensor and stimulus locations.
+\end{itemize}
+\end{document}

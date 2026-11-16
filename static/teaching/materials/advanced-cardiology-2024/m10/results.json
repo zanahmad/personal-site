@@ -1,0 +1,78 @@
+{
+  "model": "reduced cardiac Mitchell\u2013Schaeffer reaction plus original scalar tissue coupling",
+  "baseline_arrival_ms": [
+    20.778092371077946,
+    38.60532285987719
+  ],
+  "baseline_speed_m_s": 0.33656377549893507,
+  "gate_range": [
+    0.595551943871552,
+    1.0
+  ],
+  "voltage_range": [
+    0.0,
+    0.9455097474859717
+  ],
+  "n_values": [
+    100,
+    200,
+    400
+  ],
+  "spatial_speeds_m_s": [
+    0.3370606589275018,
+    0.33880660278101005,
+    0.3392438893040014
+  ],
+  "dt_values_ms": [
+    0.08,
+    0.04,
+    0.02,
+    0.01
+  ],
+  "temporal_speeds_m_s": [
+    0.3246749887121444,
+    0.3326670170666202,
+    0.33699006773263906,
+    0.3392438893040014
+  ],
+  "uniform_cell_dt_ms": [
+    0.04,
+    0.02,
+    0.01,
+    0.005
+  ],
+  "uniform_cell_reference_v": 0.77000036557605,
+  "uniform_cell_errors": [
+    0.0110272903173817,
+    0.005637446804803159,
+    0.002850664560582028,
+    0.0014334448554766954
+  ],
+  "uniform_cell_orders": [
+    0.9679645078049351,
+    0.9837436286305404,
+    0.9918118811989641
+  ],
+  "passive_spatial_errors": [
+    9.611121811559098e-05,
+    2.4116057988132766e-05,
+    6.034539375532333e-06,
+    1.5089802901657734e-06
+  ],
+  "passive_spatial_orders": [
+    1.9947107288888433,
+    1.998678546064667,
+    1.9996696903886224
+  ],
+  "max_diffusion_sum_drift_cm": 3.508304757815495e-16,
+  "stimulus_integral_cm": 0.02,
+  "checks": {
+    "exact_discrete_diffusion_mode": true,
+    "constant_diffusion_state": true,
+    "rest_preserved": true,
+    "no_coupling_no_remote_excitation": true,
+    "gate_admissibility_without_clipping": true,
+    "invalid_cases_rejected": 5
+  },
+  "runtime_seconds": 6.5485291397199035
+}
