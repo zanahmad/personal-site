@@ -4,7 +4,7 @@
 const M=window.CountMath, $=id=>document.getElementById(id);
 const colors={success:'#a855f7',failure:'#14b8a6',count:'#eab308',exposure:'#38bdf8',ink:'#f3f5fb',muted:'#a9bad2',line:'#3b4e6b'};
 const escape=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const mode=location.pathname.endsWith('classroom.html')?'classroom':'details';
+const mode= /\/classroom(?:\.html)?\/?$/.test(location.pathname)?'classroom':'details';
 const states=window.LESSON[mode];
 let current=0,last=null,simulation=null,run=0;
 const attrs=o=>Object.entries(o).map(([k,v])=>`${k}="${escape(v)}"`).join(' ');
