@@ -1,4 +1,4 @@
-/* One click plays a bounded conceptual sequence, then holds for the learner. */
+/* Covariance/Manim pacing: one authored reasoning step per click; settle, then hold. */
 (() => {
 'use strict';
 const M=window.CountMath, $=id=>document.getElementById(id);
@@ -419,7 +419,7 @@ function picture(s,replay=false){
   });
  }
 }
-function equation(s){
+function equation(s,delay=0){
  const host=$('equation'),source=s.eq||'';
  if(host.dataset.source===source)return;
  host.getAnimations({subtree:true}).forEach(a=>a.cancel());
@@ -440,15 +440,17 @@ function equation(s){
  for(const {node,box:b} of positions){
   const previous=old.filter(x=>!x.used&&x.text===node.textContent).sort((a,c)=>Math.abs(a.box.left-b.left)-Math.abs(c.box.left-b.left))[0];
   if(previous){previous.used=true;const dx=previous.box.left-b.left,dy=previous.box.top-b.top;
-   if(Math.abs(dx)>1||Math.abs(dy)>1)node.animate([{left:`${dx}px`,top:`${dy}px`},{left:'0px',top:'0px'}],{duration:680,easing:'cubic-bezier(.2,.7,.2,1)'});
-  }else node.animate([{opacity:0,top:'5px'},{opacity:1,top:'0px'}],{duration:430,delay:old.length?250:390,fill:'backwards'});
+   if(Math.abs(dx)>1||Math.abs(dy)>1)node.animate([{left:`${dx}px`,top:`${dy}px`},{left:'0px',top:'0px'}],{duration:800,delay,fill:'backwards',easing:'cubic-bezier(.2,.7,.2,1)'});
+  }else node.animate([{opacity:0,top:'5px'},{opacity:1,top:'0px'}],{duration:550,delay:delay+(old.length?100:180),fill:'backwards'});
  }
 }
 function simSpec(s){let p=s.params??{};if(s.visual==='hyperlimit')return {kind:'hypergeom',params:{N:40,K:20,n:10,...p,maxK:p.n??10}};
  if(s.visual==='poissonlimit')return {kind:'binomial',params:{n:p.n??50,p:(p.lambda??3)/(p.n??50),maxK:18}};
  if(s.visual==='poisson')return {kind:'poisson',params:{lambda:p.lambda??3,maxK:18}};return null;}
-const beats=(window.LESSON.beats?.[mode]||states.map(s=>({id:s.id,title:s.title,section:s.section,frames:[s.id],intervals:[0]})))
- .map(b=>({...b,indices:b.frames.map(id=>states.findIndex(s=>s.id===id))}));
+// Retain the old conceptual group IDs as deep-link aliases, but never let a
+// timer advance through several mathematical ideas. See covariance's pause().
+const beats=states.map((s,i)=>({id:s.id,title:s.title,section:s.section,
+ caption:s.body,frames:[s.id],indices:[i]}));
 const frameBeat=new Map();beats.forEach((b,i)=>b.indices.forEach(j=>frameBeat.set(j,i)));
 let beatIndex=0,playing=false,paused=false,timer=null,timerDue=0,timerRemaining=0,timerAction=null,generation=0,frameCursor=0;
 function snapshot(){return {beatIndex,beatCount:beats.length,playing,paused,frameCursor,beatId:beats[beatIndex].id};}
@@ -457,10 +459,10 @@ function controls(){
  $('counter').textContent=`${beatIndex+1} / ${beats.length}`;$('jump').value=beatIndex;
  $('previous').disabled=beatIndex===0&&!playing;
  $('next').disabled=beatIndex===beats.length-1&&!unfinished&&!playing;
- $('next').textContent=playing?'Finish →':unfinished?'Play →':'Next →';
- $('next').setAttribute('aria-label',playing?'Finish this animation':unfinished?'Play this explanation':'Next explanation');
+ $('next').textContent='Next →';
+ $('next').setAttribute('aria-label','Next reasoning step');
  if($('pause')){$('pause').disabled=!playing;$('pause').textContent=paused?'Continue':'Pause';$('pause').setAttribute('aria-label',paused?'Continue this animation':'Pause this animation');}
- if($('playback-status'))$('playback-status').textContent=paused?'Paused':playing?'Playing sequence':'Ready';
+ if($('playback-status'))$('playback-status').textContent=paused?'Paused':playing?'Animating this step':'Ready for next step';
  $('sample').disabled=playing;$('clear-samples').disabled=playing;
  window.lessonState={mode,index:current,id:states[current].id,count:states.length,visual:states[current].visual,...snapshot()};
 }
@@ -537,7 +539,10 @@ function paint(i,replay=false){
  $('notes-link').href='https://zanahmad.com/files/independence-bernoulli-binomial-2026-09-28.pdf'+(note?'#page='+note.page:'');
  $('notes-link').textContent=note?`Notes §${note.section}: ${note.title} ↗`:'Read the lecture notes ↗';
  $('simulation').hidden=!simSpec(s)||!(p.focus==='simulation'||p.allowSimulation===true);$('sample-caption').textContent='Exact laws are shown first. Simulation estimates them.';
- picture(s,replay);equation(s);last=s;
+ picture(s,replay);
+ // Let the diagram settle before changing the algebra. Shared objects stay put.
+ const pictureChanged=!last||last.visual!==s.visual||JSON.stringify(last.params)!==JSON.stringify(s.params);
+ equation(s,pictureChanged?1100:0);last=s;
  const hash='#'+encodeURIComponent(s.id);history.replaceState(null,'',hash);$('copy-link').href=hash;
  controls();
 }
@@ -553,7 +558,7 @@ function schedule(action,delay){
 function runFrame(cursor){
  const beat=beats[beatIndex];frameCursor=cursor;paint(beat.indices[cursor]);
  const final=cursor===beat.indices.length-1;
- schedule(()=>{if(final){playing=false;paused=false;timerAction=null;controls();}else runFrame(cursor+1);},final?1100:Math.max(450,beat.intervals?.[cursor]??1500));
+ schedule(()=>{if(final){playing=false;paused=false;timerAction=null;controls();}else runFrame(cursor+1);},2200);
 }
 function playBeat(index,cursor=0){
  cancelSequence();beatIndex=Math.max(0,Math.min(beats.length-1,index));$('speaker').open=false;
@@ -563,8 +568,9 @@ function playBeat(index,cursor=0){
 function finish(){const end=beats[beatIndex].indices.at(-1);show(end);}
 function advance(d){
  $('speaker').open=false;
- if(d<0){show(beats[Math.max(0,beatIndex-1)].indices.at(-1));return;}
- if(playing){finish();return;}
+ if(d<0){playBeat(Math.max(0,beatIndex-1));return;}
+ // Finish this transition before advancing, never skip a hidden substep.
+ if(playing){document.querySelector('#lesson').getAnimations({subtree:true}).forEach(a=>{try{a.finish();}catch{}});}
  const beat=beats[beatIndex],at=beat.indices.indexOf(current);
  if(at>=0&&at<beat.indices.length-1)playBeat(beatIndex,at+1);
  else if(beatIndex<beats.length-1)playBeat(beatIndex+1);
@@ -598,7 +604,6 @@ $('clear-samples').onclick=()=>{simulation=null;picture(states[current]);$('samp
 window.addEventListener('hashchange',()=>{const id=decodeURIComponent(location.hash.slice(1)),i=states.findIndex(s=>s.id===id),b=beats.findIndex(b=>b.id===id);if(i>=0)show(i);else if(b>=0)playBeat(b);});
 const initialId=decodeURIComponent(location.hash.slice(1)),initial=states.findIndex(s=>s.id===initialId),initialBeat=beats.findIndex(b=>b.id===initialId);
 show(initial>=0?initial:initialBeat>=0?beats[initialBeat].indices[0]:0);
-// Flat frame access remains available for legacy links and exhaustive math/layout
-// checks. Student navigation uses the much shorter conceptual sequence list.
+// Stable authored steps are shared by navigation, legacy links and QA.
 window.Deck={states,beats,show,advance,playBeat,finish,togglePause,correspondingFrame,getPlayback:snapshot,getSimulation:()=>simulation};
 })();
